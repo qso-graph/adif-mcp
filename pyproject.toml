@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
-authors = [{ name = "KI7MT" }]
+authors = [{name = "KI7MT", email = "ki7mt@yahoo.com"}]
 keywords = [
     "amateur-radio", "ham-radio", "adif", "mcp", "model-context-protocol",
     "lotw", "eqsl", "qrz", "qso-logging", "ai-agents",
@@ -23,6 +23,7 @@ dependencies = [
 
 # Classifiers help downstream tooling/users
 classifiers = [
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
@@ -30,6 +31,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Operating System :: OS Independent",
     "Environment :: Console",
+    "Topic :: Communications :: Ham Radio",
     "Topic :: Utilities",
 ]
 
@@ -76,11 +78,11 @@ all = [
 ]
 
 [project.urls]
-"Homepage" = "https://qso-graph.io"
-"Repository" = "https://github.com/qso-graph/adif-mcp"
-"Issues" = "https://github.com/qso-graph/adif-mcp/issues"
-"Documentation" = "https://qso-graph.io/"
-"ADIF Spec" = "https://adif.org.uk/316/ADIF_316.htm"
+Homepage = "https://qso-graph.io"
+Documentation = "https://qso-graph.io"
+Repository = "https://github.com/qso-graph/adif-mcp"
+Issues = "https://github.com/qso-graph/adif-mcp/issues"
+"ADIF Specification" = "https://adif.org.uk/316/ADIF_316.htm"
 
 [project.scripts]
 adif-mcp = "adif_mcp.cli.__main__:main"

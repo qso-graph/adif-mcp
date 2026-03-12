@@ -1,6 +1,6 @@
 [project]
 name = "adif-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -10,7 +10,7 @@ keywords = [
     "lotw", "eqsl", "qrz", "qso-logging", "ai-agents",
 ]
 # Support modern CPython, develop on 3.13, run on 3.11+
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 
 # Runtime deps only (keep UI optional; Tkinter is stdlib)
 dependencies = [
@@ -19,6 +19,7 @@ dependencies = [
     "fastmcp>=3.0",
     "requests>=2.32.5",
     "typing-extensions>=4.15.0",
+    "tomli>=2.0; python_version < '3.11'",
 ]
 
 # Classifiers help downstream tooling/users
@@ -26,6 +27,7 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -197,7 +199,7 @@ update_changelog_on_bump = true
 # Build system
 # -------------
 [build-system]
-requires = ["hatchling>=1.21"]
+requires = ["hatchling>=1.21", "tomli>=2.0; python_version < '3.11'"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.hooks.custom]

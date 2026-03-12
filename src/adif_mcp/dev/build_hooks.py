@@ -15,7 +15,12 @@ machine-readable copy of the ADIF compatibility information.
 from __future__ import annotations
 
 import json
-import tomllib
+import sys
+
+if sys.version_info >= (3, 11):
+    import tomllib
+else:
+    import tomli as tomllib
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 

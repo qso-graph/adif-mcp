@@ -5,7 +5,7 @@ Core [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for
 
 ## Overview
 
-adif-mcp gives AI agents safe, typed access to Amateur Radio logging data. It validates and parses ADIF records, searches the full ADIF 3.1.6 specification (fields, enumerations, data types), and provides geospatial utilities for Maidenhead locators. It also provides persona management and keyring-backed credential storage used by the qso-graph family of MCP servers.
+adif-mcp gives AI agents safe, typed access to Amateur Radio logging data. It validates and parses ADIF records, searches the full ADIF 3.1.6 specification (fields, enumerations, data types), and provides geospatial utilities for Maidenhead locators.
 
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)](https://www.python.org/)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
@@ -125,22 +125,26 @@ adif-mcp exposes **8 tools** via the Model Context Protocol:
 
 ## Architecture
 
-adif-mcp is the **foundation package** -- ADIF spec tools, persona management, and credential storage. Service integrations are separate MCP servers that depend on adif-mcp for identity and auth:
+adif-mcp is the **ADIF specification package** -- validation, parsing, and geospatial tools. Credential management is handled by [qso-graph-auth](https://pypi.org/project/qso-graph-auth/). Service integrations are separate MCP servers:
 
 | Package | PyPI | What It Does |
 |---------|------|-------------|
-| [`adif-mcp`](https://pypi.org/project/adif-mcp/) | v0.9.6 | ADIF 3.1.6 spec tools + persona/credential management |
-| [`lotw-mcp`](https://pypi.org/project/lotw-mcp/) | v0.2.0 | LoTW confirmations, QSOs, DXCC credits, user activity |
-| [`eqsl-mcp`](https://pypi.org/project/eqsl-mcp/) | v0.2.0 | eQSL inbox, verification, AG status, last upload |
-| [`qrz-mcp`](https://pypi.org/project/qrz-mcp/) | v0.2.1 | Callsign lookup, DXCC, logbook status/fetch |
-| [`hamqth-mcp`](https://pypi.org/project/hamqth-mcp/) | v0.2.0 | Callsign lookup, DXCC, bio, activity, DX spots, RBN |
-| [`pota-mcp`](https://pypi.org/project/pota-mcp/) | v0.1.1 | Parks on the Air spots, park info, stats, schedules |
-| [`sota-mcp`](https://pypi.org/project/sota-mcp/) | v0.1.1 | Summits on the Air spots, alerts, summit info, stats |
-| [`solar-mcp`](https://pypi.org/project/solar-mcp/) | v0.1.1 | Space weather conditions, forecasts, band outlook |
-| [`wspr-mcp`](https://pypi.org/project/wspr-mcp/) | v0.1.1 | WSPR beacon spots, propagation, band activity |
+| [`qso-graph-auth`](https://pypi.org/project/qso-graph-auth/) | v0.1.1 | OS keyring credential management, persona CRUD |
+| [`adif-mcp`](https://pypi.org/project/adif-mcp/) | v1.0.1 | ADIF 3.1.6 spec tools, validation, parsing, geospatial |
+| [`eqsl-mcp`](https://pypi.org/project/eqsl-mcp/) | v0.3.1 | eQSL inbox, verification, AG status, last upload |
+| [`qrz-mcp`](https://pypi.org/project/qrz-mcp/) | v0.3.1 | Callsign lookup, DXCC, logbook status/fetch |
+| [`lotw-mcp`](https://pypi.org/project/lotw-mcp/) | v0.3.1 | LoTW confirmations, QSOs, DXCC credits, user activity |
+| [`hamqth-mcp`](https://pypi.org/project/hamqth-mcp/) | v0.4.0 | Callsign lookup, DXCC, bio, activity, DX spots, RBN, QSO verify |
+| [`pota-mcp`](https://pypi.org/project/pota-mcp/) | v0.2.0 | Parks on the Air spots, park info, stats, schedules |
+| [`sota-mcp`](https://pypi.org/project/sota-mcp/) | v0.1.4 | Summits on the Air spots, alerts, summit info, stats |
+| [`solar-mcp`](https://pypi.org/project/solar-mcp/) | v0.2.0 | Space weather conditions, forecasts, band outlook |
+| [`wspr-mcp`](https://pypi.org/project/wspr-mcp/) | v0.3.0 | WSPR beacon spots, propagation, band activity |
 | [`iota-mcp`](https://pypi.org/project/iota-mcp/) | v0.1.0 | Islands on the Air lookup, search, nearby groups |
+| [`n1mm-mcp`](https://pypi.org/project/n1mm-mcp/) | v0.1.4 | N1MM Logger+ contest state via UDP |
+| [`ionis-mcp`](https://pypi.org/project/ionis-mcp/) | v1.2.8 | HF propagation analytics (175M+ signatures) |
+| [`qsp-mcp`](https://pypi.org/project/qsp-mcp/) | v0.2.1 | Local LLM ↔ MCP tool relay |
 
-Authenticated servers use `adif-mcp` for persona lookup and keyring-backed credentials. Operators install only the servers they need. Each server is independently versioned with no unnecessary dependencies.
+Authenticated servers use [qso-graph-auth](https://pypi.org/project/qso-graph-auth/) for persona lookup and keyring-backed credentials. Operators install only the servers they need. Each server is independently versioned with no unnecessary dependencies.
 
 ## Compliance & Provenance
 

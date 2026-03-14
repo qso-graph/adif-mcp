@@ -497,13 +497,15 @@ def calculate_heading(start: str, end: str) -> float:
 
 @mcp.tool()
 async def parse_adif(
-    file_path: str, start_at: int = 1, limit: int = 20
+    file_path: str, start_at: int | None = 1, limit: int | None = 20
 ) -> List[types.TextContent]:
     """Streaming parser for large ADIF files with record seeking.
 
     SECURITY NOTE: This tool reads files from the local filesystem using
     the provided path. Only pass paths to ADIF log files you own.
     """
+    start_at = start_at if start_at is not None else 1
+    limit = limit if limit is not None else 20
     record_pattern = re.compile(r"(.*?)<EOR>", re.IGNORECASE | re.DOTALL)
 
     try:

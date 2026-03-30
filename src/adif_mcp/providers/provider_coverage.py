@@ -22,8 +22,8 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import textwrap
 import sys
+import textwrap
 
 if sys.version_info >= (3, 11):
     import tomllib

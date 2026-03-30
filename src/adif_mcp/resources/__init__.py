@@ -12,7 +12,6 @@ import json
 from importlib.resources import files
 from typing import Any, cast
 
-
 # -------- Spec --------
 
 

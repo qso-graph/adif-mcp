@@ -130,17 +130,17 @@ adif-mcp is the **ADIF specification package** -- validation, parsing, and geosp
 | Package | PyPI | What It Does |
 |---------|------|-------------|
 | [`qso-graph-auth`](https://pypi.org/project/qso-graph-auth/) | v0.1.1 | OS keyring credential management, persona CRUD |
-| [`adif-mcp`](https://pypi.org/project/adif-mcp/) | v1.0.1 | ADIF 3.1.6 spec tools, validation, parsing, geospatial |
+| [`adif-mcp`](https://pypi.org/project/adif-mcp/) | v1.0.5 | ADIF 3.1.6 spec tools, validation, parsing, geospatial |
 | [`eqsl-mcp`](https://pypi.org/project/eqsl-mcp/) | v0.3.1 | eQSL inbox, verification, AG status, last upload |
 | [`qrz-mcp`](https://pypi.org/project/qrz-mcp/) | v0.3.1 | Callsign lookup, DXCC, logbook status/fetch |
 | [`lotw-mcp`](https://pypi.org/project/lotw-mcp/) | v0.3.1 | LoTW confirmations, QSOs, DXCC credits, user activity |
 | [`hamqth-mcp`](https://pypi.org/project/hamqth-mcp/) | v0.4.0 | Callsign lookup, DXCC, bio, activity, DX spots, RBN, QSO verify |
-| [`pota-mcp`](https://pypi.org/project/pota-mcp/) | v0.2.0 | Parks on the Air spots, park info, stats, schedules |
-| [`sota-mcp`](https://pypi.org/project/sota-mcp/) | v0.1.4 | Summits on the Air spots, alerts, summit info, stats |
+| [`pota-mcp`](https://pypi.org/project/pota-mcp/) | v0.2.1 | Parks on the Air spots, park info, stats, schedules |
+| [`sota-mcp`](https://pypi.org/project/sota-mcp/) | v0.1.5 | Summits on the Air spots, alerts, summit info, stats |
 | [`solar-mcp`](https://pypi.org/project/solar-mcp/) | v0.2.0 | Space weather conditions, forecasts, band outlook |
-| [`wspr-mcp`](https://pypi.org/project/wspr-mcp/) | v0.3.0 | WSPR beacon spots, propagation, band activity |
-| [`iota-mcp`](https://pypi.org/project/iota-mcp/) | v0.1.0 | Islands on the Air lookup, search, nearby groups |
-| [`n1mm-mcp`](https://pypi.org/project/n1mm-mcp/) | v0.1.4 | N1MM Logger+ contest state via UDP |
+| [`wspr-mcp`](https://pypi.org/project/wspr-mcp/) | v0.3.1 | WSPR beacon spots, propagation, band activity |
+| [`iota-mcp`](https://pypi.org/project/iota-mcp/) | v0.1.1 | Islands on the Air lookup, search, nearby groups |
+| [`n1mm-mcp`](https://pypi.org/project/n1mm-mcp/) | v0.1.3 | N1MM Logger+ contest state via UDP |
 | [`ionis-mcp`](https://pypi.org/project/ionis-mcp/) | v1.2.8 | HF propagation analytics (175M+ signatures) |
 | [`qsp-mcp`](https://pypi.org/project/qsp-mcp/) | v0.2.1 | Local LLM ↔ MCP tool relay |
 

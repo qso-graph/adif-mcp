@@ -1,0 +1,54 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:49Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "QSL_Rcvd": {
+        "Header": [
+          "Enumeration Name",
+          "Status",
+          "Meaning",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "Y": {
+            "Enumeration Name": "QSL_Rcvd",
+            "Status": "Y",
+            "Meaning": "yes (confirmed)",
+            "Description": "an incoming QSL card has been received the QSO has been confirmed by the online service"
+          },
+          "N": {
+            "Enumeration Name": "QSL_Rcvd",
+            "Status": "N",
+            "Meaning": "no",
+            "Description": "an incoming QSL card has not been received the QSO has not been confirmed by the online service"
+          },
+          "R": {
+            "Enumeration Name": "QSL_Rcvd",
+            "Status": "R",
+            "Meaning": "requested",
+            "Description": "the logging station has requested a QSL card the logging station has requested the QSO be uploaded to the online service"
+          },
+          "I": {
+            "Enumeration Name": "QSL_Rcvd",
+            "Status": "I",
+            "Meaning": "ignore or invalid"
+          },
+          "V": {
+            "Enumeration Name": "QSL_Rcvd",
+            "Status": "V",
+            "Meaning": "verified",
+            "Description": "DXCC award credit granted for the QSL card - instead use \u003CCREDIT_GRANTED:39\u003EDXCC:card,DXCC_BAND:card,DXCC_MODE:card DXCC credit granted for the LoTW confirmation - instead use \u003CCREDIT_GRANTED:39\u003EDXCC:lotw,DXCC_BAND:lotw,DXCC_MODE:lotw",
+            "Import-only": "true"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

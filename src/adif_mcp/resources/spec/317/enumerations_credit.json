@@ -1,0 +1,522 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:37Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Credit": {
+        "Header": [
+          "Enumeration Name",
+          "Credit For",
+          "Sponsor",
+          "Award",
+          "Facet",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "CQDX": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "Mixed"
+          },
+          "CQDX_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX_BAND",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "Band"
+          },
+          "CQDX_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX_MODE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "Mode"
+          },
+          "CQDX_MOBILE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX_MOBILE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "Mobile"
+          },
+          "CQDX_QRP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX_QRP",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "QRP"
+          },
+          "CQDX_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDX_SATELLITE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX",
+            "Facet": "Satellite"
+          },
+          "CQDXFIELD": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "Mixed"
+          },
+          "CQDXFIELD_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD_BAND",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "Band"
+          },
+          "CQDXFIELD_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD_MODE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "Mode"
+          },
+          "CQDXFIELD_MOBILE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD_MOBILE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "Mobile"
+          },
+          "CQDXFIELD_QRP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD_QRP",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "QRP"
+          },
+          "CQDXFIELD_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQDXFIELD_SATELLITE",
+            "Sponsor": "CQ Magazine",
+            "Award": "DX Field",
+            "Facet": "Satellite"
+          },
+          "CQWAZ_MIXED": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_MIXED",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "Mixed"
+          },
+          "CQWAZ_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_BAND",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "Band"
+          },
+          "CQWAZ_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_MODE",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "Mode"
+          },
+          "CQWAZ_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_SATELLITE",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "Satellite"
+          },
+          "CQWAZ_EME": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_EME",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "EME"
+          },
+          "CQWAZ_MOBILE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_MOBILE",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "Mobile"
+          },
+          "CQWAZ_QRP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWAZ_QRP",
+            "Sponsor": "CQ Magazine",
+            "Award": "Worked All Zones (WAZ)",
+            "Facet": "QRP"
+          },
+          "CQWPX": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWPX",
+            "Sponsor": "CQ Magazine",
+            "Award": "WPX",
+            "Facet": "Mixed"
+          },
+          "CQWPX_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWPX_BAND",
+            "Sponsor": "CQ Magazine",
+            "Award": "WPX",
+            "Facet": "Band"
+          },
+          "CQWPX_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "CQWPX_MODE",
+            "Sponsor": "CQ Magazine",
+            "Award": "WPX",
+            "Facet": "Mode"
+          },
+          "DXCC": {
+            "Enumeration Name": "Credit",
+            "Credit For": "DXCC",
+            "Sponsor": "ARRL",
+            "Award": "DX Century Club (DXCC)",
+            "Facet": "Mixed"
+          },
+          "DXCC_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "DXCC_BAND",
+            "Sponsor": "ARRL",
+            "Award": "DX Century Club (DXCC)",
+            "Facet": "Band"
+          },
+          "DXCC_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "DXCC_MODE",
+            "Sponsor": "ARRL",
+            "Award": "DX Century Club (DXCC)",
+            "Facet": "Mode"
+          },
+          "DXCC_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "DXCC_SATELLITE",
+            "Sponsor": "ARRL",
+            "Award": "DX Century Club (DXCC)",
+            "Facet": "Satellite"
+          },
+          "EAUSTRALIA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EAUSTRALIA",
+            "Sponsor": "eQSL",
+            "Award": "eAustralia",
+            "Facet": "Mixed"
+          },
+          "ECANADA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "ECANADA",
+            "Sponsor": "eQSL",
+            "Award": "eCanada",
+            "Facet": "Mixed"
+          },
+          "ECOUNTY_STATE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "ECOUNTY_STATE",
+            "Sponsor": "eQSL",
+            "Award": "eCounty",
+            "Facet": "State"
+          },
+          "EDX": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EDX",
+            "Sponsor": "eQSL",
+            "Award": "eDX",
+            "Facet": "Mixed"
+          },
+          "EDX100": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EDX100",
+            "Sponsor": "eQSL",
+            "Award": "eDX100",
+            "Facet": "Mixed"
+          },
+          "EDX100_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EDX100_BAND",
+            "Sponsor": "eQSL",
+            "Award": "eDX100",
+            "Facet": "Band"
+          },
+          "EDX100_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EDX100_MODE",
+            "Sponsor": "eQSL",
+            "Award": "eDX100",
+            "Facet": "Mode"
+          },
+          "EECHOLINK50": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EECHOLINK50",
+            "Sponsor": "eQSL",
+            "Award": "eEcholink50",
+            "Facet": "Echolink"
+          },
+          "EGRID_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EGRID_BAND",
+            "Sponsor": "eQSL",
+            "Award": "eGrid",
+            "Facet": "Band"
+          },
+          "EGRID_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EGRID_SATELLITE",
+            "Sponsor": "eQSL",
+            "Award": "eGrid",
+            "Facet": "Satellite"
+          },
+          "EPFX300": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EPFX300",
+            "Sponsor": "eQSL",
+            "Award": "ePfx300",
+            "Facet": "Mixed"
+          },
+          "EPFX300_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EPFX300_MODE",
+            "Sponsor": "eQSL",
+            "Award": "ePfx300",
+            "Facet": "Mode"
+          },
+          "EWAS": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EWAS",
+            "Sponsor": "eQSL",
+            "Award": "eWAS",
+            "Facet": "Mixed"
+          },
+          "EWAS_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EWAS_BAND",
+            "Sponsor": "eQSL",
+            "Award": "eWAS",
+            "Facet": "Band"
+          },
+          "EWAS_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EWAS_MODE",
+            "Sponsor": "eQSL",
+            "Award": "eWAS",
+            "Facet": "Mode"
+          },
+          "EWAS_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EWAS_SATELLITE",
+            "Sponsor": "eQSL",
+            "Award": "eWAS",
+            "Facet": "Satellite"
+          },
+          "EZ40": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EZ40",
+            "Sponsor": "eQSL",
+            "Award": "eZ40",
+            "Facet": "Mixed"
+          },
+          "EZ40_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "EZ40_MODE",
+            "Sponsor": "eQSL",
+            "Award": "eZ40",
+            "Facet": "Mode"
+          },
+          "FFMA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "FFMA",
+            "Sponsor": "ARRL",
+            "Award": "Fred Fish Memorial Award (FFMA)",
+            "Facet": "Mixed"
+          },
+          "IOTA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "IOTA",
+            "Sponsor": "RSGB",
+            "Award": "Islands on the Air (IOTA)",
+            "Facet": "Mixed"
+          },
+          "IOTA_BASIC": {
+            "Enumeration Name": "Credit",
+            "Credit For": "IOTA_BASIC",
+            "Sponsor": "RSGB",
+            "Award": "Islands on the Air (IOTA)",
+            "Facet": "Mixed"
+          },
+          "IOTA_CONT": {
+            "Enumeration Name": "Credit",
+            "Credit For": "IOTA_CONT",
+            "Sponsor": "RSGB",
+            "Award": "Islands on the Air (IOTA)",
+            "Facet": "Continent"
+          },
+          "IOTA_GROUP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "IOTA_GROUP",
+            "Sponsor": "RSGB",
+            "Award": "Islands on the Air (IOTA)",
+            "Facet": "Group"
+          },
+          "RDA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "RDA",
+            "Sponsor": "TAG",
+            "Award": "Russian Districts Award (RDA)",
+            "Facet": "Mixed"
+          },
+          "USACA": {
+            "Enumeration Name": "Credit",
+            "Credit For": "USACA",
+            "Sponsor": "CQ Magazine",
+            "Award": "United States of America Counties (USA-CA)",
+            "Facet": "Mixed"
+          },
+          "VUCC_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "VUCC_BAND",
+            "Sponsor": "ARRL",
+            "Award": "VHF/UHF Century Club Program (VUCC)",
+            "Facet": "Band"
+          },
+          "VUCC_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "VUCC_SATELLITE",
+            "Sponsor": "ARRL",
+            "Award": "VHF/UHF Century Club Program (VUCC)",
+            "Facet": "Satellite"
+          },
+          "WAB": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAB",
+            "Sponsor": "WAB AG",
+            "Award": "Worked All Britain (WAB)",
+            "Facet": "Mixed"
+          },
+          "WAC": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAC",
+            "Sponsor": "IARU",
+            "Award": "Worked All Continents (WAC)",
+            "Facet": "Mixed"
+          },
+          "WAC_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAC_BAND",
+            "Sponsor": "IARU",
+            "Award": "Worked All Continents (WAC)",
+            "Facet": "Band"
+          },
+          "WAE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAE",
+            "Sponsor": "DARC",
+            "Award": "Worked All Europe (WAE)",
+            "Facet": "Mixed"
+          },
+          "WAE_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAE_BAND",
+            "Sponsor": "DARC",
+            "Award": "Worked All Europe (WAE)",
+            "Facet": "Band"
+          },
+          "WAE_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAE_MODE",
+            "Sponsor": "DARC",
+            "Award": "Worked All Europe (WAE)",
+            "Facet": "Mode"
+          },
+          "WAIP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAIP",
+            "Sponsor": "ARI",
+            "Award": "Worked All Italian Provinces (WAIP)",
+            "Facet": "Mixed"
+          },
+          "WAIP_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAIP_BAND",
+            "Sponsor": "ARI",
+            "Award": "Worked All Italian Provinces (WAIP)",
+            "Facet": "Band"
+          },
+          "WAIP_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAIP_MODE",
+            "Sponsor": "ARI",
+            "Award": "Worked All Italian Provinces (WAIP)",
+            "Facet": "Mode"
+          },
+          "WAS": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "Mixed"
+          },
+          "WAS_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_BAND",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "Band"
+          },
+          "WAS_EME": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_EME",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "EME"
+          },
+          "WAS_MODE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_MODE",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "Mode"
+          },
+          "WAS_NOVICE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_NOVICE",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "Novice"
+          },
+          "WAS_QRP": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_QRP",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "QRP"
+          },
+          "WAS_SATELLITE": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WAS_SATELLITE",
+            "Sponsor": "ARRL",
+            "Award": "Worked All States (WAS)",
+            "Facet": "Satellite"
+          },
+          "WITUZ": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WITUZ",
+            "Sponsor": "RSGB",
+            "Award": "Worked ITU Zones (WITUZ)",
+            "Facet": "Mixed"
+          },
+          "WITUZ_BAND": {
+            "Enumeration Name": "Credit",
+            "Credit For": "WITUZ_BAND",
+            "Sponsor": "RSGB",
+            "Award": "Worked ITU Zones (WITUZ)",
+            "Facet": "Band"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

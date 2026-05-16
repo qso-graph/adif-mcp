@@ -1,0 +1,1042 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:55Z",
+    "DataTypes": null,
+    "Enumerations": null,
+    "Fields": {
+      "Header": [
+        "Field Name",
+        "Data Type",
+        "Enumeration",
+        "Description",
+        "Header Field",
+        "Minimum Value",
+        "Maximum Value",
+        "Import-only",
+        "Comments"
+      ],
+      "Records": {
+        "ADIF_VER": {
+          "Field Name": "ADIF_VER",
+          "Data Type": "String",
+          "Description": "Identifies the version of ADIF used in this file in the format X.Y.Z where ● X is an integer designating the ADIF epoch. ● Y is an integer between 0 and 9 designating the major version. ● Z is an integer between 0 and 9 designating the minor version.",
+          "Header Field": "true"
+        },
+        "CREATED_TIMESTAMP": {
+          "Field Name": "CREATED_TIMESTAMP",
+          "Data Type": "String",
+          "Description": "Identifies the UTC date and time that the file was created in the format of 15 characters YYYYMMDD HHMMSS where YYYYMMDD is a Date data type. HHMMSS is a 6 character Time data type.",
+          "Header Field": "true"
+        },
+        "PROGRAMID": {
+          "Field Name": "PROGRAMID",
+          "Data Type": "String",
+          "Description": "Identifies the name of the logger, converter, or utility that created or processed this ADIF content. To help avoid name clashes, the ADIF PROGRAMID Register provides a voluntary list of PROGRAMID values.",
+          "Header Field": "true"
+        },
+        "PROGRAMVERSION": {
+          "Field Name": "PROGRAMVERSION",
+          "Data Type": "String",
+          "Description": "Identifies the version of the logger, converter, or utility that created or processed this ADIF file.",
+          "Header Field": "true"
+        },
+        "USERDEFn": {
+          "Field Name": "USERDEFn",
+          "Data Type": "String",
+          "Description": "Specifies the name and optional enumeration or range of the nth user-defined field, where n is a positive integer. The name of a user-defined field may not ● be an ADIF Field name. ● contain ○ a comma. ○ a colon. ○ an open-angle-bracket or close-angle-bracket character. ○ an open-curly-bracket or close-curly-bracket character. ● begin or end with a space character.",
+          "Header Field": "true"
+        },
+        "ADDRESS": {
+          "Field Name": "ADDRESS",
+          "Data Type": "MultilineString",
+          "Description": "the contacted station\u0027s complete mailing address: full name, street address, city, postal code, and country"
+        },
+        "ADDRESS_INTL": {
+          "Field Name": "ADDRESS_INTL",
+          "Data Type": "IntlMultilineString",
+          "Description": "the contacted station\u0027s complete mailing address: full name, street address, city, postal code, and country"
+        },
+        "AGE": {
+          "Field Name": "AGE",
+          "Data Type": "Number",
+          "Description": "the contacted station\u0027s operator\u0027s age in years in the range 0 to 120 (inclusive)",
+          "Minimum Value": "0",
+          "Maximum Value": "120"
+        },
+        "ALTITUDE": {
+          "Field Name": "ALTITUDE",
+          "Data Type": "Number",
+          "Description": "the height of the contacted station in meters relative to Mean Sea Level (MSL). For example 1.5 km is \u003CALTITUDE:4\u003E1500 and 10.5 m is \u003CALTITUDE:4\u003E10.5"
+        },
+        "ANT_AZ": {
+          "Field Name": "ANT_AZ",
+          "Data Type": "Number",
+          "Description": "the logging station\u0027s antenna azimuth, in degrees with a value between 0 to 360 (inclusive). Values outside this range are import-only and must be normalized for export (e.g. 370 is exported as 10). True north is 0 degrees with values increasing in a clockwise direction.",
+          "Minimum Value": "0",
+          "Maximum Value": "360"
+        },
+        "ANT_EL": {
+          "Field Name": "ANT_EL",
+          "Data Type": "Number",
+          "Description": "the logging station\u0027s antenna elevation, in degrees with a value between -90 to 90 (inclusive). Values outside this range are import-only and must be normalized for export (e.g. 100 is exported as 80). The horizon is 0 degrees with values increasing as the angle moves in an upward direction.",
+          "Minimum Value": "-90",
+          "Maximum Value": "90"
+        },
+        "ANT_PATH": {
+          "Field Name": "ANT_PATH",
+          "Data Type": "Enumeration",
+          "Enumeration": "Ant_Path",
+          "Description": "the signal path"
+        },
+        "ARRL_SECT": {
+          "Field Name": "ARRL_SECT",
+          "Data Type": "Enumeration",
+          "Enumeration": "ARRL_Section",
+          "Description": "the contacted station\u0027s ARRL section"
+        },
+        "AWARD_SUBMITTED": {
+          "Field Name": "AWARD_SUBMITTED",
+          "Data Type": "SponsoredAwardList",
+          "Enumeration": "Sponsored_Award",
+          "Description": "the list of awards submitted to a sponsor. note that this field might not be used in a QSO record. It might be used to convey information about a user\u0027s \u0022Award Account\u0022 between an award sponsor and the user. For example, AA6YQ might submit a request for awards by sending the following: \u003CCALL:5\u003EAA6YQ \u003CAWARD_SUBMITTED:64\u003EADIF_CENTURY_BASIC,ADIF_CENTURY_SILVER,ADIF_SPECTRUM_100-160m"
+        },
+        "AWARD_GRANTED": {
+          "Field Name": "AWARD_GRANTED",
+          "Data Type": "SponsoredAwardList",
+          "Enumeration": "Sponsored_Award",
+          "Description": "the list of awards granted by a sponsor. note that this field might not be used in a QSO record. It might be used to convey information about a user\u0027s \u0022Award Account\u0022 between an award sponsor and the user. For example, in response to a request \u0022send me a list of the awards granted to AA6YQ\u0022, this might be received: \u003CCALL:5\u003EAA6YQ \u003CAWARD_GRANTED:64\u003EADIF_CENTURY_BASIC,ADIF_CENTURY_SILVER,ADIF_SPECTRUM_100-160m"
+        },
+        "A_INDEX": {
+          "Field Name": "A_INDEX",
+          "Data Type": "Number",
+          "Description": "the geomagnetic A index at the time of the QSO in the range 0 to 400 (inclusive)",
+          "Minimum Value": "0",
+          "Maximum Value": "400"
+        },
+        "BAND": {
+          "Field Name": "BAND",
+          "Data Type": "Enumeration",
+          "Enumeration": "Band",
+          "Description": "QSO Band"
+        },
+        "BAND_RX": {
+          "Field Name": "BAND_RX",
+          "Data Type": "Enumeration",
+          "Enumeration": "Band",
+          "Description": "in a split frequency QSO, the logging station\u0027s receiving band"
+        },
+        "CALL": {
+          "Field Name": "CALL",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s callsign"
+        },
+        "CHECK": {
+          "Field Name": "CHECK",
+          "Data Type": "String",
+          "Description": "contest check (e.g. for ARRL Sweepstakes)"
+        },
+        "CLASS": {
+          "Field Name": "CLASS",
+          "Data Type": "String",
+          "Description": "contest class (e.g. for ARRL Field Day)"
+        },
+        "CLUBLOG_QSO_UPLOAD_DATE": {
+          "Field Name": "CLUBLOG_QSO_UPLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "the date the QSO was last uploaded to the Club Log online service"
+        },
+        "CLUBLOG_QSO_UPLOAD_STATUS": {
+          "Field Name": "CLUBLOG_QSO_UPLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Upload_Status",
+          "Description": "the upload status of the QSO on the Club Log online service"
+        },
+        "CNTY": {
+          "Field Name": "CNTY",
+          "Data Type": "Enumeration",
+          "Enumeration": "Secondary_Administrative_Subdivision[DXCC]",
+          "Description": "the contacted station\u0027s Secondary Administrative Subdivision (e.g. US county, JA Gun), in the specified format"
+        },
+        "CNTY_ALT": {
+          "Field Name": "CNTY_ALT",
+          "Data Type": "SecondaryAdministrativeSubdivisionListAlt",
+          "Description": "a semicolon (;) delimited, unordered list of Secondary Administrative Subdivision Alt codes for the contacted station See the Data Type for details."
+        },
+        "COMMENT": {
+          "Field Name": "COMMENT",
+          "Data Type": "String",
+          "Description": "comment field for QSO for a message to be incorporated in a paper or electronic QSL for the contacted station\u0027s operator, use the QSLMSG field recommended use: information of interest to the contacted station\u0027s operator"
+        },
+        "COMMENT_INTL": {
+          "Field Name": "COMMENT_INTL",
+          "Data Type": "IntlString",
+          "Description": "comment field for QSO for a message to be incorporated in a paper or electronic QSL for the contacted station\u0027s operator, use the QSLMSG_INTL field recommended use: information of interest to the contacted station\u0027s operator"
+        },
+        "CONT": {
+          "Field Name": "CONT",
+          "Data Type": "Enumeration",
+          "Enumeration": "Continent",
+          "Description": "the contacted station\u0027s Continent"
+        },
+        "CONTACTED_OP": {
+          "Field Name": "CONTACTED_OP",
+          "Data Type": "String",
+          "Description": "the callsign of the individual operating the contacted station"
+        },
+        "CONTEST_ID": {
+          "Field Name": "CONTEST_ID",
+          "Data Type": "String",
+          "Enumeration": "Contest_ID",
+          "Description": "QSO Contest Identifier use enumeration values for interoperability"
+        },
+        "COUNTRY": {
+          "Field Name": "COUNTRY",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s DXCC entity name"
+        },
+        "COUNTRY_INTL": {
+          "Field Name": "COUNTRY_INTL",
+          "Data Type": "IntlString",
+          "Description": "the contacted station\u0027s DXCC entity name"
+        },
+        "CQZ": {
+          "Field Name": "CQZ",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s CQ Zone in the range 1 to 40 (inclusive)",
+          "Minimum Value": "1",
+          "Maximum Value": "40"
+        },
+        "CREDIT_SUBMITTED": {
+          "Field Name": "CREDIT_SUBMITTED",
+          "Data Type": "CreditList,AwardList",
+          "Enumeration": "Credit,Award",
+          "Description": "the list of credits sought for this QSO Use of data type AwardList and enumeration Award are import-only"
+        },
+        "CREDIT_GRANTED": {
+          "Field Name": "CREDIT_GRANTED",
+          "Data Type": "CreditList,AwardList",
+          "Enumeration": "Credit,Award",
+          "Description": "the list of credits granted to this QSO Use of data type AwardList and enumeration Award are import-only"
+        },
+        "DARC_DOK": {
+          "Field Name": "DARC_DOK",
+          "Data Type": "Enumeration",
+          "Description": "the contacted station\u0027s DARC DOK (District Location Code) A DOK comprises letters and numbers, e.g. \u003CDARC_DOK:3\u003EA01 Note that DARC provides two different lists - one for DOKs and one for Special DOKs."
+        },
+        "DCL_QSLRDATE": {
+          "Field Name": "DCL_QSLRDATE",
+          "Data Type": "Date",
+          "Description": "date QSL received from DCL (only valid if DCL_QSL_RCVD is Y, I, or V)(V import-only)"
+        },
+        "DCL_QSLSDATE": {
+          "Field Name": "DCL_QSLSDATE",
+          "Data Type": "Date",
+          "Description": "date QSL sent to DCL (only valid if DCL_QSL_SENT is Y, Q, or I)"
+        },
+        "DCL_QSL_RCVD": {
+          "Field Name": "DCL_QSL_RCVD",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Rcvd",
+          "Description": "DCL QSL received status Default Value: N"
+        },
+        "DCL_QSL_SENT": {
+          "Field Name": "DCL_QSL_SENT",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Sent",
+          "Description": "DCL QSL sent status Default Value: N"
+        },
+        "DISTANCE": {
+          "Field Name": "DISTANCE",
+          "Data Type": "Number",
+          "Description": "the distance between the logging station and the contacted station in kilometers via the specified signal path with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "DXCC": {
+          "Field Name": "DXCC",
+          "Data Type": "Enumeration",
+          "Enumeration": "DXCC_Entity_Code",
+          "Description": "the contacted station\u0027s DXCC Entity Code \u003CDXCC:1\u003E0 means that the contacted station is known not to be within a DXCC entity."
+        },
+        "EMAIL": {
+          "Field Name": "EMAIL",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s email address"
+        },
+        "EQ_CALL": {
+          "Field Name": "EQ_CALL",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s owner\u0027s callsign"
+        },
+        "EQSL_AG": {
+          "Field Name": "EQSL_AG",
+          "Data Type": "Enumeration",
+          "Enumeration": "EQSL_AG",
+          "Description": "indicates whether the QSO is known to be \u0022Authenticity Guaranteed\u0022 by eQSL Default value: U"
+        },
+        "EQSL_QSLRDATE": {
+          "Field Name": "EQSL_QSLRDATE",
+          "Data Type": "Date",
+          "Description": "date QSL received from eQSL.cc (only valid if EQSL_QSL_RCVD is Y, I, or V)(V import-only)"
+        },
+        "EQSL_QSLSDATE": {
+          "Field Name": "EQSL_QSLSDATE",
+          "Data Type": "Date",
+          "Description": "date QSL sent to eQSL.cc (only valid if EQSL_QSL_SENT is Y, Q, or I)"
+        },
+        "EQSL_QSL_RCVD": {
+          "Field Name": "EQSL_QSL_RCVD",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Rcvd",
+          "Description": "eQSL.cc QSL received status instead of V (import-only) use \u003CCREDIT_GRANTED:42\u003ECQWAZ:eqsl,CQWAZ_BAND:eqsl,CQWAZ_MODE:eqsl Default Value: N"
+        },
+        "EQSL_QSL_SENT": {
+          "Field Name": "EQSL_QSL_SENT",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Sent",
+          "Description": "eQSL.cc QSL sent status Default Value: N"
+        },
+        "FISTS": {
+          "Field Name": "FISTS",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s FISTS CW Club member number with a value greater than 0.",
+          "Minimum Value": "1"
+        },
+        "FISTS_CC": {
+          "Field Name": "FISTS_CC",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s FISTS CW Club Century Certificate (CC) number with a value greater than 0.",
+          "Minimum Value": "1"
+        },
+        "FORCE_INIT": {
+          "Field Name": "FORCE_INIT",
+          "Data Type": "Boolean",
+          "Description": "new EME \u0022initial\u0022"
+        },
+        "FREQ": {
+          "Field Name": "FREQ",
+          "Data Type": "Number",
+          "Description": "QSO frequency in Megahertz"
+        },
+        "FREQ_RX": {
+          "Field Name": "FREQ_RX",
+          "Data Type": "Number",
+          "Description": "in a split frequency QSO, the logging station\u0027s receiving frequency in Megahertz"
+        },
+        "GRIDSQUARE": {
+          "Field Name": "GRIDSQUARE",
+          "Data Type": "GridSquare",
+          "Description": "the contacted station\u0027s 2-character, 4-character, 6-character, or 8-character Maidenhead Grid Square For 10 or 12 character locators, store the first 8 characters in GRIDSQUARE and the additional 2 or 4 characters in the GRIDSQUARE_EXT field"
+        },
+        "GRIDSQUARE_EXT": {
+          "Field Name": "GRIDSQUARE_EXT",
+          "Data Type": "GridSquareExt",
+          "Description": "for a contacted station\u0027s 10-character Maidenhead locator, supplements the GRIDSQUARE field by containing characters 9 and 10. For a contacted station\u0027s 12-character Maidenhead locator, supplements the GRIDSQUARE field by containing characters 9, 10, 11 and 12. Characters 9 and 10 are case-insensitive ASCII letters in the range A-X. Characters 11 and 12 are Digits in the range 0 to 9. On export, the field length must be 2 or 4. On import, if the field length is greater than 4, the additional characters must be ignored. Example of exporting the 10-character locator FN01MH42BQ: \u003CGRIDSQUARE:8\u003EFN01MH42 \u003CGRIDSQUARE_EXT:2\u003EBQ"
+        },
+        "GUEST_OP": {
+          "Field Name": "GUEST_OP",
+          "Data Type": "String",
+          "Description": "import-only: use OPERATOR instead",
+          "Import-only": "true"
+        },
+        "HAMLOGEU_QSO_UPLOAD_DATE": {
+          "Field Name": "HAMLOGEU_QSO_UPLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "the date the QSO was last uploaded to the HAMLOG.EU online service"
+        },
+        "HAMLOGEU_QSO_UPLOAD_STATUS": {
+          "Field Name": "HAMLOGEU_QSO_UPLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Upload_Status",
+          "Description": "the upload status of the QSO on the HAMLOG.EU online service"
+        },
+        "HAMQTH_QSO_UPLOAD_DATE": {
+          "Field Name": "HAMQTH_QSO_UPLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "the date the QSO was last uploaded to the HamQTH.com online service"
+        },
+        "HAMQTH_QSO_UPLOAD_STATUS": {
+          "Field Name": "HAMQTH_QSO_UPLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Upload_Status",
+          "Description": "the upload status of the QSO on the HamQTH.com online service"
+        },
+        "HRDLOG_QSO_UPLOAD_DATE": {
+          "Field Name": "HRDLOG_QSO_UPLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "the date the QSO was last uploaded to the HRDLog.net online service"
+        },
+        "HRDLOG_QSO_UPLOAD_STATUS": {
+          "Field Name": "HRDLOG_QSO_UPLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Upload_Status",
+          "Description": "the upload status of the QSO on the HRDLog.net online service"
+        },
+        "IOTA": {
+          "Field Name": "IOTA",
+          "Data Type": "IOTARefNo",
+          "Description": "the contacted station\u0027s IOTA designator, in format CC-XXX, where CC is a member of the Continent enumeration XXX is the island group designator, where 1 \u003C= XXX \u003C= 999 [use leading zeroes]"
+        },
+        "IOTA_ISLAND_ID": {
+          "Field Name": "IOTA_ISLAND_ID",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s IOTA Island Identifier, an 8-digit integer in the range 1 to 99999999 [leading zeroes optional]",
+          "Minimum Value": "1",
+          "Maximum Value": "99999999"
+        },
+        "ITUZ": {
+          "Field Name": "ITUZ",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s ITU zone in the range 1 to 90 (inclusive)",
+          "Minimum Value": "1",
+          "Maximum Value": "90"
+        },
+        "K_INDEX": {
+          "Field Name": "K_INDEX",
+          "Data Type": "Integer",
+          "Description": "the geomagnetic K index at the time of the QSO in the range 0 to 9 (inclusive)",
+          "Minimum Value": "0",
+          "Maximum Value": "9"
+        },
+        "LAT": {
+          "Field Name": "LAT",
+          "Data Type": "Location",
+          "Description": "the contacted station\u0027s latitude"
+        },
+        "LON": {
+          "Field Name": "LON",
+          "Data Type": "Location",
+          "Description": "the contacted station\u0027s longitude"
+        },
+        "LOTW_QSLRDATE": {
+          "Field Name": "LOTW_QSLRDATE",
+          "Data Type": "Date",
+          "Description": "date QSL received from ARRL Logbook of the World (only valid if LOTW_QSL_RCVD is Y, I, or V)(V import-only)"
+        },
+        "LOTW_QSLSDATE": {
+          "Field Name": "LOTW_QSLSDATE",
+          "Data Type": "Date",
+          "Description": "date QSL sent to ARRL Logbook of the World (only valid if LOTW_QSL_SENT is Y, Q, or I)"
+        },
+        "LOTW_QSL_RCVD": {
+          "Field Name": "LOTW_QSL_RCVD",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Rcvd",
+          "Description": "ARRL Logbook of the World QSL received status instead of V (import-only) use \u003CCREDIT_GRANTED:39\u003EDXCC:lotw,DXCC_BAND:lotw,DXCC_MODE:lotw Default Value: N"
+        },
+        "LOTW_QSL_SENT": {
+          "Field Name": "LOTW_QSL_SENT",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Sent",
+          "Description": "ARRL Logbook of the World QSL sent status Default Value: N"
+        },
+        "MAX_BURSTS": {
+          "Field Name": "MAX_BURSTS",
+          "Data Type": "Number",
+          "Description": "maximum length of meteor scatter bursts heard by the logging station, in seconds with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "MODE": {
+          "Field Name": "MODE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Mode",
+          "Description": "QSO Mode"
+        },
+        "MORSE_KEY_INFO": {
+          "Field Name": "MORSE_KEY_INFO",
+          "Data Type": "String",
+          "Description": "details of the contacted station\u0027s Morse key (e.g. make, model, etc). Example: \u003CMORSE_KEY_INFO:16\u003EBegali Sculpture"
+        },
+        "MORSE_KEY_TYPE": {
+          "Field Name": "MORSE_KEY_TYPE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Morse_Key_Type",
+          "Description": "the contacted station\u0027s Morse key type (e.g. straight key, bug, etc). Example for a dual-lever paddle: \u003CMORSE_KEY_TYPE:2\u003EDP"
+        },
+        "MS_SHOWER": {
+          "Field Name": "MS_SHOWER",
+          "Data Type": "String",
+          "Description": "For Meteor Scatter QSOs, the name of the meteor shower in progress"
+        },
+        "MY_ALTITUDE": {
+          "Field Name": "MY_ALTITUDE",
+          "Data Type": "Number",
+          "Description": "the height of the logging station in meters relative to Mean Sea Level (MSL). For example 1.5 km is \u003CMY_ALTITUDE:4\u003E1500 and 10.5 m is \u003CMY_ALTITUDE:4\u003E10.5"
+        },
+        "MY_ANTENNA": {
+          "Field Name": "MY_ANTENNA",
+          "Data Type": "String",
+          "Description": "the logging station\u0027s antenna"
+        },
+        "MY_ANTENNA_INTL": {
+          "Field Name": "MY_ANTENNA_INTL",
+          "Data Type": "IntlString",
+          "Description": "the logging station\u0027s antenna"
+        },
+        "MY_ARRL_SECT": {
+          "Field Name": "MY_ARRL_SECT",
+          "Data Type": "Enumeration",
+          "Enumeration": "ARRL_Section",
+          "Description": "the logging station\u0027s ARRL section"
+        },
+        "MY_CITY": {
+          "Field Name": "MY_CITY",
+          "Data Type": "String",
+          "Description": "the logging station\u0027s city"
+        },
+        "MY_CITY_INTL": {
+          "Field Name": "MY_CITY_INTL",
+          "Data Type": "IntlString",
+          "Description": "the logging station\u0027s city"
+        },
+        "MY_CNTY": {
+          "Field Name": "MY_CNTY",
+          "Data Type": "Enumeration",
+          "Enumeration": "Secondary_Administrative_Subdivision[MY_DXCC]",
+          "Description": "the logging station\u0027s Secondary Administrative Subdivision (e.g. US county, JA Gun), in the specified format"
+        },
+        "MY_CNTY_ALT": {
+          "Field Name": "MY_CNTY_ALT",
+          "Data Type": "SecondaryAdministrativeSubdivisionListAlt",
+          "Description": "a semicolon (;) delimited, unordered list of Secondary Administrative Subdivision Alt codes for the logging station See the Data Type for details."
+        },
+        "MY_COUNTRY": {
+          "Field Name": "MY_COUNTRY",
+          "Data Type": "String",
+          "Enumeration": "Country",
+          "Description": "the logging station\u0027s DXCC entity name"
+        },
+        "MY_COUNTRY_INTL": {
+          "Field Name": "MY_COUNTRY_INTL",
+          "Data Type": "IntlString",
+          "Enumeration": "Country",
+          "Description": "the logging station\u0027s DXCC entity name"
+        },
+        "MY_CQ_ZONE": {
+          "Field Name": "MY_CQ_ZONE",
+          "Data Type": "PositiveInteger",
+          "Description": "the logging station\u0027s CQ Zone in the range 1 to 40 (inclusive)",
+          "Minimum Value": "1",
+          "Maximum Value": "40"
+        },
+        "MY_DARC_DOK": {
+          "Field Name": "MY_DARC_DOK",
+          "Data Type": "Enumeration",
+          "Description": "the logging station\u0027s DARC DOK (District Location Code) A DOK comprises letters and numbers, e.g. \u003CMY_DARC_DOK:3\u003EA01 Note that DARC provides two different lists - one for DOKs and one for Special DOKs."
+        },
+        "MY_DXCC": {
+          "Field Name": "MY_DXCC",
+          "Data Type": "Enumeration",
+          "Enumeration": "DXCC_Entity_Code",
+          "Description": "the logging station\u0027s DXCC Entity Code \u003CMY_DXCC:1\u003E0 means that the logging station is known not to be within a DXCC entity."
+        },
+        "MY_FISTS": {
+          "Field Name": "MY_FISTS",
+          "Data Type": "PositiveInteger",
+          "Description": "the logging station\u0027s FISTS CW Club member number with a value greater than 0.",
+          "Minimum Value": "1"
+        },
+        "MY_GRIDSQUARE": {
+          "Field Name": "MY_GRIDSQUARE",
+          "Data Type": "GridSquare",
+          "Description": "the logging station\u0027s 2-character, 4-character, 6-character, or 8-character Maidenhead Grid Square For 10 or 12 character locators, store the first 8 characters in MY_GRIDSQUARE and the additional 2 or 4 characters in the MY_GRIDSQUARE_EXT field"
+        },
+        "MY_GRIDSQUARE_EXT": {
+          "Field Name": "MY_GRIDSQUARE_EXT",
+          "Data Type": "GridSquareExt",
+          "Description": "for a logging station\u0027s 10-character Maidenhead locator, supplements the MY_GRIDSQUARE field by containing characters 9 and 10. For a logging station\u0027s 12-character Maidenhead locator, supplements the MY_GRIDSQUARE field by containing characters 9, 10, 11 and 12. Characters 9 and 10 are case-insensitive ASCII letters in the range A-X. Characters 11 and 12 are Digits in the range 0 to 9. On export, the field length must be 2 or 4. On import, if the field length is greater than 4, the additional characters must be ignored. Example of exporting the 10-character locator FN01MH42BQ: \u003CMY_GRIDSQUARE:8\u003EFN01MH42 \u003CMY_GRIDSQUARE_EXT:2\u003EBQ"
+        },
+        "MY_IOTA": {
+          "Field Name": "MY_IOTA",
+          "Data Type": "IOTARefNo",
+          "Description": "the logging station\u0027s IOTA designator, in format CC-XXX, where CC is a member of the Continent enumeration XXX is the island group designator, where 1 \u003C= XXX \u003C= 999 [use leading zeroes]"
+        },
+        "MY_IOTA_ISLAND_ID": {
+          "Field Name": "MY_IOTA_ISLAND_ID",
+          "Data Type": "PositiveInteger",
+          "Description": "the logging station\u0027s IOTA Island Identifier, an 8-digit integer in the range 1 to 99999999 [leading zeroes optional]",
+          "Minimum Value": "1",
+          "Maximum Value": "99999999"
+        },
+        "MY_ITU_ZONE": {
+          "Field Name": "MY_ITU_ZONE",
+          "Data Type": "PositiveInteger",
+          "Description": "the logging station\u0027s ITU zone in the range 1 to 90 (inclusive)",
+          "Minimum Value": "1",
+          "Maximum Value": "90"
+        },
+        "MY_LAT": {
+          "Field Name": "MY_LAT",
+          "Data Type": "Location",
+          "Description": "the logging station\u0027s latitude"
+        },
+        "MY_LON": {
+          "Field Name": "MY_LON",
+          "Data Type": "Location",
+          "Description": "the logging station\u0027s longitude"
+        },
+        "MY_MORSE_KEY_INFO": {
+          "Field Name": "MY_MORSE_KEY_INFO",
+          "Data Type": "String",
+          "Description": "details of the logging station\u0027s Morse key (e.g. make, model, etc). Example: \u003CMY_MORSE_KEY_INFO:16\u003EBegali Sculpture"
+        },
+        "MY_MORSE_KEY_TYPE": {
+          "Field Name": "MY_MORSE_KEY_TYPE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Morse_Key_Type",
+          "Description": "the logging station\u0027s Morse key type (e.g. straight key, bug, etc). Example for a dual-lever paddle: \u003CMORSE_KEY_TYPE:2\u003EDP"
+        },
+        "MY_NAME": {
+          "Field Name": "MY_NAME",
+          "Data Type": "String",
+          "Description": "the logging operator\u0027s name"
+        },
+        "MY_NAME_INTL": {
+          "Field Name": "MY_NAME_INTL",
+          "Data Type": "IntlString",
+          "Description": "the logging operator\u0027s name"
+        },
+        "MY_POSTAL_CODE": {
+          "Field Name": "MY_POSTAL_CODE",
+          "Data Type": "String",
+          "Description": "the logging station\u0027s postal code"
+        },
+        "MY_POSTAL_CODE_INTL": {
+          "Field Name": "MY_POSTAL_CODE_INTL",
+          "Data Type": "IntlString",
+          "Description": "the logging station\u0027s postal code"
+        },
+        "MY_POTA_REF": {
+          "Field Name": "MY_POTA_REF",
+          "Data Type": "POTARefList",
+          "Description": "a comma-delimited list of one or more of the logging station\u0027s POTA (Parks on the Air) reference(s). Examples: \u003CMY_POTA_REF:6\u003EK-0059 \u003CMY_POTA_REF:7\u003EK-10000 \u003CMY_POTA_REF:40\u003EK-0817,K-4566,K-4576,K-4573,K-4578@US-WY"
+        },
+        "MY_RIG": {
+          "Field Name": "MY_RIG",
+          "Data Type": "String",
+          "Description": "description of the logging station\u0027s equipment"
+        },
+        "MY_RIG_INTL": {
+          "Field Name": "MY_RIG_INTL",
+          "Data Type": "IntlString",
+          "Description": "description of the logging station\u0027s equipment"
+        },
+        "MY_SIG": {
+          "Field Name": "MY_SIG",
+          "Data Type": "String",
+          "Description": "special interest activity or event"
+        },
+        "MY_SIG_INTL": {
+          "Field Name": "MY_SIG_INTL",
+          "Data Type": "IntlString",
+          "Description": "special interest activity or event"
+        },
+        "MY_SIG_INFO": {
+          "Field Name": "MY_SIG_INFO",
+          "Data Type": "String",
+          "Description": "special interest activity or event information"
+        },
+        "MY_SIG_INFO_INTL": {
+          "Field Name": "MY_SIG_INFO_INTL",
+          "Data Type": "IntlString",
+          "Description": "special interest activity or event information"
+        },
+        "MY_SOTA_REF": {
+          "Field Name": "MY_SOTA_REF",
+          "Data Type": "SOTARef",
+          "Description": "the logging station\u0027s International SOTA Reference."
+        },
+        "MY_STATE": {
+          "Field Name": "MY_STATE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Primary_Administrative_Subdivision[MY_DXCC]",
+          "Description": "the code for the logging station\u0027s Primary Administrative Subdivision (e.g. US State, JA Island, VE Province)"
+        },
+        "MY_STREET": {
+          "Field Name": "MY_STREET",
+          "Data Type": "String",
+          "Description": "the logging station\u0027s street"
+        },
+        "MY_STREET_INTL": {
+          "Field Name": "MY_STREET_INTL",
+          "Data Type": "IntlString",
+          "Description": "the logging station\u0027s street"
+        },
+        "MY_USACA_COUNTIES": {
+          "Field Name": "MY_USACA_COUNTIES",
+          "Data Type": "SecondarySubdivisionList",
+          "Description": "two US counties in the case where the logging station is located on a border between two counties, representing counties that the contacted station may claim for the CQ Magazine USA-CA award program. E.g. MA,Franklin:MA,Hampshire"
+        },
+        "MY_VUCC_GRIDS": {
+          "Field Name": "MY_VUCC_GRIDS",
+          "Data Type": "GridSquareList",
+          "Description": "two or four adjacent Maidenhead grid locators, each four or six characters long, representing the logging station\u0027s grid squares that the contacted station may claim for the ARRL VUCC award program. E.g. EM98,FM08,EM97,FM07"
+        },
+        "MY_WWFF_REF": {
+          "Field Name": "MY_WWFF_REF",
+          "Data Type": "WWFFRef",
+          "Description": "the logging station\u0027s WWFF (World Wildlife Flora \u0026 Fauna) reference"
+        },
+        "NAME": {
+          "Field Name": "NAME",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s operator\u0027s name"
+        },
+        "NAME_INTL": {
+          "Field Name": "NAME_INTL",
+          "Data Type": "IntlString",
+          "Description": "the contacted station\u0027s operator\u0027s name"
+        },
+        "NOTES": {
+          "Field Name": "NOTES",
+          "Data Type": "MultilineString",
+          "Description": "QSO notes recommended use: information of interest to the logging station\u0027s operator"
+        },
+        "NOTES_INTL": {
+          "Field Name": "NOTES_INTL",
+          "Data Type": "IntlMultilineString",
+          "Description": "QSO notes recommended use: information of interest to the logging station\u0027s operator"
+        },
+        "NR_BURSTS": {
+          "Field Name": "NR_BURSTS",
+          "Data Type": "Integer",
+          "Description": "the number of meteor scatter bursts heard by the logging station with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "NR_PINGS": {
+          "Field Name": "NR_PINGS",
+          "Data Type": "Integer",
+          "Description": "the number of meteor scatter pings heard by the logging station with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "OPERATOR": {
+          "Field Name": "OPERATOR",
+          "Data Type": "String",
+          "Description": "the logging operator\u0027s callsign if STATION_CALLSIGN is absent, OPERATOR shall be treated as both the logging station\u0027s callsign and the logging operator\u0027s callsign"
+        },
+        "OWNER_CALLSIGN": {
+          "Field Name": "OWNER_CALLSIGN",
+          "Data Type": "String",
+          "Description": "the callsign of the owner of the station used to log the contact (the callsign of the OPERATOR\u0027s host) if OWNER_CALLSIGN is absent, STATION_CALLSIGN shall be treated as both the logging station\u0027s callsign and the callsign of the owner of the station"
+        },
+        "PFX": {
+          "Field Name": "PFX",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s WPX prefix"
+        },
+        "POTA_REF": {
+          "Field Name": "POTA_REF",
+          "Data Type": "POTARefList",
+          "Description": "a comma-delimited list of one or more of the contacted station\u0027s POTA (Parks on the Air) reference(s). Examples: \u003CPOTA_REF:6\u003EK-5033 \u003CPOTA_REF:13\u003EVE-5082@CA-AB \u003CPOTA_REF:40\u003EK-0817,K-4566,K-4576,K-4573,K-4578@US-WY"
+        },
+        "PRECEDENCE": {
+          "Field Name": "PRECEDENCE",
+          "Data Type": "String",
+          "Description": "contest precedence (e.g. for ARRL Sweepstakes)"
+        },
+        "PROP_MODE": {
+          "Field Name": "PROP_MODE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Propagation_Mode",
+          "Description": "QSO propagation mode"
+        },
+        "PUBLIC_KEY": {
+          "Field Name": "PUBLIC_KEY",
+          "Data Type": "String",
+          "Description": "public encryption key"
+        },
+        "QRZCOM_QSO_DOWNLOAD_DATE": {
+          "Field Name": "QRZCOM_QSO_DOWNLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "date QSO downloaded from QRZ.COM logbook"
+        },
+        "QRZCOM_QSO_DOWNLOAD_STATUS": {
+          "Field Name": "QRZCOM_QSO_DOWNLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Download_Status",
+          "Description": "QRZ.COM logbook QSO download status"
+        },
+        "QRZCOM_QSO_UPLOAD_DATE": {
+          "Field Name": "QRZCOM_QSO_UPLOAD_DATE",
+          "Data Type": "Date",
+          "Description": "the date the QSO was last uploaded to the QRZ.COM online service"
+        },
+        "QRZCOM_QSO_UPLOAD_STATUS": {
+          "Field Name": "QRZCOM_QSO_UPLOAD_STATUS",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Upload_Status",
+          "Description": "the upload status of the QSO on the QRZ.COM online service"
+        },
+        "QSLMSG": {
+          "Field Name": "QSLMSG",
+          "Data Type": "MultilineString",
+          "Description": "a message for the contacted station\u0027s operator to be incorporated in a paper or electronic QSL"
+        },
+        "QSLMSG_INTL": {
+          "Field Name": "QSLMSG_INTL",
+          "Data Type": "IntlMultilineString",
+          "Description": "a message for the contacted station\u0027s operator to be incorporated in a paper or electronic QSL"
+        },
+        "QSLMSG_RCVD": {
+          "Field Name": "QSLMSG_RCVD",
+          "Data Type": "MultilineString",
+          "Description": "a message addressed to the logging station\u0027s operator incorporated in a paper or electronic QSL"
+        },
+        "QSLRDATE": {
+          "Field Name": "QSLRDATE",
+          "Data Type": "Date",
+          "Description": "QSL received date (only valid if QSL_RCVD is Y, I, or V)(V import-only)"
+        },
+        "QSLSDATE": {
+          "Field Name": "QSLSDATE",
+          "Data Type": "Date",
+          "Description": "QSL sent date (only valid if QSL_SENT is Y, Q, or I)"
+        },
+        "QSL_RCVD": {
+          "Field Name": "QSL_RCVD",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Rcvd",
+          "Description": "QSL received status instead of V (import-only) use \u003CCREDIT_GRANTED:39\u003EDXCC:card,DXCC_BAND:card,DXCC_MODE:card Default Value: N"
+        },
+        "QSL_RCVD_VIA": {
+          "Field Name": "QSL_RCVD_VIA",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Via",
+          "Description": "if QSL_RCVD is set to \u0027Y\u0027 or \u0027V\u0027, the means by which the QSL was received by the logging station; otherwise, the means by which the logging station requested or intends to request that the QSL be conveyed. (Note: \u0027V\u0027 is import-only) use of M (manager) is import-only"
+        },
+        "QSL_SENT": {
+          "Field Name": "QSL_SENT",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Sent",
+          "Description": "QSL sent status Default Value: N"
+        },
+        "QSL_SENT_VIA": {
+          "Field Name": "QSL_SENT_VIA",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSL_Via",
+          "Description": "if QSL_SENT is set to \u0027Y\u0027, the means by which the QSL was sent by the logging station; otherwise, the means by which the logging station intends to convey the QSL use of M (manager) is import-only"
+        },
+        "QSL_VIA": {
+          "Field Name": "QSL_VIA",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s QSL route"
+        },
+        "QSO_COMPLETE": {
+          "Field Name": "QSO_COMPLETE",
+          "Data Type": "Enumeration",
+          "Enumeration": "QSO_Complete",
+          "Description": "indicates whether the QSO was complete from the perspective of the logging station Y - yes N - no NIL - not heard ? - uncertain"
+        },
+        "QSO_DATE": {
+          "Field Name": "QSO_DATE",
+          "Data Type": "Date",
+          "Description": "date on which the QSO started"
+        },
+        "QSO_DATE_OFF": {
+          "Field Name": "QSO_DATE_OFF",
+          "Data Type": "Date",
+          "Description": "date on which the QSO ended"
+        },
+        "QSO_RANDOM": {
+          "Field Name": "QSO_RANDOM",
+          "Data Type": "Boolean",
+          "Description": "indicates whether the QSO was random or scheduled"
+        },
+        "QTH": {
+          "Field Name": "QTH",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s city"
+        },
+        "QTH_INTL": {
+          "Field Name": "QTH_INTL",
+          "Data Type": "IntlString",
+          "Description": "the contacted station\u0027s city"
+        },
+        "REGION": {
+          "Field Name": "REGION",
+          "Data Type": "Enumeration",
+          "Enumeration": "Region",
+          "Description": "the contacted station\u0027s WAE or CQ entity contained within a DXCC entity. the value None indicates that the WAE or CQ entity is the DXCC entity in the DXCC field. nothing can be inferred from the absence of the REGION field"
+        },
+        "RIG": {
+          "Field Name": "RIG",
+          "Data Type": "MultilineString",
+          "Description": "description of the contacted station\u0027s equipment"
+        },
+        "RIG_INTL": {
+          "Field Name": "RIG_INTL",
+          "Data Type": "IntlMultilineString",
+          "Description": "description of the contacted station\u0027s equipment"
+        },
+        "RST_RCVD": {
+          "Field Name": "RST_RCVD",
+          "Data Type": "String",
+          "Description": "signal report from the contacted station"
+        },
+        "RST_SENT": {
+          "Field Name": "RST_SENT",
+          "Data Type": "String",
+          "Description": "signal report sent to the contacted station"
+        },
+        "RX_PWR": {
+          "Field Name": "RX_PWR",
+          "Data Type": "Number",
+          "Description": "the contacted station\u0027s transmitter power in Watts with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "SAT_MODE": {
+          "Field Name": "SAT_MODE",
+          "Data Type": "String",
+          "Description": "satellite mode - a code representing the satellite\u0027s uplink band and downlink band"
+        },
+        "SAT_NAME": {
+          "Field Name": "SAT_NAME",
+          "Data Type": "String",
+          "Description": "name of satellite"
+        },
+        "SFI": {
+          "Field Name": "SFI",
+          "Data Type": "Integer",
+          "Description": "the solar flux at the time of the QSO in the range 0 to 300 (inclusive).",
+          "Minimum Value": "0",
+          "Maximum Value": "300"
+        },
+        "SIG": {
+          "Field Name": "SIG",
+          "Data Type": "String",
+          "Description": "the name of the contacted station\u0027s special activity or interest group"
+        },
+        "SIG_INTL": {
+          "Field Name": "SIG_INTL",
+          "Data Type": "IntlString",
+          "Description": "the name of the contacted station\u0027s special activity or interest group"
+        },
+        "SIG_INFO": {
+          "Field Name": "SIG_INFO",
+          "Data Type": "String",
+          "Description": "information associated with the contacted station\u0027s activity or interest group"
+        },
+        "SIG_INFO_INTL": {
+          "Field Name": "SIG_INFO_INTL",
+          "Data Type": "IntlString",
+          "Description": "information associated with the contacted station\u0027s activity or interest group"
+        },
+        "SILENT_KEY": {
+          "Field Name": "SILENT_KEY",
+          "Data Type": "Boolean",
+          "Description": "\u0027Y\u0027 indicates that the contacted station\u0027s operator is now a Silent Key."
+        },
+        "SKCC": {
+          "Field Name": "SKCC",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s Straight Key Century Club (SKCC) member information"
+        },
+        "SOTA_REF": {
+          "Field Name": "SOTA_REF",
+          "Data Type": "SOTARef",
+          "Description": "the contacted station\u0027s International SOTA Reference."
+        },
+        "SRX": {
+          "Field Name": "SRX",
+          "Data Type": "Integer",
+          "Description": "contest QSO received serial number with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "SRX_STRING": {
+          "Field Name": "SRX_STRING",
+          "Data Type": "String",
+          "Description": "contest QSO received information use Cabrillo format to convey contest information for which ADIF fields are not specified in the event of a conflict between information in a dedicated contest field and this field, information in the dedicated contest field shall prevail"
+        },
+        "STATE": {
+          "Field Name": "STATE",
+          "Data Type": "Enumeration",
+          "Enumeration": "Primary_Administrative_Subdivision[DXCC]",
+          "Description": "the code for the contacted station\u0027s Primary Administrative Subdivision (e.g. US State, JA Island, VE Province)"
+        },
+        "STATION_CALLSIGN": {
+          "Field Name": "STATION_CALLSIGN",
+          "Data Type": "String",
+          "Description": "the logging station\u0027s callsign (the callsign used over the air) if STATION_CALLSIGN is absent, OPERATOR shall be treated as both the logging station\u0027s callsign and the logging operator\u0027s callsign"
+        },
+        "STX": {
+          "Field Name": "STX",
+          "Data Type": "Integer",
+          "Description": "contest QSO transmitted serial number with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "STX_STRING": {
+          "Field Name": "STX_STRING",
+          "Data Type": "String",
+          "Description": "contest QSO transmitted information use Cabrillo format to convey contest information for which ADIF fields are not specified in the event of a conflict between information in a dedicated contest field and this field, information in the dedicated contest field shall prevail"
+        },
+        "SUBMODE": {
+          "Field Name": "SUBMODE",
+          "Data Type": "String",
+          "Enumeration": "Submode[MODE]",
+          "Description": "QSO Submode use enumeration values for interoperability"
+        },
+        "SWL": {
+          "Field Name": "SWL",
+          "Data Type": "Boolean",
+          "Description": "indicates that the QSO information pertains to an SWL report"
+        },
+        "TEN_TEN": {
+          "Field Name": "TEN_TEN",
+          "Data Type": "PositiveInteger",
+          "Description": "Ten-Ten number with a value greater than 0",
+          "Minimum Value": "1"
+        },
+        "TIME_OFF": {
+          "Field Name": "TIME_OFF",
+          "Data Type": "Time",
+          "Description": "HHMM or HHMMSS in UTC in the absence of \u003CQSO_DATE_OFF\u003E, the QSO duration is less than 24 hours. For example, the following is a QSO starting at 14 July 2020 23:55 and finishing at 15 July 2020 01:00: \u003CQSO_DATE:8\u003E20200714 \u003CTIME_ON:4\u003E2355 \u003CTIME_OFF:4\u003E0100"
+        },
+        "TIME_ON": {
+          "Field Name": "TIME_ON",
+          "Data Type": "Time",
+          "Description": "HHMM or HHMMSS in UTC"
+        },
+        "TX_PWR": {
+          "Field Name": "TX_PWR",
+          "Data Type": "Number",
+          "Description": "the logging station\u0027s power in Watts with a value greater than or equal to 0",
+          "Minimum Value": "0"
+        },
+        "UKSMG": {
+          "Field Name": "UKSMG",
+          "Data Type": "PositiveInteger",
+          "Description": "the contacted station\u0027s UKSMG member number with a value greater than 0",
+          "Minimum Value": "1"
+        },
+        "USACA_COUNTIES": {
+          "Field Name": "USACA_COUNTIES",
+          "Data Type": "SecondarySubdivisionList",
+          "Description": "two US counties in the case where the contacted station is located on a border between two counties, representing counties credited to the QSO for the CQ Magazine USA-CA award program. E.g. MA,Franklin:MA,Hampshire"
+        },
+        "VE_PROV": {
+          "Field Name": "VE_PROV",
+          "Data Type": "String",
+          "Description": "import-only: use STATE instead",
+          "Import-only": "true"
+        },
+        "VUCC_GRIDS": {
+          "Field Name": "VUCC_GRIDS",
+          "Data Type": "GridSquareList",
+          "Description": "two or four adjacent Maidenhead grid locators, each four or six characters long, representing the contacted station\u0027s grid squares credited to the QSO for the ARRL VUCC award program. E.g. EM98,FM08,EM97,FM07"
+        },
+        "WEB": {
+          "Field Name": "WEB",
+          "Data Type": "String",
+          "Description": "the contacted station\u0027s URL"
+        },
+        "WWFF_REF": {
+          "Field Name": "WWFF_REF",
+          "Data Type": "WWFFRef",
+          "Description": "the contacted station\u0027s WWFF (World Wildlife Flora \u0026 Fauna) reference"
+        }
+      }
+    }
+  }
+}

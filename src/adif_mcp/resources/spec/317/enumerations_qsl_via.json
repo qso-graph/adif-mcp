@@ -1,0 +1,44 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:50Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "QSL_Via": {
+        "Header": [
+          "Enumeration Name",
+          "Via",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "B": {
+            "Enumeration Name": "QSL_Via",
+            "Via": "B",
+            "Description": "bureau"
+          },
+          "D": {
+            "Enumeration Name": "QSL_Via",
+            "Via": "D",
+            "Description": "direct"
+          },
+          "E": {
+            "Enumeration Name": "QSL_Via",
+            "Via": "E",
+            "Description": "electronic"
+          },
+          "M": {
+            "Enumeration Name": "QSL_Via",
+            "Via": "M",
+            "Description": "manager",
+            "Import-only": "true"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

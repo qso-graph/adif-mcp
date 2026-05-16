@@ -1,0 +1,457 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:52Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Secondary_Administrative_Subdivision": {
+        "Header": [
+          "Enumeration Name",
+          "Code",
+          "Secondary Administrative Subdivision",
+          "DXCC Entity Code",
+          "Alaska Judicial District",
+          "Deleted",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "AK,Aleutians East": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Aleutians East",
+            "Secondary Administrative Subdivision": "Aleutians East",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Aleutians Islands": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Aleutians Islands",
+            "Secondary Administrative Subdivision": "Aleutians Islands",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Aleutians West": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Aleutians West",
+            "Secondary Administrative Subdivision": "Aleutians West",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Anchorage": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Anchorage",
+            "Secondary Administrative Subdivision": "Anchorage",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Angoon": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Angoon",
+            "Secondary Administrative Subdivision": "Angoon",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Barrow": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Barrow",
+            "Secondary Administrative Subdivision": "Barrow",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Bethel": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Bethel",
+            "Secondary Administrative Subdivision": "Bethel",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,Bristol Bay": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Bristol Bay",
+            "Secondary Administrative Subdivision": "Bristol Bay",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Cordova-McCarthy": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Cordova-McCarthy",
+            "Secondary Administrative Subdivision": "Cordova-McCarthy",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Denali": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Denali",
+            "Secondary Administrative Subdivision": "Denali",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,Dillingham": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Dillingham",
+            "Secondary Administrative Subdivision": "Dillingham",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Fairbanks": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Fairbanks",
+            "Secondary Administrative Subdivision": "Fairbanks",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,Fairbanks North Star": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Fairbanks North Star",
+            "Secondary Administrative Subdivision": "Fairbanks North Star",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,First Judicial District": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,First Judicial District",
+            "Secondary Administrative Subdivision": "First Judicial District",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Fourth Judicial District": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Fourth Judicial District",
+            "Secondary Administrative Subdivision": "Fourth Judicial District",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Haines": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Haines",
+            "Secondary Administrative Subdivision": "Haines",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Juneau": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Juneau",
+            "Secondary Administrative Subdivision": "Juneau",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Hoonah-Angoon": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Hoonah-Angoon",
+            "Secondary Administrative Subdivision": "Hoonah-Angoon",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Kenai Peninsula": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kenai Peninsula",
+            "Secondary Administrative Subdivision": "Kenai Peninsula",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Kenai-Cook Inlet": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kenai-Cook Inlet",
+            "Secondary Administrative Subdivision": "Kenai-Cook Inlet",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Ketchikan": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Ketchikan",
+            "Secondary Administrative Subdivision": "Ketchikan",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Ketchikan Gateway": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Ketchikan Gateway",
+            "Secondary Administrative Subdivision": "Ketchikan Gateway",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Kobuk": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kobuk",
+            "Secondary Administrative Subdivision": "Kobuk",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Kodiak Island": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kodiak Island",
+            "Secondary Administrative Subdivision": "Kodiak Island",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Kuskokwim": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kuskokwim",
+            "Secondary Administrative Subdivision": "Kuskokwim",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Kusilvak": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Kusilvak",
+            "Secondary Administrative Subdivision": "Kusilvak",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District"
+          },
+          "AK,Lake and Peninsula": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Lake and Peninsula",
+            "Secondary Administrative Subdivision": "Lake and Peninsula",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Lynn Canal-Icy Straits": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Lynn Canal-Icy Straits",
+            "Secondary Administrative Subdivision": "Lynn Canal-Icy Straits",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Matanuska-Susitna": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Matanuska-Susitna",
+            "Secondary Administrative Subdivision": "Matanuska-Susitna",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Nome": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Nome",
+            "Secondary Administrative Subdivision": "Nome",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District"
+          },
+          "AK,North Slope": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,North Slope",
+            "Secondary Administrative Subdivision": "North Slope",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District"
+          },
+          "AK,Northwest Arctic": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Northwest Arctic",
+            "Secondary Administrative Subdivision": "Northwest Arctic",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District"
+          },
+          "AK,Outer Ketchikan": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Outer Ketchikan",
+            "Secondary Administrative Subdivision": "Outer Ketchikan",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Palmer-Wasilla-Talkeetna": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Palmer-Wasilla-Talkeetna",
+            "Secondary Administrative Subdivision": "Palmer-Wasilla-Talkeetna",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Petersburg": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Petersburg",
+            "Secondary Administrative Subdivision": "Petersburg",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Pribilof Islands": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Pribilof Islands",
+            "Secondary Administrative Subdivision": "Pribilof Islands",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Prince of Wales": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Prince of Wales",
+            "Secondary Administrative Subdivision": "Prince of Wales",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Prince of Wales-Hyder": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Prince of Wales-Hyder",
+            "Secondary Administrative Subdivision": "Prince of Wales-Hyder",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Prince of Wales-Outer Ketchikan": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Prince of Wales-Outer Ketchikan",
+            "Secondary Administrative Subdivision": "Prince of Wales-Outer Ketchikan",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Saint Matthew Island": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Saint Matthew Island",
+            "Secondary Administrative Subdivision": "Saint Matthew Island",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,Second Judicial District": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Second Judicial District",
+            "Secondary Administrative Subdivision": "Second Judicial District",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Seward": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Seward",
+            "Secondary Administrative Subdivision": "Seward",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Sitka": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Sitka",
+            "Secondary Administrative Subdivision": "Sitka",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Skagway-Hoonah-Angoon": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Skagway-Hoonah-Angoon",
+            "Secondary Administrative Subdivision": "Skagway-Hoonah-Angoon",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Skagway": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Skagway",
+            "Secondary Administrative Subdivision": "Skagway",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Skagway-Yakuta": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Skagway-Yakuta",
+            "Secondary Administrative Subdivision": "Skagway-Yakutat",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Skagway-Yakutat-Angoon": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Skagway-Yakutat-Angoon",
+            "Secondary Administrative Subdivision": "Skagway-Yakutat-Angoon",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Southeast Fairbanks": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Southeast Fairbanks",
+            "Secondary Administrative Subdivision": "Southeast Fairbanks",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          },
+          "AK,Third Judicial District": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Third Judicial District",
+            "Secondary Administrative Subdivision": "Third Judicial District",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Upper Yukon": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Upper Yukon",
+            "Secondary Administrative Subdivision": "Upper Yukon",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Valdez-Chitina-Whittier": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Valdez-Chitina-Whittier",
+            "Secondary Administrative Subdivision": "Valdez-Chitina-Whittier",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Valdez-Cordova": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Valdez-Cordova",
+            "Secondary Administrative Subdivision": "Valdez-Cordova",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Third Judicial District"
+          },
+          "AK,Wade Hampton": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Wade Hampton",
+            "Secondary Administrative Subdivision": "Wade Hampton",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Second Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Wales-Hyder": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Wales-Hyder",
+            "Secondary Administrative Subdivision": "Wales-Hyder",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Wrangell": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Wrangell",
+            "Secondary Administrative Subdivision": "Wrangell",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Wrangell-Petersburg": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Wrangell-Petersburg",
+            "Secondary Administrative Subdivision": "Wrangell-Petersburg",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District",
+            "Deleted": "true"
+          },
+          "AK,Yakutat": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Yakutat",
+            "Secondary Administrative Subdivision": "Yakutat",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska First Judicial District"
+          },
+          "AK,Yukon-Koyukuk": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision",
+            "Code": "AK,Yukon-Koyukuk",
+            "Secondary Administrative Subdivision": "Yukon-Koyukuk",
+            "DXCC Entity Code": "6",
+            "Alaska Judicial District": "Alaska Fourth Judicial District"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

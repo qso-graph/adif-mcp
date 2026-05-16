@@ -1,0 +1,58 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:36Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Continent": {
+        "Header": [
+          "Enumeration Name",
+          "Abbreviation",
+          "Continent",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "NA": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "NA",
+            "Continent": "North America"
+          },
+          "SA": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "SA",
+            "Continent": "South America"
+          },
+          "EU": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "EU",
+            "Continent": "Europe"
+          },
+          "AF": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "AF",
+            "Continent": "Africa"
+          },
+          "OC": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "OC",
+            "Continent": "Oceania"
+          },
+          "AS": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "AS",
+            "Continent": "Asia"
+          },
+          "AN": {
+            "Enumeration Name": "Continent",
+            "Abbreviation": "AN",
+            "Continent": "Antarctica"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

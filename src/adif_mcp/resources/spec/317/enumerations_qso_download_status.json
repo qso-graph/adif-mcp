@@ -1,0 +1,38 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:51Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "QSO_Download_Status": {
+        "Header": [
+          "Enumeration Name",
+          "Status",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "Y": {
+            "Enumeration Name": "QSO_Download_Status",
+            "Status": "Y",
+            "Description": "the QSO has been downloaded from the online service"
+          },
+          "N": {
+            "Enumeration Name": "QSO_Download_Status",
+            "Status": "N",
+            "Description": "the QSO has not been downloaded from the online service"
+          },
+          "I": {
+            "Enumeration Name": "QSO_Download_Status",
+            "Status": "I",
+            "Description": "ignore or invalid"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

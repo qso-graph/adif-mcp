@@ -1,0 +1,537 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:52Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Secondary_Administrative_Subdivision_Alt": {
+        "Header": [
+          "Enumeration Name",
+          "Code",
+          "DXCC Entity Code",
+          "Region",
+          "District",
+          "Deleted",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "NZ_Regions:Northland/Far North": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Northland/Far North",
+            "DXCC Entity Code": "170",
+            "Region": "Northland",
+            "District": "Far North"
+          },
+          "NZ_Regions:Northland/Whangarei": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Northland/Whangarei",
+            "DXCC Entity Code": "170",
+            "Region": "Northland",
+            "District": "Whangarei"
+          },
+          "NZ_Regions:Northland/Kaipara": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Northland/Kaipara",
+            "DXCC Entity Code": "170",
+            "Region": "Northland",
+            "District": "Kaipara"
+          },
+          "NZ_Regions:Auckland/Rodney": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Rodney",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Rodney"
+          },
+          "NZ_Regions:Auckland/North Shore": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/North Shore",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "North Shore"
+          },
+          "NZ_Regions:Auckland/Waitakere": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Waitakere",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Waitakere"
+          },
+          "NZ_Regions:Auckland/Auckland": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Auckland",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Auckland"
+          },
+          "NZ_Regions:Auckland/Manukau": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Manukau",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Manukau"
+          },
+          "NZ_Regions:Auckland/Papakura": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Papakura",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Papakura"
+          },
+          "NZ_Regions:Auckland/Franklin": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Auckland/Franklin",
+            "DXCC Entity Code": "170",
+            "Region": "Auckland",
+            "District": "Franklin"
+          },
+          "NZ_Regions:Waikato/Thames-Coromandel": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Thames-Coromandel",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Thames-Coromandel"
+          },
+          "NZ_Regions:Waikato/Hauraki": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Hauraki",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Hauraki"
+          },
+          "NZ_Regions:Waikato/Waikato": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Waikato",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Waikato"
+          },
+          "NZ_Regions:Waikato/Matamata Piako": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Matamata Piako",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Matamata Piako"
+          },
+          "NZ_Regions:Waikato/Hamilton": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Hamilton",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Hamilton"
+          },
+          "NZ_Regions:Waikato/Waipa": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Waipa",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Waipa"
+          },
+          "NZ_Regions:Waikato/Otorohanga": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Otorohanga",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Otorohanga"
+          },
+          "NZ_Regions:Waikato/South Waikato": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/South Waikato",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "South Waikato"
+          },
+          "NZ_Regions:Waikato/Waitomo": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Waitomo",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Waitomo"
+          },
+          "NZ_Regions:Waikato/Taupo": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Waikato/Taupo",
+            "DXCC Entity Code": "170",
+            "Region": "Waikato",
+            "District": "Taupo"
+          },
+          "NZ_Regions:Bay of Plenty/Western Bay of Plenty": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Western Bay of Plenty",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Western Bay of Plenty"
+          },
+          "NZ_Regions:Bay of Plenty/Tauranga": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Tauranga",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Tauranga"
+          },
+          "NZ_Regions:Bay of Plenty/Rotorua": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Rotorua",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Rotorua"
+          },
+          "NZ_Regions:Bay of Plenty/Kawerau": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Kawerau",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Kawerau"
+          },
+          "NZ_Regions:Bay of Plenty/Whakatane": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Whakatane",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Whakatane"
+          },
+          "NZ_Regions:Bay of Plenty/Opotiki": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Bay of Plenty/Opotiki",
+            "DXCC Entity Code": "170",
+            "Region": "Bay of Plenty",
+            "District": "Opotiki"
+          },
+          "NZ_Regions:Gisborne/Gisborne": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Gisborne/Gisborne",
+            "DXCC Entity Code": "170",
+            "Region": "Gisborne",
+            "District": "Gisborne"
+          },
+          "NZ_Regions:Hawkes Bay/Wairoa": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Hawkes Bay/Wairoa",
+            "DXCC Entity Code": "170",
+            "Region": "Hawkes Bay",
+            "District": "Wairoa"
+          },
+          "NZ_Regions:Hawkes Bay/Hastings": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Hawkes Bay/Hastings",
+            "DXCC Entity Code": "170",
+            "Region": "Hawkes Bay",
+            "District": "Hastings"
+          },
+          "NZ_Regions:Hawkes Bay/Napier": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Hawkes Bay/Napier",
+            "DXCC Entity Code": "170",
+            "Region": "Hawkes Bay",
+            "District": "Napier"
+          },
+          "NZ_Regions:Hawkes Bay/Central Hawkes Bay": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Hawkes Bay/Central Hawkes Bay",
+            "DXCC Entity Code": "170",
+            "Region": "Hawkes Bay",
+            "District": "Central Hawkes Bay"
+          },
+          "NZ_Regions:Taranaki/New Plymouth": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Taranaki/New Plymouth",
+            "DXCC Entity Code": "170",
+            "Region": "Taranaki",
+            "District": "New Plymouth"
+          },
+          "NZ_Regions:Taranaki/Stratford": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Taranaki/Stratford",
+            "DXCC Entity Code": "170",
+            "Region": "Taranaki",
+            "District": "Stratford"
+          },
+          "NZ_Regions:Taranaki/South Taranaki": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Taranaki/South Taranaki",
+            "DXCC Entity Code": "170",
+            "Region": "Taranaki",
+            "District": "South Taranaki"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Ruapehu": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Ruapehu",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Ruapehu"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Wanganui": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Wanganui",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Wanganui"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Rangitikei": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Rangitikei",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Rangitikei"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Manawatu": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Manawatu",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Manawatu"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Palmerston North": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Palmerston North",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Palmerston North"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Horowhenua": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Horowhenua",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Horowhenua"
+          },
+          "NZ_Regions:Wanganui-Manawatu/Tararua": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wanganui-Manawatu/Tararua",
+            "DXCC Entity Code": "170",
+            "Region": "Wanganui-Manawatu",
+            "District": "Tararua"
+          },
+          "NZ_Regions:Wellington/Masterton": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Masterton",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Masterton"
+          },
+          "NZ_Regions:Wellington/Carterton": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Carterton",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Carterton"
+          },
+          "NZ_Regions:Wellington/South Wairarapa": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/South Wairarapa",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "South Wairarapa"
+          },
+          "NZ_Regions:Wellington/Kapiti Coast": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Kapiti Coast",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Kapiti Coast"
+          },
+          "NZ_Regions:Wellington/Porirua": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Porirua",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Porirua"
+          },
+          "NZ_Regions:Wellington/Upper Hutt": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Upper Hutt",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Upper Hutt"
+          },
+          "NZ_Regions:Wellington/Lower Hutt": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Lower Hutt",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Lower Hutt"
+          },
+          "NZ_Regions:Wellington/Wellington": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Wellington/Wellington",
+            "DXCC Entity Code": "170",
+            "Region": "Wellington",
+            "District": "Wellington"
+          },
+          "NZ_Regions:Nelson/Nelson": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Nelson/Nelson",
+            "DXCC Entity Code": "170",
+            "Region": "Nelson",
+            "District": "Nelson"
+          },
+          "NZ_Regions:Marlborough/Marlborough": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Marlborough/Marlborough",
+            "DXCC Entity Code": "170",
+            "Region": "Marlborough",
+            "District": "Marlborough"
+          },
+          "NZ_Regions:Tasman/Tasman": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Tasman/Tasman",
+            "DXCC Entity Code": "170",
+            "Region": "Tasman",
+            "District": "Tasman"
+          },
+          "NZ_Regions:West Coast/Buller": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:West Coast/Buller",
+            "DXCC Entity Code": "170",
+            "Region": "West Coast",
+            "District": "Buller"
+          },
+          "NZ_Regions:West Coast/Grey": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:West Coast/Grey",
+            "DXCC Entity Code": "170",
+            "Region": "West Coast",
+            "District": "Grey"
+          },
+          "NZ_Regions:West Coast/Westland": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:West Coast/Westland",
+            "DXCC Entity Code": "170",
+            "Region": "West Coast",
+            "District": "Westland"
+          },
+          "NZ_Regions:Canterbury/Kaikoura": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Kaikoura",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Kaikoura"
+          },
+          "NZ_Regions:Canterbury/Hurunui": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Hurunui",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Hurunui"
+          },
+          "NZ_Regions:Canterbury/Selwyn": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Selwyn",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Selwyn"
+          },
+          "NZ_Regions:Canterbury/Waimakariri": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Waimakariri",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Waimakariri"
+          },
+          "NZ_Regions:Canterbury/Christchurch": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Christchurch",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Christchurch"
+          },
+          "NZ_Regions:Canterbury/Banks Peninsula": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Banks Peninsula",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Banks Peninsula"
+          },
+          "NZ_Regions:Canterbury/Ashburton": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Ashburton",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Ashburton"
+          },
+          "NZ_Regions:Canterbury/Mackenzie": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Mackenzie",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Mackenzie"
+          },
+          "NZ_Regions:Canterbury/Timaru": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Timaru",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Timaru"
+          },
+          "NZ_Regions:Canterbury/Waimate": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Canterbury/Waimate",
+            "DXCC Entity Code": "170",
+            "Region": "Canterbury",
+            "District": "Waimate"
+          },
+          "NZ_Regions:Otago/Waitaki": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Otago/Waitaki",
+            "DXCC Entity Code": "170",
+            "Region": "Otago",
+            "District": "Waitaki"
+          },
+          "NZ_Regions:Otago/Queenstown-Lakes": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Otago/Queenstown-Lakes",
+            "DXCC Entity Code": "170",
+            "Region": "Otago",
+            "District": "Queenstown-Lakes"
+          },
+          "NZ_Regions:Otago/Central Otago": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Otago/Central Otago",
+            "DXCC Entity Code": "170",
+            "Region": "Otago",
+            "District": "Central Otago"
+          },
+          "NZ_Regions:Otago/Dunedin": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Otago/Dunedin",
+            "DXCC Entity Code": "170",
+            "Region": "Otago",
+            "District": "Dunedin"
+          },
+          "NZ_Regions:Otago/Clutha": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Otago/Clutha",
+            "DXCC Entity Code": "170",
+            "Region": "Otago",
+            "District": "Clutha"
+          },
+          "NZ_Regions:Southland/Gore": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Southland/Gore",
+            "DXCC Entity Code": "170",
+            "Region": "Southland",
+            "District": "Gore"
+          },
+          "NZ_Regions:Southland/Southland": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Southland/Southland",
+            "DXCC Entity Code": "170",
+            "Region": "Southland",
+            "District": "Southland"
+          },
+          "NZ_Regions:Southland/Invercargill": {
+            "Enumeration Name": "Secondary_Administrative_Subdivision_Alt",
+            "Code": "NZ_Regions:Southland/Invercargill",
+            "DXCC Entity Code": "170",
+            "Region": "Southland",
+            "District": "Invercargill"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

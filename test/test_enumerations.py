@@ -22,10 +22,15 @@ def test_list_enumerations_count() -> None:
 
 
 def test_list_enumerations_has_mode() -> None:
-    """Mode enumeration present with correct record count."""
+    """Mode enumeration present with correct record count.
+
+    ADIF 3.1.7 adds OFDM (Orthogonal Frequency-Division Multiplexing),
+    bringing the Mode count from 90 (3.1.6) to 91. OFDM is not
+    Import-only, so the import_only_count stays at 42.
+    """
     result = list_enumerations()
     mode = result["enumerations"]["Mode"]
-    assert mode["record_count"] == 90
+    assert mode["record_count"] == 91
     assert mode["import_only_count"] == 42
     assert "Mode" in mode["searchable_fields"]
 
@@ -257,19 +262,21 @@ def test_validate_whitespace_band_errors() -> None:
     assert any("BAND" in e and "empty" in e for e in result["errors"])
 
 
-# --- Official ADIF 3.1.6 Test File (G3ZOD / adif.org.uk) ---
+# --- Official ADIF 3.1.7 Test File (G3ZOD / adif.org.uk) ---
 
 
 def test_official_adif_test_file_zero_errors() -> None:
-    """ADIF-TCR-001: Zero false errors on official 3.1.6 test corpus.
+    """ADIF-TCR-001: Zero false errors on official 3.1.7 test corpus.
 
-    Source: https://adif.org.uk/316/resources
+    Source: https://adif.org.uk/317/resources
     Generator: CreateADIFTestFiles (G3ZOD)
-    Records: 6,191 QSOs exercising every enumeration value
+    Records: 6,197 QSOs exercising every enumeration value (3.1.7 adds
+    +6 over 3.1.6: covers OFDM mode + FT2, FREEDATA, RIBBIT_PIX,
+    RIBBIT_SMS submodes).
     Gate: If our validator rejects an official record, our validator is wrong.
     """
     test_file = os.path.join(
-        _TEST_DATA, "ADIF_316_test_QSOs_2025_08_27.adi"
+        _TEST_DATA, "ADIF_317_test_QSOs_2026_03_22.adi"
     )
     if not os.path.exists(test_file):
         return  # Skip if test file not present (CI without data)
@@ -281,7 +288,7 @@ def test_official_adif_test_file_zero_errors() -> None:
     body = parts[1]
     records = re.findall(r"(.*?<EOR>)", body, re.IGNORECASE | re.DOTALL)
 
-    assert len(records) == 6191, f"Expected 6191 records, got {len(records)}"
+    assert len(records) == 6197, f"Expected 6197 records, got {len(records)}"
 
     all_errors = []
     for i, rec_text in enumerate(records):
@@ -359,6 +366,60 @@ def test_country_invalid() -> None:
     result = validate_adif_record(adif)
     assert result["status"] == "invalid"
     assert any("FAKELAND" in e for e in result["errors"])
+
+
+# --- ADIF 3.1.7 new enum entries ---
+
+
+def test_317_new_mode_ofdm() -> None:
+    """ADIF 3.1.7: OFDM is a new Mode (Orthogonal Frequency-Division Multiplexing)."""
+    adif = "<MODE:4>OFDM<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    assert not result["errors"], result["errors"]
+
+
+def test_317_new_submode_ft2() -> None:
+    """ADIF 3.1.7: FT2 is a new Submode under Mode MFSK."""
+    adif = "<MODE:4>MFSK<SUBMODE:3>FT2<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    submode_warns = [w for w in result["warnings"] if "submode" in w.lower()]
+    assert not submode_warns, submode_warns
+
+
+def test_317_new_submode_freedata() -> None:
+    """ADIF 3.1.7: FREEDATA is a new Submode under Mode DYNAMIC."""
+    adif = "<MODE:7>DYNAMIC<SUBMODE:8>FREEDATA<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    submode_warns = [w for w in result["warnings"] if "submode" in w.lower()]
+    assert not submode_warns, submode_warns
+
+
+def test_317_new_submode_ribbit_pix() -> None:
+    """ADIF 3.1.7: RIBBIT_PIX is a new Submode under Mode OFDM."""
+    adif = "<MODE:4>OFDM<SUBMODE:10>RIBBIT_PIX<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    submode_warns = [w for w in result["warnings"] if "submode" in w.lower()]
+    assert not submode_warns, submode_warns
+
+
+def test_317_new_submode_ribbit_sms() -> None:
+    """ADIF 3.1.7: RIBBIT_SMS is a new Submode under Mode OFDM."""
+    adif = "<MODE:4>OFDM<SUBMODE:10>RIBBIT_SMS<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    submode_warns = [w for w in result["warnings"] if "submode" in w.lower()]
+    assert not submode_warns, submode_warns
+
+
+def test_317_submode_count() -> None:
+    """ADIF 3.1.7: Submode count is 187 (3.1.6 had 183, +4 new in 3.1.7)."""
+    result = list_enumerations()
+    sub = result["enumerations"]["Submode"]
+    assert sub["record_count"] == 187
 
 
 def test_country_case_insensitive() -> None:

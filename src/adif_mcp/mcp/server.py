@@ -1,5 +1,5 @@
 """
-ADIF-MCP Server: Authoritative 3.1.6 Specification Server.
+ADIF-MCP Server: Authoritative 3.1.7 Specification Server.
 
 Provides tools for parsing, streaming, and validating ADIF data.
 """
@@ -412,8 +412,8 @@ def _validate_time(field_name: str, value: str) -> List[str]:
 # --- Spec File Loader ---
 
 
-def get_spec_text(filename: str, version: str = "316") -> str:
-    """Retrieve raw text of a 3.1.6 specification JSON file."""
+def get_spec_text(filename: str, version: str = "317") -> str:
+    """Retrieve raw text of a 3.1.7 specification JSON file."""
     current_dir = os.path.dirname(os.path.abspath(__file__))
     json_dir = os.path.abspath(
         os.path.join(current_dir, "..", "resources", "spec", version)
@@ -539,13 +539,13 @@ async def parse_adif(
 
 @mcp.tool()
 def read_specification_resource(resource_name: str) -> str:
-    """Reads an ADIF 3.1.6 specification resource (e.g., 'mode')."""
+    """Reads an ADIF 3.1.7 specification resource (e.g., 'mode')."""
     return get_spec_text(resource_name)
 
 
 @mcp.tool()
 def list_enumerations() -> Dict[str, Any]:
-    """Lists all 25 ADIF 3.1.6 enumerations with record counts and fields."""
+    """Lists all 25 ADIF 3.1.7 enumerations with record counts and fields."""
     result: Dict[str, Any] = {}
     for enum_name, fields in ENUMERATION_FIELDS.items():
         records = _load_enum_records(enum_name)
@@ -566,7 +566,7 @@ def search_enumerations(
     search_term: str,
     enumeration: Optional[str] = None,
 ) -> Dict[str, Any]:
-    """Searches ADIF 3.1.6 enumerations. Optionally filter by enumeration name."""
+    """Searches ADIF 3.1.7 enumerations. Optionally filter by enumeration name."""
     term = search_term.upper().strip()
     if not term:
         return {"error": "Search term must not be empty."}
@@ -619,7 +619,7 @@ def search_enumerations(
 
 @mcp.tool()
 def validate_adif_record(adif_string: str) -> Dict[str, Any]:
-    """Validates an ADIF record against 3.1.6 rules including enum membership."""
+    """Validates an ADIF record against 3.1.7 rules including enum membership."""
     parsed = parse_adif_internal(adif_string)
 
     try:

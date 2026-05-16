@@ -1,0 +1,53 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:50Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "QSL_Sent": {
+        "Header": [
+          "Enumeration Name",
+          "Status",
+          "Meaning",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "Y": {
+            "Enumeration Name": "QSL_Sent",
+            "Status": "Y",
+            "Meaning": "yes",
+            "Description": "an outgoing QSL card has been sent the QSO has been uploaded to, and accepted by, the online service"
+          },
+          "N": {
+            "Enumeration Name": "QSL_Sent",
+            "Status": "N",
+            "Meaning": "no",
+            "Description": "do not send an outgoing QSL card do not upload the QSO to the online service"
+          },
+          "R": {
+            "Enumeration Name": "QSL_Sent",
+            "Status": "R",
+            "Meaning": "requested",
+            "Description": "the contacted station has requested a QSL card the contacted station has requested the QSO be uploaded to the online service"
+          },
+          "Q": {
+            "Enumeration Name": "QSL_Sent",
+            "Status": "Q",
+            "Meaning": "queued",
+            "Description": "an outgoing QSL card has been selected to be sent a QSO has been selected to be uploaded to the online service"
+          },
+          "I": {
+            "Enumeration Name": "QSL_Sent",
+            "Status": "I",
+            "Meaning": "ignore or invalid"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

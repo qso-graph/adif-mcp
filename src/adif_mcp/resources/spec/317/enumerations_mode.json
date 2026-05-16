@@ -1,0 +1,464 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:40Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Mode": {
+        "Header": [
+          "Enumeration Name",
+          "Mode",
+          "Submodes",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "AM": {
+            "Enumeration Name": "Mode",
+            "Mode": "AM"
+          },
+          "ARDOP": {
+            "Enumeration Name": "Mode",
+            "Mode": "ARDOP",
+            "Description": "Amateur Radio Digital Open Protocol"
+          },
+          "ATV": {
+            "Enumeration Name": "Mode",
+            "Mode": "ATV"
+          },
+          "CHIP": {
+            "Enumeration Name": "Mode",
+            "Mode": "CHIP",
+            "Submodes": "CHIP64,CHIP128"
+          },
+          "CLO": {
+            "Enumeration Name": "Mode",
+            "Mode": "CLO"
+          },
+          "CONTESTI": {
+            "Enumeration Name": "Mode",
+            "Mode": "CONTESTI"
+          },
+          "CW": {
+            "Enumeration Name": "Mode",
+            "Mode": "CW",
+            "Submodes": "PCW"
+          },
+          "DIGITALVOICE": {
+            "Enumeration Name": "Mode",
+            "Mode": "DIGITALVOICE",
+            "Submodes": "C4FM,DMR,DSTAR,FREEDV,M17"
+          },
+          "DOMINO": {
+            "Enumeration Name": "Mode",
+            "Mode": "DOMINO",
+            "Submodes": "DOM-M,DOM4,DOM5,DOM8,DOM11,DOM16,DOM22,DOM44,DOM88,DOMINOEX,DOMINOF"
+          },
+          "DYNAMIC": {
+            "Enumeration Name": "Mode",
+            "Mode": "DYNAMIC",
+            "Submodes": "FREEDATA,VARA HF,VARA SATELLITE,VARA FM 1200,VARA FM 9600"
+          },
+          "FAX": {
+            "Enumeration Name": "Mode",
+            "Mode": "FAX"
+          },
+          "FM": {
+            "Enumeration Name": "Mode",
+            "Mode": "FM"
+          },
+          "FSK441": {
+            "Enumeration Name": "Mode",
+            "Mode": "FSK441"
+          },
+          "FSK": {
+            "Enumeration Name": "Mode",
+            "Mode": "FSK",
+            "Submodes": "SCAMP_FAST,SCAMP_SLOW,SCAMP_VSLOW",
+            "Description": "Frequency shift keying"
+          },
+          "FT8": {
+            "Enumeration Name": "Mode",
+            "Mode": "FT8",
+            "Description": "Franke-Taylor design, 8-FSK modulation"
+          },
+          "HELL": {
+            "Enumeration Name": "Mode",
+            "Mode": "HELL",
+            "Submodes": "FMHELL,FSKH105,FSKH245,FSKHELL,HELL80,HELLX5,HELLX9,HFSK,PSKHELL,SLOWHELL"
+          },
+          "ISCAT": {
+            "Enumeration Name": "Mode",
+            "Mode": "ISCAT",
+            "Submodes": "ISCAT-A,ISCAT-B"
+          },
+          "JT4": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4",
+            "Submodes": "JT4A,JT4B,JT4C,JT4D,JT4E,JT4F,JT4G"
+          },
+          "JT6M": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT6M"
+          },
+          "JT9": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT9",
+            "Submodes": "JT9-1,JT9-2,JT9-5,JT9-10,JT9-30,JT9A,JT9B,JT9C,JT9D,JT9E,JT9E FAST,JT9F,JT9F FAST,JT9G,JT9G FAST,JT9H,JT9H FAST"
+          },
+          "JT44": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT44"
+          },
+          "JT65": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT65",
+            "Submodes": "JT65A,JT65B,JT65B2,JT65C,JT65C2"
+          },
+          "MFSK": {
+            "Enumeration Name": "Mode",
+            "Mode": "MFSK",
+            "Submodes": "FSQCALL,FST4,FST4W,FT2,FT4,JS8,JTMS,MFSK4,MFSK8,MFSK11,MFSK16,MFSK22,MFSK31,MFSK32,MFSK64,MFSK64L,MFSK128 MFSK128L,Q65"
+          },
+          "MSK144": {
+            "Enumeration Name": "Mode",
+            "Mode": "MSK144"
+          },
+          "MTONE": {
+            "Enumeration Name": "Mode",
+            "Mode": "MTONE",
+            "Submodes": "SCAMP_OO,SCAMP_OO_SLW",
+            "Description": "Single modulated tone"
+          },
+          "MT63": {
+            "Enumeration Name": "Mode",
+            "Mode": "MT63"
+          },
+          "OFDM": {
+            "Enumeration Name": "Mode",
+            "Mode": "OFDM",
+            "Submodes": "RIBBIT_PIX,RIBBIT_SMS",
+            "Description": "Orthogonal Frequency-Division Multiplexing including COFDM"
+          },
+          "OLIVIA": {
+            "Enumeration Name": "Mode",
+            "Mode": "OLIVIA",
+            "Submodes": "OLIVIA 4/125,OLIVIA 4/250,OLIVIA 8/250,OLIVIA 8/500,OLIVIA 16/500,OLIVIA 16/1000,OLIVIA 32/1000"
+          },
+          "OPERA": {
+            "Enumeration Name": "Mode",
+            "Mode": "OPERA",
+            "Submodes": "OPERA-BEACON,OPERA-QSO"
+          },
+          "PAC": {
+            "Enumeration Name": "Mode",
+            "Mode": "PAC",
+            "Submodes": "PAC2,PAC3,PAC4"
+          },
+          "PAX": {
+            "Enumeration Name": "Mode",
+            "Mode": "PAX",
+            "Submodes": "PAX2"
+          },
+          "PKT": {
+            "Enumeration Name": "Mode",
+            "Mode": "PKT"
+          },
+          "PSK": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK",
+            "Submodes": "8PSK125,8PSK125F,8PSK125FL,8PSK250,8PSK250F,8PSK250FL,8PSK500,8PSK500F,8PSK1000,8PSK1000F,8PSK1200F,FSK31,PSK10,PSK31,PSK63,PSK63F,PSK63RC4,PSK63RC5,PSK63RC10,PSK63RC20,PSK63RC32,PSK125,PSK125C12,PSK125R,PSK125RC10,PSK125RC12,PSK125RC16,PSK125RC4,PSK125RC5,PSK250,PSK250C6,PSK250R,PSK250RC2,PSK250RC3,PSK250RC5,PSK250RC6,PSK250RC7,PSK500,PSK500C2,PSK500C4,PSK500R,PSK500RC2,PSK500RC3,PSK500RC4,PSK800C2,PSK800RC2,PSK1000,PSK1000C2,PSK1000R,PSK1000RC2,PSKAM10,PSKAM31,PSKAM50,PSKFEC31,QPSK31,QPSK63,QPSK125,QPSK250,QPSK500,SIM31"
+          },
+          "PSK2K": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK2K"
+          },
+          "Q15": {
+            "Enumeration Name": "Mode",
+            "Mode": "Q15"
+          },
+          "QRA64": {
+            "Enumeration Name": "Mode",
+            "Mode": "QRA64",
+            "Submodes": "QRA64A,QRA64B,QRA64C,QRA64D,QRA64E"
+          },
+          "ROS": {
+            "Enumeration Name": "Mode",
+            "Mode": "ROS",
+            "Submodes": "ROS-EME,ROS-HF,ROS-MF"
+          },
+          "RTTY": {
+            "Enumeration Name": "Mode",
+            "Mode": "RTTY",
+            "Submodes": "ASCI"
+          },
+          "RTTYM": {
+            "Enumeration Name": "Mode",
+            "Mode": "RTTYM"
+          },
+          "SSB": {
+            "Enumeration Name": "Mode",
+            "Mode": "SSB",
+            "Submodes": "LSB,USB"
+          },
+          "SSTV": {
+            "Enumeration Name": "Mode",
+            "Mode": "SSTV"
+          },
+          "T10": {
+            "Enumeration Name": "Mode",
+            "Mode": "T10",
+            "Description": "Tonal 10 digital mode with focus on sensitivity, band capacity and resistance to the HF Doppler frequency spread"
+          },
+          "THOR": {
+            "Enumeration Name": "Mode",
+            "Mode": "THOR",
+            "Submodes": "THOR-M,THOR4,THOR5,THOR8,THOR11,THOR16,THOR22,THOR25X4,THOR50X1,THOR50X2,THOR100"
+          },
+          "THRB": {
+            "Enumeration Name": "Mode",
+            "Mode": "THRB",
+            "Submodes": "THRBX,THRBX1,THRBX2,THRBX4,THROB1,THROB2,THROB4"
+          },
+          "TOR": {
+            "Enumeration Name": "Mode",
+            "Mode": "TOR",
+            "Submodes": "AMTORFEC,GTOR,NAVTEX,SITORB"
+          },
+          "V4": {
+            "Enumeration Name": "Mode",
+            "Mode": "V4"
+          },
+          "VOI": {
+            "Enumeration Name": "Mode",
+            "Mode": "VOI"
+          },
+          "WINMOR": {
+            "Enumeration Name": "Mode",
+            "Mode": "WINMOR"
+          },
+          "WSPR": {
+            "Enumeration Name": "Mode",
+            "Mode": "WSPR"
+          },
+          "AMTORFEC": {
+            "Enumeration Name": "Mode",
+            "Mode": "AMTORFEC",
+            "Import-only": "true"
+          },
+          "ASCI": {
+            "Enumeration Name": "Mode",
+            "Mode": "ASCI",
+            "Import-only": "true"
+          },
+          "C4FM": {
+            "Enumeration Name": "Mode",
+            "Mode": "C4FM",
+            "Description": "C4FM 4-level FSK Technology Imported QSOs with \u003CMODE:4\u003EC4FM\u003E must be exported as: \u003CMODE:12\u003EDIGITALVOICE \u003CSUBMODE:4\u003EC4FM",
+            "Import-only": "true"
+          },
+          "CHIP64": {
+            "Enumeration Name": "Mode",
+            "Mode": "CHIP64",
+            "Import-only": "true"
+          },
+          "CHIP128": {
+            "Enumeration Name": "Mode",
+            "Mode": "CHIP128",
+            "Import-only": "true"
+          },
+          "DOMINOF": {
+            "Enumeration Name": "Mode",
+            "Mode": "DOMINOF",
+            "Import-only": "true"
+          },
+          "DSTAR": {
+            "Enumeration Name": "Mode",
+            "Mode": "DSTAR",
+            "Description": "Digital Smart Technologies for Amateur Radio Imported QSOs with \u003CMODE:5\u003EDSTAR must be exported as: \u003CMODE:12\u003EDIGITALVOICE \u003CSUBMODE:5\u003EDSTAR",
+            "Import-only": "true"
+          },
+          "FMHELL": {
+            "Enumeration Name": "Mode",
+            "Mode": "FMHELL",
+            "Import-only": "true"
+          },
+          "FSK31": {
+            "Enumeration Name": "Mode",
+            "Mode": "FSK31",
+            "Import-only": "true"
+          },
+          "GTOR": {
+            "Enumeration Name": "Mode",
+            "Mode": "GTOR",
+            "Import-only": "true"
+          },
+          "HELL80": {
+            "Enumeration Name": "Mode",
+            "Mode": "HELL80",
+            "Import-only": "true"
+          },
+          "HFSK": {
+            "Enumeration Name": "Mode",
+            "Mode": "HFSK",
+            "Import-only": "true"
+          },
+          "JT4A": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4A",
+            "Import-only": "true"
+          },
+          "JT4B": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4B",
+            "Import-only": "true"
+          },
+          "JT4C": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4C",
+            "Import-only": "true"
+          },
+          "JT4D": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4D",
+            "Import-only": "true"
+          },
+          "JT4E": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4E",
+            "Import-only": "true"
+          },
+          "JT4F": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4F",
+            "Import-only": "true"
+          },
+          "JT4G": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT4G",
+            "Import-only": "true"
+          },
+          "JT65A": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT65A",
+            "Import-only": "true"
+          },
+          "JT65B": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT65B",
+            "Import-only": "true"
+          },
+          "JT65C": {
+            "Enumeration Name": "Mode",
+            "Mode": "JT65C",
+            "Import-only": "true"
+          },
+          "MFSK8": {
+            "Enumeration Name": "Mode",
+            "Mode": "MFSK8",
+            "Import-only": "true"
+          },
+          "MFSK16": {
+            "Enumeration Name": "Mode",
+            "Mode": "MFSK16",
+            "Import-only": "true"
+          },
+          "PAC2": {
+            "Enumeration Name": "Mode",
+            "Mode": "PAC2",
+            "Import-only": "true"
+          },
+          "PAC3": {
+            "Enumeration Name": "Mode",
+            "Mode": "PAC3",
+            "Import-only": "true"
+          },
+          "PAX2": {
+            "Enumeration Name": "Mode",
+            "Mode": "PAX2",
+            "Import-only": "true"
+          },
+          "PCW": {
+            "Enumeration Name": "Mode",
+            "Mode": "PCW",
+            "Import-only": "true"
+          },
+          "PSK10": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK10",
+            "Import-only": "true"
+          },
+          "PSK31": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK31",
+            "Import-only": "true"
+          },
+          "PSK63": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK63",
+            "Import-only": "true"
+          },
+          "PSK63F": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK63F",
+            "Import-only": "true"
+          },
+          "PSK125": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSK125",
+            "Import-only": "true"
+          },
+          "PSKAM10": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSKAM10",
+            "Import-only": "true"
+          },
+          "PSKAM31": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSKAM31",
+            "Import-only": "true"
+          },
+          "PSKAM50": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSKAM50",
+            "Import-only": "true"
+          },
+          "PSKFEC31": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSKFEC31",
+            "Import-only": "true"
+          },
+          "PSKHELL": {
+            "Enumeration Name": "Mode",
+            "Mode": "PSKHELL",
+            "Import-only": "true"
+          },
+          "QPSK31": {
+            "Enumeration Name": "Mode",
+            "Mode": "QPSK31",
+            "Import-only": "true"
+          },
+          "QPSK63": {
+            "Enumeration Name": "Mode",
+            "Mode": "QPSK63",
+            "Import-only": "true"
+          },
+          "QPSK125": {
+            "Enumeration Name": "Mode",
+            "Mode": "QPSK125",
+            "Import-only": "true"
+          },
+          "THRBX": {
+            "Enumeration Name": "Mode",
+            "Mode": "THRBX",
+            "Import-only": "true"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

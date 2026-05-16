@@ -5,7 +5,7 @@ Hatch build hook: writes ADIF metadata from pyproject.toml into the package.
 During `uv build` / `hatchling` builds, this hook reads:
 
   [tool.adif]
-  spec_version = "3.1.6"
+  spec_version = "3.1.7"
   features = ["core QSO model", "band/mode/QSL_RCVD enums"]
 
 …and emits `src/adif_mcp/adif_meta.json` so the wheel/sdist contains a

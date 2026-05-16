@@ -1,0 +1,78 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:34Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Award_Sponsor": {
+        "Header": [
+          "Enumeration Name",
+          "Sponsor",
+          "Sponsoring Organization",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "ADIF_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "ADIF_",
+            "Sponsoring Organization": "ADIF Development Group"
+          },
+          "ARI_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "ARI_",
+            "Sponsoring Organization": "ARI - l\u0027Associazione Radioamatori Italiani"
+          },
+          "ARRL_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "ARRL_",
+            "Sponsoring Organization": "ARRL - American Radio Relay League"
+          },
+          "CQ_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "CQ_",
+            "Sponsoring Organization": "CQ Magazine"
+          },
+          "DARC_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "DARC_",
+            "Sponsoring Organization": "DARC - Deutscher Amateur-Radio-Club e.V."
+          },
+          "EQSL_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "EQSL_",
+            "Sponsoring Organization": "eQSL"
+          },
+          "IARU_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "IARU_",
+            "Sponsoring Organization": "IARU - International Amateur Radio Union"
+          },
+          "JARL_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "JARL_",
+            "Sponsoring Organization": "JARL - Japan Amateur Radio League"
+          },
+          "RSGB_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "RSGB_",
+            "Sponsoring Organization": "RSGB - Radio Society of Great Britain"
+          },
+          "TAG_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "TAG_",
+            "Sponsoring Organization": "TAG - Tambov award group"
+          },
+          "WABAG_": {
+            "Enumeration Name": "Award_Sponsor",
+            "Sponsor": "WABAG_",
+            "Sponsoring Organization": "WAB - Worked all Britain"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

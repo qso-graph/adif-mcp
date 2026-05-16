@@ -1,0 +1,586 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:33Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "ARRL_Section": {
+        "Header": [
+          "Enumeration Name",
+          "Abbreviation",
+          "Section Name",
+          "DXCC Entity Code",
+          "From Date",
+          "Deleted Date",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "AL": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "AL",
+            "Section Name": "Alabama",
+            "DXCC Entity Code": "291"
+          },
+          "AK": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "AK",
+            "Section Name": "Alaska",
+            "DXCC Entity Code": "6"
+          },
+          "AB": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "AB",
+            "Section Name": "Alberta",
+            "DXCC Entity Code": "1"
+          },
+          "AR": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "AR",
+            "Section Name": "Arkansas",
+            "DXCC Entity Code": "291"
+          },
+          "AZ": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "AZ",
+            "Section Name": "Arizona",
+            "DXCC Entity Code": "291"
+          },
+          "BC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "BC",
+            "Section Name": "British Columbia",
+            "DXCC Entity Code": "1"
+          },
+          "CO": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "CO",
+            "Section Name": "Colorado",
+            "DXCC Entity Code": "291"
+          },
+          "CT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "CT",
+            "Section Name": "Connecticut",
+            "DXCC Entity Code": "291"
+          },
+          "DE": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "DE",
+            "Section Name": "Delaware",
+            "DXCC Entity Code": "291"
+          },
+          "EB": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "EB",
+            "Section Name": "East Bay",
+            "DXCC Entity Code": "291"
+          },
+          "EMA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "EMA",
+            "Section Name": "Eastern Massachusetts",
+            "DXCC Entity Code": "291"
+          },
+          "ENY": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ENY",
+            "Section Name": "Eastern New York",
+            "DXCC Entity Code": "291"
+          },
+          "EPA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "EPA",
+            "Section Name": "Eastern Pennsylvania",
+            "DXCC Entity Code": "291"
+          },
+          "EWA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "EWA",
+            "Section Name": "Eastern Washington",
+            "DXCC Entity Code": "291"
+          },
+          "GA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "GA",
+            "Section Name": "Georgia",
+            "DXCC Entity Code": "291"
+          },
+          "GH": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "GH",
+            "Section Name": "Golden Horseshoe",
+            "DXCC Entity Code": "1",
+            "From Date": "2023-01-01T00:00:00Z"
+          },
+          "GTA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "GTA",
+            "Section Name": "Greater Toronto Area",
+            "DXCC Entity Code": "1",
+            "From Date": "2012-09-01T00:00:00Z",
+            "Deleted Date": "2023-01-01T00:00:00Z",
+            "Comments": "replaced by GH"
+          },
+          "ID": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ID",
+            "Section Name": "Idaho",
+            "DXCC Entity Code": "291"
+          },
+          "IL": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "IL",
+            "Section Name": "Illinois",
+            "DXCC Entity Code": "291"
+          },
+          "IN": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "IN",
+            "Section Name": "Indiana",
+            "DXCC Entity Code": "291"
+          },
+          "IA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "IA",
+            "Section Name": "Iowa",
+            "DXCC Entity Code": "291"
+          },
+          "KS": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "KS",
+            "Section Name": "Kansas",
+            "DXCC Entity Code": "291"
+          },
+          "KY": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "KY",
+            "Section Name": "Kentucky",
+            "DXCC Entity Code": "291"
+          },
+          "LAX": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "LAX",
+            "Section Name": "Los Angeles",
+            "DXCC Entity Code": "291"
+          },
+          "LA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "LA",
+            "Section Name": "Louisiana",
+            "DXCC Entity Code": "291"
+          },
+          "ME": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ME",
+            "Section Name": "Maine",
+            "DXCC Entity Code": "291"
+          },
+          "MB": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MB",
+            "Section Name": "Manitoba",
+            "DXCC Entity Code": "1"
+          },
+          "MAR": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MAR",
+            "Section Name": "Maritime",
+            "DXCC Entity Code": "1",
+            "Deleted Date": "2023-01-01T00:00:00Z",
+            "Comments": "replaced by NB and NS"
+          },
+          "MDC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MDC",
+            "Section Name": "Maryland-DC",
+            "DXCC Entity Code": "291"
+          },
+          "MI": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MI",
+            "Section Name": "Michigan",
+            "DXCC Entity Code": "291"
+          },
+          "MN": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MN",
+            "Section Name": "Minnesota",
+            "DXCC Entity Code": "291"
+          },
+          "MS": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MS",
+            "Section Name": "Mississippi",
+            "DXCC Entity Code": "291"
+          },
+          "MO": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MO",
+            "Section Name": "Missouri",
+            "DXCC Entity Code": "291"
+          },
+          "MT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "MT",
+            "Section Name": "Montana",
+            "DXCC Entity Code": "291"
+          },
+          "NE": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NE",
+            "Section Name": "Nebraska",
+            "DXCC Entity Code": "291"
+          },
+          "NV": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NV",
+            "Section Name": "Nevada",
+            "DXCC Entity Code": "291"
+          },
+          "NB": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NB",
+            "Section Name": "New Brunswick",
+            "DXCC Entity Code": "1",
+            "From Date": "2023-01-01T00:00:00Z"
+          },
+          "NH": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NH",
+            "Section Name": "New Hampshire",
+            "DXCC Entity Code": "291"
+          },
+          "NM": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NM",
+            "Section Name": "New Mexico",
+            "DXCC Entity Code": "291"
+          },
+          "NLI": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NLI",
+            "Section Name": "New York City-Long Island",
+            "DXCC Entity Code": "291"
+          },
+          "NL": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NL",
+            "Section Name": "Newfoundland/Labrador",
+            "DXCC Entity Code": "1"
+          },
+          "NC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NC",
+            "Section Name": "North Carolina",
+            "DXCC Entity Code": "291"
+          },
+          "ND": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ND",
+            "Section Name": "North Dakota",
+            "DXCC Entity Code": "291"
+          },
+          "NTX": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NTX",
+            "Section Name": "North Texas",
+            "DXCC Entity Code": "291"
+          },
+          "NFL": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NFL",
+            "Section Name": "Northern Florida",
+            "DXCC Entity Code": "291"
+          },
+          "NNJ": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NNJ",
+            "Section Name": "Northern New Jersey",
+            "DXCC Entity Code": "291"
+          },
+          "NNY": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NNY",
+            "Section Name": "Northern New York",
+            "DXCC Entity Code": "291"
+          },
+          "NT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NT",
+            "Section Name": "Northwest Territories/Yukon/Nunavut",
+            "DXCC Entity Code": "1",
+            "From Date": "2003-11-01T00:00:00Z",
+            "Deleted Date": "2023-01-01T00:00:00Z",
+            "Comments": "replaced by TER"
+          },
+          "NWT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NWT",
+            "Section Name": "Northwest Territories/Yukon/Nunavut",
+            "DXCC Entity Code": "1",
+            "Deleted Date": "2003-11-01T00:00:00Z",
+            "Comments": "replaced by NT"
+          },
+          "NS": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "NS",
+            "Section Name": "Nova Scotia",
+            "DXCC Entity Code": "1",
+            "From Date": "2023-01-01T00:00:00Z"
+          },
+          "OH": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "OH",
+            "Section Name": "Ohio",
+            "DXCC Entity Code": "291"
+          },
+          "OK": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "OK",
+            "Section Name": "Oklahoma",
+            "DXCC Entity Code": "291"
+          },
+          "ON": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ON",
+            "Section Name": "Ontario",
+            "DXCC Entity Code": "1",
+            "Deleted Date": "2012-09-01T00:00:00Z",
+            "Comments": "replaced by GTA, ONE, ONN, and ONS"
+          },
+          "ONE": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ONE",
+            "Section Name": "Ontario East",
+            "DXCC Entity Code": "1",
+            "From Date": "2012-09-01T00:00:00Z"
+          },
+          "ONN": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ONN",
+            "Section Name": "Ontario North",
+            "DXCC Entity Code": "1",
+            "From Date": "2012-09-01T00:00:00Z"
+          },
+          "ONS": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ONS",
+            "Section Name": "Ontario South",
+            "DXCC Entity Code": "1",
+            "From Date": "2012-09-01T00:00:00Z"
+          },
+          "ORG": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "ORG",
+            "Section Name": "Orange",
+            "DXCC Entity Code": "291"
+          },
+          "OR": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "OR",
+            "Section Name": "Oregon",
+            "DXCC Entity Code": "291"
+          },
+          "PAC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "PAC",
+            "Section Name": "Pacific",
+            "DXCC Entity Code": "9,20,103,110,123,138,166,174,197,297,515"
+          },
+          "PE": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "PE",
+            "Section Name": "Prince Edward Island",
+            "DXCC Entity Code": "1",
+            "From Date": "2020-04-01T00:00:00Z"
+          },
+          "PR": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "PR",
+            "Section Name": "Puerto Rico",
+            "DXCC Entity Code": "43,202"
+          },
+          "QC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "QC",
+            "Section Name": "Quebec",
+            "DXCC Entity Code": "1"
+          },
+          "RI": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "RI",
+            "Section Name": "Rhode Island",
+            "DXCC Entity Code": "291"
+          },
+          "SV": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SV",
+            "Section Name": "Sacramento Valley",
+            "DXCC Entity Code": "291"
+          },
+          "SDG": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SDG",
+            "Section Name": "San Diego",
+            "DXCC Entity Code": "291"
+          },
+          "SF": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SF",
+            "Section Name": "San Francisco",
+            "DXCC Entity Code": "291"
+          },
+          "SJV": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SJV",
+            "Section Name": "San Joaquin Valley",
+            "DXCC Entity Code": "291"
+          },
+          "SB": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SB",
+            "Section Name": "Santa Barbara",
+            "DXCC Entity Code": "291"
+          },
+          "SCV": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SCV",
+            "Section Name": "Santa Clara Valley",
+            "DXCC Entity Code": "291"
+          },
+          "SK": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SK",
+            "Section Name": "Saskatchewan",
+            "DXCC Entity Code": "1"
+          },
+          "SC": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SC",
+            "Section Name": "South Carolina",
+            "DXCC Entity Code": "291"
+          },
+          "SD": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SD",
+            "Section Name": "South Dakota",
+            "DXCC Entity Code": "291"
+          },
+          "STX": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "STX",
+            "Section Name": "South Texas",
+            "DXCC Entity Code": "291"
+          },
+          "SFL": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SFL",
+            "Section Name": "Southern Florida",
+            "DXCC Entity Code": "291"
+          },
+          "SNJ": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "SNJ",
+            "Section Name": "Southern New Jersey",
+            "DXCC Entity Code": "291"
+          },
+          "TN": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "TN",
+            "Section Name": "Tennessee",
+            "DXCC Entity Code": "291"
+          },
+          "TER": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "TER",
+            "Section Name": "Territories",
+            "DXCC Entity Code": "1",
+            "From Date": "2023-01-01T00:00:00Z"
+          },
+          "VI": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "VI",
+            "Section Name": "US Virgin Islands",
+            "DXCC Entity Code": "105,182,285"
+          },
+          "UT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "UT",
+            "Section Name": "Utah",
+            "DXCC Entity Code": "291"
+          },
+          "VT": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "VT",
+            "Section Name": "Vermont",
+            "DXCC Entity Code": "291"
+          },
+          "VA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "VA",
+            "Section Name": "Virginia",
+            "DXCC Entity Code": "291"
+          },
+          "WCF": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WCF",
+            "Section Name": "West Central Florida",
+            "DXCC Entity Code": "291"
+          },
+          "WTX": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WTX",
+            "Section Name": "West Texas",
+            "DXCC Entity Code": "291"
+          },
+          "WV": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WV",
+            "Section Name": "West Virginia",
+            "DXCC Entity Code": "291"
+          },
+          "WMA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WMA",
+            "Section Name": "Western Massachusetts",
+            "DXCC Entity Code": "291"
+          },
+          "WNY": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WNY",
+            "Section Name": "Western New York",
+            "DXCC Entity Code": "291"
+          },
+          "WPA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WPA",
+            "Section Name": "Western Pennsylvania",
+            "DXCC Entity Code": "291"
+          },
+          "WWA": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WWA",
+            "Section Name": "Western Washington",
+            "DXCC Entity Code": "291"
+          },
+          "WI": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WI",
+            "Section Name": "Wisconsin",
+            "DXCC Entity Code": "291"
+          },
+          "WY": {
+            "Enumeration Name": "ARRL_Section",
+            "Abbreviation": "WY",
+            "Section Name": "Wyoming",
+            "DXCC Entity Code": "291"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

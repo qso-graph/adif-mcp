@@ -1,7 +1,7 @@
 # ADIF-MCP Test Case Register
 
 **Version**: v0.7.0
-**Spec**: ADIF 3.1.6 (2025-09-15)
+**Spec**: ADIF 3.1.7 (2026-03-22)
 **Official Test Corpus**: G3ZOD `CreateADIFTestFiles` (https://adif.org.uk/316/resources)
 **Reference Validators**: K1MU Validator (web), adif-multitool (CLI, G3ZOD/flwyd)
 
@@ -15,7 +15,7 @@
 | Enum Validation — Compound (ADIF-EVC) | 3 | 3/3 PASS |
 | Enum Validation — Conditional (ADIF-EVX) | 2 | 2/2 PASS |
 | Enum Validation — Regression (ADIF-EVR) | 1 | 1/1 PASS |
-| Official ADIF 3.1.6 Test Corpus (ADIF-TCR) | 2 | 2/2 PASS |
+| Official ADIF 3.1.7 Test Corpus (ADIF-TCR) | 2 | 2/2 PASS |
 | Enum JSON Parity vs Official Export | 1 | 1/1 PASS (manual) |
 | KI7MT Forensic Hard Tests (KI7MT-FRN) | 12 | 12/12 PASS |
 | **Total** | **40** | **40/40 PASS** |
@@ -36,9 +36,9 @@ cd adif-mcp
 | Field | Value |
 |-------|-------|
 | **ID** | ADIF-ENL-001 |
-| **Name** | Enumeration count matches ADIF 3.1.6 spec |
+| **Name** | Enumeration count matches ADIF 3.1.7 spec |
 | **Tool** | `list_enumerations` |
-| **Purpose** | Verify all 25 ADIF 3.1.6 enumerations are loaded and exposed |
+| **Purpose** | Verify all 25 ADIF 3.1.7 enumerations are loaded and exposed |
 | **Input** | None |
 | **Expected** | `enumeration_count` = 25, `enumerations` dict has 25 keys |
 | **Pass Criteria** | Both assertions hold |
@@ -328,22 +328,22 @@ cd adif-mcp
 
 ---
 
-## ADIF-TCR: Official ADIF 3.1.6 Test Corpus
+## ADIF-TCR: Official ADIF 3.1.7 Test Corpus
 
 ### ADIF-TCR-001: Zero False Errors
 
 | Field | Value |
 |-------|-------|
 | **ID** | ADIF-TCR-001 |
-| **Name** | Zero false errors on official ADIF 3.1.6 test QSOs |
-| **Tool** | `validate_adif_record` (iterated over 6,191 records) |
+| **Name** | Zero false errors on official ADIF 3.1.7 test QSOs |
+| **Tool** | `validate_adif_record` (iterated over 6,197 records) |
 | **Purpose** | The official test file from adif.org.uk exercises every enumeration value in the spec. If our validator rejects any official record, **our validator is wrong**. |
-| **Source** | `https://adif.org.uk/316/resources` — `ADIF_316_test_QSOs_2025_08_27.adi` |
-| **Generator** | G3ZOD `CreateADIFTestFiles` v3.1.6.1 |
-| **Records** | 6,191 QSOs covering all 25 enumerations, all field types, user-defined fields, app-defined fields |
-| **Expected** | Zero errors across all 6,191 records |
+| **Source** | `https://adif.org.uk/317/` — `ADIF_317_test_QSOs_2026_03_22.adi` |
+| **Generator** | G3ZOD `CreateADIFTestFiles` (3.1.7 corpus) |
+| **Records** | 6,197 QSOs covering all 25 enumerations, all field types, user-defined fields, app-defined fields |
+| **Expected** | Zero errors across all 6,197 records |
 | **Pass Criteria** | `len(all_errors) == 0` |
-| **Result** | **PASS — 0 errors on 6,191 records** |
+| **Result** | **PASS — 0 errors on 6,197 records** |
 
 ### ADIF-TCR-002: Warning Categories Are Legitimate
 
@@ -351,7 +351,7 @@ cd adif-mcp
 |-------|-------|
 | **ID** | ADIF-TCR-002 |
 | **Name** | All warnings on official test file are correct behavior |
-| **Tool** | `validate_adif_record` (iterated over 6,191 records) |
+| **Tool** | `validate_adif_record` (iterated over 6,197 records) |
 | **Purpose** | Verify warnings are real (not misclassified errors). The test file deliberately uses user-defined fields and import-only values. |
 | **Expected** | ~39 warnings total, all in categories: "not in spec" (user/app-defined fields), "import-only" (deprecated enum values), or "submode" (parent mode mismatch) |
 | **Pass Criteria** | 30-50 warnings, every warning matches a known category |
@@ -363,7 +363,7 @@ cd adif-mcp
 | Field | Value |
 |-------|-------|
 | **ID** | ADIF-TCR-003 |
-| **Name** | Our 25 enum JSON files match official ADIF 3.1.6 exports exactly |
+| **Name** | Our 25 enum JSON files match official ADIF 3.1.7 exports exactly |
 | **Purpose** | Verify we ship the authoritative data, not a stale or modified copy |
 | **Method** | Compare record counts and keys between `src/adif_mcp/resources/spec/316/enumerations_*.json` and official `316/exports/json/enumerations_*.json` from the ZIP archive |
 | **Expected** | Identical record counts and identical record keys for all 25 enumerations |
@@ -395,10 +395,10 @@ cd adif-mcp
 | Field | Value |
 |-------|-------|
 | **ID** | KI7MT-FRN-002 |
-| **Name** | MODE=FT4 correctly errors per ADIF 3.1.6 spec |
+| **Name** | MODE=FT4 correctly errors per ADIF 3.1.7 spec |
 | **Tool** | `validate_adif_record` |
 | **Source** | QRZ export — 2 of 49,233 records have MODE=FT4 |
-| **Purpose** | FT4 must be `MODE=MFSK + SUBMODE=FT4` per ADIF 3.1.6 policy. Unlike FT8 (grandfathered as a MODE before the policy), FT4 was added after MODE/SUBMODE standardization. WSJT-X exports FT4 correctly; the 2 errors came from a non-compliant logger. |
+| **Purpose** | FT4 must be `MODE=MFSK + SUBMODE=FT4` per ADIF 3.1.7 policy. Unlike FT8 (grandfathered as a MODE before the policy), FT4 was added after MODE/SUBMODE standardization. WSJT-X exports FT4 correctly; the 2 errors came from a non-compliant logger. |
 | **Input** | `<MODE:3>FT4<BAND:3>20m<EOR>` |
 | **Expected** | status="invalid", error mentions MODE + FT4 |
 | **Rationale** | Ref: https://wsjtx.groups.io/g/main/topic/85236332 — FT8 was rushed through before ADIF 3 policy; FT4 follows the rules. This is a TRUE data error, not a false positive. |
@@ -438,7 +438,7 @@ cd adif-mcp
 | **Name** | QSL_SENT_VIA=M warns as import-only, not error |
 | **Tool** | `validate_adif_record` |
 | **Source** | QRZ export — pre-internet QSOs used QSL managers extensively |
-| **Purpose** | QSL_Via "M" (manager) is import-only in 3.1.6. Common in logs predating eQSL/LoTW. Must preserve these QSOs on import, not reject. |
+| **Purpose** | QSL_Via "M" (manager) is import-only in 3.1.7. Common in logs predating eQSL/LoTW. Must preserve these QSOs on import, not reject. |
 | **Input** | `<QSL_SENT_VIA:1>M<QSL_SENT:1>Y<EOR>` |
 | **Expected** | status="success", warning contains "import-only", zero errors |
 | **Result** | PASS |
@@ -574,8 +574,8 @@ FT8 was rushed into the ADIF spec as its own MODE before the MODE/SUBMODE policy
 
 | Resource | URL |
 |----------|-----|
-| ADIF 3.1.6 Specification | https://adif.org/316/ADIF_316.htm |
-| ADIF 3.1.6 Resources (ZIP) | https://adif.org.uk/316/resources |
+| ADIF 3.1.7 Specification | https://adif.org/316/ADIF_316.htm |
+| ADIF 3.1.7 Resources (ZIP) | https://adif.org.uk/316/resources |
 | ADIF Resources Page | https://adif.org/316/ADIF_316_Resources.htm |
 | CreateADIFTestFiles (G3ZOD) | https://github.com/g3zod/CreateADIFTestFiles |
 | CreateADIFExportFiles (G3ZOD) | https://github.com/g3zod/CreateADIFExportFiles |

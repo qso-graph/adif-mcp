@@ -1,0 +1,123 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:49Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Propagation_Mode": {
+        "Header": [
+          "Enumeration Name",
+          "Enumeration",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "AS": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "AS",
+            "Description": "Aircraft Scatter"
+          },
+          "AUE": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "AUE",
+            "Description": "Aurora-E"
+          },
+          "AUR": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "AUR",
+            "Description": "Aurora"
+          },
+          "BS": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "BS",
+            "Description": "Back scatter"
+          },
+          "ECH": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "ECH",
+            "Description": "EchoLink"
+          },
+          "EME": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "EME",
+            "Description": "Earth-Moon-Earth"
+          },
+          "ES": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "ES",
+            "Description": "Sporadic E"
+          },
+          "F2": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "F2",
+            "Description": "F2 Reflection"
+          },
+          "FAI": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "FAI",
+            "Description": "Field Aligned Irregularities"
+          },
+          "GWAVE": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "GWAVE",
+            "Description": "Ground Wave"
+          },
+          "INTERNET": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "INTERNET",
+            "Description": "Internet-assisted"
+          },
+          "ION": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "ION",
+            "Description": "Ionoscatter"
+          },
+          "IRL": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "IRL",
+            "Description": "IRLP"
+          },
+          "LOS": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "LOS",
+            "Description": "Line of Sight (includes transmission through obstacles such as walls)"
+          },
+          "MS": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "MS",
+            "Description": "Meteor scatter"
+          },
+          "RPT": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "RPT",
+            "Description": "Terrestrial or atmospheric repeater or transponder"
+          },
+          "RS": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "RS",
+            "Description": "Rain scatter"
+          },
+          "SAT": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "SAT",
+            "Description": "Satellite"
+          },
+          "TEP": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "TEP",
+            "Description": "Trans-equatorial"
+          },
+          "TR": {
+            "Enumeration Name": "Propagation_Mode",
+            "Enumeration": "TR",
+            "Description": "Tropospheric ducting"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

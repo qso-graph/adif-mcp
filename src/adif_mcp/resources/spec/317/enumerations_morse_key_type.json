@@ -1,0 +1,82 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:40Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Morse_Key_Type": {
+        "Header": [
+          "Enumeration Name",
+          "Abbreviation",
+          "Meaning",
+          "Characteristics",
+          "Morse Composition",
+          "Examples",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "SK": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "SK",
+            "Meaning": "Straight Key",
+            "Characteristics": "a single control which actuates a single switch.",
+            "Morse Composition": "a human makes the dits and dahs and builds characters",
+            "Examples": "Lionel J-38"
+          },
+          "SS": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "SS",
+            "Meaning": "Sideswiper",
+            "Characteristics": "a single control which actuates a SPDT (single poll, double throw) switch.",
+            "Morse Composition": "a human makes the dits and dahs and builds characters",
+            "Examples": "W1SFR Green Machine Torsion Bar Cootie"
+          },
+          "BUG": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "BUG",
+            "Meaning": "Mechanical semi-automatic keyer or Bug",
+            "Characteristics": "a control which actuates a switch as well as a control which actuates a spring and pendulum mechanism which actuates a switch. Both switches are wired in parallel.",
+            "Morse Composition": "a machine makes the dits and a human makes the dahs and builds characters.",
+            "Examples": "Vibroplex Blue Racer Deluxe"
+          },
+          "FAB": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "FAB",
+            "Meaning": "Mechanical fully-automatic keyer or Bug",
+            "Characteristics": "a control which actuates one of two separate spring and pendulum mechanisms at a time, each of which actuates a switch. Both switches are wired in parallel.",
+            "Morse Composition": "a machine makes the dits and the dahs and a human builds characters.",
+            "Examples": "GHD GN209FA fully-automatic bug"
+          },
+          "SP": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "SP",
+            "Meaning": "Single Paddle",
+            "Characteristics": "a single control which actuates two independent switches.",
+            "Morse Composition": "a machine makes the dits and the dahs and a human builds the characters.",
+            "Examples": "American Morse Mini-B"
+          },
+          "DP": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "DP",
+            "Meaning": "Dual Paddle",
+            "Characteristics": "two controls which actuate independent switches.",
+            "Morse Composition": "a machine makes the dits and the dahs and a human builds the characters.",
+            "Examples": "Begali Sculpture, VK3IL pressure paddles, M0UKD capacitive touch paddles"
+          },
+          "CPU": {
+            "Enumeration Name": "Morse_Key_Type",
+            "Abbreviation": "CPU",
+            "Meaning": "Computer Driven",
+            "Characteristics": "an electronic device performs the actuation of the switch.",
+            "Morse Composition": "a machine makes the dits and dahs to build the characters.",
+            "Examples": "N1MM\u002B Logging Software"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "spec_version": "3.1.6",
+  "spec_version": "3.1.7",
   "status": "Authoritative/Sovereign",
   "maintainer": "G7BEB",
   "build_flavor": "editable",
   "features": [
     "core QSO model",
     "geography utils",
-    "3.1.6 resources"
+    "3.1.7 resources"
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:32Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Ant_Path": {
+        "Header": [
+          "Enumeration Name",
+          "Abbreviation",
+          "Meaning",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "G": {
+            "Enumeration Name": "Ant_Path",
+            "Abbreviation": "G",
+            "Meaning": "grayline"
+          },
+          "O": {
+            "Enumeration Name": "Ant_Path",
+            "Abbreviation": "O",
+            "Meaning": "other"
+          },
+          "S": {
+            "Enumeration Name": "Ant_Path",
+            "Abbreviation": "S",
+            "Meaning": "short path"
+          },
+          "L": {
+            "Enumeration Name": "Ant_Path",
+            "Abbreviation": "L",
+            "Meaning": "long path"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

@@ -1,0 +1,2076 @@
+{
+  "Adif": {
+    "Enumerations": {
+      "Country": {
+        "Header": [
+          "Enumeration Name",
+          "Country Name",
+          "DXCC Entity Code",
+          "Import-only"
+        ],
+        "Records": {
+          "CANADA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CANADA",
+            "DXCC Entity Code": "1"
+          },
+          "ABU AIL IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ABU AIL IS.",
+            "DXCC Entity Code": "2",
+            "Import-only": "true"
+          },
+          "AFGHANISTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "AFGHANISTAN",
+            "DXCC Entity Code": "3"
+          },
+          "AGALEGA & ST. BRANDON IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "AGALEGA & ST. BRANDON IS.",
+            "DXCC Entity Code": "4"
+          },
+          "ALAND IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ALAND IS.",
+            "DXCC Entity Code": "5"
+          },
+          "ALASKA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ALASKA",
+            "DXCC Entity Code": "6"
+          },
+          "ALBANIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ALBANIA",
+            "DXCC Entity Code": "7"
+          },
+          "ALDABRA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ALDABRA",
+            "DXCC Entity Code": "8",
+            "Import-only": "true"
+          },
+          "AMERICAN SAMOA": {
+            "Enumeration Name": "Country",
+            "Country Name": "AMERICAN SAMOA",
+            "DXCC Entity Code": "9"
+          },
+          "AMSTERDAM & ST. PAUL IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "AMSTERDAM & ST. PAUL IS.",
+            "DXCC Entity Code": "10"
+          },
+          "ANDAMAN & NICOBAR IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANDAMAN & NICOBAR IS.",
+            "DXCC Entity Code": "11"
+          },
+          "ANGUILLA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANGUILLA",
+            "DXCC Entity Code": "12"
+          },
+          "ANTARCTICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANTARCTICA",
+            "DXCC Entity Code": "13"
+          },
+          "ARMENIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ARMENIA",
+            "DXCC Entity Code": "14"
+          },
+          "ASIATIC RUSSIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ASIATIC RUSSIA",
+            "DXCC Entity Code": "15"
+          },
+          "NEW ZEALAND SUBANTARCTIC ISLANDS": {
+            "Enumeration Name": "Country",
+            "Country Name": "NEW ZEALAND SUBANTARCTIC ISLANDS",
+            "DXCC Entity Code": "16"
+          },
+          "AVES I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "AVES I.",
+            "DXCC Entity Code": "17"
+          },
+          "AZERBAIJAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "AZERBAIJAN",
+            "DXCC Entity Code": "18"
+          },
+          "BAJO NUEVO": {
+            "Enumeration Name": "Country",
+            "Country Name": "BAJO NUEVO",
+            "DXCC Entity Code": "19",
+            "Import-only": "true"
+          },
+          "BAKER & HOWLAND IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "BAKER & HOWLAND IS.",
+            "DXCC Entity Code": "20"
+          },
+          "BALEARIC IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "BALEARIC IS.",
+            "DXCC Entity Code": "21"
+          },
+          "PALAU": {
+            "Enumeration Name": "Country",
+            "Country Name": "PALAU",
+            "DXCC Entity Code": "22"
+          },
+          "BLENHEIM REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "BLENHEIM REEF",
+            "DXCC Entity Code": "23",
+            "Import-only": "true"
+          },
+          "BOUVET": {
+            "Enumeration Name": "Country",
+            "Country Name": "BOUVET",
+            "DXCC Entity Code": "24"
+          },
+          "BRITISH NORTH BORNEO": {
+            "Enumeration Name": "Country",
+            "Country Name": "BRITISH NORTH BORNEO",
+            "DXCC Entity Code": "25",
+            "Import-only": "true"
+          },
+          "BRITISH SOMALILAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "BRITISH SOMALILAND",
+            "DXCC Entity Code": "26",
+            "Import-only": "true"
+          },
+          "BELARUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "BELARUS",
+            "DXCC Entity Code": "27"
+          },
+          "CANAL ZONE": {
+            "Enumeration Name": "Country",
+            "Country Name": "CANAL ZONE",
+            "DXCC Entity Code": "28",
+            "Import-only": "true"
+          },
+          "CANARY IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CANARY IS.",
+            "DXCC Entity Code": "29"
+          },
+          "CELEBE & MOLUCCA IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CELEBE & MOLUCCA IS.",
+            "DXCC Entity Code": "30",
+            "Import-only": "true"
+          },
+          "C. KIRIBATI (BRITISH PHOENIX IS.)": {
+            "Enumeration Name": "Country",
+            "Country Name": "C. KIRIBATI (BRITISH PHOENIX IS.)",
+            "DXCC Entity Code": "31"
+          },
+          "CEUTA & MELILLA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CEUTA & MELILLA",
+            "DXCC Entity Code": "32"
+          },
+          "CHAGOS IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHAGOS IS.",
+            "DXCC Entity Code": "33"
+          },
+          "CHATHAM IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHATHAM IS.",
+            "DXCC Entity Code": "34"
+          },
+          "CHRISTMAS I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHRISTMAS I.",
+            "DXCC Entity Code": "35"
+          },
+          "CLIPPERTON I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CLIPPERTON I.",
+            "DXCC Entity Code": "36"
+          },
+          "COCOS I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "COCOS I.",
+            "DXCC Entity Code": "37"
+          },
+          "COCOS (KEELING) IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "COCOS (KEELING) IS.",
+            "DXCC Entity Code": "38"
+          },
+          "COMOROS": {
+            "Enumeration Name": "Country",
+            "Country Name": "COMOROS",
+            "DXCC Entity Code": "411"
+          },
+          "CRETE": {
+            "Enumeration Name": "Country",
+            "Country Name": "CRETE",
+            "DXCC Entity Code": "40"
+          },
+          "CROZET I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CROZET I.",
+            "DXCC Entity Code": "41"
+          },
+          "DAMAO, DIU": {
+            "Enumeration Name": "Country",
+            "Country Name": "DAMAO, DIU",
+            "DXCC Entity Code": "42",
+            "Import-only": "true"
+          },
+          "DESECHEO I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "DESECHEO I.",
+            "DXCC Entity Code": "43"
+          },
+          "DESROCHES": {
+            "Enumeration Name": "Country",
+            "Country Name": "DESROCHES",
+            "DXCC Entity Code": "44",
+            "Import-only": "true"
+          },
+          "DODECANESE": {
+            "Enumeration Name": "Country",
+            "Country Name": "DODECANESE",
+            "DXCC Entity Code": "45"
+          },
+          "EAST MALAYSIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "EAST MALAYSIA",
+            "DXCC Entity Code": "46"
+          },
+          "EASTER I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "EASTER I.",
+            "DXCC Entity Code": "47"
+          },
+          "E. KIRIBATI (LINE IS.)": {
+            "Enumeration Name": "Country",
+            "Country Name": "E. KIRIBATI (LINE IS.)",
+            "DXCC Entity Code": "48"
+          },
+          "EQUATORIAL GUINEA": {
+            "Enumeration Name": "Country",
+            "Country Name": "EQUATORIAL GUINEA",
+            "DXCC Entity Code": "49"
+          },
+          "MEXICO": {
+            "Enumeration Name": "Country",
+            "Country Name": "MEXICO",
+            "DXCC Entity Code": "50"
+          },
+          "ERITREA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ERITREA",
+            "DXCC Entity Code": "51"
+          },
+          "ESTONIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ESTONIA",
+            "DXCC Entity Code": "52"
+          },
+          "ETHIOPIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ETHIOPIA",
+            "DXCC Entity Code": "53"
+          },
+          "EUROPEAN RUSSIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "EUROPEAN RUSSIA",
+            "DXCC Entity Code": "54"
+          },
+          "FARQUHAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "FARQUHAR",
+            "DXCC Entity Code": "55",
+            "Import-only": "true"
+          },
+          "FERNANDO DE NORONHA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FERNANDO DE NORONHA",
+            "DXCC Entity Code": "56"
+          },
+          "FRENCH EQUATORIAL AFRICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH EQUATORIAL AFRICA",
+            "DXCC Entity Code": "57",
+            "Import-only": "true"
+          },
+          "FRENCH INDO-CHINA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH INDO-CHINA",
+            "DXCC Entity Code": "58",
+            "Import-only": "true"
+          },
+          "FRENCH WEST AFRICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH WEST AFRICA",
+            "DXCC Entity Code": "59",
+            "Import-only": "true"
+          },
+          "BAHAMAS": {
+            "Enumeration Name": "Country",
+            "Country Name": "BAHAMAS",
+            "DXCC Entity Code": "60"
+          },
+          "FRANZ JOSEF LAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRANZ JOSEF LAND",
+            "DXCC Entity Code": "61"
+          },
+          "BARBADOS": {
+            "Enumeration Name": "Country",
+            "Country Name": "BARBADOS",
+            "DXCC Entity Code": "62"
+          },
+          "FRENCH GUIANA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH GUIANA",
+            "DXCC Entity Code": "63"
+          },
+          "BERMUDA": {
+            "Enumeration Name": "Country",
+            "Country Name": "BERMUDA",
+            "DXCC Entity Code": "64"
+          },
+          "BRITISH VIRGIN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "BRITISH VIRGIN IS.",
+            "DXCC Entity Code": "65"
+          },
+          "BELIZE": {
+            "Enumeration Name": "Country",
+            "Country Name": "BELIZE",
+            "DXCC Entity Code": "66"
+          },
+          "FRENCH INDIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH INDIA",
+            "DXCC Entity Code": "67",
+            "Import-only": "true"
+          },
+          "KUWAIT/SAUDI ARABIA NEUTRAL ZONE": {
+            "Enumeration Name": "Country",
+            "Country Name": "KUWAIT/SAUDI ARABIA NEUTRAL ZONE",
+            "DXCC Entity Code": "68",
+            "Import-only": "true"
+          },
+          "CAYMAN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CAYMAN IS.",
+            "DXCC Entity Code": "69"
+          },
+          "CUBA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CUBA",
+            "DXCC Entity Code": "70"
+          },
+          "GALAPAGOS IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "GALAPAGOS IS.",
+            "DXCC Entity Code": "71"
+          },
+          "DOMINICAN REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "DOMINICAN REPUBLIC",
+            "DXCC Entity Code": "72"
+          },
+          "EL SALVADOR": {
+            "Enumeration Name": "Country",
+            "Country Name": "EL SALVADOR",
+            "DXCC Entity Code": "74"
+          },
+          "GEORGIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GEORGIA",
+            "DXCC Entity Code": "75"
+          },
+          "GUATEMALA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUATEMALA",
+            "DXCC Entity Code": "76"
+          },
+          "GRENADA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GRENADA",
+            "DXCC Entity Code": "77"
+          },
+          "HAITI": {
+            "Enumeration Name": "Country",
+            "Country Name": "HAITI",
+            "DXCC Entity Code": "78"
+          },
+          "GUADELOUPE": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUADELOUPE",
+            "DXCC Entity Code": "79"
+          },
+          "HONDURAS": {
+            "Enumeration Name": "Country",
+            "Country Name": "HONDURAS",
+            "DXCC Entity Code": "80"
+          },
+          "GERMANY": {
+            "Enumeration Name": "Country",
+            "Country Name": "GERMANY",
+            "DXCC Entity Code": "81",
+            "Import-only": "true"
+          },
+          "JAMAICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "JAMAICA",
+            "DXCC Entity Code": "82"
+          },
+          "MARTINIQUE": {
+            "Enumeration Name": "Country",
+            "Country Name": "MARTINIQUE",
+            "DXCC Entity Code": "84"
+          },
+          "BONAIRE, CURACAO": {
+            "Enumeration Name": "Country",
+            "Country Name": "BONAIRE, CURACAO",
+            "DXCC Entity Code": "85",
+            "Import-only": "true"
+          },
+          "NICARAGUA": {
+            "Enumeration Name": "Country",
+            "Country Name": "NICARAGUA",
+            "DXCC Entity Code": "86"
+          },
+          "PANAMA": {
+            "Enumeration Name": "Country",
+            "Country Name": "PANAMA",
+            "DXCC Entity Code": "88"
+          },
+          "TURKS & CAICOS IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "TURKS & CAICOS IS.",
+            "DXCC Entity Code": "89"
+          },
+          "TRINIDAD & TOBAGO": {
+            "Enumeration Name": "Country",
+            "Country Name": "TRINIDAD & TOBAGO",
+            "DXCC Entity Code": "90"
+          },
+          "ARUBA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ARUBA",
+            "DXCC Entity Code": "91"
+          },
+          "GEYSER REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "GEYSER REEF",
+            "DXCC Entity Code": "93",
+            "Import-only": "true"
+          },
+          "ANTIGUA & BARBUDA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANTIGUA & BARBUDA",
+            "DXCC Entity Code": "94"
+          },
+          "DOMINICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "DOMINICA",
+            "DXCC Entity Code": "95"
+          },
+          "MONTSERRAT": {
+            "Enumeration Name": "Country",
+            "Country Name": "MONTSERRAT",
+            "DXCC Entity Code": "96"
+          },
+          "ST. LUCIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. LUCIA",
+            "DXCC Entity Code": "97"
+          },
+          "ST. VINCENT": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. VINCENT",
+            "DXCC Entity Code": "98"
+          },
+          "GLORIOSO IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "GLORIOSO IS.",
+            "DXCC Entity Code": "99"
+          },
+          "ARGENTINA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ARGENTINA",
+            "DXCC Entity Code": "100"
+          },
+          "GOA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GOA",
+            "DXCC Entity Code": "101",
+            "Import-only": "true"
+          },
+          "GOLD COAST, TOGOLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "GOLD COAST, TOGOLAND",
+            "DXCC Entity Code": "102",
+            "Import-only": "true"
+          },
+          "GUAM": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUAM",
+            "DXCC Entity Code": "103"
+          },
+          "BOLIVIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "BOLIVIA",
+            "DXCC Entity Code": "104"
+          },
+          "GUANTANAMO BAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUANTANAMO BAY",
+            "DXCC Entity Code": "105"
+          },
+          "GUERNSEY": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUERNSEY",
+            "DXCC Entity Code": "106"
+          },
+          "GUINEA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUINEA",
+            "DXCC Entity Code": "107"
+          },
+          "BRAZIL": {
+            "Enumeration Name": "Country",
+            "Country Name": "BRAZIL",
+            "DXCC Entity Code": "108"
+          },
+          "GUINEA-BISSAU": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUINEA-BISSAU",
+            "DXCC Entity Code": "109"
+          },
+          "HAWAII": {
+            "Enumeration Name": "Country",
+            "Country Name": "HAWAII",
+            "DXCC Entity Code": "110"
+          },
+          "HEARD I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "HEARD I.",
+            "DXCC Entity Code": "111"
+          },
+          "CHILE": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHILE",
+            "DXCC Entity Code": "112"
+          },
+          "IFNI": {
+            "Enumeration Name": "Country",
+            "Country Name": "IFNI",
+            "DXCC Entity Code": "113",
+            "Import-only": "true"
+          },
+          "ISLE OF MAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "ISLE OF MAN",
+            "DXCC Entity Code": "114"
+          },
+          "ITALIAN SOMALILAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "ITALIAN SOMALILAND",
+            "DXCC Entity Code": "115",
+            "Import-only": "true"
+          },
+          "COLOMBIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "COLOMBIA",
+            "DXCC Entity Code": "116"
+          },
+          "ITU HQ": {
+            "Enumeration Name": "Country",
+            "Country Name": "ITU HQ",
+            "DXCC Entity Code": "117"
+          },
+          "JAN MAYEN": {
+            "Enumeration Name": "Country",
+            "Country Name": "JAN MAYEN",
+            "DXCC Entity Code": "118"
+          },
+          "JAVA": {
+            "Enumeration Name": "Country",
+            "Country Name": "JAVA",
+            "DXCC Entity Code": "119",
+            "Import-only": "true"
+          },
+          "ECUADOR": {
+            "Enumeration Name": "Country",
+            "Country Name": "ECUADOR",
+            "DXCC Entity Code": "120"
+          },
+          "JERSEY": {
+            "Enumeration Name": "Country",
+            "Country Name": "JERSEY",
+            "DXCC Entity Code": "122"
+          },
+          "JOHNSTON I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "JOHNSTON I.",
+            "DXCC Entity Code": "123"
+          },
+          "JUAN DE NOVA, EUROPA": {
+            "Enumeration Name": "Country",
+            "Country Name": "JUAN DE NOVA, EUROPA",
+            "DXCC Entity Code": "124"
+          },
+          "JUAN FERNANDEZ IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "JUAN FERNANDEZ IS.",
+            "DXCC Entity Code": "125"
+          },
+          "KALININGRAD": {
+            "Enumeration Name": "Country",
+            "Country Name": "KALININGRAD",
+            "DXCC Entity Code": "126"
+          },
+          "KAMARAN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "KAMARAN IS.",
+            "DXCC Entity Code": "127",
+            "Import-only": "true"
+          },
+          "KARELO-FINNISH REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "KARELO-FINNISH REPUBLIC",
+            "DXCC Entity Code": "128",
+            "Import-only": "true"
+          },
+          "GUYANA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GUYANA",
+            "DXCC Entity Code": "129"
+          },
+          "KAZAKHSTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "KAZAKHSTAN",
+            "DXCC Entity Code": "130"
+          },
+          "KERGUELEN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "KERGUELEN IS.",
+            "DXCC Entity Code": "131"
+          },
+          "PARAGUAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "PARAGUAY",
+            "DXCC Entity Code": "132"
+          },
+          "KERMADEC IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "KERMADEC IS.",
+            "DXCC Entity Code": "133"
+          },
+          "KINGMAN REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "KINGMAN REEF",
+            "DXCC Entity Code": "134",
+            "Import-only": "true"
+          },
+          "KYRGYZSTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "KYRGYZSTAN",
+            "DXCC Entity Code": "135"
+          },
+          "PERU": {
+            "Enumeration Name": "Country",
+            "Country Name": "PERU",
+            "DXCC Entity Code": "136"
+          },
+          "REPUBLIC OF KOREA": {
+            "Enumeration Name": "Country",
+            "Country Name": "REPUBLIC OF KOREA",
+            "DXCC Entity Code": "137"
+          },
+          "KURE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "KURE I.",
+            "DXCC Entity Code": "138"
+          },
+          "KURIA MURIA I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "KURIA MURIA I.",
+            "DXCC Entity Code": "139",
+            "Import-only": "true"
+          },
+          "SURINAME": {
+            "Enumeration Name": "Country",
+            "Country Name": "SURINAME",
+            "DXCC Entity Code": "140"
+          },
+          "FALKLAND IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "FALKLAND IS.",
+            "DXCC Entity Code": "141"
+          },
+          "LAKSHADWEEP IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "LAKSHADWEEP IS.",
+            "DXCC Entity Code": "142"
+          },
+          "LAOS": {
+            "Enumeration Name": "Country",
+            "Country Name": "LAOS",
+            "DXCC Entity Code": "143"
+          },
+          "URUGUAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "URUGUAY",
+            "DXCC Entity Code": "144"
+          },
+          "LATVIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "LATVIA",
+            "DXCC Entity Code": "145"
+          },
+          "LITHUANIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "LITHUANIA",
+            "DXCC Entity Code": "146"
+          },
+          "LORD HOWE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "LORD HOWE I.",
+            "DXCC Entity Code": "147"
+          },
+          "VENEZUELA": {
+            "Enumeration Name": "Country",
+            "Country Name": "VENEZUELA",
+            "DXCC Entity Code": "148"
+          },
+          "AZORES": {
+            "Enumeration Name": "Country",
+            "Country Name": "AZORES",
+            "DXCC Entity Code": "149"
+          },
+          "AUSTRALIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "AUSTRALIA",
+            "DXCC Entity Code": "150"
+          },
+          "MALYJ VYSOTSKIJ I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALYJ VYSOTSKIJ I.",
+            "DXCC Entity Code": "151",
+            "Import-only": "true"
+          },
+          "MACAO": {
+            "Enumeration Name": "Country",
+            "Country Name": "MACAO",
+            "DXCC Entity Code": "152"
+          },
+          "MACQUARIE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MACQUARIE I.",
+            "DXCC Entity Code": "153"
+          },
+          "YEMEN ARAB REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "YEMEN ARAB REPUBLIC",
+            "DXCC Entity Code": "154",
+            "Import-only": "true"
+          },
+          "MALAYA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALAYA",
+            "DXCC Entity Code": "155",
+            "Import-only": "true"
+          },
+          "NAURU": {
+            "Enumeration Name": "Country",
+            "Country Name": "NAURU",
+            "DXCC Entity Code": "157"
+          },
+          "VANUATU": {
+            "Enumeration Name": "Country",
+            "Country Name": "VANUATU",
+            "DXCC Entity Code": "158"
+          },
+          "MALDIVES": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALDIVES",
+            "DXCC Entity Code": "159"
+          },
+          "TONGA": {
+            "Enumeration Name": "Country",
+            "Country Name": "TONGA",
+            "DXCC Entity Code": "160"
+          },
+          "MALPELO I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALPELO I.",
+            "DXCC Entity Code": "161"
+          },
+          "NEW CALEDONIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "NEW CALEDONIA",
+            "DXCC Entity Code": "162"
+          },
+          "PAPUA NEW GUINEA": {
+            "Enumeration Name": "Country",
+            "Country Name": "PAPUA NEW GUINEA",
+            "DXCC Entity Code": "163"
+          },
+          "MANCHURIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MANCHURIA",
+            "DXCC Entity Code": "164",
+            "Import-only": "true"
+          },
+          "MAURITIUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "MAURITIUS",
+            "DXCC Entity Code": "165"
+          },
+          "MARIANA IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MARIANA IS.",
+            "DXCC Entity Code": "166"
+          },
+          "MARKET REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "MARKET REEF",
+            "DXCC Entity Code": "167"
+          },
+          "MARSHALL IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MARSHALL IS.",
+            "DXCC Entity Code": "168"
+          },
+          "MAYOTTE": {
+            "Enumeration Name": "Country",
+            "Country Name": "MAYOTTE",
+            "DXCC Entity Code": "169"
+          },
+          "NEW ZEALAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "NEW ZEALAND",
+            "DXCC Entity Code": "170"
+          },
+          "MELLISH REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "MELLISH REEF",
+            "DXCC Entity Code": "171"
+          },
+          "PITCAIRN I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PITCAIRN I.",
+            "DXCC Entity Code": "172"
+          },
+          "MICRONESIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MICRONESIA",
+            "DXCC Entity Code": "173"
+          },
+          "MIDWAY I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MIDWAY I.",
+            "DXCC Entity Code": "174"
+          },
+          "FRENCH POLYNESIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRENCH POLYNESIA",
+            "DXCC Entity Code": "175"
+          },
+          "FIJI": {
+            "Enumeration Name": "Country",
+            "Country Name": "FIJI",
+            "DXCC Entity Code": "176"
+          },
+          "MINAMI TORISHIMA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MINAMI TORISHIMA",
+            "DXCC Entity Code": "177"
+          },
+          "MINERVA REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "MINERVA REEF",
+            "DXCC Entity Code": "178",
+            "Import-only": "true"
+          },
+          "MOLDOVA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MOLDOVA",
+            "DXCC Entity Code": "179"
+          },
+          "MOUNT ATHOS": {
+            "Enumeration Name": "Country",
+            "Country Name": "MOUNT ATHOS",
+            "DXCC Entity Code": "180"
+          },
+          "MOZAMBIQUE": {
+            "Enumeration Name": "Country",
+            "Country Name": "MOZAMBIQUE",
+            "DXCC Entity Code": "181"
+          },
+          "NAVASSA I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "NAVASSA I.",
+            "DXCC Entity Code": "182"
+          },
+          "NETHERLANDS BORNEO": {
+            "Enumeration Name": "Country",
+            "Country Name": "NETHERLANDS BORNEO",
+            "DXCC Entity Code": "183",
+            "Import-only": "true"
+          },
+          "NETHERLANDS NEW GUINEA": {
+            "Enumeration Name": "Country",
+            "Country Name": "NETHERLANDS NEW GUINEA",
+            "DXCC Entity Code": "184",
+            "Import-only": "true"
+          },
+          "SOLOMON IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOLOMON IS.",
+            "DXCC Entity Code": "185"
+          },
+          "NEWFOUNDLAND, LABRADOR": {
+            "Enumeration Name": "Country",
+            "Country Name": "NEWFOUNDLAND, LABRADOR",
+            "DXCC Entity Code": "186",
+            "Import-only": "true"
+          },
+          "NIGER": {
+            "Enumeration Name": "Country",
+            "Country Name": "NIGER",
+            "DXCC Entity Code": "187"
+          },
+          "NIUE": {
+            "Enumeration Name": "Country",
+            "Country Name": "NIUE",
+            "DXCC Entity Code": "188"
+          },
+          "NORFOLK I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "NORFOLK I.",
+            "DXCC Entity Code": "189"
+          },
+          "SAMOA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAMOA",
+            "DXCC Entity Code": "190"
+          },
+          "NORTH COOK IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "NORTH COOK IS.",
+            "DXCC Entity Code": "191"
+          },
+          "OGASAWARA": {
+            "Enumeration Name": "Country",
+            "Country Name": "OGASAWARA",
+            "DXCC Entity Code": "192"
+          },
+          "OKINAWA (RYUKYU IS.)": {
+            "Enumeration Name": "Country",
+            "Country Name": "OKINAWA (RYUKYU IS.)",
+            "DXCC Entity Code": "193",
+            "Import-only": "true"
+          },
+          "OKINO TORI-SHIMA": {
+            "Enumeration Name": "Country",
+            "Country Name": "OKINO TORI-SHIMA",
+            "DXCC Entity Code": "194",
+            "Import-only": "true"
+          },
+          "ANNOBON I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANNOBON I.",
+            "DXCC Entity Code": "195"
+          },
+          "PALESTINE": {
+            "Enumeration Name": "Country",
+            "Country Name": "PALESTINE",
+            "DXCC Entity Code": "510"
+          },
+          "PALMYRA & JARVIS IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PALMYRA & JARVIS IS.",
+            "DXCC Entity Code": "197"
+          },
+          "PAPUA TERRITORY": {
+            "Enumeration Name": "Country",
+            "Country Name": "PAPUA TERRITORY",
+            "DXCC Entity Code": "198",
+            "Import-only": "true"
+          },
+          "PETER 1 I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PETER 1 I.",
+            "DXCC Entity Code": "199"
+          },
+          "PORTUGUESE TIMOR": {
+            "Enumeration Name": "Country",
+            "Country Name": "PORTUGUESE TIMOR",
+            "DXCC Entity Code": "200",
+            "Import-only": "true"
+          },
+          "PRINCE EDWARD & MARION IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PRINCE EDWARD & MARION IS.",
+            "DXCC Entity Code": "201"
+          },
+          "PUERTO RICO": {
+            "Enumeration Name": "Country",
+            "Country Name": "PUERTO RICO",
+            "DXCC Entity Code": "202"
+          },
+          "ANDORRA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANDORRA",
+            "DXCC Entity Code": "203"
+          },
+          "REVILLAGIGEDO": {
+            "Enumeration Name": "Country",
+            "Country Name": "REVILLAGIGEDO",
+            "DXCC Entity Code": "204"
+          },
+          "ASCENSION I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ASCENSION I.",
+            "DXCC Entity Code": "205"
+          },
+          "AUSTRIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "AUSTRIA",
+            "DXCC Entity Code": "206"
+          },
+          "RODRIGUES I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "RODRIGUES I.",
+            "DXCC Entity Code": "207"
+          },
+          "RUANDA-URUNDI": {
+            "Enumeration Name": "Country",
+            "Country Name": "RUANDA-URUNDI",
+            "DXCC Entity Code": "208",
+            "Import-only": "true"
+          },
+          "BELGIUM": {
+            "Enumeration Name": "Country",
+            "Country Name": "BELGIUM",
+            "DXCC Entity Code": "209"
+          },
+          "SAAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAAR",
+            "DXCC Entity Code": "210",
+            "Import-only": "true"
+          },
+          "SABLE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SABLE I.",
+            "DXCC Entity Code": "211"
+          },
+          "BULGARIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "BULGARIA",
+            "DXCC Entity Code": "212"
+          },
+          "SAINT MARTIN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAINT MARTIN",
+            "DXCC Entity Code": "213"
+          },
+          "CORSICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CORSICA",
+            "DXCC Entity Code": "214"
+          },
+          "CYPRUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "CYPRUS",
+            "DXCC Entity Code": "215"
+          },
+          "SAN ANDRES & PROVIDENCIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAN ANDRES & PROVIDENCIA",
+            "DXCC Entity Code": "216"
+          },
+          "SAN FELIX & SAN AMBROSIO": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAN FELIX & SAN AMBROSIO",
+            "DXCC Entity Code": "217"
+          },
+          "CZECHOSLOVAKIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CZECHOSLOVAKIA",
+            "DXCC Entity Code": "218",
+            "Import-only": "true"
+          },
+          "SAO TOME & PRINCIPE": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAO TOME & PRINCIPE",
+            "DXCC Entity Code": "219"
+          },
+          "SARAWAK": {
+            "Enumeration Name": "Country",
+            "Country Name": "SARAWAK",
+            "DXCC Entity Code": "220",
+            "Import-only": "true"
+          },
+          "DENMARK": {
+            "Enumeration Name": "Country",
+            "Country Name": "DENMARK",
+            "DXCC Entity Code": "221"
+          },
+          "FAROE IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "FAROE IS.",
+            "DXCC Entity Code": "222"
+          },
+          "ENGLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "ENGLAND",
+            "DXCC Entity Code": "223"
+          },
+          "FINLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "FINLAND",
+            "DXCC Entity Code": "224"
+          },
+          "SARDINIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SARDINIA",
+            "DXCC Entity Code": "225"
+          },
+          "SAUDI ARABIA/IRAQ NEUTRAL ZONE": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAUDI ARABIA/IRAQ NEUTRAL ZONE",
+            "DXCC Entity Code": "226",
+            "Import-only": "true"
+          },
+          "FRANCE": {
+            "Enumeration Name": "Country",
+            "Country Name": "FRANCE",
+            "DXCC Entity Code": "227"
+          },
+          "SERRANA BANK & RONCADOR CAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "SERRANA BANK & RONCADOR CAY",
+            "DXCC Entity Code": "228",
+            "Import-only": "true"
+          },
+          "GERMAN DEMOCRATIC REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "GERMAN DEMOCRATIC REPUBLIC",
+            "DXCC Entity Code": "229",
+            "Import-only": "true"
+          },
+          "FEDERAL REPUBLIC OF GERMANY": {
+            "Enumeration Name": "Country",
+            "Country Name": "FEDERAL REPUBLIC OF GERMANY",
+            "DXCC Entity Code": "230"
+          },
+          "SIKKIM": {
+            "Enumeration Name": "Country",
+            "Country Name": "SIKKIM",
+            "DXCC Entity Code": "231",
+            "Import-only": "true"
+          },
+          "SOMALIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOMALIA",
+            "DXCC Entity Code": "232"
+          },
+          "GIBRALTAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "GIBRALTAR",
+            "DXCC Entity Code": "233"
+          },
+          "SOUTH COOK IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH COOK IS.",
+            "DXCC Entity Code": "234"
+          },
+          "SOUTH GEORGIA I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH GEORGIA I.",
+            "DXCC Entity Code": "235"
+          },
+          "GREECE": {
+            "Enumeration Name": "Country",
+            "Country Name": "GREECE",
+            "DXCC Entity Code": "236"
+          },
+          "GREENLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "GREENLAND",
+            "DXCC Entity Code": "237"
+          },
+          "SOUTH ORKNEY IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH ORKNEY IS.",
+            "DXCC Entity Code": "238"
+          },
+          "HUNGARY": {
+            "Enumeration Name": "Country",
+            "Country Name": "HUNGARY",
+            "DXCC Entity Code": "239"
+          },
+          "SOUTH SANDWICH IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH SANDWICH IS.",
+            "DXCC Entity Code": "240"
+          },
+          "SOUTH SHETLAND IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH SHETLAND IS.",
+            "DXCC Entity Code": "241"
+          },
+          "ICELAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "ICELAND",
+            "DXCC Entity Code": "242"
+          },
+          "PEOPLE'S DEMOCRATIC REP. OF YEMEN": {
+            "Enumeration Name": "Country",
+            "Country Name": "PEOPLE'S DEMOCRATIC REP. OF YEMEN",
+            "DXCC Entity Code": "243",
+            "Import-only": "true"
+          },
+          "SOUTHERN SUDAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTHERN SUDAN",
+            "DXCC Entity Code": "244",
+            "Import-only": "true"
+          },
+          "IRELAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "IRELAND",
+            "DXCC Entity Code": "245"
+          },
+          "SOVEREIGN MILITARY ORDER OF MALTA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOVEREIGN MILITARY ORDER OF MALTA",
+            "DXCC Entity Code": "246"
+          },
+          "SPRATLY IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SPRATLY IS.",
+            "DXCC Entity Code": "247"
+          },
+          "ITALY": {
+            "Enumeration Name": "Country",
+            "Country Name": "ITALY",
+            "DXCC Entity Code": "248"
+          },
+          "ST. KITTS & NEVIS": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. KITTS & NEVIS",
+            "DXCC Entity Code": "249"
+          },
+          "ST. HELENA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. HELENA",
+            "DXCC Entity Code": "250"
+          },
+          "LIECHTENSTEIN": {
+            "Enumeration Name": "Country",
+            "Country Name": "LIECHTENSTEIN",
+            "DXCC Entity Code": "251"
+          },
+          "ST. PAUL I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. PAUL I.",
+            "DXCC Entity Code": "252"
+          },
+          "ST. PETER & ST. PAUL ROCKS": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. PETER & ST. PAUL ROCKS",
+            "DXCC Entity Code": "253"
+          },
+          "LUXEMBOURG": {
+            "Enumeration Name": "Country",
+            "Country Name": "LUXEMBOURG",
+            "DXCC Entity Code": "254"
+          },
+          "ST. MAARTEN, SABA, ST. EUSTATIUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. MAARTEN, SABA, ST. EUSTATIUS",
+            "DXCC Entity Code": "255",
+            "Import-only": "true"
+          },
+          "MADEIRA IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MADEIRA IS.",
+            "DXCC Entity Code": "256"
+          },
+          "MALTA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALTA",
+            "DXCC Entity Code": "257"
+          },
+          "SUMATRA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SUMATRA",
+            "DXCC Entity Code": "258",
+            "Import-only": "true"
+          },
+          "SVALBARD": {
+            "Enumeration Name": "Country",
+            "Country Name": "SVALBARD",
+            "DXCC Entity Code": "259"
+          },
+          "MONACO": {
+            "Enumeration Name": "Country",
+            "Country Name": "MONACO",
+            "DXCC Entity Code": "260"
+          },
+          "SWAN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SWAN IS.",
+            "DXCC Entity Code": "261",
+            "Import-only": "true"
+          },
+          "TAJIKISTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "TAJIKISTAN",
+            "DXCC Entity Code": "262"
+          },
+          "NETHERLANDS": {
+            "Enumeration Name": "Country",
+            "Country Name": "NETHERLANDS",
+            "DXCC Entity Code": "263"
+          },
+          "TANGIER": {
+            "Enumeration Name": "Country",
+            "Country Name": "TANGIER",
+            "DXCC Entity Code": "264",
+            "Import-only": "true"
+          },
+          "NORTHERN IRELAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "NORTHERN IRELAND",
+            "DXCC Entity Code": "265"
+          },
+          "NORWAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "NORWAY",
+            "DXCC Entity Code": "266"
+          },
+          "TERRITORY OF NEW GUINEA": {
+            "Enumeration Name": "Country",
+            "Country Name": "TERRITORY OF NEW GUINEA",
+            "DXCC Entity Code": "267",
+            "Import-only": "true"
+          },
+          "TIBET": {
+            "Enumeration Name": "Country",
+            "Country Name": "TIBET",
+            "DXCC Entity Code": "268",
+            "Import-only": "true"
+          },
+          "POLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "POLAND",
+            "DXCC Entity Code": "269"
+          },
+          "TOKELAU IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "TOKELAU IS.",
+            "DXCC Entity Code": "270"
+          },
+          "TRIESTE": {
+            "Enumeration Name": "Country",
+            "Country Name": "TRIESTE",
+            "DXCC Entity Code": "271",
+            "Import-only": "true"
+          },
+          "PORTUGAL": {
+            "Enumeration Name": "Country",
+            "Country Name": "PORTUGAL",
+            "DXCC Entity Code": "272"
+          },
+          "TRINDADE & MARTIM VAZ IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "TRINDADE & MARTIM VAZ IS.",
+            "DXCC Entity Code": "273"
+          },
+          "TRISTAN DA CUNHA & GOUGH I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "TRISTAN DA CUNHA & GOUGH I.",
+            "DXCC Entity Code": "274"
+          },
+          "ROMANIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ROMANIA",
+            "DXCC Entity Code": "275"
+          },
+          "TROMELIN I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "TROMELIN I.",
+            "DXCC Entity Code": "276"
+          },
+          "ST. PIERRE & MIQUELON": {
+            "Enumeration Name": "Country",
+            "Country Name": "ST. PIERRE & MIQUELON",
+            "DXCC Entity Code": "277"
+          },
+          "SAN MARINO": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAN MARINO",
+            "DXCC Entity Code": "278"
+          },
+          "SCOTLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "SCOTLAND",
+            "DXCC Entity Code": "279"
+          },
+          "TURKMENISTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "TURKMENISTAN",
+            "DXCC Entity Code": "280"
+          },
+          "SPAIN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SPAIN",
+            "DXCC Entity Code": "281"
+          },
+          "TUVALU": {
+            "Enumeration Name": "Country",
+            "Country Name": "TUVALU",
+            "DXCC Entity Code": "282"
+          },
+          "UK SOVEREIGN BASE AREAS ON CYPRUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "UK SOVEREIGN BASE AREAS ON CYPRUS",
+            "DXCC Entity Code": "283"
+          },
+          "SWEDEN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SWEDEN",
+            "DXCC Entity Code": "284"
+          },
+          "VIRGIN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "VIRGIN IS.",
+            "DXCC Entity Code": "285"
+          },
+          "UGANDA": {
+            "Enumeration Name": "Country",
+            "Country Name": "UGANDA",
+            "DXCC Entity Code": "286"
+          },
+          "SWITZERLAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "SWITZERLAND",
+            "DXCC Entity Code": "287"
+          },
+          "UKRAINE": {
+            "Enumeration Name": "Country",
+            "Country Name": "UKRAINE",
+            "DXCC Entity Code": "288"
+          },
+          "UNITED NATIONS HQ": {
+            "Enumeration Name": "Country",
+            "Country Name": "UNITED NATIONS HQ",
+            "DXCC Entity Code": "289"
+          },
+          "UNITED STATES OF AMERICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "UNITED STATES OF AMERICA",
+            "DXCC Entity Code": "291"
+          },
+          "UZBEKISTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "UZBEKISTAN",
+            "DXCC Entity Code": "292"
+          },
+          "VIET NAM": {
+            "Enumeration Name": "Country",
+            "Country Name": "VIET NAM",
+            "DXCC Entity Code": "293"
+          },
+          "WALES": {
+            "Enumeration Name": "Country",
+            "Country Name": "WALES",
+            "DXCC Entity Code": "294"
+          },
+          "VATICAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "VATICAN",
+            "DXCC Entity Code": "295"
+          },
+          "SERBIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SERBIA",
+            "DXCC Entity Code": "296"
+          },
+          "WAKE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "WAKE I.",
+            "DXCC Entity Code": "297"
+          },
+          "WALLIS & FUTUNA IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "WALLIS & FUTUNA IS.",
+            "DXCC Entity Code": "298"
+          },
+          "WEST MALAYSIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "WEST MALAYSIA",
+            "DXCC Entity Code": "299"
+          },
+          "W. KIRIBATI (GILBERT IS. )": {
+            "Enumeration Name": "Country",
+            "Country Name": "W. KIRIBATI (GILBERT IS. )",
+            "DXCC Entity Code": "301"
+          },
+          "WESTERN SAHARA": {
+            "Enumeration Name": "Country",
+            "Country Name": "WESTERN SAHARA",
+            "DXCC Entity Code": "302"
+          },
+          "WILLIS I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "WILLIS I.",
+            "DXCC Entity Code": "303"
+          },
+          "BAHRAIN": {
+            "Enumeration Name": "Country",
+            "Country Name": "BAHRAIN",
+            "DXCC Entity Code": "304"
+          },
+          "BANGLADESH": {
+            "Enumeration Name": "Country",
+            "Country Name": "BANGLADESH",
+            "DXCC Entity Code": "305"
+          },
+          "BHUTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "BHUTAN",
+            "DXCC Entity Code": "306"
+          },
+          "ZANZIBAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "ZANZIBAR",
+            "DXCC Entity Code": "307",
+            "Import-only": "true"
+          },
+          "COSTA RICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "COSTA RICA",
+            "DXCC Entity Code": "308"
+          },
+          "MYANMAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "MYANMAR",
+            "DXCC Entity Code": "309"
+          },
+          "CAMBODIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CAMBODIA",
+            "DXCC Entity Code": "312"
+          },
+          "SRI LANKA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SRI LANKA",
+            "DXCC Entity Code": "315"
+          },
+          "CHINA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHINA",
+            "DXCC Entity Code": "318"
+          },
+          "HONG KONG": {
+            "Enumeration Name": "Country",
+            "Country Name": "HONG KONG",
+            "DXCC Entity Code": "321"
+          },
+          "INDIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "INDIA",
+            "DXCC Entity Code": "324"
+          },
+          "INDONESIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "INDONESIA",
+            "DXCC Entity Code": "327"
+          },
+          "IRAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "IRAN",
+            "DXCC Entity Code": "330"
+          },
+          "IRAQ": {
+            "Enumeration Name": "Country",
+            "Country Name": "IRAQ",
+            "DXCC Entity Code": "333"
+          },
+          "ISRAEL": {
+            "Enumeration Name": "Country",
+            "Country Name": "ISRAEL",
+            "DXCC Entity Code": "336"
+          },
+          "JAPAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "JAPAN",
+            "DXCC Entity Code": "339"
+          },
+          "JORDAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "JORDAN",
+            "DXCC Entity Code": "342"
+          },
+          "DEMOCRATIC PEOPLE'S REP. OF KOREA": {
+            "Enumeration Name": "Country",
+            "Country Name": "DEMOCRATIC PEOPLE'S REP. OF KOREA",
+            "DXCC Entity Code": "344"
+          },
+          "BRUNEI DARUSSALAM": {
+            "Enumeration Name": "Country",
+            "Country Name": "BRUNEI DARUSSALAM",
+            "DXCC Entity Code": "345"
+          },
+          "KUWAIT": {
+            "Enumeration Name": "Country",
+            "Country Name": "KUWAIT",
+            "DXCC Entity Code": "348"
+          },
+          "LEBANON": {
+            "Enumeration Name": "Country",
+            "Country Name": "LEBANON",
+            "DXCC Entity Code": "354"
+          },
+          "MONGOLIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MONGOLIA",
+            "DXCC Entity Code": "363"
+          },
+          "NEPAL": {
+            "Enumeration Name": "Country",
+            "Country Name": "NEPAL",
+            "DXCC Entity Code": "369"
+          },
+          "OMAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "OMAN",
+            "DXCC Entity Code": "370"
+          },
+          "PAKISTAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "PAKISTAN",
+            "DXCC Entity Code": "372"
+          },
+          "PHILIPPINES": {
+            "Enumeration Name": "Country",
+            "Country Name": "PHILIPPINES",
+            "DXCC Entity Code": "375"
+          },
+          "QATAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "QATAR",
+            "DXCC Entity Code": "376"
+          },
+          "SAUDI ARABIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAUDI ARABIA",
+            "DXCC Entity Code": "378"
+          },
+          "SEYCHELLES": {
+            "Enumeration Name": "Country",
+            "Country Name": "SEYCHELLES",
+            "DXCC Entity Code": "379"
+          },
+          "SINGAPORE": {
+            "Enumeration Name": "Country",
+            "Country Name": "SINGAPORE",
+            "DXCC Entity Code": "381"
+          },
+          "DJIBOUTI": {
+            "Enumeration Name": "Country",
+            "Country Name": "DJIBOUTI",
+            "DXCC Entity Code": "382"
+          },
+          "SYRIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SYRIA",
+            "DXCC Entity Code": "384"
+          },
+          "TAIWAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "TAIWAN",
+            "DXCC Entity Code": "386"
+          },
+          "THAILAND": {
+            "Enumeration Name": "Country",
+            "Country Name": "THAILAND",
+            "DXCC Entity Code": "387"
+          },
+          "TURKEY": {
+            "Enumeration Name": "Country",
+            "Country Name": "TURKEY",
+            "DXCC Entity Code": "390"
+          },
+          "UNITED ARAB EMIRATES": {
+            "Enumeration Name": "Country",
+            "Country Name": "UNITED ARAB EMIRATES",
+            "DXCC Entity Code": "391"
+          },
+          "ALGERIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ALGERIA",
+            "DXCC Entity Code": "400"
+          },
+          "ANGOLA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ANGOLA",
+            "DXCC Entity Code": "401"
+          },
+          "BOTSWANA": {
+            "Enumeration Name": "Country",
+            "Country Name": "BOTSWANA",
+            "DXCC Entity Code": "402"
+          },
+          "BURUNDI": {
+            "Enumeration Name": "Country",
+            "Country Name": "BURUNDI",
+            "DXCC Entity Code": "404"
+          },
+          "CAMEROON": {
+            "Enumeration Name": "Country",
+            "Country Name": "CAMEROON",
+            "DXCC Entity Code": "406"
+          },
+          "CENTRAL AFRICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CENTRAL AFRICA",
+            "DXCC Entity Code": "408"
+          },
+          "CAPE VERDE": {
+            "Enumeration Name": "Country",
+            "Country Name": "CAPE VERDE",
+            "DXCC Entity Code": "409"
+          },
+          "CHAD": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHAD",
+            "DXCC Entity Code": "410"
+          },
+          "REPUBLIC OF THE CONGO": {
+            "Enumeration Name": "Country",
+            "Country Name": "REPUBLIC OF THE CONGO",
+            "DXCC Entity Code": "412"
+          },
+          "DEMOCRATIC REPUBLIC OF THE CONGO": {
+            "Enumeration Name": "Country",
+            "Country Name": "DEMOCRATIC REPUBLIC OF THE CONGO",
+            "DXCC Entity Code": "414"
+          },
+          "BENIN": {
+            "Enumeration Name": "Country",
+            "Country Name": "BENIN",
+            "DXCC Entity Code": "416"
+          },
+          "GABON": {
+            "Enumeration Name": "Country",
+            "Country Name": "GABON",
+            "DXCC Entity Code": "420"
+          },
+          "THE GAMBIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "THE GAMBIA",
+            "DXCC Entity Code": "422"
+          },
+          "GHANA": {
+            "Enumeration Name": "Country",
+            "Country Name": "GHANA",
+            "DXCC Entity Code": "424"
+          },
+          "COTE D'IVOIRE": {
+            "Enumeration Name": "Country",
+            "Country Name": "COTE D'IVOIRE",
+            "DXCC Entity Code": "428"
+          },
+          "KENYA": {
+            "Enumeration Name": "Country",
+            "Country Name": "KENYA",
+            "DXCC Entity Code": "430"
+          },
+          "LESOTHO": {
+            "Enumeration Name": "Country",
+            "Country Name": "LESOTHO",
+            "DXCC Entity Code": "432"
+          },
+          "LIBERIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "LIBERIA",
+            "DXCC Entity Code": "434"
+          },
+          "LIBYA": {
+            "Enumeration Name": "Country",
+            "Country Name": "LIBYA",
+            "DXCC Entity Code": "436"
+          },
+          "MADAGASCAR": {
+            "Enumeration Name": "Country",
+            "Country Name": "MADAGASCAR",
+            "DXCC Entity Code": "438"
+          },
+          "MALAWI": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALAWI",
+            "DXCC Entity Code": "440"
+          },
+          "MALI": {
+            "Enumeration Name": "Country",
+            "Country Name": "MALI",
+            "DXCC Entity Code": "442"
+          },
+          "MAURITANIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "MAURITANIA",
+            "DXCC Entity Code": "444"
+          },
+          "MOROCCO": {
+            "Enumeration Name": "Country",
+            "Country Name": "MOROCCO",
+            "DXCC Entity Code": "446"
+          },
+          "NIGERIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "NIGERIA",
+            "DXCC Entity Code": "450"
+          },
+          "ZIMBABWE": {
+            "Enumeration Name": "Country",
+            "Country Name": "ZIMBABWE",
+            "DXCC Entity Code": "452"
+          },
+          "REUNION I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "REUNION I.",
+            "DXCC Entity Code": "453"
+          },
+          "RWANDA": {
+            "Enumeration Name": "Country",
+            "Country Name": "RWANDA",
+            "DXCC Entity Code": "454"
+          },
+          "SENEGAL": {
+            "Enumeration Name": "Country",
+            "Country Name": "SENEGAL",
+            "DXCC Entity Code": "456"
+          },
+          "SIERRA LEONE": {
+            "Enumeration Name": "Country",
+            "Country Name": "SIERRA LEONE",
+            "DXCC Entity Code": "458"
+          },
+          "ROTUMA I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "ROTUMA I.",
+            "DXCC Entity Code": "460"
+          },
+          "REPUBLIC OF SOUTH AFRICA": {
+            "Enumeration Name": "Country",
+            "Country Name": "REPUBLIC OF SOUTH AFRICA",
+            "DXCC Entity Code": "462"
+          },
+          "NAMIBIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "NAMIBIA",
+            "DXCC Entity Code": "464"
+          },
+          "SUDAN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SUDAN",
+            "DXCC Entity Code": "466"
+          },
+          "KINGDOM OF ESWATINI": {
+            "Enumeration Name": "Country",
+            "Country Name": "KINGDOM OF ESWATINI",
+            "DXCC Entity Code": "468"
+          },
+          "TANZANIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "TANZANIA",
+            "DXCC Entity Code": "470"
+          },
+          "TUNISIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "TUNISIA",
+            "DXCC Entity Code": "474"
+          },
+          "EGYPT": {
+            "Enumeration Name": "Country",
+            "Country Name": "EGYPT",
+            "DXCC Entity Code": "478"
+          },
+          "BURKINA FASO": {
+            "Enumeration Name": "Country",
+            "Country Name": "BURKINA FASO",
+            "DXCC Entity Code": "480"
+          },
+          "ZAMBIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "ZAMBIA",
+            "DXCC Entity Code": "482"
+          },
+          "TOGO": {
+            "Enumeration Name": "Country",
+            "Country Name": "TOGO",
+            "DXCC Entity Code": "483"
+          },
+          "WALVIS BAY": {
+            "Enumeration Name": "Country",
+            "Country Name": "WALVIS BAY",
+            "DXCC Entity Code": "488",
+            "Import-only": "true"
+          },
+          "CONWAY REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "CONWAY REEF",
+            "DXCC Entity Code": "489"
+          },
+          "BANABA I. (OCEAN I.)": {
+            "Enumeration Name": "Country",
+            "Country Name": "BANABA I. (OCEAN I.)",
+            "DXCC Entity Code": "490"
+          },
+          "YEMEN": {
+            "Enumeration Name": "Country",
+            "Country Name": "YEMEN",
+            "DXCC Entity Code": "492"
+          },
+          "PENGUIN IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PENGUIN IS.",
+            "DXCC Entity Code": "493",
+            "Import-only": "true"
+          },
+          "CROATIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "CROATIA",
+            "DXCC Entity Code": "497"
+          },
+          "SLOVENIA": {
+            "Enumeration Name": "Country",
+            "Country Name": "SLOVENIA",
+            "DXCC Entity Code": "499"
+          },
+          "BOSNIA-HERZEGOVINA": {
+            "Enumeration Name": "Country",
+            "Country Name": "BOSNIA-HERZEGOVINA",
+            "DXCC Entity Code": "501"
+          },
+          "NORTH MACEDONIA (REPUBLIC OF)": {
+            "Enumeration Name": "Country",
+            "Country Name": "NORTH MACEDONIA (REPUBLIC OF)",
+            "DXCC Entity Code": "502"
+          },
+          "CZECH REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "CZECH REPUBLIC",
+            "DXCC Entity Code": "503"
+          },
+          "SLOVAK REPUBLIC": {
+            "Enumeration Name": "Country",
+            "Country Name": "SLOVAK REPUBLIC",
+            "DXCC Entity Code": "504"
+          },
+          "PRATAS I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "PRATAS I.",
+            "DXCC Entity Code": "505"
+          },
+          "SCARBOROUGH REEF": {
+            "Enumeration Name": "Country",
+            "Country Name": "SCARBOROUGH REEF",
+            "DXCC Entity Code": "506"
+          },
+          "TEMOTU PROVINCE": {
+            "Enumeration Name": "Country",
+            "Country Name": "TEMOTU PROVINCE",
+            "DXCC Entity Code": "507"
+          },
+          "AUSTRAL I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "AUSTRAL I.",
+            "DXCC Entity Code": "508"
+          },
+          "MARQUESAS IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "MARQUESAS IS.",
+            "DXCC Entity Code": "509"
+          },
+          "TIMOR-LESTE": {
+            "Enumeration Name": "Country",
+            "Country Name": "TIMOR-LESTE",
+            "DXCC Entity Code": "511"
+          },
+          "CHESTERFIELD IS.": {
+            "Enumeration Name": "Country",
+            "Country Name": "CHESTERFIELD IS.",
+            "DXCC Entity Code": "512"
+          },
+          "DUCIE I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "DUCIE I.",
+            "DXCC Entity Code": "513"
+          },
+          "MONTENEGRO": {
+            "Enumeration Name": "Country",
+            "Country Name": "MONTENEGRO",
+            "DXCC Entity Code": "514"
+          },
+          "SWAINS I.": {
+            "Enumeration Name": "Country",
+            "Country Name": "SWAINS I.",
+            "DXCC Entity Code": "515"
+          },
+          "SAINT BARTHELEMY": {
+            "Enumeration Name": "Country",
+            "Country Name": "SAINT BARTHELEMY",
+            "DXCC Entity Code": "516"
+          },
+          "CURACAO": {
+            "Enumeration Name": "Country",
+            "Country Name": "CURACAO",
+            "DXCC Entity Code": "517"
+          },
+          "SINT MAARTEN": {
+            "Enumeration Name": "Country",
+            "Country Name": "SINT MAARTEN",
+            "DXCC Entity Code": "518"
+          },
+          "SABA & ST. EUSTATIUS": {
+            "Enumeration Name": "Country",
+            "Country Name": "SABA & ST. EUSTATIUS",
+            "DXCC Entity Code": "519"
+          },
+          "BONAIRE": {
+            "Enumeration Name": "Country",
+            "Country Name": "BONAIRE",
+            "DXCC Entity Code": "520"
+          },
+          "SOUTH SUDAN (REPUBLIC OF)": {
+            "Enumeration Name": "Country",
+            "Country Name": "SOUTH SUDAN (REPUBLIC OF)",
+            "DXCC Entity Code": "521"
+          },
+          "REPUBLIC OF KOSOVO": {
+            "Enumeration Name": "Country",
+            "Country Name": "REPUBLIC OF KOSOVO",
+            "DXCC Entity Code": "522"
+          }
+        }
+      }
+    }
+  }
+}

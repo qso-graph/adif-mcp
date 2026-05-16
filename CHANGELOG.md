@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-05-16
+
+### Added
+
+* **ADIF 3.1.7 specification support**. Full official 3.1.7 JSON resources from [adif.org.uk](https://adif.org.uk/317/) installed alongside the sealed 3.1.6 set. New enum entries (pure additive — no breaking changes):
+  - New Mode: **OFDM** (Orthogonal Frequency-Division Multiplexing including COFDM)
+  - New Submode: **FT2** (Mode MFSK)
+  - New Submode: **FREEDATA** (Mode DYNAMIC)
+  - New Submode: **RIBBIT_PIX** (Mode OFDM — Images transmitted using Ribbit)
+  - New Submode: **RIBBIT_SMS** (Mode OFDM)
+* `src/adif_mcp/resources/spec/317/` — full 30-file canonical 3.1.7 JSON set (29 official from upstream ZIP + project-internal `enumerations_country.json` carried forward).
+* Test corpus `test/data/ADIF_317_test_QSOs_2026_03_22.adi` (6,197 records, +6 over 3.1.6) — official G3ZOD-generated file from upstream `ADIF_317_resources_2026_03_22.zip`.
+* New tests covering the 5 new enum entries (`test_317_new_mode_ofdm`, `test_317_new_submode_ft2`, `test_317_new_submode_freedata`, `test_317_new_submode_ribbit_pix`, `test_317_new_submode_ribbit_sms`, `test_317_submode_count`).
+
+### Changed
+
+* Default spec set switched to **3.1.7** (`__adif_spec__`, `[tool.adif] spec_version`, `[tool.adif_mcp] spec`, `get_spec_text(version=...)` default).
+* `test_list_enumerations_has_mode` — Mode record count expectation 90 → 91. Import-only count stays 42 (OFDM is not import-only).
+* `test_official_adif_test_file_zero_errors` — switched to the 3.1.7 corpus, record count 6191 → 6197.
+* `test_pkg_meta_exposed` — accepted `__adif_spec__` set now includes "3.1.7".
+* Docstrings, README, and project URLs updated to reference 3.1.7.
+
+### Preserved
+
+* `src/adif_mcp/resources/spec/316/` — sealed and untouched. Callers explicitly pinning to 3.1.6 continue to work via `get_spec_text(filename, version="316")`.
+* `test/data/ADIF_316_test_QSOs_2025_09_15.adi` — sealed for regression reference.
+
+### Reference
+
+* Upstream spec changes: https://adif.org.uk/317/ADIF_317_annotated.htm
+* Tracks fleet rollout pattern from IONIS-AI/ionis-devel#49 (also bumps `get_version_info`'s reported `adif_spec_version` from `3.1.6` to `3.1.7`).
+
 ## [0.4.4] - 2025-12-28
 
 ### **Added**

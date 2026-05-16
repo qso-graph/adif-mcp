@@ -1,0 +1,38 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:49Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "QSL_Medium": {
+        "Header": [
+          "Enumeration Name",
+          "Medium",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "CARD": {
+            "Enumeration Name": "QSL_Medium",
+            "Medium": "CARD",
+            "Description": "QSO confirmation via paper QSL card"
+          },
+          "EQSL": {
+            "Enumeration Name": "QSL_Medium",
+            "Medium": "EQSL",
+            "Description": "QSO confirmation via eQSL.cc"
+          },
+          "LOTW": {
+            "Enumeration Name": "QSL_Medium",
+            "Medium": "LOTW",
+            "Description": "QSO confirmation via ARRL Logbook of the World"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

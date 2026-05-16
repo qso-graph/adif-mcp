@@ -20,7 +20,7 @@ except PackageNotFoundError:  # local dev / editable installs without dist metad
     _pkg_version = "0.0.0"
 
 __version__: Final[str] = _pkg_version
-__adif_spec__: Final[str] = "3.1.6"
+__adif_spec__: Final[str] = "3.1.7"
 
 __all__: list[str] = []
 

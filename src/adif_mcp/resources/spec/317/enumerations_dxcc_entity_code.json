@@ -1,0 +1,2101 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:38Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "DXCC_Entity_Code": {
+        "Header": [
+          "Enumeration Name",
+          "Entity Code",
+          "Entity Name",
+          "Deleted",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "0": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "0",
+            "Entity Name": "None (the contacted station is known to not be within a DXCC entity)"
+          },
+          "1": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "1",
+            "Entity Name": "CANADA"
+          },
+          "2": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "2",
+            "Entity Name": "ABU AIL IS.",
+            "Deleted": "true"
+          },
+          "3": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "3",
+            "Entity Name": "AFGHANISTAN"
+          },
+          "4": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "4",
+            "Entity Name": "AGALEGA \u0026 ST. BRANDON IS."
+          },
+          "5": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "5",
+            "Entity Name": "ALAND IS."
+          },
+          "6": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "6",
+            "Entity Name": "ALASKA"
+          },
+          "7": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "7",
+            "Entity Name": "ALBANIA"
+          },
+          "8": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "8",
+            "Entity Name": "ALDABRA",
+            "Deleted": "true"
+          },
+          "9": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "9",
+            "Entity Name": "AMERICAN SAMOA"
+          },
+          "10": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "10",
+            "Entity Name": "AMSTERDAM \u0026 ST. PAUL IS."
+          },
+          "11": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "11",
+            "Entity Name": "ANDAMAN \u0026 NICOBAR IS."
+          },
+          "12": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "12",
+            "Entity Name": "ANGUILLA"
+          },
+          "13": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "13",
+            "Entity Name": "ANTARCTICA"
+          },
+          "14": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "14",
+            "Entity Name": "ARMENIA"
+          },
+          "15": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "15",
+            "Entity Name": "ASIATIC RUSSIA"
+          },
+          "16": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "16",
+            "Entity Name": "NEW ZEALAND SUBANTARCTIC ISLANDS"
+          },
+          "17": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "17",
+            "Entity Name": "AVES I."
+          },
+          "18": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "18",
+            "Entity Name": "AZERBAIJAN"
+          },
+          "19": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "19",
+            "Entity Name": "BAJO NUEVO",
+            "Deleted": "true"
+          },
+          "20": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "20",
+            "Entity Name": "BAKER \u0026 HOWLAND IS."
+          },
+          "21": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "21",
+            "Entity Name": "BALEARIC IS."
+          },
+          "22": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "22",
+            "Entity Name": "PALAU"
+          },
+          "23": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "23",
+            "Entity Name": "BLENHEIM REEF",
+            "Deleted": "true"
+          },
+          "24": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "24",
+            "Entity Name": "BOUVET"
+          },
+          "25": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "25",
+            "Entity Name": "BRITISH NORTH BORNEO",
+            "Deleted": "true"
+          },
+          "26": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "26",
+            "Entity Name": "BRITISH SOMALILAND",
+            "Deleted": "true"
+          },
+          "27": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "27",
+            "Entity Name": "BELARUS"
+          },
+          "28": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "28",
+            "Entity Name": "CANAL ZONE",
+            "Deleted": "true"
+          },
+          "29": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "29",
+            "Entity Name": "CANARY IS."
+          },
+          "30": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "30",
+            "Entity Name": "CELEBE \u0026 MOLUCCA IS.",
+            "Deleted": "true"
+          },
+          "31": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "31",
+            "Entity Name": "C. KIRIBATI (BRITISH PHOENIX IS.)"
+          },
+          "32": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "32",
+            "Entity Name": "CEUTA \u0026 MELILLA"
+          },
+          "33": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "33",
+            "Entity Name": "CHAGOS IS."
+          },
+          "34": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "34",
+            "Entity Name": "CHATHAM IS."
+          },
+          "35": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "35",
+            "Entity Name": "CHRISTMAS I."
+          },
+          "36": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "36",
+            "Entity Name": "CLIPPERTON I."
+          },
+          "37": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "37",
+            "Entity Name": "COCOS I."
+          },
+          "38": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "38",
+            "Entity Name": "COCOS (KEELING) IS."
+          },
+          "39": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "39",
+            "Entity Name": "COMOROS",
+            "Deleted": "true"
+          },
+          "40": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "40",
+            "Entity Name": "CRETE"
+          },
+          "41": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "41",
+            "Entity Name": "CROZET I."
+          },
+          "42": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "42",
+            "Entity Name": "DAMAO, DIU",
+            "Deleted": "true"
+          },
+          "43": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "43",
+            "Entity Name": "DESECHEO I."
+          },
+          "44": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "44",
+            "Entity Name": "DESROCHES",
+            "Deleted": "true"
+          },
+          "45": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "45",
+            "Entity Name": "DODECANESE"
+          },
+          "46": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "46",
+            "Entity Name": "EAST MALAYSIA"
+          },
+          "47": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "47",
+            "Entity Name": "EASTER I."
+          },
+          "48": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "48",
+            "Entity Name": "E. KIRIBATI (LINE IS.)"
+          },
+          "49": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "49",
+            "Entity Name": "EQUATORIAL GUINEA"
+          },
+          "50": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "50",
+            "Entity Name": "MEXICO"
+          },
+          "51": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "51",
+            "Entity Name": "ERITREA"
+          },
+          "52": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "52",
+            "Entity Name": "ESTONIA"
+          },
+          "53": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "53",
+            "Entity Name": "ETHIOPIA"
+          },
+          "54": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "54",
+            "Entity Name": "EUROPEAN RUSSIA"
+          },
+          "55": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "55",
+            "Entity Name": "FARQUHAR",
+            "Deleted": "true"
+          },
+          "56": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "56",
+            "Entity Name": "FERNANDO DE NORONHA"
+          },
+          "57": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "57",
+            "Entity Name": "FRENCH EQUATORIAL AFRICA",
+            "Deleted": "true"
+          },
+          "58": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "58",
+            "Entity Name": "FRENCH INDO-CHINA",
+            "Deleted": "true"
+          },
+          "59": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "59",
+            "Entity Name": "FRENCH WEST AFRICA",
+            "Deleted": "true"
+          },
+          "60": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "60",
+            "Entity Name": "BAHAMAS"
+          },
+          "61": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "61",
+            "Entity Name": "FRANZ JOSEF LAND"
+          },
+          "62": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "62",
+            "Entity Name": "BARBADOS"
+          },
+          "63": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "63",
+            "Entity Name": "FRENCH GUIANA"
+          },
+          "64": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "64",
+            "Entity Name": "BERMUDA"
+          },
+          "65": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "65",
+            "Entity Name": "BRITISH VIRGIN IS."
+          },
+          "66": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "66",
+            "Entity Name": "BELIZE"
+          },
+          "67": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "67",
+            "Entity Name": "FRENCH INDIA",
+            "Deleted": "true"
+          },
+          "68": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "68",
+            "Entity Name": "KUWAIT/SAUDI ARABIA NEUTRAL ZONE",
+            "Deleted": "true"
+          },
+          "69": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "69",
+            "Entity Name": "CAYMAN IS."
+          },
+          "70": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "70",
+            "Entity Name": "CUBA"
+          },
+          "71": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "71",
+            "Entity Name": "GALAPAGOS IS."
+          },
+          "72": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "72",
+            "Entity Name": "DOMINICAN REPUBLIC"
+          },
+          "74": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "74",
+            "Entity Name": "EL SALVADOR"
+          },
+          "75": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "75",
+            "Entity Name": "GEORGIA"
+          },
+          "76": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "76",
+            "Entity Name": "GUATEMALA"
+          },
+          "77": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "77",
+            "Entity Name": "GRENADA"
+          },
+          "78": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "78",
+            "Entity Name": "HAITI"
+          },
+          "79": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "79",
+            "Entity Name": "GUADELOUPE"
+          },
+          "80": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "80",
+            "Entity Name": "HONDURAS"
+          },
+          "81": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "81",
+            "Entity Name": "GERMANY",
+            "Deleted": "true"
+          },
+          "82": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "82",
+            "Entity Name": "JAMAICA"
+          },
+          "84": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "84",
+            "Entity Name": "MARTINIQUE"
+          },
+          "85": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "85",
+            "Entity Name": "BONAIRE, CURACAO",
+            "Deleted": "true"
+          },
+          "86": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "86",
+            "Entity Name": "NICARAGUA"
+          },
+          "88": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "88",
+            "Entity Name": "PANAMA"
+          },
+          "89": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "89",
+            "Entity Name": "TURKS \u0026 CAICOS IS."
+          },
+          "90": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "90",
+            "Entity Name": "TRINIDAD \u0026 TOBAGO"
+          },
+          "91": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "91",
+            "Entity Name": "ARUBA"
+          },
+          "93": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "93",
+            "Entity Name": "GEYSER REEF",
+            "Deleted": "true"
+          },
+          "94": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "94",
+            "Entity Name": "ANTIGUA \u0026 BARBUDA"
+          },
+          "95": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "95",
+            "Entity Name": "DOMINICA"
+          },
+          "96": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "96",
+            "Entity Name": "MONTSERRAT"
+          },
+          "97": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "97",
+            "Entity Name": "ST. LUCIA"
+          },
+          "98": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "98",
+            "Entity Name": "ST. VINCENT"
+          },
+          "99": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "99",
+            "Entity Name": "GLORIOSO IS."
+          },
+          "100": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "100",
+            "Entity Name": "ARGENTINA"
+          },
+          "101": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "101",
+            "Entity Name": "GOA",
+            "Deleted": "true"
+          },
+          "102": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "102",
+            "Entity Name": "GOLD COAST, TOGOLAND",
+            "Deleted": "true"
+          },
+          "103": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "103",
+            "Entity Name": "GUAM"
+          },
+          "104": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "104",
+            "Entity Name": "BOLIVIA"
+          },
+          "105": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "105",
+            "Entity Name": "GUANTANAMO BAY"
+          },
+          "106": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "106",
+            "Entity Name": "GUERNSEY"
+          },
+          "107": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "107",
+            "Entity Name": "GUINEA"
+          },
+          "108": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "108",
+            "Entity Name": "BRAZIL"
+          },
+          "109": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "109",
+            "Entity Name": "GUINEA-BISSAU"
+          },
+          "110": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "110",
+            "Entity Name": "HAWAII"
+          },
+          "111": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "111",
+            "Entity Name": "HEARD I."
+          },
+          "112": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "112",
+            "Entity Name": "CHILE"
+          },
+          "113": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "113",
+            "Entity Name": "IFNI",
+            "Deleted": "true"
+          },
+          "114": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "114",
+            "Entity Name": "ISLE OF MAN"
+          },
+          "115": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "115",
+            "Entity Name": "ITALIAN SOMALILAND",
+            "Deleted": "true"
+          },
+          "116": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "116",
+            "Entity Name": "COLOMBIA"
+          },
+          "117": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "117",
+            "Entity Name": "ITU HQ"
+          },
+          "118": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "118",
+            "Entity Name": "JAN MAYEN"
+          },
+          "119": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "119",
+            "Entity Name": "JAVA",
+            "Deleted": "true"
+          },
+          "120": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "120",
+            "Entity Name": "ECUADOR"
+          },
+          "122": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "122",
+            "Entity Name": "JERSEY"
+          },
+          "123": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "123",
+            "Entity Name": "JOHNSTON I."
+          },
+          "124": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "124",
+            "Entity Name": "JUAN DE NOVA, EUROPA"
+          },
+          "125": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "125",
+            "Entity Name": "JUAN FERNANDEZ IS."
+          },
+          "126": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "126",
+            "Entity Name": "KALININGRAD"
+          },
+          "127": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "127",
+            "Entity Name": "KAMARAN IS.",
+            "Deleted": "true"
+          },
+          "128": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "128",
+            "Entity Name": "KARELO-FINNISH REPUBLIC",
+            "Deleted": "true"
+          },
+          "129": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "129",
+            "Entity Name": "GUYANA"
+          },
+          "130": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "130",
+            "Entity Name": "KAZAKHSTAN"
+          },
+          "131": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "131",
+            "Entity Name": "KERGUELEN IS."
+          },
+          "132": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "132",
+            "Entity Name": "PARAGUAY"
+          },
+          "133": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "133",
+            "Entity Name": "KERMADEC IS."
+          },
+          "134": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "134",
+            "Entity Name": "KINGMAN REEF",
+            "Deleted": "true"
+          },
+          "135": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "135",
+            "Entity Name": "KYRGYZSTAN"
+          },
+          "136": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "136",
+            "Entity Name": "PERU"
+          },
+          "137": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "137",
+            "Entity Name": "REPUBLIC OF KOREA"
+          },
+          "138": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "138",
+            "Entity Name": "KURE I."
+          },
+          "139": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "139",
+            "Entity Name": "KURIA MURIA I.",
+            "Deleted": "true"
+          },
+          "140": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "140",
+            "Entity Name": "SURINAME"
+          },
+          "141": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "141",
+            "Entity Name": "FALKLAND IS."
+          },
+          "142": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "142",
+            "Entity Name": "LAKSHADWEEP IS."
+          },
+          "143": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "143",
+            "Entity Name": "LAOS"
+          },
+          "144": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "144",
+            "Entity Name": "URUGUAY"
+          },
+          "145": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "145",
+            "Entity Name": "LATVIA"
+          },
+          "146": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "146",
+            "Entity Name": "LITHUANIA"
+          },
+          "147": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "147",
+            "Entity Name": "LORD HOWE I."
+          },
+          "148": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "148",
+            "Entity Name": "VENEZUELA"
+          },
+          "149": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "149",
+            "Entity Name": "AZORES"
+          },
+          "150": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "150",
+            "Entity Name": "AUSTRALIA"
+          },
+          "151": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "151",
+            "Entity Name": "MALYJ VYSOTSKIJ I.",
+            "Deleted": "true"
+          },
+          "152": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "152",
+            "Entity Name": "MACAO"
+          },
+          "153": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "153",
+            "Entity Name": "MACQUARIE I."
+          },
+          "154": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "154",
+            "Entity Name": "YEMEN ARAB REPUBLIC",
+            "Deleted": "true"
+          },
+          "155": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "155",
+            "Entity Name": "MALAYA",
+            "Deleted": "true"
+          },
+          "157": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "157",
+            "Entity Name": "NAURU"
+          },
+          "158": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "158",
+            "Entity Name": "VANUATU"
+          },
+          "159": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "159",
+            "Entity Name": "MALDIVES"
+          },
+          "160": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "160",
+            "Entity Name": "TONGA"
+          },
+          "161": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "161",
+            "Entity Name": "MALPELO I."
+          },
+          "162": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "162",
+            "Entity Name": "NEW CALEDONIA"
+          },
+          "163": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "163",
+            "Entity Name": "PAPUA NEW GUINEA"
+          },
+          "164": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "164",
+            "Entity Name": "MANCHURIA",
+            "Deleted": "true"
+          },
+          "165": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "165",
+            "Entity Name": "MAURITIUS"
+          },
+          "166": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "166",
+            "Entity Name": "MARIANA IS."
+          },
+          "167": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "167",
+            "Entity Name": "MARKET REEF"
+          },
+          "168": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "168",
+            "Entity Name": "MARSHALL IS."
+          },
+          "169": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "169",
+            "Entity Name": "MAYOTTE"
+          },
+          "170": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "170",
+            "Entity Name": "NEW ZEALAND"
+          },
+          "171": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "171",
+            "Entity Name": "MELLISH REEF"
+          },
+          "172": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "172",
+            "Entity Name": "PITCAIRN I."
+          },
+          "173": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "173",
+            "Entity Name": "MICRONESIA"
+          },
+          "174": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "174",
+            "Entity Name": "MIDWAY I."
+          },
+          "175": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "175",
+            "Entity Name": "FRENCH POLYNESIA"
+          },
+          "176": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "176",
+            "Entity Name": "FIJI"
+          },
+          "177": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "177",
+            "Entity Name": "MINAMI TORISHIMA"
+          },
+          "178": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "178",
+            "Entity Name": "MINERVA REEF",
+            "Deleted": "true"
+          },
+          "179": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "179",
+            "Entity Name": "MOLDOVA"
+          },
+          "180": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "180",
+            "Entity Name": "MOUNT ATHOS"
+          },
+          "181": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "181",
+            "Entity Name": "MOZAMBIQUE"
+          },
+          "182": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "182",
+            "Entity Name": "NAVASSA I."
+          },
+          "183": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "183",
+            "Entity Name": "NETHERLANDS BORNEO",
+            "Deleted": "true"
+          },
+          "184": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "184",
+            "Entity Name": "NETHERLANDS NEW GUINEA",
+            "Deleted": "true"
+          },
+          "185": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "185",
+            "Entity Name": "SOLOMON IS."
+          },
+          "186": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "186",
+            "Entity Name": "NEWFOUNDLAND, LABRADOR",
+            "Deleted": "true"
+          },
+          "187": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "187",
+            "Entity Name": "NIGER"
+          },
+          "188": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "188",
+            "Entity Name": "NIUE"
+          },
+          "189": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "189",
+            "Entity Name": "NORFOLK I."
+          },
+          "190": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "190",
+            "Entity Name": "SAMOA"
+          },
+          "191": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "191",
+            "Entity Name": "NORTH COOK IS."
+          },
+          "192": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "192",
+            "Entity Name": "OGASAWARA"
+          },
+          "193": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "193",
+            "Entity Name": "OKINAWA (RYUKYU IS.)",
+            "Deleted": "true"
+          },
+          "194": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "194",
+            "Entity Name": "OKINO TORI-SHIMA",
+            "Deleted": "true"
+          },
+          "195": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "195",
+            "Entity Name": "ANNOBON I."
+          },
+          "196": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "196",
+            "Entity Name": "PALESTINE",
+            "Deleted": "true"
+          },
+          "197": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "197",
+            "Entity Name": "PALMYRA \u0026 JARVIS IS."
+          },
+          "198": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "198",
+            "Entity Name": "PAPUA TERRITORY",
+            "Deleted": "true"
+          },
+          "199": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "199",
+            "Entity Name": "PETER 1 I."
+          },
+          "200": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "200",
+            "Entity Name": "PORTUGUESE TIMOR",
+            "Deleted": "true"
+          },
+          "201": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "201",
+            "Entity Name": "PRINCE EDWARD \u0026 MARION IS."
+          },
+          "202": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "202",
+            "Entity Name": "PUERTO RICO"
+          },
+          "203": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "203",
+            "Entity Name": "ANDORRA"
+          },
+          "204": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "204",
+            "Entity Name": "REVILLAGIGEDO"
+          },
+          "205": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "205",
+            "Entity Name": "ASCENSION I."
+          },
+          "206": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "206",
+            "Entity Name": "AUSTRIA"
+          },
+          "207": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "207",
+            "Entity Name": "RODRIGUES I."
+          },
+          "208": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "208",
+            "Entity Name": "RUANDA-URUNDI",
+            "Deleted": "true"
+          },
+          "209": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "209",
+            "Entity Name": "BELGIUM"
+          },
+          "210": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "210",
+            "Entity Name": "SAAR",
+            "Deleted": "true"
+          },
+          "211": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "211",
+            "Entity Name": "SABLE I."
+          },
+          "212": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "212",
+            "Entity Name": "BULGARIA"
+          },
+          "213": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "213",
+            "Entity Name": "SAINT MARTIN"
+          },
+          "214": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "214",
+            "Entity Name": "CORSICA"
+          },
+          "215": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "215",
+            "Entity Name": "CYPRUS"
+          },
+          "216": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "216",
+            "Entity Name": "SAN ANDRES \u0026 PROVIDENCIA"
+          },
+          "217": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "217",
+            "Entity Name": "SAN FELIX \u0026 SAN AMBROSIO"
+          },
+          "218": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "218",
+            "Entity Name": "CZECHOSLOVAKIA",
+            "Deleted": "true"
+          },
+          "219": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "219",
+            "Entity Name": "SAO TOME \u0026 PRINCIPE"
+          },
+          "220": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "220",
+            "Entity Name": "SARAWAK",
+            "Deleted": "true"
+          },
+          "221": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "221",
+            "Entity Name": "DENMARK"
+          },
+          "222": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "222",
+            "Entity Name": "FAROE IS."
+          },
+          "223": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "223",
+            "Entity Name": "ENGLAND"
+          },
+          "224": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "224",
+            "Entity Name": "FINLAND"
+          },
+          "225": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "225",
+            "Entity Name": "SARDINIA"
+          },
+          "226": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "226",
+            "Entity Name": "SAUDI ARABIA/IRAQ NEUTRAL ZONE",
+            "Deleted": "true"
+          },
+          "227": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "227",
+            "Entity Name": "FRANCE"
+          },
+          "228": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "228",
+            "Entity Name": "SERRANA BANK \u0026 RONCADOR CAY",
+            "Deleted": "true"
+          },
+          "229": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "229",
+            "Entity Name": "GERMAN DEMOCRATIC REPUBLIC",
+            "Deleted": "true"
+          },
+          "230": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "230",
+            "Entity Name": "FEDERAL REPUBLIC OF GERMANY"
+          },
+          "231": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "231",
+            "Entity Name": "SIKKIM",
+            "Deleted": "true"
+          },
+          "232": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "232",
+            "Entity Name": "SOMALIA"
+          },
+          "233": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "233",
+            "Entity Name": "GIBRALTAR"
+          },
+          "234": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "234",
+            "Entity Name": "SOUTH COOK IS."
+          },
+          "235": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "235",
+            "Entity Name": "SOUTH GEORGIA I."
+          },
+          "236": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "236",
+            "Entity Name": "GREECE"
+          },
+          "237": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "237",
+            "Entity Name": "GREENLAND"
+          },
+          "238": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "238",
+            "Entity Name": "SOUTH ORKNEY IS."
+          },
+          "239": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "239",
+            "Entity Name": "HUNGARY"
+          },
+          "240": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "240",
+            "Entity Name": "SOUTH SANDWICH IS."
+          },
+          "241": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "241",
+            "Entity Name": "SOUTH SHETLAND IS."
+          },
+          "242": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "242",
+            "Entity Name": "ICELAND"
+          },
+          "243": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "243",
+            "Entity Name": "PEOPLE\u0027S DEMOCRATIC REP. OF YEMEN",
+            "Deleted": "true"
+          },
+          "244": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "244",
+            "Entity Name": "SOUTHERN SUDAN",
+            "Deleted": "true"
+          },
+          "245": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "245",
+            "Entity Name": "IRELAND"
+          },
+          "246": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "246",
+            "Entity Name": "SOVEREIGN MILITARY ORDER OF MALTA"
+          },
+          "247": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "247",
+            "Entity Name": "SPRATLY IS."
+          },
+          "248": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "248",
+            "Entity Name": "ITALY"
+          },
+          "249": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "249",
+            "Entity Name": "ST. KITTS \u0026 NEVIS"
+          },
+          "250": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "250",
+            "Entity Name": "ST. HELENA"
+          },
+          "251": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "251",
+            "Entity Name": "LIECHTENSTEIN"
+          },
+          "252": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "252",
+            "Entity Name": "ST. PAUL I."
+          },
+          "253": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "253",
+            "Entity Name": "ST. PETER \u0026 ST. PAUL ROCKS"
+          },
+          "254": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "254",
+            "Entity Name": "LUXEMBOURG"
+          },
+          "255": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "255",
+            "Entity Name": "ST. MAARTEN, SABA, ST. EUSTATIUS",
+            "Deleted": "true"
+          },
+          "256": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "256",
+            "Entity Name": "MADEIRA IS."
+          },
+          "257": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "257",
+            "Entity Name": "MALTA"
+          },
+          "258": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "258",
+            "Entity Name": "SUMATRA",
+            "Deleted": "true"
+          },
+          "259": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "259",
+            "Entity Name": "SVALBARD"
+          },
+          "260": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "260",
+            "Entity Name": "MONACO"
+          },
+          "261": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "261",
+            "Entity Name": "SWAN IS.",
+            "Deleted": "true"
+          },
+          "262": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "262",
+            "Entity Name": "TAJIKISTAN"
+          },
+          "263": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "263",
+            "Entity Name": "NETHERLANDS"
+          },
+          "264": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "264",
+            "Entity Name": "TANGIER",
+            "Deleted": "true"
+          },
+          "265": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "265",
+            "Entity Name": "NORTHERN IRELAND"
+          },
+          "266": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "266",
+            "Entity Name": "NORWAY"
+          },
+          "267": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "267",
+            "Entity Name": "TERRITORY OF NEW GUINEA",
+            "Deleted": "true"
+          },
+          "268": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "268",
+            "Entity Name": "TIBET",
+            "Deleted": "true"
+          },
+          "269": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "269",
+            "Entity Name": "POLAND"
+          },
+          "270": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "270",
+            "Entity Name": "TOKELAU IS."
+          },
+          "271": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "271",
+            "Entity Name": "TRIESTE",
+            "Deleted": "true"
+          },
+          "272": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "272",
+            "Entity Name": "PORTUGAL"
+          },
+          "273": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "273",
+            "Entity Name": "TRINDADE \u0026 MARTIM VAZ IS."
+          },
+          "274": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "274",
+            "Entity Name": "TRISTAN DA CUNHA \u0026 GOUGH I."
+          },
+          "275": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "275",
+            "Entity Name": "ROMANIA"
+          },
+          "276": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "276",
+            "Entity Name": "TROMELIN I."
+          },
+          "277": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "277",
+            "Entity Name": "ST. PIERRE \u0026 MIQUELON"
+          },
+          "278": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "278",
+            "Entity Name": "SAN MARINO"
+          },
+          "279": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "279",
+            "Entity Name": "SCOTLAND"
+          },
+          "280": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "280",
+            "Entity Name": "TURKMENISTAN"
+          },
+          "281": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "281",
+            "Entity Name": "SPAIN"
+          },
+          "282": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "282",
+            "Entity Name": "TUVALU"
+          },
+          "283": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "283",
+            "Entity Name": "UK SOVEREIGN BASE AREAS ON CYPRUS"
+          },
+          "284": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "284",
+            "Entity Name": "SWEDEN"
+          },
+          "285": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "285",
+            "Entity Name": "VIRGIN IS."
+          },
+          "286": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "286",
+            "Entity Name": "UGANDA"
+          },
+          "287": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "287",
+            "Entity Name": "SWITZERLAND"
+          },
+          "288": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "288",
+            "Entity Name": "UKRAINE"
+          },
+          "289": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "289",
+            "Entity Name": "UNITED NATIONS HQ"
+          },
+          "291": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "291",
+            "Entity Name": "UNITED STATES OF AMERICA"
+          },
+          "292": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "292",
+            "Entity Name": "UZBEKISTAN"
+          },
+          "293": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "293",
+            "Entity Name": "VIET NAM"
+          },
+          "294": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "294",
+            "Entity Name": "WALES"
+          },
+          "295": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "295",
+            "Entity Name": "VATICAN"
+          },
+          "296": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "296",
+            "Entity Name": "SERBIA"
+          },
+          "297": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "297",
+            "Entity Name": "WAKE I."
+          },
+          "298": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "298",
+            "Entity Name": "WALLIS \u0026 FUTUNA IS."
+          },
+          "299": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "299",
+            "Entity Name": "WEST MALAYSIA"
+          },
+          "301": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "301",
+            "Entity Name": "W. KIRIBATI (GILBERT IS. )"
+          },
+          "302": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "302",
+            "Entity Name": "WESTERN SAHARA"
+          },
+          "303": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "303",
+            "Entity Name": "WILLIS I."
+          },
+          "304": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "304",
+            "Entity Name": "BAHRAIN"
+          },
+          "305": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "305",
+            "Entity Name": "BANGLADESH"
+          },
+          "306": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "306",
+            "Entity Name": "BHUTAN"
+          },
+          "307": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "307",
+            "Entity Name": "ZANZIBAR",
+            "Deleted": "true"
+          },
+          "308": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "308",
+            "Entity Name": "COSTA RICA"
+          },
+          "309": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "309",
+            "Entity Name": "MYANMAR"
+          },
+          "312": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "312",
+            "Entity Name": "CAMBODIA"
+          },
+          "315": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "315",
+            "Entity Name": "SRI LANKA"
+          },
+          "318": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "318",
+            "Entity Name": "CHINA"
+          },
+          "321": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "321",
+            "Entity Name": "HONG KONG"
+          },
+          "324": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "324",
+            "Entity Name": "INDIA"
+          },
+          "327": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "327",
+            "Entity Name": "INDONESIA"
+          },
+          "330": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "330",
+            "Entity Name": "IRAN"
+          },
+          "333": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "333",
+            "Entity Name": "IRAQ"
+          },
+          "336": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "336",
+            "Entity Name": "ISRAEL"
+          },
+          "339": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "339",
+            "Entity Name": "JAPAN"
+          },
+          "342": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "342",
+            "Entity Name": "JORDAN"
+          },
+          "344": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "344",
+            "Entity Name": "DEMOCRATIC PEOPLE\u0027S REP. OF KOREA"
+          },
+          "345": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "345",
+            "Entity Name": "BRUNEI DARUSSALAM"
+          },
+          "348": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "348",
+            "Entity Name": "KUWAIT"
+          },
+          "354": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "354",
+            "Entity Name": "LEBANON"
+          },
+          "363": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "363",
+            "Entity Name": "MONGOLIA"
+          },
+          "369": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "369",
+            "Entity Name": "NEPAL"
+          },
+          "370": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "370",
+            "Entity Name": "OMAN"
+          },
+          "372": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "372",
+            "Entity Name": "PAKISTAN"
+          },
+          "375": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "375",
+            "Entity Name": "PHILIPPINES"
+          },
+          "376": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "376",
+            "Entity Name": "QATAR"
+          },
+          "378": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "378",
+            "Entity Name": "SAUDI ARABIA"
+          },
+          "379": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "379",
+            "Entity Name": "SEYCHELLES"
+          },
+          "381": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "381",
+            "Entity Name": "SINGAPORE"
+          },
+          "382": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "382",
+            "Entity Name": "DJIBOUTI"
+          },
+          "384": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "384",
+            "Entity Name": "SYRIA"
+          },
+          "386": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "386",
+            "Entity Name": "TAIWAN"
+          },
+          "387": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "387",
+            "Entity Name": "THAILAND"
+          },
+          "390": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "390",
+            "Entity Name": "TURKEY"
+          },
+          "391": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "391",
+            "Entity Name": "UNITED ARAB EMIRATES"
+          },
+          "400": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "400",
+            "Entity Name": "ALGERIA"
+          },
+          "401": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "401",
+            "Entity Name": "ANGOLA"
+          },
+          "402": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "402",
+            "Entity Name": "BOTSWANA"
+          },
+          "404": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "404",
+            "Entity Name": "BURUNDI"
+          },
+          "406": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "406",
+            "Entity Name": "CAMEROON"
+          },
+          "408": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "408",
+            "Entity Name": "CENTRAL AFRICA"
+          },
+          "409": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "409",
+            "Entity Name": "CAPE VERDE"
+          },
+          "410": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "410",
+            "Entity Name": "CHAD"
+          },
+          "411": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "411",
+            "Entity Name": "COMOROS"
+          },
+          "412": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "412",
+            "Entity Name": "REPUBLIC OF THE CONGO"
+          },
+          "414": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "414",
+            "Entity Name": "DEMOCRATIC REPUBLIC OF THE CONGO"
+          },
+          "416": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "416",
+            "Entity Name": "BENIN"
+          },
+          "420": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "420",
+            "Entity Name": "GABON"
+          },
+          "422": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "422",
+            "Entity Name": "THE GAMBIA"
+          },
+          "424": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "424",
+            "Entity Name": "GHANA"
+          },
+          "428": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "428",
+            "Entity Name": "COTE D\u0027IVOIRE"
+          },
+          "430": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "430",
+            "Entity Name": "KENYA"
+          },
+          "432": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "432",
+            "Entity Name": "LESOTHO"
+          },
+          "434": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "434",
+            "Entity Name": "LIBERIA"
+          },
+          "436": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "436",
+            "Entity Name": "LIBYA"
+          },
+          "438": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "438",
+            "Entity Name": "MADAGASCAR"
+          },
+          "440": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "440",
+            "Entity Name": "MALAWI"
+          },
+          "442": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "442",
+            "Entity Name": "MALI"
+          },
+          "444": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "444",
+            "Entity Name": "MAURITANIA"
+          },
+          "446": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "446",
+            "Entity Name": "MOROCCO"
+          },
+          "450": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "450",
+            "Entity Name": "NIGERIA"
+          },
+          "452": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "452",
+            "Entity Name": "ZIMBABWE"
+          },
+          "453": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "453",
+            "Entity Name": "REUNION I."
+          },
+          "454": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "454",
+            "Entity Name": "RWANDA"
+          },
+          "456": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "456",
+            "Entity Name": "SENEGAL"
+          },
+          "458": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "458",
+            "Entity Name": "SIERRA LEONE"
+          },
+          "460": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "460",
+            "Entity Name": "ROTUMA I."
+          },
+          "462": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "462",
+            "Entity Name": "REPUBLIC OF SOUTH AFRICA"
+          },
+          "464": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "464",
+            "Entity Name": "NAMIBIA"
+          },
+          "466": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "466",
+            "Entity Name": "SUDAN"
+          },
+          "468": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "468",
+            "Entity Name": "KINGDOM OF ESWATINI"
+          },
+          "470": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "470",
+            "Entity Name": "TANZANIA"
+          },
+          "474": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "474",
+            "Entity Name": "TUNISIA"
+          },
+          "478": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "478",
+            "Entity Name": "EGYPT"
+          },
+          "480": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "480",
+            "Entity Name": "BURKINA FASO"
+          },
+          "482": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "482",
+            "Entity Name": "ZAMBIA"
+          },
+          "483": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "483",
+            "Entity Name": "TOGO"
+          },
+          "488": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "488",
+            "Entity Name": "WALVIS BAY",
+            "Deleted": "true"
+          },
+          "489": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "489",
+            "Entity Name": "CONWAY REEF"
+          },
+          "490": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "490",
+            "Entity Name": "BANABA I. (OCEAN I.)"
+          },
+          "492": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "492",
+            "Entity Name": "YEMEN"
+          },
+          "493": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "493",
+            "Entity Name": "PENGUIN IS.",
+            "Deleted": "true"
+          },
+          "497": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "497",
+            "Entity Name": "CROATIA"
+          },
+          "499": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "499",
+            "Entity Name": "SLOVENIA"
+          },
+          "501": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "501",
+            "Entity Name": "BOSNIA-HERZEGOVINA"
+          },
+          "502": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "502",
+            "Entity Name": "NORTH MACEDONIA (REPUBLIC OF)"
+          },
+          "503": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "503",
+            "Entity Name": "CZECH REPUBLIC"
+          },
+          "504": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "504",
+            "Entity Name": "SLOVAK REPUBLIC"
+          },
+          "505": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "505",
+            "Entity Name": "PRATAS I."
+          },
+          "506": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "506",
+            "Entity Name": "SCARBOROUGH REEF"
+          },
+          "507": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "507",
+            "Entity Name": "TEMOTU PROVINCE"
+          },
+          "508": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "508",
+            "Entity Name": "AUSTRAL I."
+          },
+          "509": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "509",
+            "Entity Name": "MARQUESAS IS."
+          },
+          "510": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "510",
+            "Entity Name": "PALESTINE"
+          },
+          "511": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "511",
+            "Entity Name": "TIMOR-LESTE"
+          },
+          "512": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "512",
+            "Entity Name": "CHESTERFIELD IS."
+          },
+          "513": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "513",
+            "Entity Name": "DUCIE I."
+          },
+          "514": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "514",
+            "Entity Name": "MONTENEGRO"
+          },
+          "515": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "515",
+            "Entity Name": "SWAINS I."
+          },
+          "516": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "516",
+            "Entity Name": "SAINT BARTHELEMY"
+          },
+          "517": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "517",
+            "Entity Name": "CURACAO"
+          },
+          "518": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "518",
+            "Entity Name": "SINT MAARTEN"
+          },
+          "519": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "519",
+            "Entity Name": "SABA \u0026 ST. EUSTATIUS"
+          },
+          "520": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "520",
+            "Entity Name": "BONAIRE"
+          },
+          "521": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "521",
+            "Entity Name": "SOUTH SUDAN (REPUBLIC OF)"
+          },
+          "522": {
+            "Enumeration Name": "DXCC_Entity_Code",
+            "Entity Code": "522",
+            "Entity Name": "REPUBLIC OF KOSOVO"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

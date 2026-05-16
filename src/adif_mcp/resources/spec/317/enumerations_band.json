@@ -1,0 +1,222 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:35Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Band": {
+        "Header": [
+          "Enumeration Name",
+          "Band",
+          "Lower Freq (MHz)",
+          "Upper Freq (MHz)",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "2190m": {
+            "Enumeration Name": "Band",
+            "Band": "2190m",
+            "Lower Freq (MHz)": ".1357",
+            "Upper Freq (MHz)": ".1378"
+          },
+          "630m": {
+            "Enumeration Name": "Band",
+            "Band": "630m",
+            "Lower Freq (MHz)": ".472",
+            "Upper Freq (MHz)": ".479"
+          },
+          "560m": {
+            "Enumeration Name": "Band",
+            "Band": "560m",
+            "Lower Freq (MHz)": ".501",
+            "Upper Freq (MHz)": ".504"
+          },
+          "160m": {
+            "Enumeration Name": "Band",
+            "Band": "160m",
+            "Lower Freq (MHz)": "1.8",
+            "Upper Freq (MHz)": "2.0"
+          },
+          "80m": {
+            "Enumeration Name": "Band",
+            "Band": "80m",
+            "Lower Freq (MHz)": "3.5",
+            "Upper Freq (MHz)": "4.0"
+          },
+          "60m": {
+            "Enumeration Name": "Band",
+            "Band": "60m",
+            "Lower Freq (MHz)": "5.06",
+            "Upper Freq (MHz)": "5.45"
+          },
+          "40m": {
+            "Enumeration Name": "Band",
+            "Band": "40m",
+            "Lower Freq (MHz)": "7.0",
+            "Upper Freq (MHz)": "7.3"
+          },
+          "30m": {
+            "Enumeration Name": "Band",
+            "Band": "30m",
+            "Lower Freq (MHz)": "10.1",
+            "Upper Freq (MHz)": "10.15"
+          },
+          "20m": {
+            "Enumeration Name": "Band",
+            "Band": "20m",
+            "Lower Freq (MHz)": "14.0",
+            "Upper Freq (MHz)": "14.35"
+          },
+          "17m": {
+            "Enumeration Name": "Band",
+            "Band": "17m",
+            "Lower Freq (MHz)": "18.068",
+            "Upper Freq (MHz)": "18.168"
+          },
+          "15m": {
+            "Enumeration Name": "Band",
+            "Band": "15m",
+            "Lower Freq (MHz)": "21.0",
+            "Upper Freq (MHz)": "21.45"
+          },
+          "12m": {
+            "Enumeration Name": "Band",
+            "Band": "12m",
+            "Lower Freq (MHz)": "24.890",
+            "Upper Freq (MHz)": "24.99"
+          },
+          "10m": {
+            "Enumeration Name": "Band",
+            "Band": "10m",
+            "Lower Freq (MHz)": "28.0",
+            "Upper Freq (MHz)": "29.7"
+          },
+          "8m": {
+            "Enumeration Name": "Band",
+            "Band": "8m",
+            "Lower Freq (MHz)": "40",
+            "Upper Freq (MHz)": "45"
+          },
+          "6m": {
+            "Enumeration Name": "Band",
+            "Band": "6m",
+            "Lower Freq (MHz)": "50",
+            "Upper Freq (MHz)": "54"
+          },
+          "5m": {
+            "Enumeration Name": "Band",
+            "Band": "5m",
+            "Lower Freq (MHz)": "54.000001",
+            "Upper Freq (MHz)": "69.9"
+          },
+          "4m": {
+            "Enumeration Name": "Band",
+            "Band": "4m",
+            "Lower Freq (MHz)": "70",
+            "Upper Freq (MHz)": "71"
+          },
+          "2m": {
+            "Enumeration Name": "Band",
+            "Band": "2m",
+            "Lower Freq (MHz)": "144",
+            "Upper Freq (MHz)": "148"
+          },
+          "1.25m": {
+            "Enumeration Name": "Band",
+            "Band": "1.25m",
+            "Lower Freq (MHz)": "222",
+            "Upper Freq (MHz)": "225"
+          },
+          "70cm": {
+            "Enumeration Name": "Band",
+            "Band": "70cm",
+            "Lower Freq (MHz)": "420",
+            "Upper Freq (MHz)": "450"
+          },
+          "33cm": {
+            "Enumeration Name": "Band",
+            "Band": "33cm",
+            "Lower Freq (MHz)": "902",
+            "Upper Freq (MHz)": "928"
+          },
+          "23cm": {
+            "Enumeration Name": "Band",
+            "Band": "23cm",
+            "Lower Freq (MHz)": "1240",
+            "Upper Freq (MHz)": "1300"
+          },
+          "13cm": {
+            "Enumeration Name": "Band",
+            "Band": "13cm",
+            "Lower Freq (MHz)": "2300",
+            "Upper Freq (MHz)": "2450"
+          },
+          "9cm": {
+            "Enumeration Name": "Band",
+            "Band": "9cm",
+            "Lower Freq (MHz)": "3300",
+            "Upper Freq (MHz)": "3500"
+          },
+          "6cm": {
+            "Enumeration Name": "Band",
+            "Band": "6cm",
+            "Lower Freq (MHz)": "5650",
+            "Upper Freq (MHz)": "5925"
+          },
+          "3cm": {
+            "Enumeration Name": "Band",
+            "Band": "3cm",
+            "Lower Freq (MHz)": "10000",
+            "Upper Freq (MHz)": "10500"
+          },
+          "1.25cm": {
+            "Enumeration Name": "Band",
+            "Band": "1.25cm",
+            "Lower Freq (MHz)": "24000",
+            "Upper Freq (MHz)": "24250"
+          },
+          "6mm": {
+            "Enumeration Name": "Band",
+            "Band": "6mm",
+            "Lower Freq (MHz)": "47000",
+            "Upper Freq (MHz)": "47200"
+          },
+          "4mm": {
+            "Enumeration Name": "Band",
+            "Band": "4mm",
+            "Lower Freq (MHz)": "75500",
+            "Upper Freq (MHz)": "81000"
+          },
+          "2.5mm": {
+            "Enumeration Name": "Band",
+            "Band": "2.5mm",
+            "Lower Freq (MHz)": "119980",
+            "Upper Freq (MHz)": "123000"
+          },
+          "2mm": {
+            "Enumeration Name": "Band",
+            "Band": "2mm",
+            "Lower Freq (MHz)": "134000",
+            "Upper Freq (MHz)": "149000"
+          },
+          "1mm": {
+            "Enumeration Name": "Band",
+            "Band": "1mm",
+            "Lower Freq (MHz)": "241000",
+            "Upper Freq (MHz)": "250000"
+          },
+          "submm": {
+            "Enumeration Name": "Band",
+            "Band": "submm",
+            "Lower Freq (MHz)": "300000",
+            "Upper Freq (MHz)": "7500000"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

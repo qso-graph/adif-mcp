@@ -1,6 +1,6 @@
 [project]
 name = "adif-mcp"
-version = "1.0.5"
+version = "1.1.0"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -84,7 +84,7 @@ Homepage = "https://qso-graph.io"
 Documentation = "https://qso-graph.io"
 Repository = "https://github.com/qso-graph/adif-mcp"
 Issues = "https://github.com/qso-graph/adif-mcp/issues"
-"ADIF Specification" = "https://adif.org.uk/316/ADIF_316.htm"
+"ADIF Specification" = "https://adif.org.uk/317/ADIF_317.htm"
 
 [project.scripts]
 adif-mcp = "adif_mcp.cli.__main__:main"
@@ -93,7 +93,7 @@ adif-mcp = "adif_mcp.cli.__main__:main"
 # ADIF tool config (OS-agnostic & SSOT-ish; helpers interpret it)
 # --------------------------------------------------------------------
 [tool.adif]
-spec_version = "3.1.6"
+spec_version = "3.1.7"
 features = ["core QSO model", "band/mode/QSL_RCVD enums"]
 
 [tool.adif_mcp]
@@ -103,7 +103,7 @@ meta_output = "adif_meta.json"
 personas_index = "personas.json"
 providers_dir = "providers"
 schemas = "adif_catalog.json"
-spec = "ADIF_316"
+spec = "ADIF_317"
 
 [tool.pytest.ini_options]
 testpaths = ["test"]

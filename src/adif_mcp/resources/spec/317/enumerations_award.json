@@ -1,0 +1,167 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:34Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Award": {
+        "Header": [
+          "Enumeration Name",
+          "Award",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "AJA": {
+            "Enumeration Name": "Award",
+            "Award": "AJA",
+            "Import-only": "true"
+          },
+          "CQDX": {
+            "Enumeration Name": "Award",
+            "Award": "CQDX",
+            "Import-only": "true"
+          },
+          "CQDXFIELD": {
+            "Enumeration Name": "Award",
+            "Award": "CQDXFIELD",
+            "Import-only": "true"
+          },
+          "CQWAZ_MIXED": {
+            "Enumeration Name": "Award",
+            "Award": "CQWAZ_MIXED",
+            "Import-only": "true"
+          },
+          "CQWAZ_CW": {
+            "Enumeration Name": "Award",
+            "Award": "CQWAZ_CW",
+            "Import-only": "true"
+          },
+          "CQWAZ_PHONE": {
+            "Enumeration Name": "Award",
+            "Award": "CQWAZ_PHONE",
+            "Import-only": "true"
+          },
+          "CQWAZ_RTTY": {
+            "Enumeration Name": "Award",
+            "Award": "CQWAZ_RTTY",
+            "Import-only": "true"
+          },
+          "CQWAZ_160m": {
+            "Enumeration Name": "Award",
+            "Award": "CQWAZ_160m",
+            "Import-only": "true"
+          },
+          "CQWPX": {
+            "Enumeration Name": "Award",
+            "Award": "CQWPX",
+            "Import-only": "true"
+          },
+          "DARC_DOK": {
+            "Enumeration Name": "Award",
+            "Award": "DARC_DOK",
+            "Import-only": "true"
+          },
+          "DXCC": {
+            "Enumeration Name": "Award",
+            "Award": "DXCC",
+            "Import-only": "true"
+          },
+          "DXCC_MIXED": {
+            "Enumeration Name": "Award",
+            "Award": "DXCC_MIXED",
+            "Import-only": "true"
+          },
+          "DXCC_CW": {
+            "Enumeration Name": "Award",
+            "Award": "DXCC_CW",
+            "Import-only": "true"
+          },
+          "DXCC_PHONE": {
+            "Enumeration Name": "Award",
+            "Award": "DXCC_PHONE",
+            "Import-only": "true"
+          },
+          "DXCC_RTTY": {
+            "Enumeration Name": "Award",
+            "Award": "DXCC_RTTY",
+            "Import-only": "true"
+          },
+          "IOTA": {
+            "Enumeration Name": "Award",
+            "Award": "IOTA",
+            "Import-only": "true"
+          },
+          "JCC": {
+            "Enumeration Name": "Award",
+            "Award": "JCC",
+            "Import-only": "true"
+          },
+          "JCG": {
+            "Enumeration Name": "Award",
+            "Award": "JCG",
+            "Import-only": "true"
+          },
+          "MARATHON": {
+            "Enumeration Name": "Award",
+            "Award": "MARATHON",
+            "Import-only": "true"
+          },
+          "RDA": {
+            "Enumeration Name": "Award",
+            "Award": "RDA",
+            "Import-only": "true"
+          },
+          "WAB": {
+            "Enumeration Name": "Award",
+            "Award": "WAB",
+            "Import-only": "true"
+          },
+          "WAC": {
+            "Enumeration Name": "Award",
+            "Award": "WAC",
+            "Import-only": "true"
+          },
+          "WAE": {
+            "Enumeration Name": "Award",
+            "Award": "WAE",
+            "Import-only": "true"
+          },
+          "WAIP": {
+            "Enumeration Name": "Award",
+            "Award": "WAIP",
+            "Import-only": "true"
+          },
+          "WAJA": {
+            "Enumeration Name": "Award",
+            "Award": "WAJA",
+            "Import-only": "true"
+          },
+          "WAS": {
+            "Enumeration Name": "Award",
+            "Award": "WAS",
+            "Import-only": "true"
+          },
+          "WAZ": {
+            "Enumeration Name": "Award",
+            "Award": "WAZ",
+            "Import-only": "true"
+          },
+          "USACA": {
+            "Enumeration Name": "Award",
+            "Award": "USACA",
+            "Import-only": "true"
+          },
+          "VUCC": {
+            "Enumeration Name": "Award",
+            "Award": "VUCC",
+            "Import-only": "true"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

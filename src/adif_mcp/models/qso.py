@@ -1,4 +1,4 @@
-"""ADIF 3.1.6 QSO Model definition."""
+"""ADIF 3.1.7 QSO Model definition."""
 
 from datetime import date, time
 from typing import Optional
@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field, field_validator
 
 class QSO(BaseModel):
     """
-    Represents a single ADIF 3.1.6 QSO record.
+    Represents a single ADIF 3.1.7 QSO record.
 
     Strictly typed to prevent hallucinations and ensure protocol integrity.
     """

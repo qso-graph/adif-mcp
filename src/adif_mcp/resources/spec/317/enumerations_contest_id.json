@@ -1,0 +1,1307 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:36Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Contest_ID": {
+        "Header": [
+          "Enumeration Name",
+          "Contest-ID",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "070-160M-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-160M-SPRINT",
+            "Description": "PODXS Great Pumpkin Sprint"
+          },
+          "070-3-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-3-DAY",
+            "Description": "PODXS Three Day Weekend"
+          },
+          "070-31-FLAVORS": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-31-FLAVORS",
+            "Description": "PODXS 31 Flavors"
+          },
+          "070-40M-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-40M-SPRINT",
+            "Description": "PODXS 40m Firecracker Sprint"
+          },
+          "070-80M-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-80M-SPRINT",
+            "Description": "PODXS 80m Jay Hudak Memorial Sprint"
+          },
+          "070-PSKFEST": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-PSKFEST",
+            "Description": "PODXS PSKFest"
+          },
+          "070-ST-PATS-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-ST-PATS-DAY",
+            "Description": "PODXS St. Patricks Day"
+          },
+          "070-VALENTINE-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "070-VALENTINE-SPRINT",
+            "Description": "PODXS Valentine Sprint"
+          },
+          "10-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "10-RTTY",
+            "Description": "Ten-Meter RTTY Contest (2011 onwards)"
+          },
+          "1010-OPEN-SEASON": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "1010-OPEN-SEASON",
+            "Description": "Open Season Ten Meter QSO Party"
+          },
+          "7QP": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "7QP",
+            "Description": "7th-Area QSO Party"
+          },
+          "AL-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "AL-QSO-PARTY",
+            "Description": "Alabama QSO Party"
+          },
+          "ALL-ASIAN-DX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ALL-ASIAN-DX-CW",
+            "Description": "JARL All Asian DX Contest (CW)"
+          },
+          "ALL-ASIAN-DX-PHONE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ALL-ASIAN-DX-PHONE",
+            "Description": "JARL All Asian DX Contest (PHONE)"
+          },
+          "ANARTS-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ANARTS-RTTY",
+            "Description": "ANARTS WW RTTY"
+          },
+          "ANATOLIAN-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ANATOLIAN-RTTY",
+            "Description": "Anatolian WW RTTY"
+          },
+          "AP-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "AP-SPRINT",
+            "Description": "Asia - Pacific Sprint"
+          },
+          "AR-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "AR-QSO-PARTY",
+            "Description": "Arkansas QSO Party"
+          },
+          "ARI-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-DX",
+            "Description": "ARI DX Contest"
+          },
+          "ARI-EME": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-EME",
+            "Description": "ARI Italian EME Trophy"
+          },
+          "ARI-IAC-13CM": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-IAC-13CM",
+            "Description": "ARI Italian Activity Contest (13cm\u002B)"
+          },
+          "ARI-IAC-23CM": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-IAC-23CM",
+            "Description": "ARI Italian Activity Contest (23cm)"
+          },
+          "ARI-IAC-6M": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-IAC-6M",
+            "Description": "ARI Italian Activity Contest (6m)"
+          },
+          "ARI-IAC-UHF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-IAC-UHF",
+            "Description": "ARI Italian Activity Contest (UHF)"
+          },
+          "ARI-IAC-VHF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARI-IAC-VHF",
+            "Description": "ARI Italian Activity Contest (VHF)"
+          },
+          "ARRL-10": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-10",
+            "Description": "ARRL 10 Meter Contest"
+          },
+          "ARRL-10-GHZ": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-10-GHZ",
+            "Description": "ARRL 10 GHz and Up Contest"
+          },
+          "ARRL-160": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-160",
+            "Description": "ARRL 160 Meter Contest"
+          },
+          "ARRL-222": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-222",
+            "Description": "ARRL 222 MHz and Up Distance Contest"
+          },
+          "ARRL-DIGI": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-DIGI",
+            "Description": "ARRL International Digital Contest"
+          },
+          "ARRL-DX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-DX-CW",
+            "Description": "ARRL International DX Contest (CW)"
+          },
+          "ARRL-DX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-DX-SSB",
+            "Description": "ARRL International DX Contest (Phone)"
+          },
+          "ARRL-EME": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-EME",
+            "Description": "ARRL EME contest"
+          },
+          "ARRL-FIELD-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-FIELD-DAY",
+            "Description": "ARRL Field Day"
+          },
+          "ARRL-RR-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-RR-CW",
+            "Description": "ARRL Rookie Roundup (CW)"
+          },
+          "ARRL-RR-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-RR-RTTY",
+            "Description": "ARRL Rookie Roundup (RTTY)"
+          },
+          "ARRL-RR-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-RR-SSB",
+            "Description": "ARRL Rookie Roundup (Phone)"
+          },
+          "ARRL-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-RTTY",
+            "Description": "ARRL RTTY Round-Up"
+          },
+          "ARRL-SCR": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-SCR",
+            "Description": "ARRL School Club Roundup"
+          },
+          "ARRL-SS-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-SS-CW",
+            "Description": "ARRL November Sweepstakes (CW)"
+          },
+          "ARRL-SS-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-SS-SSB",
+            "Description": "ARRL November Sweepstakes (Phone)"
+          },
+          "ARRL-UHF-AUG": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-UHF-AUG",
+            "Description": "ARRL August UHF Contest"
+          },
+          "ARRL-VHF-JAN": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-VHF-JAN",
+            "Description": "ARRL January VHF Sweepstakes"
+          },
+          "ARRL-VHF-JUN": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-VHF-JUN",
+            "Description": "ARRL June VHF QSO Party"
+          },
+          "ARRL-VHF-SEP": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ARRL-VHF-SEP",
+            "Description": "ARRL September VHF QSO Party"
+          },
+          "AZ-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "AZ-QSO-PARTY",
+            "Description": "Arizona QSO Party"
+          },
+          "BANGGAI-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "BANGGAI-DX",
+            "Description": "ORARI Banggai DX Contest"
+          },
+          "BARTG-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "BARTG-RTTY",
+            "Description": "BARTG Spring RTTY Contest"
+          },
+          "BARTG-SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "BARTG-SPRINT",
+            "Description": "BARTG Sprint Contest"
+          },
+          "BC-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "BC-QSO-PARTY",
+            "Description": "British Columbia QSO Party"
+          },
+          "BEKASI-MERDEKA-CONTEST": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "BEKASI-MERDEKA-CONTEST",
+            "Description": "ORARI Bekasi Merdeka Contest"
+          },
+          "CA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CA-QSO-PARTY",
+            "Description": "California QSO Party"
+          },
+          "CIS-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CIS-DX",
+            "Description": "CIS DX Contest"
+          },
+          "CO-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CO-QSO-PARTY",
+            "Description": "Colorado QSO Party"
+          },
+          "CQ-160-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-160-CW",
+            "Description": "CQ WW 160 Meter DX Contest (CW)"
+          },
+          "CQ-160-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-160-SSB",
+            "Description": "CQ WW 160 Meter DX Contest (SSB)"
+          },
+          "CQ-M": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-M",
+            "Description": "CQ-M International DX Contest"
+          },
+          "CQ-VHF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-VHF",
+            "Description": "CQ World-Wide VHF Contest"
+          },
+          "CQ-WPX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WPX-CW",
+            "Description": "CQ WW WPX Contest (CW)"
+          },
+          "CQ-WPX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WPX-RTTY",
+            "Description": "CQ/RJ WW RTTY WPX Contest"
+          },
+          "CQ-WPX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WPX-SSB",
+            "Description": "CQ WW WPX Contest (SSB)"
+          },
+          "CQ-WW-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WW-CW",
+            "Description": "CQ WW DX Contest (CW)"
+          },
+          "CQ-WW-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WW-RTTY",
+            "Description": "CQ/RJ WW RTTY DX Contest"
+          },
+          "CQ-WW-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CQ-WW-SSB",
+            "Description": "CQ WW DX Contest (SSB)"
+          },
+          "CT-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CT-QSO-PARTY",
+            "Description": "Connecticut QSO Party"
+          },
+          "CVA-DX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CVA-DX-CW",
+            "Description": "Concurso Verde e Amarelo DX CW Contest"
+          },
+          "CVA-DX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CVA-DX-SSB",
+            "Description": "Concurso Verde e Amarelo DX CW Contest"
+          },
+          "CWOPS-CW-OPEN": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CWOPS-CW-OPEN",
+            "Description": "CWops CW Open Competition"
+          },
+          "CWOPS-CWT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "CWOPS-CWT",
+            "Description": "CWops Mini-CWT Test"
+          },
+          "DARC-10": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-10",
+            "Description": "DARC 10m Contest"
+          },
+          "DARC-CWA": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-CWA",
+            "Description": "DARC CW Trainee Contest"
+          },
+          "DARC-FT4": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-FT4",
+            "Description": "DARC FT4 Contest"
+          },
+          "DARC-HELL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-HELL",
+            "Description": "DARC Hell Contest"
+          },
+          "DARC-MICROWAVE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-MICROWAVE",
+            "Description": "DARC Microwave Contest"
+          },
+          "DARC-TRAINEE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-TRAINEE",
+            "Description": "DARC Trainee Contest"
+          },
+          "DARC-UKW-SPRING": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-UKW-SPRING",
+            "Description": "DARC UKW Spring Contest"
+          },
+          "DARC-UKW-FIELD-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-UKW-FIELD-DAY",
+            "Description": "DARC UKW Summer Contest"
+          },
+          "DARC-VHF-UHF-MICROWAVE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-VHF-UHF-MICROWAVE",
+            "Description": "DARC VHF-, UHF-, Microwave Contest (May)"
+          },
+          "DARC-WAEDC-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-WAEDC-CW",
+            "Description": "WAE DX Contest (CW)"
+          },
+          "DARC-WAEDC-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-WAEDC-RTTY",
+            "Description": "WAE DX Contest (RTTY)"
+          },
+          "DARC-WAEDC-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-WAEDC-SSB",
+            "Description": "WAE DX Contest (SSB)"
+          },
+          "DARC-WAG": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DARC-WAG",
+            "Description": "DARC Worked All Germany"
+          },
+          "DE-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DE-QSO-PARTY",
+            "Description": "Delaware QSO Party"
+          },
+          "DL-DX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DL-DX-RTTY",
+            "Description": "DL-DX RTTY Contest"
+          },
+          "DMC-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "DMC-RTTY",
+            "Description": "DMC RTTY Contest"
+          },
+          "EA-CNCW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-CNCW",
+            "Description": "Concurso Nacional de Telegrafía"
+          },
+          "EA-DME": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-DME",
+            "Description": "Municipios Españoles"
+          },
+          "EA-MAJESTAD-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-MAJESTAD-CW",
+            "Description": "His Majesty The King of Spain CW Contest (2022 and later)"
+          },
+          "EA-MAJESTAD-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-MAJESTAD-SSB",
+            "Description": "His Majesty The King of Spain SSB Contest (2022 and later)"
+          },
+          "EA-PSK63": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-PSK63",
+            "Description": "EA PSK63"
+          },
+          "EA-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-RTTY",
+            "Description": "Unión de Radioaficionados Españoles RTTY Contest",
+            "Import-only": "true"
+          },
+          "EA-SMRE-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-SMRE-CW",
+            "Description": "Su Majestad El Rey de España - CW (2021 and earlier)"
+          },
+          "EA-SMRE-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-SMRE-SSB",
+            "Description": "Su Majestad El Rey de España - SSB (2021 and earlier)"
+          },
+          "EA-VHF-ATLANTIC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-ATLANTIC",
+            "Description": "Atlántico V-UHF"
+          },
+          "EA-VHF-COM": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-COM",
+            "Description": "Combinado de V-UHF"
+          },
+          "EA-VHF-COSTA-SOL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-COSTA-SOL",
+            "Description": "Costa del Sol V-UHF"
+          },
+          "EA-VHF-EA": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-EA",
+            "Description": "Nacional VHF"
+          },
+          "EA-VHF-EA1RCS": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-EA1RCS",
+            "Description": "Segovia EA1RCS V-UHF"
+          },
+          "EA-VHF-QSL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-QSL",
+            "Description": "QSL V-UHF \u0026 50MHz"
+          },
+          "EA-VHF-SADURNI": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-VHF-SADURNI",
+            "Description": "Sant Sadurni V-UHF"
+          },
+          "EA-WW-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EA-WW-RTTY",
+            "Description": "Unión de Radioaficionados Españoles RTTY Contest"
+          },
+          "EASTER": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EASTER",
+            "Description": "DARC Easter Contest"
+          },
+          "EPC-PSK63": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EPC-PSK63",
+            "Description": "PSK63 QSO Party"
+          },
+          "EU SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EU SPRINT",
+            "Description": "EU Sprint"
+          },
+          "EU-HF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EU-HF",
+            "Description": "EU HF Championship"
+          },
+          "EU-PSK-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EU-PSK-DX",
+            "Description": "EU PSK DX Contest"
+          },
+          "EUCW160M": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "EUCW160M",
+            "Description": "European CW Association 160m CW Party"
+          },
+          "FALL SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "FALL SPRINT",
+            "Description": "FISTS Fall Sprint"
+          },
+          "FL-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "FL-QSO-PARTY",
+            "Description": "Florida QSO Party"
+          },
+          "GA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "GA-QSO-PARTY",
+            "Description": "Georgia QSO Party"
+          },
+          "HA-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "HA-DX",
+            "Description": "Hungarian DX Contest"
+          },
+          "HELVETIA": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "HELVETIA",
+            "Description": "Helvetia Contest"
+          },
+          "HI-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "HI-QSO-PARTY",
+            "Description": "Hawaiian QSO Party"
+          },
+          "HOLYLAND": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "HOLYLAND",
+            "Description": "IARC Holyland Contest"
+          },
+          "IA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "IA-QSO-PARTY",
+            "Description": "Iowa QSO Party"
+          },
+          "IARU-FIELD-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "IARU-FIELD-DAY",
+            "Description": "DARC IARU Region 1 Field Day"
+          },
+          "IARU-HF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "IARU-HF",
+            "Description": "IARU HF World Championship"
+          },
+          "ICWC-MST": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ICWC-MST",
+            "Description": "ICWC Medium Speed Test"
+          },
+          "ID-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ID-QSO-PARTY",
+            "Description": "Idaho QSO Party"
+          },
+          "IL QSO PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "IL QSO PARTY",
+            "Description": "Illinois QSO Party"
+          },
+          "IN-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "IN-QSO-PARTY",
+            "Description": "Indiana QSO Party"
+          },
+          "JARTS-WW-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "JARTS-WW-RTTY",
+            "Description": "JARTS WW RTTY"
+          },
+          "JIDX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "JIDX-CW",
+            "Description": "Japan International DX Contest (CW)"
+          },
+          "JIDX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "JIDX-SSB",
+            "Description": "Japan International DX Contest (SSB)"
+          },
+          "JT-DX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "JT-DX-RTTY",
+            "Description": "Mongolian RTTY DX Contest"
+          },
+          "K1USN-SSO": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "K1USN-SSO",
+            "Description": "K1USN Slow Speed Open"
+          },
+          "K1USN-SST": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "K1USN-SST",
+            "Description": "K1USN Slow Speed Test"
+          },
+          "KS-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "KS-QSO-PARTY",
+            "Description": "Kansas QSO Party"
+          },
+          "KY-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "KY-QSO-PARTY",
+            "Description": "Kentucky QSO Party"
+          },
+          "LA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "LA-QSO-PARTY",
+            "Description": "Louisiana QSO Party"
+          },
+          "LDC-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "LDC-RTTY",
+            "Description": "DRCG Long Distance Contest (RTTY)"
+          },
+          "LZ DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "LZ DX",
+            "Description": "LZ DX Contest"
+          },
+          "MAR-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MAR-QSO-PARTY",
+            "Description": "Maritimes QSO Party"
+          },
+          "MD-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MD-QSO-PARTY",
+            "Description": "Maryland QSO Party"
+          },
+          "ME-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ME-QSO-PARTY",
+            "Description": "Maine QSO Party"
+          },
+          "MI-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MI-QSO-PARTY",
+            "Description": "Michigan QSO Party"
+          },
+          "MIDATLANTIC-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MIDATLANTIC-QSO-PARTY",
+            "Description": "Mid-Atlantic QSO Party"
+          },
+          "MN-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MN-QSO-PARTY",
+            "Description": "Minnesota QSO Party"
+          },
+          "MO-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MO-QSO-PARTY",
+            "Description": "Missouri QSO Party"
+          },
+          "MS-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MS-QSO-PARTY",
+            "Description": "Mississippi QSO Party"
+          },
+          "MT-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "MT-QSO-PARTY",
+            "Description": "Montana QSO Party"
+          },
+          "NA-SPRINT-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NA-SPRINT-CW",
+            "Description": "North America Sprint (CW)"
+          },
+          "NA-SPRINT-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NA-SPRINT-RTTY",
+            "Description": "North America Sprint (RTTY)"
+          },
+          "NA-SPRINT-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NA-SPRINT-SSB",
+            "Description": "North America Sprint (Phone)"
+          },
+          "NAQP-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NAQP-CW",
+            "Description": "North America QSO Party (CW)"
+          },
+          "NAQP-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NAQP-RTTY",
+            "Description": "North America QSO Party (RTTY)"
+          },
+          "NAQP-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NAQP-SSB",
+            "Description": "North America QSO Party (Phone)"
+          },
+          "NAVAL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NAVAL",
+            "Description": "International Naval Contest (INC)"
+          },
+          "NC-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NC-QSO-PARTY",
+            "Description": "North Carolina QSO Party"
+          },
+          "ND-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ND-QSO-PARTY",
+            "Description": "North Dakota QSO Party"
+          },
+          "NE-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NE-QSO-PARTY",
+            "Description": "Nebraska QSO Party"
+          },
+          "NEQP": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NEQP",
+            "Description": "New England QSO Party"
+          },
+          "NH-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NH-QSO-PARTY",
+            "Description": "New Hampshire QSO Party"
+          },
+          "NJ-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NJ-QSO-PARTY",
+            "Description": "New Jersey QSO Party"
+          },
+          "NM-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NM-QSO-PARTY",
+            "Description": "New Mexico QSO Party"
+          },
+          "NRAU-BALTIC-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NRAU-BALTIC-CW",
+            "Description": "NRAU-Baltic Contest (CW)"
+          },
+          "NRAU-BALTIC-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NRAU-BALTIC-SSB",
+            "Description": "NRAU-Baltic Contest (SSB)"
+          },
+          "NV-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NV-QSO-PARTY",
+            "Description": "Nevada QSO Party"
+          },
+          "NY-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "NY-QSO-PARTY",
+            "Description": "New York QSO Party"
+          },
+          "OCEANIA-DX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OCEANIA-DX-CW",
+            "Description": "Oceania DX Contest (CW)"
+          },
+          "OCEANIA-DX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OCEANIA-DX-SSB",
+            "Description": "Oceania DX Contest (SSB)"
+          },
+          "OH-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OH-QSO-PARTY",
+            "Description": "Ohio QSO Party"
+          },
+          "OK-DX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OK-DX-RTTY",
+            "Description": "Czech Radio Club OK DX Contest"
+          },
+          "OK-OM-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OK-OM-DX",
+            "Description": "Czech Radio Club OK-OM DX Contest"
+          },
+          "OK-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OK-QSO-PARTY",
+            "Description": "Oklahoma QSO Party"
+          },
+          "OMISS-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OMISS-QSO-PARTY",
+            "Description": "Old Man International Sideband Society QSO Party"
+          },
+          "ON-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ON-QSO-PARTY",
+            "Description": "Ontario QSO Party"
+          },
+          "OR-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "OR-QSO-PARTY",
+            "Description": "Oregon QSO Party"
+          },
+          "ORARI-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "ORARI-DX",
+            "Description": "ORARI DX Contest"
+          },
+          "PA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "PA-QSO-PARTY",
+            "Description": "Pennsylvania QSO Party"
+          },
+          "PACC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "PACC",
+            "Description": "Dutch PACC Contest"
+          },
+          "PCC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "PCC",
+            "Description": "PCCPro CW Contest"
+          },
+          "PSK-DEATHMATCH": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "PSK-DEATHMATCH",
+            "Description": "MDXA PSK DeathMatch (2005-2010)"
+          },
+          "QC-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "QC-QSO-PARTY",
+            "Description": "Quebec QSO Party"
+          },
+          "RAC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RAC",
+            "Description": "Canadian Amateur Radio Society Contest",
+            "Import-only": "true"
+          },
+          "RAC-CANADA-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RAC-CANADA-DAY",
+            "Description": "RAC Canada Day Contest"
+          },
+          "RAC-CANADA-WINTER": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RAC-CANADA-WINTER",
+            "Description": "RAC Canada Winter Contest"
+          },
+          "RDAC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RDAC",
+            "Description": "Russian District Award Contest"
+          },
+          "RDXC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RDXC",
+            "Description": "Russian DX Contest"
+          },
+          "REF-160M": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "REF-160M",
+            "Description": "Reseau des Emetteurs Francais 160m Contest"
+          },
+          "REF-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "REF-CW",
+            "Description": "Reseau des Emetteurs Francais Contest (CW)"
+          },
+          "REF-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "REF-SSB",
+            "Description": "Reseau des Emetteurs Francais Contest (SSB)"
+          },
+          "REP-PORTUGAL-DAY-HF": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "REP-PORTUGAL-DAY-HF",
+            "Description": "Rede dos Emissores Portugueses Portugal Day HF Contest"
+          },
+          "RI-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RI-QSO-PARTY",
+            "Description": "Rhode Island QSO Party"
+          },
+          "RSGB-160": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-160",
+            "Description": "1.8MHz Contest"
+          },
+          "RSGB-21/28-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-21/28-CW",
+            "Description": "21/28 MHz Contest (CW)"
+          },
+          "RSGB-21/28-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-21/28-SSB",
+            "Description": "21/28 MHz Contest (SSB)"
+          },
+          "RSGB-80M-CC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-80M-CC",
+            "Description": "80m Club Championships"
+          },
+          "RSGB-AFS-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-AFS-CW",
+            "Description": "Affiliated Societies Team Contest (CW)"
+          },
+          "RSGB-AFS-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-AFS-SSB",
+            "Description": "Affiliated Societies Team Contest (SSB)"
+          },
+          "RSGB-CLUB-CALLS": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-CLUB-CALLS",
+            "Description": "Club Calls"
+          },
+          "RSGB-COMMONWEALTH": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-COMMONWEALTH",
+            "Description": "Commonwealth Contest"
+          },
+          "RSGB-IOTA": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-IOTA",
+            "Description": "IOTA Contest"
+          },
+          "RSGB-LOW-POWER": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-LOW-POWER",
+            "Description": "Low Power Field Day"
+          },
+          "RSGB-NFD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-NFD",
+            "Description": "National Field Day"
+          },
+          "RSGB-ROPOCO": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-ROPOCO",
+            "Description": "RoPoCo"
+          },
+          "RSGB-SSB-FD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RSGB-SSB-FD",
+            "Description": "SSB Field Day"
+          },
+          "RUSSIAN-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "RUSSIAN-RTTY",
+            "Description": "Russian Radio RTTY Worldwide Contest"
+          },
+          "SAC-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SAC-CW",
+            "Description": "Scandinavian Activity Contest (CW)"
+          },
+          "SAC-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SAC-SSB",
+            "Description": "Scandinavian Activity Contest (SSB)"
+          },
+          "SARTG-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SARTG-RTTY",
+            "Description": "SARTG WW RTTY"
+          },
+          "SC-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SC-QSO-PARTY",
+            "Description": "South Carolina QSO Party"
+          },
+          "SCC-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SCC-RTTY",
+            "Description": "SCC RTTY Championship"
+          },
+          "SD-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SD-QSO-PARTY",
+            "Description": "South Dakota QSO Party"
+          },
+          "SHORTRY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SHORTRY",
+            "Description": "DARC RTTY Short Contest"
+          },
+          "SMP-AUG": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SMP-AUG",
+            "Description": "SSA Portabeltest"
+          },
+          "SMP-MAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SMP-MAY",
+            "Description": "SSA Portabeltest"
+          },
+          "SP-DX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SP-DX-RTTY",
+            "Description": "PRC SPDX Contest (RTTY)"
+          },
+          "SPAR-WINTER-FD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SPAR-WINTER-FD",
+            "Description": "SPAR Winter Field Day(2016 and earlier)"
+          },
+          "SPDXCONTEST": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SPDXCONTEST",
+            "Description": "SP DX Contest"
+          },
+          "SPRING SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SPRING SPRINT",
+            "Description": "FISTS Spring Sprint"
+          },
+          "SR-MARATHON": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SR-MARATHON",
+            "Description": "Scottish-Russian Marathon"
+          },
+          "STEW-PERRY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "STEW-PERRY",
+            "Description": "Stew Perry Topband Distance Challenge"
+          },
+          "SUMMER SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "SUMMER SPRINT",
+            "Description": "FISTS Summer Sprint"
+          },
+          "TARA-GRID-DIP": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TARA-GRID-DIP",
+            "Description": "TARA Grid Dip PSK-RTTY Shindig"
+          },
+          "TARA-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TARA-RTTY",
+            "Description": "TARA RTTY Mêlée"
+          },
+          "TARA-RUMBLE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TARA-RUMBLE",
+            "Description": "TARA Rumble PSK Contest"
+          },
+          "TARA-SKIRMISH": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TARA-SKIRMISH",
+            "Description": "TARA Skirmish Digital Prefix Contest"
+          },
+          "TEN-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TEN-RTTY",
+            "Description": "Ten-Meter RTTY Contest (before 2011)"
+          },
+          "TMC-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TMC-RTTY",
+            "Description": "The Makrothen Contest"
+          },
+          "TN-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TN-QSO-PARTY",
+            "Description": "Tennessee QSO Party"
+          },
+          "TX-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "TX-QSO-PARTY",
+            "Description": "Texas QSO Party"
+          },
+          "UBA-DX-CW": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UBA-DX-CW",
+            "Description": "UBA Contest (CW)"
+          },
+          "UBA-DX-SSB": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UBA-DX-SSB",
+            "Description": "UBA Contest (SSB)"
+          },
+          "UK-DX-BPSK63": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UK-DX-BPSK63",
+            "Description": "European PSK Club BPSK63 Contest"
+          },
+          "UK-DX-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UK-DX-RTTY",
+            "Description": "UK DX RTTY Contest"
+          },
+          "UKR-CHAMP-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UKR-CHAMP-RTTY",
+            "Description": "Open Ukraine RTTY Championship"
+          },
+          "UKRAINIAN DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UKRAINIAN DX",
+            "Description": "Ukrainian DX"
+          },
+          "UKSMG-6M-MARATHON": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UKSMG-6M-MARATHON",
+            "Description": "UKSMG 6m Marathon"
+          },
+          "UKSMG-SUMMER-ES": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UKSMG-SUMMER-ES",
+            "Description": "UKSMG Summer Es Contest"
+          },
+          "URE-DX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "URE-DX",
+            "Description": "Ukrainian DX Contest",
+            "Import-only": "true"
+          },
+          "US-COUNTIES-QSO": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "US-COUNTIES-QSO",
+            "Description": "Mobile Amateur Awards Club"
+          },
+          "UT-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "UT-QSO-PARTY",
+            "Description": "Utah QSO Party"
+          },
+          "VA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "VA-QSO-PARTY",
+            "Description": "Virginia QSO Party"
+          },
+          "VENEZ-IND-DAY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "VENEZ-IND-DAY",
+            "Description": "RCV Venezuelan Independence Day Contest"
+          },
+          "VIRGINIA QSO PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "VIRGINIA QSO PARTY",
+            "Description": "Virginia QSO Party",
+            "Import-only": "true"
+          },
+          "VOLTA-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "VOLTA-RTTY",
+            "Description": "Alessandro Volta RTTY DX Contest"
+          },
+          "VT-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "VT-QSO-PARTY",
+            "Description": "Vermont QSO Party"
+          },
+          "WA-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WA-QSO-PARTY",
+            "Description": "Washington QSO Party"
+          },
+          "WFD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WFD",
+            "Description": "Winter Field Day (2017 and later)"
+          },
+          "WI-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WI-QSO-PARTY",
+            "Description": "Wisconsin QSO Party"
+          },
+          "WIA-HARRY ANGEL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-HARRY ANGEL",
+            "Description": "WIA Harry Angel Memorial 80m Sprint"
+          },
+          "WIA-JMMFD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-JMMFD",
+            "Description": "WIA John Moyle Memorial Field Day"
+          },
+          "WIA-OCDX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-OCDX",
+            "Description": "WIA Oceania DX (OCDX) Contest"
+          },
+          "WIA-REMEMBRANCE": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-REMEMBRANCE",
+            "Description": "WIA Remembrance Day"
+          },
+          "WIA-ROSS HULL": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-ROSS HULL",
+            "Description": "WIA Ross Hull Memorial VHF/UHF Contest"
+          },
+          "WIA-TRANS TASMAN": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-TRANS TASMAN",
+            "Description": "WIA Trans Tasman Low Bands Challenge"
+          },
+          "WIA-VHF/UHF FD": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-VHF/UHF FD",
+            "Description": "WIA VHF UHF Field Days"
+          },
+          "WIA-VK SHIRES": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WIA-VK SHIRES",
+            "Description": "WIA VK Shires"
+          },
+          "WINTER SPRINT": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WINTER SPRINT",
+            "Description": "FISTS Winter Sprint"
+          },
+          "WV-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WV-QSO-PARTY",
+            "Description": "West Virginia QSO Party"
+          },
+          "WW-DIGI": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WW-DIGI",
+            "Description": "World Wide Digi DX Contest"
+          },
+          "WY-QSO-PARTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "WY-QSO-PARTY",
+            "Description": "Wyoming QSO Party"
+          },
+          "XE-INTL-RTTY": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "XE-INTL-RTTY",
+            "Description": "Mexico International Contest (RTTY)"
+          },
+          "YOHFDX": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "YOHFDX",
+            "Description": "YODX HF contest"
+          },
+          "YUDXC": {
+            "Enumeration Name": "Contest_ID",
+            "Contest-ID": "YUDXC",
+            "Description": "YU DX Contest"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

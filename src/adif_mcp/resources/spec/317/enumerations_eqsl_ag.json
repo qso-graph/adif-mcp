@@ -1,0 +1,38 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:39Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "EQSL_AG": {
+        "Header": [
+          "Enumeration Name",
+          "Status",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "Y": {
+            "Enumeration Name": "EQSL_AG",
+            "Status": "Y",
+            "Description": "The QSO\u0027s callsign holds eQSL.cc\u0027s \u0022Authenticity Guaranteed\u0022 status"
+          },
+          "N": {
+            "Enumeration Name": "EQSL_AG",
+            "Status": "N",
+            "Description": "The QSO\u0027s callsign does not hold eQSL.cc\u0027s \u0022Authenticity Guaranteed\u0022 status"
+          },
+          "U": {
+            "Enumeration Name": "EQSL_AG",
+            "Status": "U",
+            "Description": "Unspecified (Default)"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

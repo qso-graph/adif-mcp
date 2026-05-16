@@ -1,0 +1,984 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:54Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Submode": {
+        "Header": [
+          "Enumeration Name",
+          "Submode",
+          "Mode",
+          "Description",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "8PSK125": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK125",
+            "Mode": "PSK"
+          },
+          "8PSK125F": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK125F",
+            "Mode": "PSK"
+          },
+          "8PSK125FL": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK125FL",
+            "Mode": "PSK"
+          },
+          "8PSK250": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK250",
+            "Mode": "PSK"
+          },
+          "8PSK250F": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK250F",
+            "Mode": "PSK"
+          },
+          "8PSK250FL": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK250FL",
+            "Mode": "PSK"
+          },
+          "8PSK500": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK500",
+            "Mode": "PSK"
+          },
+          "8PSK500F": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK500F",
+            "Mode": "PSK"
+          },
+          "8PSK1000": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK1000",
+            "Mode": "PSK"
+          },
+          "8PSK1000F": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK1000F",
+            "Mode": "PSK"
+          },
+          "8PSK1200F": {
+            "Enumeration Name": "Submode",
+            "Submode": "8PSK1200F",
+            "Mode": "PSK"
+          },
+          "AMTORFEC": {
+            "Enumeration Name": "Submode",
+            "Submode": "AMTORFEC",
+            "Mode": "TOR"
+          },
+          "ASCI": {
+            "Enumeration Name": "Submode",
+            "Submode": "ASCI",
+            "Mode": "RTTY"
+          },
+          "C4FM": {
+            "Enumeration Name": "Submode",
+            "Submode": "C4FM",
+            "Mode": "DIGITALVOICE",
+            "Description": "C4FM 4-level FSK See the Propagation_Mode enumeration section for examples of representing C4FM voice transmissions."
+          },
+          "CHIP64": {
+            "Enumeration Name": "Submode",
+            "Submode": "CHIP64",
+            "Mode": "CHIP"
+          },
+          "CHIP128": {
+            "Enumeration Name": "Submode",
+            "Submode": "CHIP128",
+            "Mode": "CHIP"
+          },
+          "DMR": {
+            "Enumeration Name": "Submode",
+            "Submode": "DMR",
+            "Mode": "DIGITALVOICE",
+            "Description": "Digital Mobile Radio See the Propagation_Mode enumeration section for examples of representing DMR voice transmissions."
+          },
+          "DOM-M": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM-M",
+            "Mode": "DOMINO"
+          },
+          "DOM4": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM4",
+            "Mode": "DOMINO"
+          },
+          "DOM5": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM5",
+            "Mode": "DOMINO"
+          },
+          "DOM8": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM8",
+            "Mode": "DOMINO"
+          },
+          "DOM11": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM11",
+            "Mode": "DOMINO"
+          },
+          "DOM16": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM16",
+            "Mode": "DOMINO"
+          },
+          "DOM22": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM22",
+            "Mode": "DOMINO"
+          },
+          "DOM44": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM44",
+            "Mode": "DOMINO"
+          },
+          "DOM88": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOM88",
+            "Mode": "DOMINO"
+          },
+          "DOMINOEX": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOMINOEX",
+            "Mode": "DOMINO"
+          },
+          "DOMINOF": {
+            "Enumeration Name": "Submode",
+            "Submode": "DOMINOF",
+            "Mode": "DOMINO"
+          },
+          "DSTAR": {
+            "Enumeration Name": "Submode",
+            "Submode": "DSTAR",
+            "Mode": "DIGITALVOICE",
+            "Description": "Digital Smart Technologies for Amateur Radio See the Propagation_Mode enumeration section for examples of representing DSTAR voice transmissions."
+          },
+          "FMHELL": {
+            "Enumeration Name": "Submode",
+            "Submode": "FMHELL",
+            "Mode": "HELL"
+          },
+          "FREEDATA": {
+            "Enumeration Name": "Submode",
+            "Submode": "FREEDATA",
+            "Mode": "DYNAMIC",
+            "Description": "Data communications leveraging Codec2 HF modems"
+          },
+          "FREEDV": {
+            "Enumeration Name": "Submode",
+            "Submode": "FREEDV",
+            "Mode": "DIGITALVOICE",
+            "Description": "Digital voice mode for HF radio implemented with open source"
+          },
+          "FSK31": {
+            "Enumeration Name": "Submode",
+            "Submode": "FSK31",
+            "Mode": "PSK"
+          },
+          "FSKH105": {
+            "Enumeration Name": "Submode",
+            "Submode": "FSKH105",
+            "Mode": "HELL"
+          },
+          "FSKH245": {
+            "Enumeration Name": "Submode",
+            "Submode": "FSKH245",
+            "Mode": "HELL"
+          },
+          "FSKHELL": {
+            "Enumeration Name": "Submode",
+            "Submode": "FSKHELL",
+            "Mode": "HELL"
+          },
+          "FSQCALL": {
+            "Enumeration Name": "Submode",
+            "Submode": "FSQCALL",
+            "Mode": "MFSK",
+            "Description": "FSQCall protocol used with FSQ (Fast Simple QSO) transmission mode"
+          },
+          "FST4": {
+            "Enumeration Name": "Submode",
+            "Submode": "FST4",
+            "Mode": "MFSK",
+            "Description": "This is a digital mode supported by the WSJT-X software"
+          },
+          "FST4W": {
+            "Enumeration Name": "Submode",
+            "Submode": "FST4W",
+            "Mode": "MFSK",
+            "Description": "This is a digital mode supported by the WSJT-X software that is for quasi-beacon transmissions of WSPR-style messages"
+          },
+          "FT2": {
+            "Enumeration Name": "Submode",
+            "Submode": "FT2",
+            "Mode": "MFSK"
+          },
+          "FT4": {
+            "Enumeration Name": "Submode",
+            "Submode": "FT4",
+            "Mode": "MFSK",
+            "Description": "FT4 is a digital mode designed specifically for radio contesting"
+          },
+          "GTOR": {
+            "Enumeration Name": "Submode",
+            "Submode": "GTOR",
+            "Mode": "TOR"
+          },
+          "HELL80": {
+            "Enumeration Name": "Submode",
+            "Submode": "HELL80",
+            "Mode": "HELL"
+          },
+          "HELLX5": {
+            "Enumeration Name": "Submode",
+            "Submode": "HELLX5",
+            "Mode": "HELL"
+          },
+          "HELLX9": {
+            "Enumeration Name": "Submode",
+            "Submode": "HELLX9",
+            "Mode": "HELL"
+          },
+          "HFSK": {
+            "Enumeration Name": "Submode",
+            "Submode": "HFSK",
+            "Mode": "HELL"
+          },
+          "ISCAT-A": {
+            "Enumeration Name": "Submode",
+            "Submode": "ISCAT-A",
+            "Mode": "ISCAT"
+          },
+          "ISCAT-B": {
+            "Enumeration Name": "Submode",
+            "Submode": "ISCAT-B",
+            "Mode": "ISCAT"
+          },
+          "JS8": {
+            "Enumeration Name": "Submode",
+            "Submode": "JS8",
+            "Mode": "MFSK",
+            "Description": "Jordan Sherer designed 8-FSK modulation"
+          },
+          "JT4A": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4A",
+            "Mode": "JT4"
+          },
+          "JT4B": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4B",
+            "Mode": "JT4"
+          },
+          "JT4C": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4C",
+            "Mode": "JT4"
+          },
+          "JT4D": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4D",
+            "Mode": "JT4"
+          },
+          "JT4E": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4E",
+            "Mode": "JT4"
+          },
+          "JT4F": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4F",
+            "Mode": "JT4"
+          },
+          "JT4G": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT4G",
+            "Mode": "JT4"
+          },
+          "JT9-1": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9-1",
+            "Mode": "JT9"
+          },
+          "JT9-2": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9-2",
+            "Mode": "JT9"
+          },
+          "JT9-5": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9-5",
+            "Mode": "JT9"
+          },
+          "JT9-10": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9-10",
+            "Mode": "JT9"
+          },
+          "JT9-30": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9-30",
+            "Mode": "JT9"
+          },
+          "JT9A": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9A",
+            "Mode": "JT9"
+          },
+          "JT9B": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9B",
+            "Mode": "JT9"
+          },
+          "JT9C": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9C",
+            "Mode": "JT9"
+          },
+          "JT9D": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9D",
+            "Mode": "JT9"
+          },
+          "JT9E": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9E",
+            "Mode": "JT9"
+          },
+          "JT9E FAST": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9E FAST",
+            "Mode": "JT9"
+          },
+          "JT9F": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9F",
+            "Mode": "JT9"
+          },
+          "JT9F FAST": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9F FAST",
+            "Mode": "JT9"
+          },
+          "JT9G": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9G",
+            "Mode": "JT9"
+          },
+          "JT9G FAST": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9G FAST",
+            "Mode": "JT9"
+          },
+          "JT9H": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9H",
+            "Mode": "JT9"
+          },
+          "JT9H FAST": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT9H FAST",
+            "Mode": "JT9"
+          },
+          "JT65A": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT65A",
+            "Mode": "JT65"
+          },
+          "JT65B": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT65B",
+            "Mode": "JT65"
+          },
+          "JT65B2": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT65B2",
+            "Mode": "JT65"
+          },
+          "JT65C": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT65C",
+            "Mode": "JT65"
+          },
+          "JT65C2": {
+            "Enumeration Name": "Submode",
+            "Submode": "JT65C2",
+            "Mode": "JT65"
+          },
+          "JTMS": {
+            "Enumeration Name": "Submode",
+            "Submode": "JTMS",
+            "Mode": "MFSK"
+          },
+          "LSB": {
+            "Enumeration Name": "Submode",
+            "Submode": "LSB",
+            "Mode": "SSB",
+            "Description": "Amplitude modulated voice telephony, lower-sideband, suppressed-carrier"
+          },
+          "M17": {
+            "Enumeration Name": "Submode",
+            "Submode": "M17",
+            "Mode": "DIGITALVOICE",
+            "Description": "Digital radio protocol using the Codec 2 voice encoder"
+          },
+          "MFSK4": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK4",
+            "Mode": "MFSK"
+          },
+          "MFSK8": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK8",
+            "Mode": "MFSK"
+          },
+          "MFSK11": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK11",
+            "Mode": "MFSK"
+          },
+          "MFSK16": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK16",
+            "Mode": "MFSK"
+          },
+          "MFSK22": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK22",
+            "Mode": "MFSK"
+          },
+          "MFSK31": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK31",
+            "Mode": "MFSK"
+          },
+          "MFSK32": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK32",
+            "Mode": "MFSK"
+          },
+          "MFSK64": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK64",
+            "Mode": "MFSK"
+          },
+          "MFSK64L": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK64L",
+            "Mode": "MFSK"
+          },
+          "MFSK128": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK128",
+            "Mode": "MFSK"
+          },
+          "MFSK128L": {
+            "Enumeration Name": "Submode",
+            "Submode": "MFSK128L",
+            "Mode": "MFSK"
+          },
+          "NAVTEX": {
+            "Enumeration Name": "Submode",
+            "Submode": "NAVTEX",
+            "Mode": "TOR"
+          },
+          "OLIVIA 4/125": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 4/125",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 4/250": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 4/250",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 8/250": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 8/250",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 8/500": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 8/500",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 16/500": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 16/500",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 16/1000": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 16/1000",
+            "Mode": "OLIVIA"
+          },
+          "OLIVIA 32/1000": {
+            "Enumeration Name": "Submode",
+            "Submode": "OLIVIA 32/1000",
+            "Mode": "OLIVIA"
+          },
+          "OPERA-BEACON": {
+            "Enumeration Name": "Submode",
+            "Submode": "OPERA-BEACON",
+            "Mode": "OPERA"
+          },
+          "OPERA-QSO": {
+            "Enumeration Name": "Submode",
+            "Submode": "OPERA-QSO",
+            "Mode": "OPERA"
+          },
+          "PAC2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PAC2",
+            "Mode": "PAC"
+          },
+          "PAC3": {
+            "Enumeration Name": "Submode",
+            "Submode": "PAC3",
+            "Mode": "PAC"
+          },
+          "PAC4": {
+            "Enumeration Name": "Submode",
+            "Submode": "PAC4",
+            "Mode": "PAC"
+          },
+          "PAX2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PAX2",
+            "Mode": "PAX"
+          },
+          "PCW": {
+            "Enumeration Name": "Submode",
+            "Submode": "PCW",
+            "Mode": "CW",
+            "Description": "Coherent CW"
+          },
+          "PSK10": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK10",
+            "Mode": "PSK"
+          },
+          "PSK31": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK31",
+            "Mode": "PSK"
+          },
+          "PSK63": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63",
+            "Mode": "PSK"
+          },
+          "PSK63F": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63F",
+            "Mode": "PSK"
+          },
+          "PSK63RC10": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63RC10",
+            "Mode": "PSK"
+          },
+          "PSK63RC20": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63RC20",
+            "Mode": "PSK"
+          },
+          "PSK63RC32": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63RC32",
+            "Mode": "PSK"
+          },
+          "PSK63RC4": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63RC4",
+            "Mode": "PSK"
+          },
+          "PSK63RC5": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK63RC5",
+            "Mode": "PSK"
+          },
+          "PSK125": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125",
+            "Mode": "PSK"
+          },
+          "PSK125RC10": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125RC10",
+            "Mode": "PSK"
+          },
+          "PSK125RC12": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125RC12",
+            "Mode": "PSK"
+          },
+          "PSK125RC16": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125RC16",
+            "Mode": "PSK"
+          },
+          "PSK125RC4": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125RC4",
+            "Mode": "PSK"
+          },
+          "PSK125RC5": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK125RC5",
+            "Mode": "PSK"
+          },
+          "PSK250": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250",
+            "Mode": "PSK"
+          },
+          "PSK250RC2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250RC2",
+            "Mode": "PSK"
+          },
+          "PSK250RC3": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250RC3",
+            "Mode": "PSK"
+          },
+          "PSK250RC5": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250RC5",
+            "Mode": "PSK"
+          },
+          "PSK250RC6": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250RC6",
+            "Mode": "PSK"
+          },
+          "PSK250RC7": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK250RC7",
+            "Mode": "PSK"
+          },
+          "PSK500": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK500",
+            "Mode": "PSK"
+          },
+          "PSK500RC2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK500RC2",
+            "Mode": "PSK"
+          },
+          "PSK500RC3": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK500RC3",
+            "Mode": "PSK"
+          },
+          "PSK500RC4": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK500RC4",
+            "Mode": "PSK"
+          },
+          "PSK800RC2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK800RC2",
+            "Mode": "PSK"
+          },
+          "PSK1000": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK1000",
+            "Mode": "PSK"
+          },
+          "PSK1000RC2": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSK1000RC2",
+            "Mode": "PSK"
+          },
+          "PSKAM10": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSKAM10",
+            "Mode": "PSK"
+          },
+          "PSKAM31": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSKAM31",
+            "Mode": "PSK"
+          },
+          "PSKAM50": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSKAM50",
+            "Mode": "PSK"
+          },
+          "PSKFEC31": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSKFEC31",
+            "Mode": "PSK"
+          },
+          "PSKHELL": {
+            "Enumeration Name": "Submode",
+            "Submode": "PSKHELL",
+            "Mode": "HELL"
+          },
+          "QPSK31": {
+            "Enumeration Name": "Submode",
+            "Submode": "QPSK31",
+            "Mode": "PSK"
+          },
+          "Q65": {
+            "Enumeration Name": "Submode",
+            "Submode": "Q65",
+            "Mode": "MFSK"
+          },
+          "QPSK63": {
+            "Enumeration Name": "Submode",
+            "Submode": "QPSK63",
+            "Mode": "PSK"
+          },
+          "QPSK125": {
+            "Enumeration Name": "Submode",
+            "Submode": "QPSK125",
+            "Mode": "PSK"
+          },
+          "QPSK250": {
+            "Enumeration Name": "Submode",
+            "Submode": "QPSK250",
+            "Mode": "PSK"
+          },
+          "QPSK500": {
+            "Enumeration Name": "Submode",
+            "Submode": "QPSK500",
+            "Mode": "PSK"
+          },
+          "QRA64A": {
+            "Enumeration Name": "Submode",
+            "Submode": "QRA64A",
+            "Mode": "QRA64"
+          },
+          "QRA64B": {
+            "Enumeration Name": "Submode",
+            "Submode": "QRA64B",
+            "Mode": "QRA64"
+          },
+          "QRA64C": {
+            "Enumeration Name": "Submode",
+            "Submode": "QRA64C",
+            "Mode": "QRA64"
+          },
+          "QRA64D": {
+            "Enumeration Name": "Submode",
+            "Submode": "QRA64D",
+            "Mode": "QRA64"
+          },
+          "QRA64E": {
+            "Enumeration Name": "Submode",
+            "Submode": "QRA64E",
+            "Mode": "QRA64"
+          },
+          "RIBBIT_PIX": {
+            "Enumeration Name": "Submode",
+            "Submode": "RIBBIT_PIX",
+            "Mode": "OFDM",
+            "Description": "Images transmitted using Ribbit"
+          },
+          "RIBBIT_SMS": {
+            "Enumeration Name": "Submode",
+            "Submode": "RIBBIT_SMS",
+            "Mode": "OFDM",
+            "Description": "Short text messages transmitted using Ribbit"
+          },
+          "ROS-EME": {
+            "Enumeration Name": "Submode",
+            "Submode": "ROS-EME",
+            "Mode": "ROS"
+          },
+          "ROS-HF": {
+            "Enumeration Name": "Submode",
+            "Submode": "ROS-HF",
+            "Mode": "ROS"
+          },
+          "ROS-MF": {
+            "Enumeration Name": "Submode",
+            "Submode": "ROS-MF",
+            "Mode": "ROS"
+          },
+          "SCAMP_FAST": {
+            "Enumeration Name": "Submode",
+            "Submode": "SCAMP_FAST",
+            "Mode": "FSK",
+            "Description": "SCAMP fast FSK"
+          },
+          "SCAMP_OO": {
+            "Enumeration Name": "Submode",
+            "Submode": "SCAMP_OO",
+            "Mode": "MTONE",
+            "Description": "SCAMP single modulated tone on/off keying"
+          },
+          "SCAMP_OO_SLW": {
+            "Enumeration Name": "Submode",
+            "Submode": "SCAMP_OO_SLW",
+            "Mode": "MTONE",
+            "Description": "SCAMP single modulated tone on/off slow keying"
+          },
+          "SCAMP_SLOW": {
+            "Enumeration Name": "Submode",
+            "Submode": "SCAMP_SLOW",
+            "Mode": "FSK",
+            "Description": "SCAMP slow FSK"
+          },
+          "SCAMP_VSLOW": {
+            "Enumeration Name": "Submode",
+            "Submode": "SCAMP_VSLOW",
+            "Mode": "FSK",
+            "Description": "SCAMP very slow FSK"
+          },
+          "SIM31": {
+            "Enumeration Name": "Submode",
+            "Submode": "SIM31",
+            "Mode": "PSK"
+          },
+          "SITORB": {
+            "Enumeration Name": "Submode",
+            "Submode": "SITORB",
+            "Mode": "TOR"
+          },
+          "SLOWHELL": {
+            "Enumeration Name": "Submode",
+            "Submode": "SLOWHELL",
+            "Mode": "HELL"
+          },
+          "THOR-M": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR-M",
+            "Mode": "THOR"
+          },
+          "THOR4": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR4",
+            "Mode": "THOR"
+          },
+          "THOR5": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR5",
+            "Mode": "THOR"
+          },
+          "THOR8": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR8",
+            "Mode": "THOR"
+          },
+          "THOR11": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR11",
+            "Mode": "THOR"
+          },
+          "THOR16": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR16",
+            "Mode": "THOR"
+          },
+          "THOR22": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR22",
+            "Mode": "THOR"
+          },
+          "THOR25X4": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR25X4",
+            "Mode": "THOR"
+          },
+          "THOR50X1": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR50X1",
+            "Mode": "THOR"
+          },
+          "THOR50X2": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR50X2",
+            "Mode": "THOR"
+          },
+          "THOR100": {
+            "Enumeration Name": "Submode",
+            "Submode": "THOR100",
+            "Mode": "THOR"
+          },
+          "THRBX": {
+            "Enumeration Name": "Submode",
+            "Submode": "THRBX",
+            "Mode": "THRB"
+          },
+          "THRBX1": {
+            "Enumeration Name": "Submode",
+            "Submode": "THRBX1",
+            "Mode": "THRB"
+          },
+          "THRBX2": {
+            "Enumeration Name": "Submode",
+            "Submode": "THRBX2",
+            "Mode": "THRB"
+          },
+          "THRBX4": {
+            "Enumeration Name": "Submode",
+            "Submode": "THRBX4",
+            "Mode": "THRB"
+          },
+          "THROB1": {
+            "Enumeration Name": "Submode",
+            "Submode": "THROB1",
+            "Mode": "THRB"
+          },
+          "THROB2": {
+            "Enumeration Name": "Submode",
+            "Submode": "THROB2",
+            "Mode": "THRB"
+          },
+          "THROB4": {
+            "Enumeration Name": "Submode",
+            "Submode": "THROB4",
+            "Mode": "THRB"
+          },
+          "USB": {
+            "Enumeration Name": "Submode",
+            "Submode": "USB",
+            "Mode": "SSB",
+            "Description": "Amplitude modulated voice telephony, upper-sideband, suppressed-carrier"
+          },
+          "VARA HF": {
+            "Enumeration Name": "Submode",
+            "Submode": "VARA HF",
+            "Mode": "DYNAMIC",
+            "Description": "Channel adaptive high-speed modem for HF"
+          },
+          "VARA SATELLITE": {
+            "Enumeration Name": "Submode",
+            "Submode": "VARA SATELLITE",
+            "Mode": "DYNAMIC",
+            "Description": "Channel adaptive high-speed modem for satellite operations"
+          },
+          "VARA FM 1200": {
+            "Enumeration Name": "Submode",
+            "Submode": "VARA FM 1200",
+            "Mode": "DYNAMIC",
+            "Description": "Channel adaptive high-speed modem for FM transceivers"
+          },
+          "VARA FM 9600": {
+            "Enumeration Name": "Submode",
+            "Submode": "VARA FM 9600",
+            "Mode": "DYNAMIC",
+            "Description": "Channel adaptive high-speed modem for FM transceivers"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

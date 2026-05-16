@@ -1,0 +1,109 @@
+{
+  "Adif": {
+    "Version": "3.1.7",
+    "Status": "Released",
+    "Date": "2026-03-22T00:00:00Z",
+    "Created": "2026-03-22T12:41:51Z",
+    "DataTypes": null,
+    "Enumerations": {
+      "Region": {
+        "Header": [
+          "Enumeration Name",
+          "Region Entity Code",
+          "DXCC Entity Code",
+          "Region",
+          "Prefix",
+          "Applicability",
+          "Start Date",
+          "End Date",
+          "Import-only",
+          "Comments"
+        ],
+        "Records": {
+          "NONE": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "NONE",
+            "Region": "Not within a WAE or CQ region that is within a DXCC entity"
+          },
+          "IV.206": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "IV",
+            "DXCC Entity Code": "206",
+            "Region": "ITU Vienna",
+            "Prefix": "4U1V",
+            "Applicability": "CQ, WAE"
+          },
+          "AI.248": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "AI",
+            "DXCC Entity Code": "248",
+            "Region": "African Italy",
+            "Prefix": "IG9",
+            "Applicability": "CQ"
+          },
+          "SY.248": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "SY",
+            "DXCC Entity Code": "248",
+            "Region": "Sicily",
+            "Prefix": "IT9",
+            "Applicability": "CQ, WAE"
+          },
+          "BI.259": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "BI",
+            "DXCC Entity Code": "259",
+            "Region": "Bear Island",
+            "Prefix": "JW/B",
+            "Applicability": "CQ, WAE"
+          },
+          "SI.279": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "SI",
+            "DXCC Entity Code": "279",
+            "Region": "Shetland Islands",
+            "Prefix": "GM/S",
+            "Applicability": "CQ, WAE"
+          },
+          "KO.296": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "KO",
+            "DXCC Entity Code": "296",
+            "Region": "Kosovo",
+            "Prefix": "YU8",
+            "Applicability": "CQ, WAE",
+            "End Date": "2012-09-11T00:00:00Z"
+          },
+          "KO.0": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "KO",
+            "DXCC Entity Code": "0",
+            "Region": "Kosovo",
+            "Prefix": "Z6",
+            "Applicability": "CQ, WAE",
+            "Start Date": "2012-09-12T00:00:00Z",
+            "End Date": "2018-01-20T00:00:00Z"
+          },
+          "KO.522": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "KO",
+            "DXCC Entity Code": "522",
+            "Region": "Kosovo",
+            "Prefix": "Z6",
+            "Applicability": "CQ, WAE",
+            "Start Date": "2018-01-21T00:00:00Z"
+          },
+          "ET.390": {
+            "Enumeration Name": "Region",
+            "Region Entity Code": "ET",
+            "DXCC Entity Code": "390",
+            "Region": "European Turkey",
+            "Prefix": "TA1",
+            "Applicability": "CQ"
+          }
+        }
+      }
+    },
+    "Fields": null
+  }
+}

@@ -89,3 +89,27 @@ def test_country_matches_dxcc_entity_names(version_dir: str) -> None:
         for name, rec in country.items()
     }
     assert actual == expected
+
+
+_UPSTREAM = os.path.join(os.path.dirname(__file__), "data", "adif_upstream_sha256.json")
+
+
+@pytest.mark.parametrize("version_dir", VERSIONS)
+def test_upstream_files_match_adif_org_checksums(version_dir: str) -> None:
+    """Every ADIF export we package is byte-identical to adif.org.uk's (#8).
+
+    The SHA-256 values come from ADIF's published resource zip, so a change here
+    is our change, never mistaken for an upstream one.
+    """
+    import hashlib
+
+    with open(_UPSTREAM, encoding="utf-8") as f:
+        pinned = json.load(f)["versions"][version_dir]["files"]
+    packaged = {
+        os.path.basename(p) for p in glob.glob(os.path.join(_SPEC, version_dir, "*.json"))
+    }
+    assert packaged - set(pinned) == {"enumerations_country.json"}
+    assert set(pinned) <= packaged
+    for name, sha in pinned.items():
+        with open(os.path.join(_SPEC, version_dir, name), "rb") as fh:
+            assert hashlib.sha256(fh.read()).hexdigest() == sha, name

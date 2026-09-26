@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2026-09-26
+
+### Fixed
+
+* **Country is now labelled as a view of ADIF's DXCC_Entity_Code** (#8). ADIF's `MY_COUNTRY` / `MY_COUNTRY_INTL` fields name a "Country" enumeration whose data is ADIF's published `DXCC_Entity_Code` Entity Name column. ADIF publishes no separate Country table, so `all.json` and `enumerations.json` correctly carry 25 enumerations. `enumerations_country.json` is that ADIF column re-keyed by name by adif-mcp. It now carries a `Derived` block, and `list_enumerations` reports a `source` for every enumeration (`"ADIF"` or `"ADIF DXCC_Entity_Code Entity Name, re-keyed by adif-mcp"`). The upstream files are unchanged and stay byte-identical to ADIF's exports.
+* `list_enumerations` docstring said 25 enumerations; it returns 26 (25 ADIF + Country) (#5, supersedes #6).
+* `make gate` passes again: `test/test_resources.py` had three tests without docstrings, below the 100% `interrogate` floor.
+
+### Added
+
+* `test/test_spec_consistency.py`: for 3.1.6 and 3.1.7, the combined files must equal the ADIF per-file exports record for record; every per-file enumeration must be an ADIF export (with a matching `Version`) or declared derived; the server's enumeration table must match the files; Country must match the DXCC entity names it comes from. Each of those was seen to fail on a deliberately broken copy.
+* `scripts/generate_country_enum.py` takes the spec directory as an argument (was hardcoded to 316) and writes the `Derived` block.
+
 ## [1.1.0] - 2026-05-16
 
 ### Added

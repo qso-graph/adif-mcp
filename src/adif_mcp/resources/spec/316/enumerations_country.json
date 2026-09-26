@@ -1,5 +1,11 @@
 {
   "Adif": {
+    "Derived": {
+      "By": "adif-mcp",
+      "Generator": "scripts/generate_country_enum.py",
+      "From": "enumerations_dxcc_entity_code.json, Entity Name",
+      "Note": "A view of ADIF's DXCC_Entity_Code Entity Name, re-keyed by name. The data is ADIF's; ADIF publishes no separate Country table."
+    },
     "Enumerations": {
       "Country": {
         "Header": [

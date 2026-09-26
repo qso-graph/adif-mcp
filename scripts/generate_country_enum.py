@@ -7,8 +7,10 @@ are the Entity Name column of DXCC_Entity_Code. This script derives the
 Country enumeration from that column. Deleted DXCC entities are marked
 Import-only.
 
-The output is NOT an ADIF export. It carries a "Derived" block saying so,
-and it must never be merged into the upstream combined files (all.json,
+The data is ADIF's: every name and code comes from ADIF's published
+DXCC_Entity_Code enumeration. Only the file is ours, re-keyed by name so
+MY_COUNTRY can be validated. It carries a "Derived" block saying so, and it
+must never be merged into the upstream combined files (all.json,
 enumerations.json), which stay byte-identical to what ADIF publishes.
 
 Usage: python scripts/generate_country_enum.py 317   (spec directory name)
@@ -61,8 +63,9 @@ def main() -> None:
                 "By": "adif-mcp",
                 "Generator": "scripts/generate_country_enum.py",
                 "From": "enumerations_dxcc_entity_code.json, Entity Name",
-                "Note": "Not an ADIF export. ADIF references a Country "
-                "enumeration but publishes no Country table.",
+                "Note": "A view of ADIF's DXCC_Entity_Code Entity Name, re-keyed "
+                "by name. The data is ADIF's; ADIF publishes no separate Country "
+                "table.",
             },
             "Enumerations": {
                 "Country": {

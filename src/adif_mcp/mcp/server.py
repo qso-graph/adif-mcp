@@ -55,12 +55,13 @@ ENUMERATION_FIELDS: Dict[str, List[str]] = {
     "Submode": ["Submode", "Mode"],
 }
 
-# Enumerations adif-mcp derives itself. ADIF's MY_COUNTRY / MY_COUNTRY_INTL fields
-# name a "Country" enumeration, but the ADIF exports publish no Country table; it is
-# generated from DXCC_Entity_Code's Entity Name column by scripts/generate_country_enum.py.
-# Every other enumeration is ADIF's own export, unmodified.
+# Enumerations whose file adif-mcp builds itself. ADIF's MY_COUNTRY / MY_COUNTRY_INTL
+# fields name a "Country" enumeration, and its data is ADIF's published DXCC_Entity_Code
+# Entity Name column; ADIF publishes no separate Country table, so
+# scripts/generate_country_enum.py re-keys that column by name. Every other enumeration
+# is ADIF's own export, unmodified.
 DERIVED_ENUMERATIONS: Dict[str, str] = {
-    "Country": "adif-mcp (derived from DXCC_Entity_Code Entity Name)",
+    "Country": "ADIF DXCC_Entity_Code Entity Name, re-keyed by adif-mcp",
 }
 
 # Primary key field for membership validation per enumeration

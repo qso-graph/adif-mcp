@@ -55,6 +55,14 @@ ENUMERATION_FIELDS: Dict[str, List[str]] = {
     "Submode": ["Submode", "Mode"],
 }
 
+# Enumerations adif-mcp derives itself. ADIF's MY_COUNTRY / MY_COUNTRY_INTL fields
+# name a "Country" enumeration, but the ADIF exports publish no Country table; it is
+# generated from DXCC_Entity_Code's Entity Name column by scripts/generate_country_enum.py.
+# Every other enumeration is ADIF's own export, unmodified.
+DERIVED_ENUMERATIONS: Dict[str, str] = {
+    "Country": "adif-mcp (derived from DXCC_Entity_Code Entity Name)",
+}
+
 # Primary key field for membership validation per enumeration
 ENUM_VALIDATION_KEY: Dict[str, str] = {
     "Ant_Path": "Abbreviation",
@@ -545,7 +553,11 @@ def read_specification_resource(resource_name: str) -> str:
 
 @mcp.tool()
 def list_enumerations() -> Dict[str, Any]:
-    """Lists all 25 ADIF 3.1.7 enumerations with record counts and fields."""
+    """Lists the 26 enumerations: ADIF 3.1.7's 25 plus Country (derived).
+
+    Each entry's ``source`` says whether it is ADIF's own export or derived
+    by adif-mcp, so a consumer loading reference tables can tell them apart.
+    """
     result: Dict[str, Any] = {}
     for enum_name, fields in ENUMERATION_FIELDS.items():
         records = _load_enum_records(enum_name)
@@ -557,6 +569,7 @@ def list_enumerations() -> Dict[str, Any]:
             "record_count": len(records),
             "import_only_count": import_only_count,
             "searchable_fields": fields,
+            "source": DERIVED_ENUMERATIONS.get(enum_name, "ADIF"),
         }
     return {"enumeration_count": len(result), "enumerations": result}
 

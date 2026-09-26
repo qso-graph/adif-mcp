@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
 """Generate enumerations_country.json from DXCC Entity Code enumeration.
 
-The ADIF spec defines Country as the DXCC entity name. This script extracts
-all Entity Names from enumerations_dxcc_entity_code.json and creates a
-Country enumeration file. Deleted DXCC entities are marked Import-only.
+ADIF's MY_COUNTRY and MY_COUNTRY_INTL fields name an enumeration called
+"Country", but the ADIF exports publish no Country table: the country names
+are the Entity Name column of DXCC_Entity_Code. This script derives the
+Country enumeration from that column. Deleted DXCC entities are marked
+Import-only.
 
-One-time generator — output is committed as a static resource.
+The output is NOT an ADIF export. It carries a "Derived" block saying so,
+and it must never be merged into the upstream combined files (all.json,
+enumerations.json), which stay byte-identical to what ADIF publishes.
+
+Usage: python scripts/generate_country_enum.py 317   (spec directory name)
+Output is committed as a static resource.
 """
 
 import json
 import os
+import sys
 
 
 def main() -> None:
     """Generate Country enumeration JSON from DXCC entities."""
+    if len(sys.argv) != 2:
+        sys.exit("usage: generate_country_enum.py <spec-version-dir, e.g. 317>")
+    version = sys.argv[1]
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    spec_dir = os.path.join(
-        script_dir, "..", "src", "adif_mcp", "resources", "spec", "316"
-    )
+    spec_dir = os.path.join(script_dir, "..", "src", "adif_mcp", "resources", "spec", version)
 
     dxcc_path = os.path.join(spec_dir, "enumerations_dxcc_entity_code.json")
     with open(dxcc_path, "r", encoding="utf-8") as f:
@@ -48,6 +57,13 @@ def main() -> None:
 
     output = {
         "Adif": {
+            "Derived": {
+                "By": "adif-mcp",
+                "Generator": "scripts/generate_country_enum.py",
+                "From": "enumerations_dxcc_entity_code.json, Entity Name",
+                "Note": "Not an ADIF export. ADIF references a Country "
+                "enumeration but publishes no Country table.",
+            },
             "Enumerations": {
                 "Country": {
                     "Header": [
@@ -58,7 +74,7 @@ def main() -> None:
                     ],
                     "Records": country_records,
                 }
-            }
+            },
         }
     }
 
@@ -67,9 +83,7 @@ def main() -> None:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     total = len(country_records)
-    deleted = sum(
-        1 for r in country_records.values() if r.get("Import-only") == "true"
-    )
+    deleted = sum(1 for r in country_records.values() if r.get("Import-only") == "true")
     print(f"Generated {out_path}")
     active = total - deleted
     print(f"  Total: {total} countries ({active} active, {deleted} import-only)")

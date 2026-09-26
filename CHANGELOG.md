@@ -2,12 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.1.1] - 2026-09-26
 
 ### Fixed
 
 * **Country is now labelled as a view of ADIF's DXCC_Entity_Code** (#8). ADIF's `MY_COUNTRY` / `MY_COUNTRY_INTL` fields name a "Country" enumeration whose data is ADIF's published `DXCC_Entity_Code` Entity Name column. ADIF publishes no separate Country table, so `all.json` and `enumerations.json` correctly carry 25 enumerations. `enumerations_country.json` is that ADIF column re-keyed by name by adif-mcp. It now carries a `Derived` block, and `list_enumerations` reports a `source` for every enumeration (`"ADIF"` or `"ADIF DXCC_Entity_Code Entity Name, re-keyed by adif-mcp"`). The upstream files are unchanged and stay byte-identical to ADIF's exports.
 * `list_enumerations` docstring said 25 enumerations; it returns 26 (25 ADIF + Country).
+* `make gate` passes again: `test/test_resources.py` had three tests without docstrings, below the 100% `interrogate` floor.
 
 ### Added
 

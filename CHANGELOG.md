@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2026-09-26
+
+### Security
+
+* **`read_specification_resource` could read `.json` files outside the spec directory** (#9). The resource name was joined into a file path unchecked, so a relative name such as `../../x` read any `.json` file on the host at a lowercase path. Present since the 3.1.6 loader; 1.1.0 and 1.1.1 are affected. Names must now match `[a-z0-9_]+`. The error message also no longer includes the server's spec directory path.
+
+### Fixed
+
+* **An unknown resource name returned the whole 958 KB `all.json`** instead of an error (#9). There is no fallback now: an unknown name returns an error with the list of available names. `all` still returns `all.json`.
+* **The 3.1.6 spec files are byte-identical to ADIF's again** (#8). Their content always matched, but they had been committed with LF line endings where ADIF ships CRLF, so the 1.1.1 entry's "byte-identical" held for 3.1.7 only. They are restored from `ADIF_316_resources_2025_09_15.zip`, and `.gitattributes` marks the spec JSON `-text` so git never converts them again.
+
+### Added
+
+* `test/data/adif_upstream_sha256.json`: SHA-256 of ADIF's resource zips and of every JSON export in them, for 3.1.6 and 3.1.7. `test_upstream_files_match_adif_org_checksums` requires every packaged ADIF file to match, and `enumerations_country.json` to be the only file that is not ADIF's (#8, item 3).
+* Two tests in `test_security.py` for #9 (path-like names rejected; unknown names are an error). Both fail against the 1.1.1 server.
+
 ## [1.1.1] - 2026-09-26
 
 ### Fixed

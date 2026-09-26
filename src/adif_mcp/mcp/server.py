@@ -420,6 +420,8 @@ def _validate_time(field_name: str, value: str) -> List[str]:
 
 # --- Spec File Loader ---
 
+_SPEC_NAME_RE = re.compile(r"[a-z0-9_]+")
+
 
 def get_spec_text(filename: str, version: str = "317") -> str:
     """Retrieve raw text of a 3.1.7 specification JSON file."""
@@ -429,10 +431,15 @@ def get_spec_text(filename: str, version: str = "317") -> str:
     )
     name = filename.lower().strip()
 
+    # A resource name is a bare file stem: nothing that can climb out of json_dir.
+    # There is no fallback: an unknown name is an error, never the whole all.json
+    # (issue #9). Ask for "all" to get all.json.
+    if not _SPEC_NAME_RE.fullmatch(name):
+        return json.dumps({"error": f"Invalid resource name {filename!r}."})
+
     targets = [
         os.path.join(json_dir, f"enumerations_{name}.json"),
         os.path.join(json_dir, f"{name}.json"),
-        os.path.join(json_dir, "all.json"),
     ]
 
     for target_path in targets:
@@ -442,7 +449,14 @@ def get_spec_text(filename: str, version: str = "317") -> str:
                     return f.read()
             except Exception:
                 continue
-    return json.dumps({"error": f"Resource {name} not found in {json_dir}"})
+    available = sorted(
+        f[: -len(".json")].removeprefix("enumerations_")
+        for f in os.listdir(json_dir)
+        if f.endswith(".json")
+    )
+    return json.dumps(
+        {"error": f"Resource {name!r} not found.", "available": available}
+    )
 
 
 # --- MCP Resources ---
@@ -548,7 +562,10 @@ async def parse_adif(
 
 @mcp.tool()
 def read_specification_resource(resource_name: str) -> str:
-    """Reads an ADIF 3.1.7 specification resource (e.g., 'mode')."""
+    """Reads an ADIF 3.1.7 specification resource (e.g., 'mode', 'fields', 'all').
+
+    An unknown name returns an error listing the available names.
+    """
     return get_spec_text(resource_name)
 
 

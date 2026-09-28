@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2026-09-28
+
+### Added (CI hygiene)
+
+- **MCP Registry sync** — `publish.yml` publishes to the [Official MCP Registry](https://registry.modelcontextprotocol.io)
+  after each PyPI publish, using GitHub OIDC for auth. Triggered on
+  `v*` tag push; no manual steps. The Registry job waits until PyPI
+  serves the version, and retries. Pattern documented in
+  [qso-graph/.github/TEMPLATES.md](https://github.com/qso-graph/.github/blob/main/TEMPLATES.md).
+- **Registry version badge** in README — PyPI and Registry versions
+  are visible side-by-side so any drift between publishing surfaces
+  is immediately apparent.
+- **Release gates** — the tag must match `pyproject.toml`, and a
+  `verify` job fails the release unless PyPI and the MCP Registry
+  both serve the new version.
+
+### Fixed
+
+- The Official MCP Registry listed adif-mcp at 0.9.3. This release brings it current.
+
 ## [1.1.2] - 2026-09-26
 
 ### Security

@@ -1,30 +1,45 @@
 <!-- mcp-name: io.github.qso-graph/adif-mcp -->
 # adif-mcp
 
-Core [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for **Amateur Radio Logging**, built on the [ADIF 3.1.7 specification](https://adif.org.uk/317/ADIF_317.htm).
+[![PyPI](https://img.shields.io/pypi/v/adif-mcp?label=PyPI&color=blue)](https://pypi.org/project/adif-mcp/)
+[![MCP Registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0%2Fservers%3Fsearch%3Dadif-mcp&query=%24.servers%5B0%5D.server.version&label=MCP%20Registry&color=blue)](https://registry.modelcontextprotocol.io/v0/servers?search=adif-mcp)
 
-## Overview
+MCP server for the [ADIF 3.1.7 specification](https://adif.org.uk/317/ADIF_317.htm): validate and parse ADIF records, search the spec's fields, enumerations and data types, and compute distance and heading between Maidenhead locators, through any MCP-compatible AI assistant.
 
-adif-mcp gives AI agents safe, typed access to Amateur Radio logging data. It validates and parses ADIF records, searches the full ADIF 3.1.7 specification (fields, enumerations, data types), and provides geospatial utilities for Maidenhead locators.
+Part of the [qso-graph](https://qso-graph.io/) project. **No authentication required** — the ADIF specification is bundled, so it works offline.
 
-[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)](https://www.python.org/)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
-[![ADIF 3.1.7](https://img.shields.io/badge/ADIF-3.1.7-blue)](https://adif.org.uk/317/ADIF_317.htm)
-[![PyPI](https://img.shields.io/pypi/v/adif-mcp)](https://pypi.org/project/adif-mcp/)
-[![CI](https://github.com/qso-graph/adif-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/qso-graph/adif-mcp/actions/workflows/ci.yml)
-[![Docs](https://img.shields.io/badge/docs-qso--graph.io-blue)](https://qso-graph.io/)
-
-## Quick Start
+## Install
 
 ```bash
 pip install adif-mcp
 ```
 
-## Configure Your MCP Client
+## Tools
 
-adif-mcp works with any MCP-compatible client. Add the server config and restart -- tools appear automatically.
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `validate_adif_record` | Validate a raw ADIF record against the 3.1.7 spec | adif_string |
+| `parse_adif` | Streaming parser for large ADIF files, with pagination | file_path, start_at, limit |
+| `read_specification_resource` | Raw JSON for any spec module (band, mode, fields, ...) | resource_name |
+| `list_enumerations` | All ADIF enumerations with entry counts | — |
+| `search_enumerations` | Search enumeration records by keyword | search_term, enumeration |
+| `calculate_distance` | Great-circle distance (km) between two Maidenhead locators | start, end |
+| `calculate_heading` | Initial beam heading (azimuth) between two locators | start, end |
+| `get_version_info` | Service version + upstream spec version (fleet identity attestation) | — |
 
-### Claude Desktop
+## What is ADIF?
+
+ADIF (Amateur Data Interchange Format) is the standard file format amateur radio logging programs use to exchange QSO records. adif-mcp is the specification package of qso-graph: it validates, parses and searches ADIF so an assistant can work with logs safely and accurately. Credentials are handled separately by [qso-graph-auth](https://pypi.org/project/qso-graph-auth/), and each logging service has its own MCP server (see [qso-graph.io](https://qso-graph.io/)).
+
+## Quick Start
+
+No credentials needed — just install and configure your MCP client.
+
+### Configure your MCP client
+
+adif-mcp works with any MCP-compatible client. Add the server config and restart. The tools appear automatically.
+
+#### Claude Desktop
 
 Add to `claude_desktop_config.json` (`~/Library/Application Support/Claude/` on macOS, `%APPDATA%\Claude\` on Windows):
 
@@ -38,7 +53,7 @@ Add to `claude_desktop_config.json` (`~/Library/Application Support/Claude/` on 
 }
 ```
 
-### Claude Code
+#### Claude Code
 
 Add to `.claude/settings.json`:
 
@@ -52,7 +67,7 @@ Add to `.claude/settings.json`:
 }
 ```
 
-### ChatGPT Desktop
+#### ChatGPT Desktop
 
 Configure via Settings > Apps & Connectors, or in your agent definition:
 
@@ -66,7 +81,7 @@ Configure via Settings > Apps & Connectors, or in your agent definition:
 }
 ```
 
-### Cursor
+#### Cursor
 
 Add to `.cursor/mcp.json` (project-level) or `~/.cursor/mcp.json` (global):
 
@@ -80,7 +95,7 @@ Add to `.cursor/mcp.json` (project-level) or `~/.cursor/mcp.json` (global):
 }
 ```
 
-### VS Code / GitHub Copilot
+#### VS Code / GitHub Copilot
 
 Add to `.vscode/mcp.json` in your workspace:
 
@@ -94,7 +109,7 @@ Add to `.vscode/mcp.json` in your workspace:
 }
 ```
 
-### Gemini CLI
+#### Gemini CLI
 
 Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 
@@ -108,43 +123,15 @@ Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 }
 ```
 
-## Tools
+### Ask questions
 
-adif-mcp exposes **8 tools** via the Model Context Protocol:
+> "Is this ADIF record valid? <CALL:5>KI7MT<QSO_DATE:8>20260928<BAND:3>20m<MODE:3>SSB<EOR>"
 
-| Category | Tool | Description |
-|----------|------|-------------|
-| **Validation** | `validate_adif_record` | Validate a raw ADIF string against the 3.1.7 spec |
-| **Validation** | `parse_adif` | Streaming parser for large ADIF files with pagination |
-| **Spec** | `read_specification_resource` | Retrieve raw JSON for any spec module (band, mode, fields) |
-| **Spec** | `list_enumerations` | List all ADIF enumerations with entry counts |
-| **Spec** | `search_enumerations` | Search enumeration records by keyword |
-| **Geospatial** | `calculate_distance` | Great Circle distance (km) between two Maidenhead locators |
-| **Geospatial** | `calculate_heading` | Initial beam heading (azimuth) between two locators |
-| **System** | `get_version_info` | Active service version and ADIF spec version |
+> "What values does the ADIF MODE enumeration allow for digital modes?"
 
-## Architecture
+> "Parse my log file and show me the first 50 QSOs."
 
-adif-mcp is the **ADIF specification package** -- validation, parsing, and geospatial tools. Credential management is handled by [qso-graph-auth](https://pypi.org/project/qso-graph-auth/). Service integrations are separate MCP servers:
-
-| Package | PyPI | What It Does |
-|---------|------|-------------|
-| [`qso-graph-auth`](https://pypi.org/project/qso-graph-auth/) | v0.1.1 | OS keyring credential management, persona CRUD |
-| [`adif-mcp`](https://pypi.org/project/adif-mcp/) | v1.1.0 | ADIF 3.1.7 spec tools, validation, parsing, geospatial |
-| [`eqsl-mcp`](https://pypi.org/project/eqsl-mcp/) | v0.3.1 | eQSL inbox, verification, AG status, last upload |
-| [`qrz-mcp`](https://pypi.org/project/qrz-mcp/) | v0.3.1 | Callsign lookup, DXCC, logbook status/fetch |
-| [`lotw-mcp`](https://pypi.org/project/lotw-mcp/) | v0.3.1 | LoTW confirmations, QSOs, DXCC credits, user activity |
-| [`hamqth-mcp`](https://pypi.org/project/hamqth-mcp/) | v0.4.0 | Callsign lookup, DXCC, bio, activity, DX spots, RBN, QSO verify |
-| [`pota-mcp`](https://pypi.org/project/pota-mcp/) | v0.2.1 | Parks on the Air spots, park info, stats, schedules |
-| [`sota-mcp`](https://pypi.org/project/sota-mcp/) | v0.1.5 | Summits on the Air spots, alerts, summit info, stats |
-| [`solar-mcp`](https://pypi.org/project/solar-mcp/) | v0.2.0 | Space weather conditions, forecasts, band outlook |
-| [`wspr-mcp`](https://pypi.org/project/wspr-mcp/) | v0.3.1 | WSPR beacon spots, propagation, band activity |
-| [`iota-mcp`](https://pypi.org/project/iota-mcp/) | v0.1.1 | Islands on the Air lookup, search, nearby groups |
-| [`n1mm-mcp`](https://pypi.org/project/n1mm-mcp/) | v0.1.3 | N1MM Logger+ contest state via UDP |
-| [`ionis-mcp`](https://pypi.org/project/ionis-mcp/) | v1.2.8 | HF propagation analytics (175M+ signatures) |
-| [`qsp-mcp`](https://pypi.org/project/qsp-mcp/) | v0.2.1 | Local LLM ↔ MCP tool relay |
-
-Authenticated servers use [qso-graph-auth](https://pypi.org/project/qso-graph-auth/) for persona lookup and keyring-backed credentials. Operators install only the servers they need. Each server is independently versioned with no unnecessary dependencies.
+> "How far is it from DN13 to JN48, and what heading should I point the beam?"
 
 ## Compliance & Provenance
 
@@ -160,6 +147,15 @@ The project uses **APP_ fields** for provenance when augmenting records:
 - `APP_ADIF-MCP_OP` -- operation performed (`normalize`, `validate`, `merge`)
 - `APP_ADIF-MCP-LOTW_ACTION` -- LoTW server operation
 - `APP_ADIF-MCP-EQSL_TIME` -- timestamp of eQSL merge
+
+## Development
+
+```bash
+git clone https://github.com/qso-graph/adif-mcp.git
+cd adif-mcp
+pip install -e ".[test]"
+pytest
+```
 
 ## License
 

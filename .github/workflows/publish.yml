@@ -12,6 +12,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # PyPI publishes pyproject's version; the Registry publishes the tag's.
+      # They must be the same, or the two would disagree about what was released.
+      - name: Tag matches pyproject.toml version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PKG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
+          echo "tag=${TAG_VERSION} pyproject=${PKG_VERSION}"
+          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
+            echo "FAIL: tag v${TAG_VERSION} does not match pyproject.toml version ${PKG_VERSION}"
+            exit 1
+          fi
+
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -51,3 +64,110 @@ jobs:
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
+
+  # ---------------------------------------------------------------------------
+  # Registry-publish — pushes server.json to the Official MCP Registry after
+  # PyPI publish succeeds, so discovery surfaces stay in sync with PyPI.
+  # Canonical template: https://github.com/qso-graph/.github/blob/main/TEMPLATES.md
+  # ---------------------------------------------------------------------------
+  registry-publish:
+    name: Publish to MCP Registry
+    needs: publish  # waits for PyPI publish to succeed
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # GitHub OIDC
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install jq (server.json bump)
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Install mcp-publisher
+        run: |
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher --help > /dev/null  # smoke test
+
+      - name: Bump server.json to tag version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          echo "Setting server.json to ${TAG_VERSION}"
+          jq --arg v "$TAG_VERSION" \
+             '.version = $v | .packages[0].version = $v' \
+             server.json > /tmp/server.json
+          mv /tmp/server.json server.json
+          cat server.json
+
+      # The Registry checks PyPI itself and refuses a version PyPI isn't
+      # serving yet, which can lag the upload by a minute or more.
+      - name: Wait until PyPI serves this version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
+          for i in $(seq 1 40); do
+            if curl -fsS "https://pypi.org/pypi/${PACKAGE}/${TAG_VERSION}/json" > /dev/null; then
+              echo "PyPI serves ${PACKAGE} ${TAG_VERSION}"
+              exit 0
+            fi
+            echo "attempt ${i}: PyPI doesn't serve ${PACKAGE} ${TAG_VERSION} yet"
+            sleep 15
+          done
+          echo "FAIL: PyPI never served ${PACKAGE} ${TAG_VERSION}"
+          exit 1
+
+      - name: Authenticate to MCP Registry (GitHub OIDC)
+        run: ./mcp-publisher login github-oidc
+
+      # Retries ride out the Registry's own transient failures. Before each
+      # retry, check whether an earlier attempt landed despite the error.
+      - name: Publish to MCP Registry
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          NAME="$(jq -r '.name' server.json)"
+          REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
+          for i in 1 2 3 4 5; do
+            if ./mcp-publisher publish; then
+              exit 0
+            fi
+            echo "attempt ${i} failed; retrying in $((i * 30)) s"
+            sleep $((i * 30))
+            REG="$(curl -fsS "$REGISTRY" | jq -r --arg n "$NAME" '[.servers[] | select(.server.name == $n) | .server.version][0] // empty' || true)"
+            if [ "$REG" = "$TAG_VERSION" ]; then
+              echo "The Registry already has ${NAME} ${TAG_VERSION}; an earlier attempt landed"
+              exit 0
+            fi
+          done
+          echo "FAIL: the MCP Registry refused the publish 5 times"
+          exit 1
+
+  # ---------------------------------------------------------------------------
+  # Verify — a release is complete only when PyPI AND the MCP Registry both
+  # serve the tagged version. If either doesn't within 10 minutes, this run
+  # fails: a green run means published everywhere, a red one means not done.
+  # ---------------------------------------------------------------------------
+  verify:
+    name: Verify PyPI and MCP Registry
+    needs: registry-publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: PyPI and Registry serve the tagged version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
+          NAME="$(jq -r '.name' server.json)"
+          REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
+          for i in $(seq 1 40); do
+            PYPI="$(curl -fsS "https://pypi.org/pypi/${PACKAGE}/json" | jq -r '.info.version' || true)"
+            REG="$(curl -fsS "$REGISTRY" | jq -r --arg n "$NAME" '[.servers[] | select(.server.name == $n) | .server.version][0] // empty' || true)"
+            echo "attempt ${i}: PyPI=${PYPI:-none} Registry=${REG:-none} want=${TAG_VERSION}"
+            if [ "$PYPI" = "$TAG_VERSION" ] && [ "$REG" = "$TAG_VERSION" ]; then
+              echo "Published everywhere: ${PACKAGE} ${TAG_VERSION} on PyPI and ${NAME} ${TAG_VERSION} in the MCP Registry"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "FAIL: release incomplete. PyPI=${PYPI:-none} Registry=${REG:-none}, expected ${TAG_VERSION}"
+          exit 1

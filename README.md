@@ -2,7 +2,7 @@
 # adif-mcp
 
 [![PyPI](https://img.shields.io/pypi/v/adif-mcp?label=PyPI&color=blue)](https://pypi.org/project/adif-mcp/)
-[![MCP Registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0%2Fservers%3Fsearch%3Dadif-mcp&query=%24.servers%5B0%5D.server.version&label=MCP%20Registry&color=blue)](https://registry.modelcontextprotocol.io/v0/servers?search=adif-mcp)
+[![MCP Registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0%2Fservers%3Fsearch%3Dio.github.qso-graph%2Fadif-mcp%26version%3Dlatest&query=%24.servers%5B0%5D.server.version&label=MCP%20Registry&color=blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.qso-graph/adif-mcp&version=latest)
 
 MCP server for the [ADIF 3.1.7 specification](https://adif.org.uk/317/ADIF_317.htm): validate and parse ADIF records, search the spec's fields, enumerations and data types, and compute distance and heading between Maidenhead locators, through any MCP-compatible AI assistant.
 

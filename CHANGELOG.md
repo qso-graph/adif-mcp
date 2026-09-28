@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.4] - 2026-09-28
+
+### Fixed
+
+- **Attribution for the ADIF specification files** (#12). The package redistributes ADIF's own
+  exports (versions 3.1.6 and 3.1.7) under our GPL-3.0-or-later declaration, with no notice that
+  they are ADIF's work. A `NOTICE` file and a README beside the files now say so: they are the
+  ADIF Developers Group's, redistributed unmodified from adif.org.uk, and not covered by our
+  licence. Our own files there (each version's derived `enumerations_country.json`,
+  `adif_catalog.json`, `adif_meta.json`) are listed as ours.
+
 ## [1.1.3] - 2026-09-28
 
 ### Added (CI hygiene)

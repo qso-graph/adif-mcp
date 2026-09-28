@@ -159,4 +159,6 @@ pytest
 
 ## License
 
-GPL-3.0-or-later. See [LICENSE](LICENSE) for details.
+adif-mcp's own code is GPL-3.0-or-later. See [LICENSE](LICENSE) for details.
+
+**The ADIF specification files are not ours.** The package includes the ADIF 3.1.6 and 3.1.7 specification exports, unmodified, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our licence doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and two small catalog files. See [NOTICE](NOTICE).

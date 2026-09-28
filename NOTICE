@@ -1,0 +1,24 @@
+adif-mcp
+Copyright (C) Greg Beam, KI7MT, and contributors.
+Licensed under the GNU General Public License v3.0 or later (see LICENSE).
+
+Third-party material: the ADIF specification
+--------------------------------------------
+
+The files in src/adif_mcp/resources/spec/316/ and src/adif_mcp/resources/spec/317/
+are the Amateur Data Interchange Format (ADIF) specification exports, versions 3.1.6
+and 3.1.7, produced by the ADIF Developers Group and published at
+https://adif.org.uk/. They are redistributed unmodified; a test checks that they stay
+byte-identical to ADIF's published files.
+
+They are ADIF's work, not ours. This project's GPL-3.0-or-later licence covers our
+own code and files. It does not cover the ADIF specification files, and we claim no
+rights in them. ADIF publishes the exports so developers can "generate (for example)
+program data or SQL files" from them, which is how this project uses them.
+
+Exceptions, which are ours:
+- src/adif_mcp/resources/spec/316/enumerations_country.json
+- src/adif_mcp/resources/spec/317/enumerations_country.json
+  The Country enumeration is derived by this project (see the file's "Derived" block);
+  ADIF does not publish it in this form.
+- src/adif_mcp/resources/spec/adif_catalog.json and adif_meta.json.

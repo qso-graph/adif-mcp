@@ -11,7 +11,8 @@ Part of the [qso-graph](https://qso-graph.io/) project. **No authentication requ
 ## Install
 
 ```bash
-pip install adif-mcp
+uvx adif-mcp            # run it; nothing to install
+pip install adif-mcp    # or install it into your own environment
 ```
 
 ## Tools
@@ -47,7 +48,8 @@ Add to `claude_desktop_config.json` (`~/Library/Application Support/Claude/` on 
 {
   "mcpServers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
@@ -61,7 +63,8 @@ Add to `.claude/settings.json`:
 {
   "mcpServers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
@@ -75,7 +78,8 @@ Configure via Settings > Apps & Connectors, or in your agent definition:
 {
   "mcpServers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
@@ -89,7 +93,8 @@ Add to `.cursor/mcp.json` (project-level) or `~/.cursor/mcp.json` (global):
 {
   "mcpServers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
@@ -103,7 +108,8 @@ Add to `.vscode/mcp.json` in your workspace:
 {
   "servers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
@@ -117,11 +123,14 @@ Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 {
   "mcpServers": {
     "adif": {
-      "command": "adif-mcp"
+      "command": "uvx",
+      "args": ["adif-mcp"]
     }
   }
 }
 ```
+
+Installed with pip instead? Use `"command": "adif-mcp"` in any config above.
 
 ### Ask questions
 
@@ -153,8 +162,8 @@ The project uses **APP_ fields** for provenance when augmenting records:
 ```bash
 git clone https://github.com/qso-graph/adif-mcp.git
 cd adif-mcp
-pip install -e ".[test]"
-pytest
+uv sync --group dev
+uv run pytest
 ```
 
 ## License

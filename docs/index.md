@@ -35,7 +35,7 @@ ADIF-MCP is a community-driven effort. It does not replace or compete with exist
 
 - **Interoperability** -- schema-driven, spec-compliant core for tools and services to talk to each other
 - **Extensibility** -- plugin and integration framework for LoTW, eQSL, QRZ, and future platforms
-- **Collaboration** -- designed to complement, not fragment, the ecosystem of ADIF tools
+- **Collaboration** -- designed to complement, not fragment, the ADIF tools hams already use
 - **Future-facing** -- safe, typed access to ADIF data for AI agents and modern workflows
 
 ## Quick Links

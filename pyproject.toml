@@ -81,7 +81,7 @@ all = [
 
 [project.urls]
 Homepage = "https://qso-graph.io"
-Documentation = "https://qso-graph.io"
+Documentation = "https://qso-graph.io/servers/adif-mcp/"
 Repository = "https://github.com/qso-graph/adif-mcp"
 Issues = "https://github.com/qso-graph/adif-mcp/issues"
 "ADIF Specification" = "https://adif.org.uk/317/ADIF_317.htm"

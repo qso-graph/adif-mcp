@@ -26,7 +26,7 @@ Traditionally, getting those answers means exporting ADIF, writing scripts, logg
 
 - **Lower friction**: insights without scripting.
 - **Future-proof**: typed access for AI agents & MCP integrations.
-- **Ecosystem-friendly**: complements (not replaces) existing loggers and services.
+- **Works alongside others**: complements (not replaces) existing loggers and services.
 - **Flexible**: useful for casual operators and award chasers alike.
 
 ---

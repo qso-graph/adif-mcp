@@ -139,6 +139,23 @@ Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 
 > "How far is it from DN13 to JN48, and what heading should I point the beam?"
 
+## What the validator checks
+
+adif-mcp ships ADIF 3.1.7 as ADIF publishes it: 186 fields, 25 enumerations and 28 data types.
+`validate_adif_record` checks each field against its ADIF data type and, for enumerated fields,
+against the enumeration:
+
+- **Enumeration values** match regardless of case, so LoTW's `BAND=15M` is accepted as `15m`.
+- **Import-only values** (42 of the Mode enumeration's 91 entries, for example) give a warning, not an
+  error: ADIF allows them on import but not in new records.
+- **Compound values** such as `CREDIT_SUBMITTED` (a list of `Credit` or `Credit:Medium` entries) are
+  checked entry by entry.
+- **SUBMODE** must be a valid Submode; one that belongs to a different MODE gives a warning. FT4, for
+  example, is `MODE=MFSK` with `SUBMODE=FT4`.
+
+The server also publishes the MCP resource `adif://system/version`: the service version and the ADIF
+specification version it serves.
+
 ## Compliance & Provenance
 
 adif-mcp follows the [ADIF Specification](https://adif.org.uk) (currently 3.1.7) and uses **registered Program IDs** to identify all exports:

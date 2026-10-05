@@ -32,10 +32,6 @@ nav:
   #     - Personas & Credentials: userguide/persona-management.md
   #     - Award Queries: userguide/awards.md
   #     - Choosing an LLM: concepts/choice-of-llms.md
-  # - Integrations:
-  #     - Overview: integrations/overview.md
-  #     - LoTW: integrations/lotw/index.md
-  #     - eQSL: integrations/eqsl/index.md
   # - Developer Guide:
   #     - Dev Env Setup: dev/dev-env-setup.md
   #     - Testing Playbook: dev/testing.md
@@ -61,8 +57,12 @@ plugins:
       timezone: UTC
   - redirects:
       redirect_maps:
-        lotw.md: integrations/lotw/index.md
-        eqsl.md: integrations/eqsl/index.md
+        # LoTW and eQSL moved out of adif-mcp into their own servers in QSO Graph.
+        lotw.md: https://qso-graph.io/servers/lotw/
+        eqsl.md: https://qso-graph.io/servers/eqsl/
+        integrations/overview.md: https://qso-graph.io/
+        integrations/lotw/index.md: https://qso-graph.io/servers/lotw/
+        integrations/eqsl/index.md: https://qso-graph.io/servers/eqsl/
   - mkdocstrings:
       default_handler: python
       handlers:

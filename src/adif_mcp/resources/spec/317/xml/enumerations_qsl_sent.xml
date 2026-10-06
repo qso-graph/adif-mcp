@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:50Z">
+  <enumerations>
+    <enumeration name="QSL_Sent">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Status</value>
+        <value>Meaning</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSL_Sent</value>
+        <value name="Status">Y</value>
+        <value name="Meaning">yes</value>
+        <value name="Description">an outgoing QSL card has been sent the QSO has been uploaded to, and accepted by, the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Sent</value>
+        <value name="Status">N</value>
+        <value name="Meaning">no</value>
+        <value name="Description">do not send an outgoing QSL card do not upload the QSO to the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Sent</value>
+        <value name="Status">R</value>
+        <value name="Meaning">requested</value>
+        <value name="Description">the contacted station has requested a QSL card the contacted station has requested the QSO be uploaded to the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Sent</value>
+        <value name="Status">Q</value>
+        <value name="Meaning">queued</value>
+        <value name="Description">an outgoing QSL card has been selected to be sent a QSO has been selected to be uploaded to the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Sent</value>
+        <value name="Status">I</value>
+        <value name="Meaning">ignore or invalid</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

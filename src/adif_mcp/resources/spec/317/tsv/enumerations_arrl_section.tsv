@@ -1,0 +1,91 @@
+﻿Enumeration Name	Abbreviation	Section Name	DXCC Entity Code	From Date	Deleted Date	Import-only	Comments	ADIF Version	ADIF Status
+ARRL_Section	AL	Alabama	291					3.1.7	Released
+ARRL_Section	AK	Alaska	6					3.1.7	Released
+ARRL_Section	AB	Alberta	1					3.1.7	Released
+ARRL_Section	AR	Arkansas	291					3.1.7	Released
+ARRL_Section	AZ	Arizona	291					3.1.7	Released
+ARRL_Section	BC	British Columbia	1					3.1.7	Released
+ARRL_Section	CO	Colorado	291					3.1.7	Released
+ARRL_Section	CT	Connecticut	291					3.1.7	Released
+ARRL_Section	DE	Delaware	291					3.1.7	Released
+ARRL_Section	EB	East Bay	291					3.1.7	Released
+ARRL_Section	EMA	Eastern Massachusetts	291					3.1.7	Released
+ARRL_Section	ENY	Eastern New York	291					3.1.7	Released
+ARRL_Section	EPA	Eastern Pennsylvania	291					3.1.7	Released
+ARRL_Section	EWA	Eastern Washington	291					3.1.7	Released
+ARRL_Section	GA	Georgia	291					3.1.7	Released
+ARRL_Section	GH	Golden Horseshoe	1	2023/01/01				3.1.7	Released
+ARRL_Section	GTA	Greater Toronto Area	1	2012/09/01	2023/01/01		replaced by GH	3.1.7	Released
+ARRL_Section	ID	Idaho	291					3.1.7	Released
+ARRL_Section	IL	Illinois	291					3.1.7	Released
+ARRL_Section	IN	Indiana	291					3.1.7	Released
+ARRL_Section	IA	Iowa	291					3.1.7	Released
+ARRL_Section	KS	Kansas	291					3.1.7	Released
+ARRL_Section	KY	Kentucky	291					3.1.7	Released
+ARRL_Section	LAX	Los Angeles	291					3.1.7	Released
+ARRL_Section	LA	Louisiana	291					3.1.7	Released
+ARRL_Section	ME	Maine	291					3.1.7	Released
+ARRL_Section	MB	Manitoba	1					3.1.7	Released
+ARRL_Section	MAR	Maritime	1		2023/01/01		replaced by NB and NS	3.1.7	Released
+ARRL_Section	MDC	Maryland-DC	291					3.1.7	Released
+ARRL_Section	MI	Michigan	291					3.1.7	Released
+ARRL_Section	MN	Minnesota	291					3.1.7	Released
+ARRL_Section	MS	Mississippi	291					3.1.7	Released
+ARRL_Section	MO	Missouri	291					3.1.7	Released
+ARRL_Section	MT	Montana	291					3.1.7	Released
+ARRL_Section	NE	Nebraska	291					3.1.7	Released
+ARRL_Section	NV	Nevada	291					3.1.7	Released
+ARRL_Section	NB	New Brunswick	1	2023/01/01				3.1.7	Released
+ARRL_Section	NH	New Hampshire	291					3.1.7	Released
+ARRL_Section	NM	New Mexico	291					3.1.7	Released
+ARRL_Section	NLI	New York City-Long Island	291					3.1.7	Released
+ARRL_Section	NL	Newfoundland/Labrador	1					3.1.7	Released
+ARRL_Section	NC	North Carolina	291					3.1.7	Released
+ARRL_Section	ND	North Dakota	291					3.1.7	Released
+ARRL_Section	NTX	North Texas	291					3.1.7	Released
+ARRL_Section	NFL	Northern Florida	291					3.1.7	Released
+ARRL_Section	NNJ	Northern New Jersey	291					3.1.7	Released
+ARRL_Section	NNY	Northern New York	291					3.1.7	Released
+ARRL_Section	NT	Northwest Territories/Yukon/Nunavut	1	2003/11/01	2023/01/01		replaced by TER	3.1.7	Released
+ARRL_Section	NWT	Northwest Territories/Yukon/Nunavut	1		2003/11/01		replaced by NT	3.1.7	Released
+ARRL_Section	NS	Nova Scotia	1	2023/01/01				3.1.7	Released
+ARRL_Section	OH	Ohio	291					3.1.7	Released
+ARRL_Section	OK	Oklahoma	291					3.1.7	Released
+ARRL_Section	ON	Ontario	1		2012/09/01		replaced by GTA, ONE, ONN, and ONS	3.1.7	Released
+ARRL_Section	ONE	Ontario East	1	2012/09/01				3.1.7	Released
+ARRL_Section	ONN	Ontario North	1	2012/09/01				3.1.7	Released
+ARRL_Section	ONS	Ontario South	1	2012/09/01				3.1.7	Released
+ARRL_Section	ORG	Orange	291					3.1.7	Released
+ARRL_Section	OR	Oregon	291					3.1.7	Released
+ARRL_Section	PAC	Pacific	9,20,103,110,123,138,166,174,197,297,515					3.1.7	Released
+ARRL_Section	PE	Prince Edward Island	1	2020/04/01				3.1.7	Released
+ARRL_Section	PR	Puerto Rico	43,202					3.1.7	Released
+ARRL_Section	QC	Quebec	1					3.1.7	Released
+ARRL_Section	RI	Rhode Island	291					3.1.7	Released
+ARRL_Section	SV	Sacramento Valley	291					3.1.7	Released
+ARRL_Section	SDG	San Diego	291					3.1.7	Released
+ARRL_Section	SF	San Francisco	291					3.1.7	Released
+ARRL_Section	SJV	San Joaquin Valley	291					3.1.7	Released
+ARRL_Section	SB	Santa Barbara	291					3.1.7	Released
+ARRL_Section	SCV	Santa Clara Valley	291					3.1.7	Released
+ARRL_Section	SK	Saskatchewan	1					3.1.7	Released
+ARRL_Section	SC	South Carolina	291					3.1.7	Released
+ARRL_Section	SD	South Dakota	291					3.1.7	Released
+ARRL_Section	STX	South Texas	291					3.1.7	Released
+ARRL_Section	SFL	Southern Florida	291					3.1.7	Released
+ARRL_Section	SNJ	Southern New Jersey	291					3.1.7	Released
+ARRL_Section	TN	Tennessee	291					3.1.7	Released
+ARRL_Section	TER	Territories	1	2023/01/01				3.1.7	Released
+ARRL_Section	VI	US Virgin Islands	105,182,285					3.1.7	Released
+ARRL_Section	UT	Utah	291					3.1.7	Released
+ARRL_Section	VT	Vermont	291					3.1.7	Released
+ARRL_Section	VA	Virginia	291					3.1.7	Released
+ARRL_Section	WCF	West Central Florida	291					3.1.7	Released
+ARRL_Section	WTX	West Texas	291					3.1.7	Released
+ARRL_Section	WV	West Virginia	291					3.1.7	Released
+ARRL_Section	WMA	Western Massachusetts	291					3.1.7	Released
+ARRL_Section	WNY	Western New York	291					3.1.7	Released
+ARRL_Section	WPA	Western Pennsylvania	291					3.1.7	Released
+ARRL_Section	WWA	Western Washington	291					3.1.7	Released
+ARRL_Section	WI	Wisconsin	291					3.1.7	Released
+ARRL_Section	WY	Wyoming	291					3.1.7	Released

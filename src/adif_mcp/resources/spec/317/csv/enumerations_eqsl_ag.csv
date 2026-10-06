@@ -1,0 +1,4 @@
+﻿"Enumeration Name","Status","Description","Import-only","Comments","ADIF Version","ADIF Status"
+"EQSL_AG","Y","The QSO's callsign holds eQSL.cc's ""Authenticity Guaranteed"" status","","","3.1.7","Released"
+"EQSL_AG","N","The QSO's callsign does not hold eQSL.cc's ""Authenticity Guaranteed"" status","","","3.1.7","Released"
+"EQSL_AG","U","Unspecified (Default)","","","3.1.7","Released"

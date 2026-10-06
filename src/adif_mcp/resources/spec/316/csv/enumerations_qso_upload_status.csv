@@ -1,0 +1,4 @@
+﻿"Enumeration Name","Status","Description","Import-only","Comments","ADIF Version","ADIF Status"
+"QSO_Upload_Status","Y","the QSO has been uploaded to, and accepted by, the online service","","","3.1.6","Released"
+"QSO_Upload_Status","N","do not upload the QSO to the online service","","","3.1.6","Released"
+"QSO_Upload_Status","M","the QSO has been modified since being uploaded to the online service","","","3.1.6","Released"

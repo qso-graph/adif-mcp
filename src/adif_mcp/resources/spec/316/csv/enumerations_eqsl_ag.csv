@@ -1,0 +1,4 @@
+﻿"Enumeration Name","Status","Description","Import-only","Comments","ADIF Version","ADIF Status"
+"EQSL_AG","Y","the QSO is confirmed and ""Authenticity Guaranteed"" by eQSL","","","3.1.6","Released"
+"EQSL_AG","N","the QSO is confirmed but not ""Authenticity Guaranteed"" by eQSL","","","3.1.6","Released"
+"EQSL_AG","U","unknown","","","3.1.6","Released"

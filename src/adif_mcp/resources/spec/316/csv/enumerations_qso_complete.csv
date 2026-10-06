@@ -1,0 +1,5 @@
+﻿"Enumeration Name","Abbreviation","Meaning","Import-only","Comments","ADIF Version","ADIF Status"
+"QSO_Complete","Y","yes","","","3.1.6","Released"
+"QSO_Complete","N","no","","","3.1.6","Released"
+"QSO_Complete","NIL","not heard","","","3.1.6","Released"
+"QSO_Complete","?","uncertain","","","3.1.6","Released"

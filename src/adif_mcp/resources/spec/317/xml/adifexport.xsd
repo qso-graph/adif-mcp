@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>
+      This schema for the ADIF XML files exported from the ADIF Specification's tables.
+      
+      2024-10-03: First version.
+    </xs:documentation>
+  </xs:annotation>
+  <xs:element name="adif">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dataTypes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="7" name="value" type="datatypesheadervalues"/>                    
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="record">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="value">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="name" use="required" type="datatypesheadervalues"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="enumerations" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="enumeration">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="header">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="value" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="record">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="value">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="name" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fields" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="header">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="9" name="value" type="fieldheadervalues"/>                                        
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="record">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="value">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="name" use="required" type="fieldheadervalues"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+      <xs:attribute name="status" type="xs:string" use="required" />
+      <xs:attribute name="created" type="xs:dateTime" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="datatypesheadervalues">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Field Name|Data Type Name|Data Type Indicator|Enumeration|Description|Header Field|Minimum Value|Maximum Value|Import-only|Comments"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fieldheadervalues">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Field Name|Data Type|Enumeration|Description|Header Field|Minimum Value|Maximum Value|Import-only|Comments"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

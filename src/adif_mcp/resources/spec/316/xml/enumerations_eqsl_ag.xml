@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:37Z">
+  <enumerations>
+    <enumeration name="EQSL_AG">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Status</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">EQSL_AG</value>
+        <value name="Status">Y</value>
+        <value name="Description">the QSO is confirmed and "Authenticity Guaranteed" by eQSL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">EQSL_AG</value>
+        <value name="Status">N</value>
+        <value name="Description">the QSO is confirmed but not "Authenticity Guaranteed" by eQSL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">EQSL_AG</value>
+        <value name="Status">U</value>
+        <value name="Description">unknown</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

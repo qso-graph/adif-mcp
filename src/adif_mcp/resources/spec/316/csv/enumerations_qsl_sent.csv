@@ -1,0 +1,6 @@
+﻿"Enumeration Name","Status","Meaning","Description","Import-only","Comments","ADIF Version","ADIF Status"
+"QSL_Sent","Y","yes","an outgoing QSL card has been sent the QSO has been uploaded to, and accepted by, the online service","","","3.1.6","Released"
+"QSL_Sent","N","no","do not send an outgoing QSL card do not upload the QSO to the online service","","","3.1.6","Released"
+"QSL_Sent","R","requested","the contacted station has requested a QSL card the contacted station has requested the QSO be uploaded to the online service","","","3.1.6","Released"
+"QSL_Sent","Q","queued","an outgoing QSL card has been selected to be sent a QSO has been selected to be uploaded to the online service","","","3.1.6","Released"
+"QSL_Sent","I","ignore or invalid","","","","3.1.6","Released"

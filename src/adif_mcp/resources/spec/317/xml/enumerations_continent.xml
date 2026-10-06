@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:36Z">
+  <enumerations>
+    <enumeration name="Continent">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Abbreviation</value>
+        <value>Continent</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">NA</value>
+        <value name="Continent">North America</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">SA</value>
+        <value name="Continent">South America</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">EU</value>
+        <value name="Continent">Europe</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">AF</value>
+        <value name="Continent">Africa</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">OC</value>
+        <value name="Continent">Oceania</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">AS</value>
+        <value name="Continent">Asia</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Continent</value>
+        <value name="Abbreviation">AN</value>
+        <value name="Continent">Antarctica</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

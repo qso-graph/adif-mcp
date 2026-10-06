@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:55Z">
+  <enumerations>
+    <enumeration name="Region">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Region Entity Code</value>
+        <value>DXCC Entity Code</value>
+        <value>Region</value>
+        <value>Prefix</value>
+        <value>Applicability</value>
+        <value>Start Date</value>
+        <value>End Date</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">NONE</value>
+        <value name="Region">Not within a WAE or CQ region that is within a DXCC entity</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">IV</value>
+        <value name="DXCC Entity Code">206</value>
+        <value name="Region">ITU Vienna</value>
+        <value name="Prefix">4U1V</value>
+        <value name="Applicability">CQ, WAE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">AI</value>
+        <value name="DXCC Entity Code">248</value>
+        <value name="Region">African Italy</value>
+        <value name="Prefix">IG9</value>
+        <value name="Applicability">CQ</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">SY</value>
+        <value name="DXCC Entity Code">248</value>
+        <value name="Region">Sicily</value>
+        <value name="Prefix">IT9</value>
+        <value name="Applicability">CQ, WAE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">BI</value>
+        <value name="DXCC Entity Code">259</value>
+        <value name="Region">Bear Island</value>
+        <value name="Prefix">JW/B</value>
+        <value name="Applicability">CQ, WAE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">SI</value>
+        <value name="DXCC Entity Code">279</value>
+        <value name="Region">Shetland Islands</value>
+        <value name="Prefix">GM/S</value>
+        <value name="Applicability">CQ, WAE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">KO</value>
+        <value name="DXCC Entity Code">296</value>
+        <value name="Region">Kosovo</value>
+        <value name="Prefix">YU8</value>
+        <value name="Applicability">CQ, WAE</value>
+        <value name="End Date">2012-09-11</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">KO</value>
+        <value name="DXCC Entity Code">0</value>
+        <value name="Region">Kosovo</value>
+        <value name="Prefix">Z6</value>
+        <value name="Applicability">CQ, WAE</value>
+        <value name="Start Date">2012-09-12</value>
+        <value name="End Date">2018-01-20</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">KO</value>
+        <value name="DXCC Entity Code">522</value>
+        <value name="Region">Kosovo</value>
+        <value name="Prefix">Z6</value>
+        <value name="Applicability">CQ, WAE</value>
+        <value name="Start Date">2018-01-21</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Region</value>
+        <value name="Region Entity Code">ET</value>
+        <value name="DXCC Entity Code">390</value>
+        <value name="Region">European Turkey</value>
+        <value name="Prefix">TA1</value>
+        <value name="Applicability">CQ</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

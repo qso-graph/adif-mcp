@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:55Z">
+  <fields>
+    <header>
+      <value>Field Name</value>
+      <value>Data Type</value>
+      <value>Enumeration</value>
+      <value>Description</value>
+      <value>Header Field</value>
+      <value>Minimum Value</value>
+      <value>Maximum Value</value>
+      <value>Import-only</value>
+      <value>Comments</value>
+    </header>
+    <record>
+      <value name="Field Name">ADIF_VER</value>
+      <value name="Data Type">String</value>
+      <value name="Description">Identifies the version of ADIF used in this file in the format X.Y.Z where ● X is an integer designating the ADIF epoch. ● Y is an integer between 0 and 9 designating the major version. ● Z is an integer between 0 and 9 designating the minor version.</value>
+      <value name="Header Field">true</value>
+    </record>
+    <record>
+      <value name="Field Name">CREATED_TIMESTAMP</value>
+      <value name="Data Type">String</value>
+      <value name="Description">Identifies the UTC date and time that the file was created in the format of 15 characters YYYYMMDD HHMMSS where YYYYMMDD is a Date data type. HHMMSS is a 6 character Time data type.</value>
+      <value name="Header Field">true</value>
+    </record>
+    <record>
+      <value name="Field Name">PROGRAMID</value>
+      <value name="Data Type">String</value>
+      <value name="Description">Identifies the name of the logger, converter, or utility that created or processed this ADIF content. To help avoid name clashes, the ADIF PROGRAMID Register provides a voluntary list of PROGRAMID values.</value>
+      <value name="Header Field">true</value>
+    </record>
+    <record>
+      <value name="Field Name">PROGRAMVERSION</value>
+      <value name="Data Type">String</value>
+      <value name="Description">Identifies the version of the logger, converter, or utility that created or processed this ADIF file.</value>
+      <value name="Header Field">true</value>
+    </record>
+    <record>
+      <value name="Field Name">USERDEFn</value>
+      <value name="Data Type">String</value>
+      <value name="Description">Specifies the name and optional enumeration or range of the nth user-defined field, where n is a positive integer. The name of a user-defined field may not ● be an ADIF Field name. ● contain ○ a comma. ○ a colon. ○ an open-angle-bracket or close-angle-bracket character. ○ an open-curly-bracket or close-curly-bracket character. ● begin or end with a space character.</value>
+      <value name="Header Field">true</value>
+    </record>
+    <record>
+      <value name="Field Name">ADDRESS</value>
+      <value name="Data Type">MultilineString</value>
+      <value name="Description">the contacted station's complete mailing address: full name, street address, city, postal code, and country</value>
+    </record>
+    <record>
+      <value name="Field Name">ADDRESS_INTL</value>
+      <value name="Data Type">IntlMultilineString</value>
+      <value name="Description">the contacted station's complete mailing address: full name, street address, city, postal code, and country</value>
+    </record>
+    <record>
+      <value name="Field Name">AGE</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the contacted station's operator's age in years in the range 0 to 120 (inclusive)</value>
+      <value name="Minimum Value">0</value>
+      <value name="Maximum Value">120</value>
+    </record>
+    <record>
+      <value name="Field Name">ALTITUDE</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the height of the contacted station in meters relative to Mean Sea Level (MSL). For example 1.5 km is &lt;ALTITUDE:4&gt;1500 and 10.5 m is &lt;ALTITUDE:4&gt;10.5</value>
+    </record>
+    <record>
+      <value name="Field Name">ANT_AZ</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the logging station's antenna azimuth, in degrees with a value between 0 to 360 (inclusive). Values outside this range are import-only and must be normalized for export (e.g. 370 is exported as 10). True north is 0 degrees with values increasing in a clockwise direction.</value>
+      <value name="Minimum Value">0</value>
+      <value name="Maximum Value">360</value>
+    </record>
+    <record>
+      <value name="Field Name">ANT_EL</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the logging station's antenna elevation, in degrees with a value between -90 to 90 (inclusive). Values outside this range are import-only and must be normalized for export (e.g. 100 is exported as 80). The horizon is 0 degrees with values increasing as the angle moves in an upward direction.</value>
+      <value name="Minimum Value">-90</value>
+      <value name="Maximum Value">90</value>
+    </record>
+    <record>
+      <value name="Field Name">ANT_PATH</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Ant_Path</value>
+      <value name="Description">the signal path</value>
+    </record>
+    <record>
+      <value name="Field Name">ARRL_SECT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">ARRL_Section</value>
+      <value name="Description">the contacted station's ARRL section</value>
+    </record>
+    <record>
+      <value name="Field Name">AWARD_SUBMITTED</value>
+      <value name="Data Type">SponsoredAwardList</value>
+      <value name="Enumeration">Sponsored_Award</value>
+      <value name="Description">the list of awards submitted to a sponsor. note that this field might not be used in a QSO record. It might be used to convey information about a user's "Award Account" between an award sponsor and the user. For example, AA6YQ might submit a request for awards by sending the following: &lt;CALL:5&gt;AA6YQ &lt;AWARD_SUBMITTED:64&gt;ADIF_CENTURY_BASIC,ADIF_CENTURY_SILVER,ADIF_SPECTRUM_100-160m</value>
+    </record>
+    <record>
+      <value name="Field Name">AWARD_GRANTED</value>
+      <value name="Data Type">SponsoredAwardList</value>
+      <value name="Enumeration">Sponsored_Award</value>
+      <value name="Description">the list of awards granted by a sponsor. note that this field might not be used in a QSO record. It might be used to convey information about a user's "Award Account" between an award sponsor and the user. For example, in response to a request "send me a list of the awards granted to AA6YQ", this might be received: &lt;CALL:5&gt;AA6YQ &lt;AWARD_GRANTED:64&gt;ADIF_CENTURY_BASIC,ADIF_CENTURY_SILVER,ADIF_SPECTRUM_100-160m</value>
+    </record>
+    <record>
+      <value name="Field Name">A_INDEX</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the geomagnetic A index at the time of the QSO in the range 0 to 400 (inclusive)</value>
+      <value name="Minimum Value">0</value>
+      <value name="Maximum Value">400</value>
+    </record>
+    <record>
+      <value name="Field Name">BAND</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Band</value>
+      <value name="Description">QSO Band</value>
+    </record>
+    <record>
+      <value name="Field Name">BAND_RX</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Band</value>
+      <value name="Description">in a split frequency QSO, the logging station's receiving band</value>
+    </record>
+    <record>
+      <value name="Field Name">CALL</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's callsign</value>
+    </record>
+    <record>
+      <value name="Field Name">CHECK</value>
+      <value name="Data Type">String</value>
+      <value name="Description">contest check (e.g. for ARRL Sweepstakes)</value>
+    </record>
+    <record>
+      <value name="Field Name">CLASS</value>
+      <value name="Data Type">String</value>
+      <value name="Description">contest class (e.g. for ARRL Field Day)</value>
+    </record>
+    <record>
+      <value name="Field Name">CLUBLOG_QSO_UPLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">the date the QSO was last uploaded to the Club Log online service</value>
+    </record>
+    <record>
+      <value name="Field Name">CLUBLOG_QSO_UPLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Upload_Status</value>
+      <value name="Description">the upload status of the QSO on the Club Log online service</value>
+    </record>
+    <record>
+      <value name="Field Name">CNTY</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Secondary_Administrative_Subdivision[DXCC]</value>
+      <value name="Description">the contacted station's Secondary Administrative Subdivision (e.g. US county, JA Gun), in the specified format</value>
+    </record>
+    <record>
+      <value name="Field Name">CNTY_ALT</value>
+      <value name="Data Type">SecondaryAdministrativeSubdivisionListAlt</value>
+      <value name="Description">a semicolon (;) delimited, unordered list of Secondary Administrative Subdivision Alt codes for the contacted station See the Data Type for details.</value>
+    </record>
+    <record>
+      <value name="Field Name">COMMENT</value>
+      <value name="Data Type">String</value>
+      <value name="Description">comment field for QSO for a message to be incorporated in a paper or electronic QSL for the contacted station's operator, use the QSLMSG field recommended use: information of interest to the contacted station's operator</value>
+    </record>
+    <record>
+      <value name="Field Name">COMMENT_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">comment field for QSO for a message to be incorporated in a paper or electronic QSL for the contacted station's operator, use the QSLMSG_INTL field recommended use: information of interest to the contacted station's operator</value>
+    </record>
+    <record>
+      <value name="Field Name">CONT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Continent</value>
+      <value name="Description">the contacted station's Continent</value>
+    </record>
+    <record>
+      <value name="Field Name">CONTACTED_OP</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the callsign of the individual operating the contacted station</value>
+    </record>
+    <record>
+      <value name="Field Name">CONTEST_ID</value>
+      <value name="Data Type">String</value>
+      <value name="Enumeration">Contest_ID</value>
+      <value name="Description">QSO Contest Identifier use enumeration values for interoperability</value>
+    </record>
+    <record>
+      <value name="Field Name">COUNTRY</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's DXCC entity name</value>
+    </record>
+    <record>
+      <value name="Field Name">COUNTRY_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the contacted station's DXCC entity name</value>
+    </record>
+    <record>
+      <value name="Field Name">CQZ</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's CQ Zone in the range 1 to 40 (inclusive)</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">40</value>
+    </record>
+    <record>
+      <value name="Field Name">CREDIT_SUBMITTED</value>
+      <value name="Data Type">CreditList,AwardList</value>
+      <value name="Enumeration">Credit,Award</value>
+      <value name="Description">the list of credits sought for this QSO Use of data type AwardList and enumeration Award are import-only</value>
+    </record>
+    <record>
+      <value name="Field Name">CREDIT_GRANTED</value>
+      <value name="Data Type">CreditList,AwardList</value>
+      <value name="Enumeration">Credit,Award</value>
+      <value name="Description">the list of credits granted to this QSO Use of data type AwardList and enumeration Award are import-only</value>
+    </record>
+    <record>
+      <value name="Field Name">DARC_DOK</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Description">the contacted station's DARC DOK (District Location Code) A DOK comprises letters and numbers, e.g. &lt;DARC_DOK:3&gt;A01 Note that DARC provides two different lists - one for DOKs and one for Special DOKs.</value>
+    </record>
+    <record>
+      <value name="Field Name">DCL_QSLRDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL received from DCL (only valid if DCL_QSL_RCVD is Y, I, or V)(V import-only)</value>
+    </record>
+    <record>
+      <value name="Field Name">DCL_QSLSDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL sent to DCL (only valid if DCL_QSL_SENT is Y, Q, or I)</value>
+    </record>
+    <record>
+      <value name="Field Name">DCL_QSL_RCVD</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Rcvd</value>
+      <value name="Description">DCL QSL received status Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">DCL_QSL_SENT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Sent</value>
+      <value name="Description">DCL QSL sent status Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">DISTANCE</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the distance between the logging station and the contacted station in kilometers via the specified signal path with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">DXCC</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">DXCC_Entity_Code</value>
+      <value name="Description">the contacted station's DXCC Entity Code &lt;DXCC:1&gt;0 means that the contacted station is known not to be within a DXCC entity.</value>
+    </record>
+    <record>
+      <value name="Field Name">EMAIL</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's email address</value>
+    </record>
+    <record>
+      <value name="Field Name">EQ_CALL</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's owner's callsign</value>
+    </record>
+    <record>
+      <value name="Field Name">EQSL_AG</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">EQSL_AG</value>
+      <value name="Description">indicates whether the QSO is known to be "Authenticity Guaranteed" by eQSL Default value: U</value>
+    </record>
+    <record>
+      <value name="Field Name">EQSL_QSLRDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL received from eQSL.cc (only valid if EQSL_QSL_RCVD is Y, I, or V)(V import-only)</value>
+    </record>
+    <record>
+      <value name="Field Name">EQSL_QSLSDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL sent to eQSL.cc (only valid if EQSL_QSL_SENT is Y, Q, or I)</value>
+    </record>
+    <record>
+      <value name="Field Name">EQSL_QSL_RCVD</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Rcvd</value>
+      <value name="Description">eQSL.cc QSL received status instead of V (import-only) use &lt;CREDIT_GRANTED:42&gt;CQWAZ:eqsl,CQWAZ_BAND:eqsl,CQWAZ_MODE:eqsl Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">EQSL_QSL_SENT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Sent</value>
+      <value name="Description">eQSL.cc QSL sent status Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">FISTS</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's FISTS CW Club member number with a value greater than 0.</value>
+      <value name="Minimum Value">1</value>
+    </record>
+    <record>
+      <value name="Field Name">FISTS_CC</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's FISTS CW Club Century Certificate (CC) number with a value greater than 0.</value>
+      <value name="Minimum Value">1</value>
+    </record>
+    <record>
+      <value name="Field Name">FORCE_INIT</value>
+      <value name="Data Type">Boolean</value>
+      <value name="Description">new EME "initial"</value>
+    </record>
+    <record>
+      <value name="Field Name">FREQ</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">QSO frequency in Megahertz</value>
+    </record>
+    <record>
+      <value name="Field Name">FREQ_RX</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">in a split frequency QSO, the logging station's receiving frequency in Megahertz</value>
+    </record>
+    <record>
+      <value name="Field Name">GRIDSQUARE</value>
+      <value name="Data Type">GridSquare</value>
+      <value name="Description">the contacted station's 2-character, 4-character, 6-character, or 8-character Maidenhead Grid Square For 10 or 12 character locators, store the first 8 characters in GRIDSQUARE and the additional 2 or 4 characters in the GRIDSQUARE_EXT field</value>
+    </record>
+    <record>
+      <value name="Field Name">GRIDSQUARE_EXT</value>
+      <value name="Data Type">GridSquareExt</value>
+      <value name="Description">for a contacted station's 10-character Maidenhead locator, supplements the GRIDSQUARE field by containing characters 9 and 10. For a contacted station's 12-character Maidenhead locator, supplements the GRIDSQUARE field by containing characters 9, 10, 11 and 12. Characters 9 and 10 are case-insensitive ASCII letters in the range A-X. Characters 11 and 12 are Digits in the range 0 to 9. On export, the field length must be 2 or 4. On import, if the field length is greater than 4, the additional characters must be ignored. Example of exporting the 10-character locator FN01MH42BQ: &lt;GRIDSQUARE:8&gt;FN01MH42 &lt;GRIDSQUARE_EXT:2&gt;BQ</value>
+    </record>
+    <record>
+      <value name="Field Name">GUEST_OP</value>
+      <value name="Data Type">String</value>
+      <value name="Description">import-only: use OPERATOR instead</value>
+      <value name="Import-only">true</value>
+    </record>
+    <record>
+      <value name="Field Name">HAMLOGEU_QSO_UPLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">the date the QSO was last uploaded to the HAMLOG.EU online service</value>
+    </record>
+    <record>
+      <value name="Field Name">HAMLOGEU_QSO_UPLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Upload_Status</value>
+      <value name="Description">the upload status of the QSO on the HAMLOG.EU online service</value>
+    </record>
+    <record>
+      <value name="Field Name">HAMQTH_QSO_UPLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">the date the QSO was last uploaded to the HamQTH.com online service</value>
+    </record>
+    <record>
+      <value name="Field Name">HAMQTH_QSO_UPLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Upload_Status</value>
+      <value name="Description">the upload status of the QSO on the HamQTH.com online service</value>
+    </record>
+    <record>
+      <value name="Field Name">HRDLOG_QSO_UPLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">the date the QSO was last uploaded to the HRDLog.net online service</value>
+    </record>
+    <record>
+      <value name="Field Name">HRDLOG_QSO_UPLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Upload_Status</value>
+      <value name="Description">the upload status of the QSO on the HRDLog.net online service</value>
+    </record>
+    <record>
+      <value name="Field Name">IOTA</value>
+      <value name="Data Type">IOTARefNo</value>
+      <value name="Description">the contacted station's IOTA designator, in format CC-XXX, where CC is a member of the Continent enumeration XXX is the island group designator, where 1 &lt;= XXX &lt;= 999 [use leading zeroes]</value>
+    </record>
+    <record>
+      <value name="Field Name">IOTA_ISLAND_ID</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's IOTA Island Identifier, an 8-digit integer in the range 1 to 99999999 [leading zeroes optional]</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">99999999</value>
+    </record>
+    <record>
+      <value name="Field Name">ITUZ</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's ITU zone in the range 1 to 90 (inclusive)</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">90</value>
+    </record>
+    <record>
+      <value name="Field Name">K_INDEX</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">the geomagnetic K index at the time of the QSO in the range 0 to 9 (inclusive)</value>
+      <value name="Minimum Value">0</value>
+      <value name="Maximum Value">9</value>
+    </record>
+    <record>
+      <value name="Field Name">LAT</value>
+      <value name="Data Type">Location</value>
+      <value name="Description">the contacted station's latitude</value>
+    </record>
+    <record>
+      <value name="Field Name">LON</value>
+      <value name="Data Type">Location</value>
+      <value name="Description">the contacted station's longitude</value>
+    </record>
+    <record>
+      <value name="Field Name">LOTW_QSLRDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL received from ARRL Logbook of the World (only valid if LOTW_QSL_RCVD is Y, I, or V)(V import-only)</value>
+    </record>
+    <record>
+      <value name="Field Name">LOTW_QSLSDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSL sent to ARRL Logbook of the World (only valid if LOTW_QSL_SENT is Y, Q, or I)</value>
+    </record>
+    <record>
+      <value name="Field Name">LOTW_QSL_RCVD</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Rcvd</value>
+      <value name="Description">ARRL Logbook of the World QSL received status instead of V (import-only) use &lt;CREDIT_GRANTED:39&gt;DXCC:lotw,DXCC_BAND:lotw,DXCC_MODE:lotw Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">LOTW_QSL_SENT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Sent</value>
+      <value name="Description">ARRL Logbook of the World QSL sent status Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">MAX_BURSTS</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">maximum length of meteor scatter bursts heard by the logging station, in seconds with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">MODE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Mode</value>
+      <value name="Description">QSO Mode</value>
+    </record>
+    <record>
+      <value name="Field Name">MORSE_KEY_INFO</value>
+      <value name="Data Type">String</value>
+      <value name="Description">details of the contacted station's Morse key (e.g. make, model, etc). Example: &lt;MORSE_KEY_INFO:16&gt;Begali Sculpture</value>
+    </record>
+    <record>
+      <value name="Field Name">MORSE_KEY_TYPE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Morse_Key_Type</value>
+      <value name="Description">the contacted station's Morse key type (e.g. straight key, bug, etc). Example for a dual-lever paddle: &lt;MORSE_KEY_TYPE:2&gt;DP</value>
+    </record>
+    <record>
+      <value name="Field Name">MS_SHOWER</value>
+      <value name="Data Type">String</value>
+      <value name="Description">For Meteor Scatter QSOs, the name of the meteor shower in progress</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_ALTITUDE</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the height of the logging station in meters relative to Mean Sea Level (MSL). For example 1.5 km is &lt;MY_ALTITUDE:4&gt;1500 and 10.5 m is &lt;MY_ALTITUDE:4&gt;10.5</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_ANTENNA</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging station's antenna</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_ANTENNA_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the logging station's antenna</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_ARRL_SECT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">ARRL_Section</value>
+      <value name="Description">the logging station's ARRL section</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_CITY</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging station's city</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_CITY_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the logging station's city</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_CNTY</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Secondary_Administrative_Subdivision[MY_DXCC]</value>
+      <value name="Description">the logging station's Secondary Administrative Subdivision (e.g. US county, JA Gun), in the specified format</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_CNTY_ALT</value>
+      <value name="Data Type">SecondaryAdministrativeSubdivisionListAlt</value>
+      <value name="Description">a semicolon (;) delimited, unordered list of Secondary Administrative Subdivision Alt codes for the logging station See the Data Type for details.</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_COUNTRY</value>
+      <value name="Data Type">String</value>
+      <value name="Enumeration">Country</value>
+      <value name="Description">the logging station's DXCC entity name</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_COUNTRY_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Enumeration">Country</value>
+      <value name="Description">the logging station's DXCC entity name</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_CQ_ZONE</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the logging station's CQ Zone in the range 1 to 40 (inclusive)</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">40</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_DARC_DOK</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Description">the logging station's DARC DOK (District Location Code) A DOK comprises letters and numbers, e.g. &lt;MY_DARC_DOK:3&gt;A01 Note that DARC provides two different lists - one for DOKs and one for Special DOKs.</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_DXCC</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">DXCC_Entity_Code</value>
+      <value name="Description">the logging station's DXCC Entity Code &lt;MY_DXCC:1&gt;0 means that the logging station is known not to be within a DXCC entity.</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_FISTS</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the logging station's FISTS CW Club member number with a value greater than 0.</value>
+      <value name="Minimum Value">1</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_GRIDSQUARE</value>
+      <value name="Data Type">GridSquare</value>
+      <value name="Description">the logging station's 2-character, 4-character, 6-character, or 8-character Maidenhead Grid Square For 10 or 12 character locators, store the first 8 characters in MY_GRIDSQUARE and the additional 2 or 4 characters in the MY_GRIDSQUARE_EXT field</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_GRIDSQUARE_EXT</value>
+      <value name="Data Type">GridSquareExt</value>
+      <value name="Description">for a logging station's 10-character Maidenhead locator, supplements the MY_GRIDSQUARE field by containing characters 9 and 10. For a logging station's 12-character Maidenhead locator, supplements the MY_GRIDSQUARE field by containing characters 9, 10, 11 and 12. Characters 9 and 10 are case-insensitive ASCII letters in the range A-X. Characters 11 and 12 are Digits in the range 0 to 9. On export, the field length must be 2 or 4. On import, if the field length is greater than 4, the additional characters must be ignored. Example of exporting the 10-character locator FN01MH42BQ: &lt;MY_GRIDSQUARE:8&gt;FN01MH42 &lt;MY_GRIDSQUARE_EXT:2&gt;BQ</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_IOTA</value>
+      <value name="Data Type">IOTARefNo</value>
+      <value name="Description">the logging station's IOTA designator, in format CC-XXX, where CC is a member of the Continent enumeration XXX is the island group designator, where 1 &lt;= XXX &lt;= 999 [use leading zeroes]</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_IOTA_ISLAND_ID</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the logging station's IOTA Island Identifier, an 8-digit integer in the range 1 to 99999999 [leading zeroes optional]</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">99999999</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_ITU_ZONE</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the logging station's ITU zone in the range 1 to 90 (inclusive)</value>
+      <value name="Minimum Value">1</value>
+      <value name="Maximum Value">90</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_LAT</value>
+      <value name="Data Type">Location</value>
+      <value name="Description">the logging station's latitude</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_LON</value>
+      <value name="Data Type">Location</value>
+      <value name="Description">the logging station's longitude</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_MORSE_KEY_INFO</value>
+      <value name="Data Type">String</value>
+      <value name="Description">details of the logging station's Morse key (e.g. make, model, etc). Example: &lt;MY_MORSE_KEY_INFO:16&gt;Begali Sculpture</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_MORSE_KEY_TYPE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Morse_Key_Type</value>
+      <value name="Description">the logging station's Morse key type (e.g. straight key, bug, etc). Example for a dual-lever paddle: &lt;MORSE_KEY_TYPE:2&gt;DP</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_NAME</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging operator's name</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_NAME_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the logging operator's name</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_POSTAL_CODE</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging station's postal code</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_POSTAL_CODE_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the logging station's postal code</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_POTA_REF</value>
+      <value name="Data Type">POTARefList</value>
+      <value name="Description">a comma-delimited list of one or more of the logging station's POTA (Parks on the Air) reference(s). Examples: &lt;MY_POTA_REF:6&gt;K-0059 &lt;MY_POTA_REF:7&gt;K-10000 &lt;MY_POTA_REF:40&gt;K-0817,K-4566,K-4576,K-4573,K-4578@US-WY</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_RIG</value>
+      <value name="Data Type">String</value>
+      <value name="Description">description of the logging station's equipment</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_RIG_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">description of the logging station's equipment</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_SIG</value>
+      <value name="Data Type">String</value>
+      <value name="Description">special interest activity or event</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_SIG_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">special interest activity or event</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_SIG_INFO</value>
+      <value name="Data Type">String</value>
+      <value name="Description">special interest activity or event information</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_SIG_INFO_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">special interest activity or event information</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_SOTA_REF</value>
+      <value name="Data Type">SOTARef</value>
+      <value name="Description">the logging station's International SOTA Reference.</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_STATE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Primary_Administrative_Subdivision[MY_DXCC]</value>
+      <value name="Description">the code for the logging station's Primary Administrative Subdivision (e.g. US State, JA Island, VE Province)</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_STREET</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging station's street</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_STREET_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the logging station's street</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_USACA_COUNTIES</value>
+      <value name="Data Type">SecondarySubdivisionList</value>
+      <value name="Description">two US counties in the case where the logging station is located on a border between two counties, representing counties that the contacted station may claim for the CQ Magazine USA-CA award program. E.g. MA,Franklin:MA,Hampshire</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_VUCC_GRIDS</value>
+      <value name="Data Type">GridSquareList</value>
+      <value name="Description">two or four adjacent Maidenhead grid locators, each four or six characters long, representing the logging station's grid squares that the contacted station may claim for the ARRL VUCC award program. E.g. EM98,FM08,EM97,FM07</value>
+    </record>
+    <record>
+      <value name="Field Name">MY_WWFF_REF</value>
+      <value name="Data Type">WWFFRef</value>
+      <value name="Description">the logging station's WWFF (World Wildlife Flora &amp; Fauna) reference</value>
+    </record>
+    <record>
+      <value name="Field Name">NAME</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's operator's name</value>
+    </record>
+    <record>
+      <value name="Field Name">NAME_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the contacted station's operator's name</value>
+    </record>
+    <record>
+      <value name="Field Name">NOTES</value>
+      <value name="Data Type">MultilineString</value>
+      <value name="Description">QSO notes recommended use: information of interest to the logging station's operator</value>
+    </record>
+    <record>
+      <value name="Field Name">NOTES_INTL</value>
+      <value name="Data Type">IntlMultilineString</value>
+      <value name="Description">QSO notes recommended use: information of interest to the logging station's operator</value>
+    </record>
+    <record>
+      <value name="Field Name">NR_BURSTS</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">the number of meteor scatter bursts heard by the logging station with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">NR_PINGS</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">the number of meteor scatter pings heard by the logging station with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">OPERATOR</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging operator's callsign if STATION_CALLSIGN is absent, OPERATOR shall be treated as both the logging station's callsign and the logging operator's callsign</value>
+    </record>
+    <record>
+      <value name="Field Name">OWNER_CALLSIGN</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the callsign of the owner of the station used to log the contact (the callsign of the OPERATOR's host) if OWNER_CALLSIGN is absent, STATION_CALLSIGN shall be treated as both the logging station's callsign and the callsign of the owner of the station</value>
+    </record>
+    <record>
+      <value name="Field Name">PFX</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's WPX prefix</value>
+    </record>
+    <record>
+      <value name="Field Name">POTA_REF</value>
+      <value name="Data Type">POTARefList</value>
+      <value name="Description">a comma-delimited list of one or more of the contacted station's POTA (Parks on the Air) reference(s). Examples: &lt;POTA_REF:6&gt;K-5033 &lt;POTA_REF:13&gt;VE-5082@CA-AB &lt;POTA_REF:40&gt;K-0817,K-4566,K-4576,K-4573,K-4578@US-WY</value>
+    </record>
+    <record>
+      <value name="Field Name">PRECEDENCE</value>
+      <value name="Data Type">String</value>
+      <value name="Description">contest precedence (e.g. for ARRL Sweepstakes)</value>
+    </record>
+    <record>
+      <value name="Field Name">PROP_MODE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Propagation_Mode</value>
+      <value name="Description">QSO propagation mode</value>
+    </record>
+    <record>
+      <value name="Field Name">PUBLIC_KEY</value>
+      <value name="Data Type">String</value>
+      <value name="Description">public encryption key</value>
+    </record>
+    <record>
+      <value name="Field Name">QRZCOM_QSO_DOWNLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date QSO downloaded from QRZ.COM logbook</value>
+    </record>
+    <record>
+      <value name="Field Name">QRZCOM_QSO_DOWNLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Download_Status</value>
+      <value name="Description">QRZ.COM logbook QSO download status</value>
+    </record>
+    <record>
+      <value name="Field Name">QRZCOM_QSO_UPLOAD_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">the date the QSO was last uploaded to the QRZ.COM online service</value>
+    </record>
+    <record>
+      <value name="Field Name">QRZCOM_QSO_UPLOAD_STATUS</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Upload_Status</value>
+      <value name="Description">the upload status of the QSO on the QRZ.COM online service</value>
+    </record>
+    <record>
+      <value name="Field Name">QSLMSG</value>
+      <value name="Data Type">MultilineString</value>
+      <value name="Description">a message for the contacted station's operator to be incorporated in a paper or electronic QSL</value>
+    </record>
+    <record>
+      <value name="Field Name">QSLMSG_INTL</value>
+      <value name="Data Type">IntlMultilineString</value>
+      <value name="Description">a message for the contacted station's operator to be incorporated in a paper or electronic QSL</value>
+    </record>
+    <record>
+      <value name="Field Name">QSLMSG_RCVD</value>
+      <value name="Data Type">MultilineString</value>
+      <value name="Description">a message addressed to the logging station's operator incorporated in a paper or electronic QSL</value>
+    </record>
+    <record>
+      <value name="Field Name">QSLRDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">QSL received date (only valid if QSL_RCVD is Y, I, or V)(V import-only)</value>
+    </record>
+    <record>
+      <value name="Field Name">QSLSDATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">QSL sent date (only valid if QSL_SENT is Y, Q, or I)</value>
+    </record>
+    <record>
+      <value name="Field Name">QSL_RCVD</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Rcvd</value>
+      <value name="Description">QSL received status instead of V (import-only) use &lt;CREDIT_GRANTED:39&gt;DXCC:card,DXCC_BAND:card,DXCC_MODE:card Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">QSL_RCVD_VIA</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Via</value>
+      <value name="Description">if QSL_RCVD is set to 'Y' or 'V', the means by which the QSL was received by the logging station; otherwise, the means by which the logging station requested or intends to request that the QSL be conveyed. (Note: 'V' is import-only) use of M (manager) is import-only</value>
+    </record>
+    <record>
+      <value name="Field Name">QSL_SENT</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Sent</value>
+      <value name="Description">QSL sent status Default Value: N</value>
+    </record>
+    <record>
+      <value name="Field Name">QSL_SENT_VIA</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSL_Via</value>
+      <value name="Description">if QSL_SENT is set to 'Y', the means by which the QSL was sent by the logging station; otherwise, the means by which the logging station intends to convey the QSL use of M (manager) is import-only</value>
+    </record>
+    <record>
+      <value name="Field Name">QSL_VIA</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's QSL route</value>
+    </record>
+    <record>
+      <value name="Field Name">QSO_COMPLETE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">QSO_Complete</value>
+      <value name="Description">indicates whether the QSO was complete from the perspective of the logging station Y - yes N - no NIL - not heard ? - uncertain</value>
+    </record>
+    <record>
+      <value name="Field Name">QSO_DATE</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date on which the QSO started</value>
+    </record>
+    <record>
+      <value name="Field Name">QSO_DATE_OFF</value>
+      <value name="Data Type">Date</value>
+      <value name="Description">date on which the QSO ended</value>
+    </record>
+    <record>
+      <value name="Field Name">QSO_RANDOM</value>
+      <value name="Data Type">Boolean</value>
+      <value name="Description">indicates whether the QSO was random or scheduled</value>
+    </record>
+    <record>
+      <value name="Field Name">QTH</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's city</value>
+    </record>
+    <record>
+      <value name="Field Name">QTH_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the contacted station's city</value>
+    </record>
+    <record>
+      <value name="Field Name">REGION</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Region</value>
+      <value name="Description">the contacted station's WAE or CQ entity contained within a DXCC entity. the value None indicates that the WAE or CQ entity is the DXCC entity in the DXCC field. nothing can be inferred from the absence of the REGION field</value>
+    </record>
+    <record>
+      <value name="Field Name">RIG</value>
+      <value name="Data Type">MultilineString</value>
+      <value name="Description">description of the contacted station's equipment</value>
+    </record>
+    <record>
+      <value name="Field Name">RIG_INTL</value>
+      <value name="Data Type">IntlMultilineString</value>
+      <value name="Description">description of the contacted station's equipment</value>
+    </record>
+    <record>
+      <value name="Field Name">RST_RCVD</value>
+      <value name="Data Type">String</value>
+      <value name="Description">signal report from the contacted station</value>
+    </record>
+    <record>
+      <value name="Field Name">RST_SENT</value>
+      <value name="Data Type">String</value>
+      <value name="Description">signal report sent to the contacted station</value>
+    </record>
+    <record>
+      <value name="Field Name">RX_PWR</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the contacted station's transmitter power in Watts with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">SAT_MODE</value>
+      <value name="Data Type">String</value>
+      <value name="Description">satellite mode - a code representing the satellite's uplink band and downlink band</value>
+    </record>
+    <record>
+      <value name="Field Name">SAT_NAME</value>
+      <value name="Data Type">String</value>
+      <value name="Description">name of satellite</value>
+    </record>
+    <record>
+      <value name="Field Name">SFI</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">the solar flux at the time of the QSO in the range 0 to 300 (inclusive).</value>
+      <value name="Minimum Value">0</value>
+      <value name="Maximum Value">300</value>
+    </record>
+    <record>
+      <value name="Field Name">SIG</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the name of the contacted station's special activity or interest group</value>
+    </record>
+    <record>
+      <value name="Field Name">SIG_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">the name of the contacted station's special activity or interest group</value>
+    </record>
+    <record>
+      <value name="Field Name">SIG_INFO</value>
+      <value name="Data Type">String</value>
+      <value name="Description">information associated with the contacted station's activity or interest group</value>
+    </record>
+    <record>
+      <value name="Field Name">SIG_INFO_INTL</value>
+      <value name="Data Type">IntlString</value>
+      <value name="Description">information associated with the contacted station's activity or interest group</value>
+    </record>
+    <record>
+      <value name="Field Name">SILENT_KEY</value>
+      <value name="Data Type">Boolean</value>
+      <value name="Description">'Y' indicates that the contacted station's operator is now a Silent Key.</value>
+    </record>
+    <record>
+      <value name="Field Name">SKCC</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's Straight Key Century Club (SKCC) member information</value>
+    </record>
+    <record>
+      <value name="Field Name">SOTA_REF</value>
+      <value name="Data Type">SOTARef</value>
+      <value name="Description">the contacted station's International SOTA Reference.</value>
+    </record>
+    <record>
+      <value name="Field Name">SRX</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">contest QSO received serial number with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">SRX_STRING</value>
+      <value name="Data Type">String</value>
+      <value name="Description">contest QSO received information use Cabrillo format to convey contest information for which ADIF fields are not specified in the event of a conflict between information in a dedicated contest field and this field, information in the dedicated contest field shall prevail</value>
+    </record>
+    <record>
+      <value name="Field Name">STATE</value>
+      <value name="Data Type">Enumeration</value>
+      <value name="Enumeration">Primary_Administrative_Subdivision[DXCC]</value>
+      <value name="Description">the code for the contacted station's Primary Administrative Subdivision (e.g. US State, JA Island, VE Province)</value>
+    </record>
+    <record>
+      <value name="Field Name">STATION_CALLSIGN</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the logging station's callsign (the callsign used over the air) if STATION_CALLSIGN is absent, OPERATOR shall be treated as both the logging station's callsign and the logging operator's callsign</value>
+    </record>
+    <record>
+      <value name="Field Name">STX</value>
+      <value name="Data Type">Integer</value>
+      <value name="Description">contest QSO transmitted serial number with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">STX_STRING</value>
+      <value name="Data Type">String</value>
+      <value name="Description">contest QSO transmitted information use Cabrillo format to convey contest information for which ADIF fields are not specified in the event of a conflict between information in a dedicated contest field and this field, information in the dedicated contest field shall prevail</value>
+    </record>
+    <record>
+      <value name="Field Name">SUBMODE</value>
+      <value name="Data Type">String</value>
+      <value name="Enumeration">Submode[MODE]</value>
+      <value name="Description">QSO Submode use enumeration values for interoperability</value>
+    </record>
+    <record>
+      <value name="Field Name">SWL</value>
+      <value name="Data Type">Boolean</value>
+      <value name="Description">indicates that the QSO information pertains to an SWL report</value>
+    </record>
+    <record>
+      <value name="Field Name">TEN_TEN</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">Ten-Ten number with a value greater than 0</value>
+      <value name="Minimum Value">1</value>
+    </record>
+    <record>
+      <value name="Field Name">TIME_OFF</value>
+      <value name="Data Type">Time</value>
+      <value name="Description">HHMM or HHMMSS in UTC in the absence of &lt;QSO_DATE_OFF&gt;, the QSO duration is less than 24 hours. For example, the following is a QSO starting at 14 July 2020 23:55 and finishing at 15 July 2020 01:00: &lt;QSO_DATE:8&gt;20200714 &lt;TIME_ON:4&gt;2355 &lt;TIME_OFF:4&gt;0100</value>
+    </record>
+    <record>
+      <value name="Field Name">TIME_ON</value>
+      <value name="Data Type">Time</value>
+      <value name="Description">HHMM or HHMMSS in UTC</value>
+    </record>
+    <record>
+      <value name="Field Name">TX_PWR</value>
+      <value name="Data Type">Number</value>
+      <value name="Description">the logging station's power in Watts with a value greater than or equal to 0</value>
+      <value name="Minimum Value">0</value>
+    </record>
+    <record>
+      <value name="Field Name">UKSMG</value>
+      <value name="Data Type">PositiveInteger</value>
+      <value name="Description">the contacted station's UKSMG member number with a value greater than 0</value>
+      <value name="Minimum Value">1</value>
+    </record>
+    <record>
+      <value name="Field Name">USACA_COUNTIES</value>
+      <value name="Data Type">SecondarySubdivisionList</value>
+      <value name="Description">two US counties in the case where the contacted station is located on a border between two counties, representing counties credited to the QSO for the CQ Magazine USA-CA award program. E.g. MA,Franklin:MA,Hampshire</value>
+    </record>
+    <record>
+      <value name="Field Name">VE_PROV</value>
+      <value name="Data Type">String</value>
+      <value name="Description">import-only: use STATE instead</value>
+      <value name="Import-only">true</value>
+    </record>
+    <record>
+      <value name="Field Name">VUCC_GRIDS</value>
+      <value name="Data Type">GridSquareList</value>
+      <value name="Description">two or four adjacent Maidenhead grid locators, each four or six characters long, representing the contacted station's grid squares credited to the QSO for the ARRL VUCC award program. E.g. EM98,FM08,EM97,FM07</value>
+    </record>
+    <record>
+      <value name="Field Name">WEB</value>
+      <value name="Data Type">String</value>
+      <value name="Description">the contacted station's URL</value>
+    </record>
+    <record>
+      <value name="Field Name">WWFF_REF</value>
+      <value name="Data Type">WWFFRef</value>
+      <value name="Description">the contacted station's WWFF (World Wildlife Flora &amp; Fauna) reference</value>
+    </record>
+  </fields>
+</adif>

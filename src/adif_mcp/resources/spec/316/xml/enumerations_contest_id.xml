@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:32Z">
+  <enumerations>
+    <enumeration name="Contest_ID">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Contest-ID</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-160M-SPRINT</value>
+        <value name="Description">PODXS Great Pumpkin Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-3-DAY</value>
+        <value name="Description">PODXS Three Day Weekend</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-31-FLAVORS</value>
+        <value name="Description">PODXS 31 Flavors</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-40M-SPRINT</value>
+        <value name="Description">PODXS 40m Firecracker Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-80M-SPRINT</value>
+        <value name="Description">PODXS 80m Jay Hudak Memorial Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-PSKFEST</value>
+        <value name="Description">PODXS PSKFest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-ST-PATS-DAY</value>
+        <value name="Description">PODXS St. Patricks Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">070-VALENTINE-SPRINT</value>
+        <value name="Description">PODXS Valentine Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">10-RTTY</value>
+        <value name="Description">Ten-Meter RTTY Contest (2011 onwards)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">1010-OPEN-SEASON</value>
+        <value name="Description">Open Season Ten Meter QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">7QP</value>
+        <value name="Description">7th-Area QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">AL-QSO-PARTY</value>
+        <value name="Description">Alabama QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ALL-ASIAN-DX-CW</value>
+        <value name="Description">JARL All Asian DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ALL-ASIAN-DX-PHONE</value>
+        <value name="Description">JARL All Asian DX Contest (PHONE)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ANARTS-RTTY</value>
+        <value name="Description">ANARTS WW RTTY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ANATOLIAN-RTTY</value>
+        <value name="Description">Anatolian WW RTTY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">AP-SPRINT</value>
+        <value name="Description">Asia - Pacific Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">AR-QSO-PARTY</value>
+        <value name="Description">Arkansas QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-DX</value>
+        <value name="Description">ARI DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-EME</value>
+        <value name="Description">ARI Italian EME Trophy</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-IAC-13CM</value>
+        <value name="Description">ARI Italian Activity Contest (13cm+)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-IAC-23CM</value>
+        <value name="Description">ARI Italian Activity Contest (23cm)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-IAC-6M</value>
+        <value name="Description">ARI Italian Activity Contest (6m)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-IAC-UHF</value>
+        <value name="Description">ARI Italian Activity Contest (UHF)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARI-IAC-VHF</value>
+        <value name="Description">ARI Italian Activity Contest (VHF)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-10</value>
+        <value name="Description">ARRL 10 Meter Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-10-GHZ</value>
+        <value name="Description">ARRL 10 GHz and Up Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-160</value>
+        <value name="Description">ARRL 160 Meter Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-222</value>
+        <value name="Description">ARRL 222 MHz and Up Distance Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-DIGI</value>
+        <value name="Description">ARRL International Digital Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-DX-CW</value>
+        <value name="Description">ARRL International DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-DX-SSB</value>
+        <value name="Description">ARRL International DX Contest (Phone)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-EME</value>
+        <value name="Description">ARRL EME contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-FIELD-DAY</value>
+        <value name="Description">ARRL Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-RR-CW</value>
+        <value name="Description">ARRL Rookie Roundup (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-RR-RTTY</value>
+        <value name="Description">ARRL Rookie Roundup (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-RR-SSB</value>
+        <value name="Description">ARRL Rookie Roundup (Phone)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-RTTY</value>
+        <value name="Description">ARRL RTTY Round-Up</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-SCR</value>
+        <value name="Description">ARRL School Club Roundup</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-SS-CW</value>
+        <value name="Description">ARRL November Sweepstakes (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-SS-SSB</value>
+        <value name="Description">ARRL November Sweepstakes (Phone)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-UHF-AUG</value>
+        <value name="Description">ARRL August UHF Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-VHF-JAN</value>
+        <value name="Description">ARRL January VHF Sweepstakes</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-VHF-JUN</value>
+        <value name="Description">ARRL June VHF QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ARRL-VHF-SEP</value>
+        <value name="Description">ARRL September VHF QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">AZ-QSO-PARTY</value>
+        <value name="Description">Arizona QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">BANGGAI-DX</value>
+        <value name="Description">ORARI Banggai DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">BARTG-RTTY</value>
+        <value name="Description">BARTG Spring RTTY Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">BARTG-SPRINT</value>
+        <value name="Description">BARTG Sprint Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">BC-QSO-PARTY</value>
+        <value name="Description">British Columbia QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">BEKASI-MERDEKA-CONTEST</value>
+        <value name="Description">ORARI Bekasi Merdeka Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CA-QSO-PARTY</value>
+        <value name="Description">California QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CIS-DX</value>
+        <value name="Description">CIS DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CO-QSO-PARTY</value>
+        <value name="Description">Colorado QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-160-CW</value>
+        <value name="Description">CQ WW 160 Meter DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-160-SSB</value>
+        <value name="Description">CQ WW 160 Meter DX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-M</value>
+        <value name="Description">CQ-M International DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-VHF</value>
+        <value name="Description">CQ World-Wide VHF Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WPX-CW</value>
+        <value name="Description">CQ WW WPX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WPX-RTTY</value>
+        <value name="Description">CQ/RJ WW RTTY WPX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WPX-SSB</value>
+        <value name="Description">CQ WW WPX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WW-CW</value>
+        <value name="Description">CQ WW DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WW-RTTY</value>
+        <value name="Description">CQ/RJ WW RTTY DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CQ-WW-SSB</value>
+        <value name="Description">CQ WW DX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CT-QSO-PARTY</value>
+        <value name="Description">Connecticut QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CVA-DX-CW</value>
+        <value name="Description">Concurso Verde e Amarelo DX CW Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CVA-DX-SSB</value>
+        <value name="Description">Concurso Verde e Amarelo DX CW Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CWOPS-CW-OPEN</value>
+        <value name="Description">CWops CW Open Competition</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">CWOPS-CWT</value>
+        <value name="Description">CWops Mini-CWT Test</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-10</value>
+        <value name="Description">DARC 10m Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-CWA</value>
+        <value name="Description">DARC CW Trainee Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-FT4</value>
+        <value name="Description">DARC FT4 Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-HELL</value>
+        <value name="Description">DARC Hell Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-MICROWAVE</value>
+        <value name="Description">DARC Microwave Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-TRAINEE</value>
+        <value name="Description">DARC Trainee Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-UKW-SPRING</value>
+        <value name="Description">DARC UKW Spring Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-UKW-FIELD-DAY</value>
+        <value name="Description">DARC UKW Summer Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-VHF-UHF-MICROWAVE</value>
+        <value name="Description">DARC VHF-, UHF-, Microwave Contest (May)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-WAEDC-CW</value>
+        <value name="Description">WAE DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-WAEDC-RTTY</value>
+        <value name="Description">WAE DX Contest (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-WAEDC-SSB</value>
+        <value name="Description">WAE DX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DARC-WAG</value>
+        <value name="Description">DARC Worked All Germany</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DE-QSO-PARTY</value>
+        <value name="Description">Delaware QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DL-DX-RTTY</value>
+        <value name="Description">DL-DX RTTY Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">DMC-RTTY</value>
+        <value name="Description">DMC RTTY Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-CNCW</value>
+        <value name="Description">Concurso Nacional de Telegrafía</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-DME</value>
+        <value name="Description">Municipios Españoles</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-MAJESTAD-CW</value>
+        <value name="Description">His Majesty The King of Spain CW Contest (2022 and later)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-MAJESTAD-SSB</value>
+        <value name="Description">His Majesty The King of Spain SSB Contest (2022 and later)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-PSK63</value>
+        <value name="Description">EA PSK63</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-RTTY</value>
+        <value name="Description">Unión de Radioaficionados Españoles RTTY Contest</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-SMRE-CW</value>
+        <value name="Description">Su Majestad El Rey de España - CW (2021 and earlier)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-SMRE-SSB</value>
+        <value name="Description">Su Majestad El Rey de España - SSB (2021 and earlier)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-ATLANTIC</value>
+        <value name="Description">Atlántico V-UHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-COM</value>
+        <value name="Description">Combinado de V-UHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-COSTA-SOL</value>
+        <value name="Description">Costa del Sol V-UHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-EA</value>
+        <value name="Description">Nacional VHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-EA1RCS</value>
+        <value name="Description">Segovia EA1RCS V-UHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-QSL</value>
+        <value name="Description">QSL V-UHF &amp; 50MHz</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-VHF-SADURNI</value>
+        <value name="Description">Sant Sadurni V-UHF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EA-WW-RTTY</value>
+        <value name="Description">Unión de Radioaficionados Españoles RTTY Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EASTER</value>
+        <value name="Description">DARC Easter Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EPC-PSK63</value>
+        <value name="Description">PSK63 QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EU SPRINT</value>
+        <value name="Description">EU Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EU-HF</value>
+        <value name="Description">EU HF Championship</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EU-PSK-DX</value>
+        <value name="Description">EU PSK DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">EUCW160M</value>
+        <value name="Description">European CW Association 160m CW Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">FALL SPRINT</value>
+        <value name="Description">FISTS Fall Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">FL-QSO-PARTY</value>
+        <value name="Description">Florida QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">GA-QSO-PARTY</value>
+        <value name="Description">Georgia QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">HA-DX</value>
+        <value name="Description">Hungarian DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">HELVETIA</value>
+        <value name="Description">Helvetia Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">HI-QSO-PARTY</value>
+        <value name="Description">Hawaiian QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">HOLYLAND</value>
+        <value name="Description">IARC Holyland Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">IA-QSO-PARTY</value>
+        <value name="Description">Iowa QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">IARU-FIELD-DAY</value>
+        <value name="Description">DARC IARU Region 1 Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">IARU-HF</value>
+        <value name="Description">IARU HF World Championship</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ICWC-MST</value>
+        <value name="Description">ICWC Medium Speed Test</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ID-QSO-PARTY</value>
+        <value name="Description">Idaho QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">IL QSO PARTY</value>
+        <value name="Description">Illinois QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">IN-QSO-PARTY</value>
+        <value name="Description">Indiana QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">JARTS-WW-RTTY</value>
+        <value name="Description">JARTS WW RTTY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">JIDX-CW</value>
+        <value name="Description">Japan International DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">JIDX-SSB</value>
+        <value name="Description">Japan International DX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">JT-DX-RTTY</value>
+        <value name="Description">Mongolian RTTY DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">K1USN-SSO</value>
+        <value name="Description">K1USN Slow Speed Open</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">K1USN-SST</value>
+        <value name="Description">K1USN Slow Speed Test</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">KS-QSO-PARTY</value>
+        <value name="Description">Kansas QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">KY-QSO-PARTY</value>
+        <value name="Description">Kentucky QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">LA-QSO-PARTY</value>
+        <value name="Description">Louisiana QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">LDC-RTTY</value>
+        <value name="Description">DRCG Long Distance Contest (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">LZ DX</value>
+        <value name="Description">LZ DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MAR-QSO-PARTY</value>
+        <value name="Description">Maritimes QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MD-QSO-PARTY</value>
+        <value name="Description">Maryland QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ME-QSO-PARTY</value>
+        <value name="Description">Maine QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MI-QSO-PARTY</value>
+        <value name="Description">Michigan QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MIDATLANTIC-QSO-PARTY</value>
+        <value name="Description">Mid-Atlantic QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MN-QSO-PARTY</value>
+        <value name="Description">Minnesota QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MO-QSO-PARTY</value>
+        <value name="Description">Missouri QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MS-QSO-PARTY</value>
+        <value name="Description">Mississippi QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">MT-QSO-PARTY</value>
+        <value name="Description">Montana QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NA-SPRINT-CW</value>
+        <value name="Description">North America Sprint (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NA-SPRINT-RTTY</value>
+        <value name="Description">North America Sprint (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NA-SPRINT-SSB</value>
+        <value name="Description">North America Sprint (Phone)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NAQP-CW</value>
+        <value name="Description">North America QSO Party (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NAQP-RTTY</value>
+        <value name="Description">North America QSO Party (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NAQP-SSB</value>
+        <value name="Description">North America QSO Party (Phone)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NAVAL</value>
+        <value name="Description">International Naval Contest (INC)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NC-QSO-PARTY</value>
+        <value name="Description">North Carolina QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ND-QSO-PARTY</value>
+        <value name="Description">North Dakota QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NE-QSO-PARTY</value>
+        <value name="Description">Nebraska QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NEQP</value>
+        <value name="Description">New England QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NH-QSO-PARTY</value>
+        <value name="Description">New Hampshire QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NJ-QSO-PARTY</value>
+        <value name="Description">New Jersey QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NM-QSO-PARTY</value>
+        <value name="Description">New Mexico QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NRAU-BALTIC-CW</value>
+        <value name="Description">NRAU-Baltic Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NRAU-BALTIC-SSB</value>
+        <value name="Description">NRAU-Baltic Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NV-QSO-PARTY</value>
+        <value name="Description">Nevada QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">NY-QSO-PARTY</value>
+        <value name="Description">New York QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OCEANIA-DX-CW</value>
+        <value name="Description">Oceania DX Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OCEANIA-DX-SSB</value>
+        <value name="Description">Oceania DX Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OH-QSO-PARTY</value>
+        <value name="Description">Ohio QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OK-DX-RTTY</value>
+        <value name="Description">Czech Radio Club OK DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OK-OM-DX</value>
+        <value name="Description">Czech Radio Club OK-OM DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OK-QSO-PARTY</value>
+        <value name="Description">Oklahoma QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OMISS-QSO-PARTY</value>
+        <value name="Description">Old Man International Sideband Society QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ON-QSO-PARTY</value>
+        <value name="Description">Ontario QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">OR-QSO-PARTY</value>
+        <value name="Description">Oregon QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">ORARI-DX</value>
+        <value name="Description">ORARI DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">PA-QSO-PARTY</value>
+        <value name="Description">Pennsylvania QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">PACC</value>
+        <value name="Description">Dutch PACC Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">PCC</value>
+        <value name="Description">PCCPro CW Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">PSK-DEATHMATCH</value>
+        <value name="Description">MDXA PSK DeathMatch (2005-2010)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">QC-QSO-PARTY</value>
+        <value name="Description">Quebec QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RAC</value>
+        <value name="Description">Canadian Amateur Radio Society Contest</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RAC-CANADA-DAY</value>
+        <value name="Description">RAC Canada Day Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RAC-CANADA-WINTER</value>
+        <value name="Description">RAC Canada Winter Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RDAC</value>
+        <value name="Description">Russian District Award Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RDXC</value>
+        <value name="Description">Russian DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">REF-160M</value>
+        <value name="Description">Reseau des Emetteurs Francais 160m Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">REF-CW</value>
+        <value name="Description">Reseau des Emetteurs Francais Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">REF-SSB</value>
+        <value name="Description">Reseau des Emetteurs Francais Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">REP-PORTUGAL-DAY-HF</value>
+        <value name="Description">Rede dos Emissores Portugueses Portugal Day HF Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RI-QSO-PARTY</value>
+        <value name="Description">Rhode Island QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-160</value>
+        <value name="Description">1.8MHz Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-21/28-CW</value>
+        <value name="Description">21/28 MHz Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-21/28-SSB</value>
+        <value name="Description">21/28 MHz Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-80M-CC</value>
+        <value name="Description">80m Club Championships</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-AFS-CW</value>
+        <value name="Description">Affiliated Societies Team Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-AFS-SSB</value>
+        <value name="Description">Affiliated Societies Team Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-CLUB-CALLS</value>
+        <value name="Description">Club Calls</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-COMMONWEALTH</value>
+        <value name="Description">Commonwealth Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-IOTA</value>
+        <value name="Description">IOTA Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-LOW-POWER</value>
+        <value name="Description">Low Power Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-NFD</value>
+        <value name="Description">National Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-ROPOCO</value>
+        <value name="Description">RoPoCo</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RSGB-SSB-FD</value>
+        <value name="Description">SSB Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">RUSSIAN-RTTY</value>
+        <value name="Description">Russian Radio RTTY Worldwide Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SAC-CW</value>
+        <value name="Description">Scandinavian Activity Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SAC-SSB</value>
+        <value name="Description">Scandinavian Activity Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SARTG-RTTY</value>
+        <value name="Description">SARTG WW RTTY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SC-QSO-PARTY</value>
+        <value name="Description">South Carolina QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SCC-RTTY</value>
+        <value name="Description">SCC RTTY Championship</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SD-QSO-PARTY</value>
+        <value name="Description">South Dakota QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SHORTRY</value>
+        <value name="Description">DARC RTTY Short Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SMP-AUG</value>
+        <value name="Description">SSA Portabeltest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SMP-MAY</value>
+        <value name="Description">SSA Portabeltest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SP-DX-RTTY</value>
+        <value name="Description">PRC SPDX Contest (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SPAR-WINTER-FD</value>
+        <value name="Description">SPAR Winter Field Day(2016 and earlier)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SPDXCONTEST</value>
+        <value name="Description">SP DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SPRING SPRINT</value>
+        <value name="Description">FISTS Spring Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SR-MARATHON</value>
+        <value name="Description">Scottish-Russian Marathon</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">STEW-PERRY</value>
+        <value name="Description">Stew Perry Topband Distance Challenge</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">SUMMER SPRINT</value>
+        <value name="Description">FISTS Summer Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TARA-GRID-DIP</value>
+        <value name="Description">TARA Grid Dip PSK-RTTY Shindig</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TARA-RTTY</value>
+        <value name="Description">TARA RTTY Mêlée</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TARA-RUMBLE</value>
+        <value name="Description">TARA Rumble PSK Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TARA-SKIRMISH</value>
+        <value name="Description">TARA Skirmish Digital Prefix Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TEN-RTTY</value>
+        <value name="Description">Ten-Meter RTTY Contest (before 2011)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TMC-RTTY</value>
+        <value name="Description">The Makrothen Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TN-QSO-PARTY</value>
+        <value name="Description">Tennessee QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">TX-QSO-PARTY</value>
+        <value name="Description">Texas QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UBA-DX-CW</value>
+        <value name="Description">UBA Contest (CW)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UBA-DX-SSB</value>
+        <value name="Description">UBA Contest (SSB)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UK-DX-BPSK63</value>
+        <value name="Description">European PSK Club BPSK63 Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UK-DX-RTTY</value>
+        <value name="Description">UK DX RTTY Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UKR-CHAMP-RTTY</value>
+        <value name="Description">Open Ukraine RTTY Championship</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UKRAINIAN DX</value>
+        <value name="Description">Ukrainian DX</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UKSMG-6M-MARATHON</value>
+        <value name="Description">UKSMG 6m Marathon</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UKSMG-SUMMER-ES</value>
+        <value name="Description">UKSMG Summer Es Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">URE-DX</value>
+        <value name="Description">Ukrainian DX Contest</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">US-COUNTIES-QSO</value>
+        <value name="Description">Mobile Amateur Awards Club</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">UT-QSO-PARTY</value>
+        <value name="Description">Utah QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">VA-QSO-PARTY</value>
+        <value name="Description">Virginia QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">VENEZ-IND-DAY</value>
+        <value name="Description">RCV Venezuelan Independence Day Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">VIRGINIA QSO PARTY</value>
+        <value name="Description">Virginia QSO Party</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">VOLTA-RTTY</value>
+        <value name="Description">Alessandro Volta RTTY DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">VT-QSO-PARTY</value>
+        <value name="Description">Vermont QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WA-QSO-PARTY</value>
+        <value name="Description">Washington QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WFD</value>
+        <value name="Description">Winter Field Day (2017 and later)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WI-QSO-PARTY</value>
+        <value name="Description">Wisconsin QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-HARRY ANGEL</value>
+        <value name="Description">WIA Harry Angel Memorial 80m Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-JMMFD</value>
+        <value name="Description">WIA John Moyle Memorial Field Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-OCDX</value>
+        <value name="Description">WIA Oceania DX (OCDX) Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-REMEMBRANCE</value>
+        <value name="Description">WIA Remembrance Day</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-ROSS HULL</value>
+        <value name="Description">WIA Ross Hull Memorial VHF/UHF Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-TRANS TASMAN</value>
+        <value name="Description">WIA Trans Tasman Low Bands Challenge</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-VHF/UHF FD</value>
+        <value name="Description">WIA VHF UHF Field Days</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WIA-VK SHIRES</value>
+        <value name="Description">WIA VK Shires</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WINTER SPRINT</value>
+        <value name="Description">FISTS Winter Sprint</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WV-QSO-PARTY</value>
+        <value name="Description">West Virginia QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WW-DIGI</value>
+        <value name="Description">World Wide Digi DX Contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">WY-QSO-PARTY</value>
+        <value name="Description">Wyoming QSO Party</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">XE-INTL-RTTY</value>
+        <value name="Description">Mexico International Contest (RTTY)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">YOHFDX</value>
+        <value name="Description">YODX HF contest</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Contest_ID</value>
+        <value name="Contest-ID">YUDXC</value>
+        <value name="Description">YU DX Contest</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

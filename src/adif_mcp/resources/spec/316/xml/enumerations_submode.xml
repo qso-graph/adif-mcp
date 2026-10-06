@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:58Z">
+  <enumerations>
+    <enumeration name="Submode">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Submode</value>
+        <value>Mode</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK125</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK125F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK125FL</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK250</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK250F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK250FL</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK500</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK500F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK1000</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK1000F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">8PSK1200F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">AMTORFEC</value>
+        <value name="Mode">TOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ASCI</value>
+        <value name="Mode">RTTY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">C4FM</value>
+        <value name="Mode">DIGITALVOICE</value>
+        <value name="Description">C4FM 4-level FSK See the Propagation_Mode enumeration section for examples of representing C4FM voice transmissions.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">CHIP64</value>
+        <value name="Mode">CHIP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">CHIP128</value>
+        <value name="Mode">CHIP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DMR</value>
+        <value name="Mode">DIGITALVOICE</value>
+        <value name="Description">Digital Mobile Radio See the Propagation_Mode enumeration section for examples of representing DMR voice transmissions.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM-M</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM4</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM5</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM8</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM11</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM16</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM22</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM44</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOM88</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOMINOEX</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DOMINOF</value>
+        <value name="Mode">DOMINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">DSTAR</value>
+        <value name="Mode">DIGITALVOICE</value>
+        <value name="Description">Digital Smart Technologies for Amateur Radio See the Propagation_Mode enumeration section for examples of representing DSTAR voice transmissions.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FMHELL</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FREEDV</value>
+        <value name="Mode">DIGITALVOICE</value>
+        <value name="Description">Digital voice mode for HF radio implemented with open source</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FSK31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FSKH105</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FSKH245</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FSKHELL</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FSQCALL</value>
+        <value name="Mode">MFSK</value>
+        <value name="Description">FSQCall protocol used with FSQ (Fast Simple QSO) transmission mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FST4</value>
+        <value name="Mode">MFSK</value>
+        <value name="Description">This is a digital mode supported by the WSJT-X software</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FST4W</value>
+        <value name="Mode">MFSK</value>
+        <value name="Description">This is a digital mode supported by the WSJT-X software that is for quasi-beacon transmissions of WSPR-style messages</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">FT4</value>
+        <value name="Mode">MFSK</value>
+        <value name="Description">FT4 is a digital mode designed specifically for radio contesting</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">GTOR</value>
+        <value name="Mode">TOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">HELL80</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">HELLX5</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">HELLX9</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">HFSK</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ISCAT-A</value>
+        <value name="Mode">ISCAT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ISCAT-B</value>
+        <value name="Mode">ISCAT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JS8</value>
+        <value name="Mode">MFSK</value>
+        <value name="Description">Jordan Sherer designed 8-FSK modulation</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4A</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4B</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4C</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4D</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4E</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4F</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT4G</value>
+        <value name="Mode">JT4</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9-1</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9-2</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9-5</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9-10</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9-30</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9A</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9B</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9C</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9D</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9E</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9E FAST</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9F</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9F FAST</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9G</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9G FAST</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9H</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT9H FAST</value>
+        <value name="Mode">JT9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT65A</value>
+        <value name="Mode">JT65</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT65B</value>
+        <value name="Mode">JT65</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT65B2</value>
+        <value name="Mode">JT65</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT65C</value>
+        <value name="Mode">JT65</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JT65C2</value>
+        <value name="Mode">JT65</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">JTMS</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">LSB</value>
+        <value name="Mode">SSB</value>
+        <value name="Description">Amplitude modulated voice telephony, lower-sideband, suppressed-carrier</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">M17</value>
+        <value name="Mode">DIGITALVOICE</value>
+        <value name="Description">Digital radio protocol using the Codec 2 voice encoder</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK4</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK8</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK11</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK16</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK22</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK31</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK32</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK64</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK64L</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK128</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">MFSK128L</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">NAVTEX</value>
+        <value name="Mode">TOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 4/125</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 4/250</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 8/250</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 8/500</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 16/500</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 16/1000</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OLIVIA 32/1000</value>
+        <value name="Mode">OLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OPERA-BEACON</value>
+        <value name="Mode">OPERA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">OPERA-QSO</value>
+        <value name="Mode">OPERA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PAC2</value>
+        <value name="Mode">PAC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PAC3</value>
+        <value name="Mode">PAC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PAC4</value>
+        <value name="Mode">PAC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PAX2</value>
+        <value name="Mode">PAX</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PCW</value>
+        <value name="Mode">CW</value>
+        <value name="Description">Coherent CW</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK10</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63F</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63RC10</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63RC20</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63RC32</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63RC4</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK63RC5</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125RC10</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125RC12</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125RC16</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125RC4</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK125RC5</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250RC2</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250RC3</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250RC5</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250RC6</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK250RC7</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK500</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK500RC2</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK500RC3</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK500RC4</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK800RC2</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK1000</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSK1000RC2</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSKAM10</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSKAM31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSKAM50</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSKFEC31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">PSKHELL</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QPSK31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">Q65</value>
+        <value name="Mode">MFSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QPSK63</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QPSK125</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QPSK250</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QPSK500</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QRA64A</value>
+        <value name="Mode">QRA64</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QRA64B</value>
+        <value name="Mode">QRA64</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QRA64C</value>
+        <value name="Mode">QRA64</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QRA64D</value>
+        <value name="Mode">QRA64</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">QRA64E</value>
+        <value name="Mode">QRA64</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ROS-EME</value>
+        <value name="Mode">ROS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ROS-HF</value>
+        <value name="Mode">ROS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">ROS-MF</value>
+        <value name="Mode">ROS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SCAMP_FAST</value>
+        <value name="Mode">FSK</value>
+        <value name="Description">SCAMP fast FSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SCAMP_OO</value>
+        <value name="Mode">MTONE</value>
+        <value name="Description">SCAMP single modulated tone on/off keying</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SCAMP_OO_SLW</value>
+        <value name="Mode">MTONE</value>
+        <value name="Description">SCAMP single modulated tone on/off slow keying</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SCAMP_SLOW</value>
+        <value name="Mode">FSK</value>
+        <value name="Description">SCAMP slow FSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SCAMP_VSLOW</value>
+        <value name="Mode">FSK</value>
+        <value name="Description">SCAMP very slow FSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SIM31</value>
+        <value name="Mode">PSK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SITORB</value>
+        <value name="Mode">TOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">SLOWHELL</value>
+        <value name="Mode">HELL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR-M</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR4</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR5</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR8</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR11</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR16</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR22</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR25X4</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR50X1</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR50X2</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THOR100</value>
+        <value name="Mode">THOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THRBX</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THRBX1</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THRBX2</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THRBX4</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THROB1</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THROB2</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">THROB4</value>
+        <value name="Mode">THRB</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">USB</value>
+        <value name="Mode">SSB</value>
+        <value name="Description">Amplitude modulated voice telephony, upper-sideband, suppressed-carrier</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">VARA HF</value>
+        <value name="Mode">DYNAMIC</value>
+        <value name="Description">Channel adaptive high-speed modem for HF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">VARA SATELLITE</value>
+        <value name="Mode">DYNAMIC</value>
+        <value name="Description">Channel adaptive high-speed modem for satellite operations</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">VARA FM 1200</value>
+        <value name="Mode">DYNAMIC</value>
+        <value name="Description">Channel adaptive high-speed modem for FM transceivers</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Submode</value>
+        <value name="Submode">VARA FM 9600</value>
+        <value name="Mode">DYNAMIC</value>
+        <value name="Description">Channel adaptive high-speed modem for FM transceivers</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

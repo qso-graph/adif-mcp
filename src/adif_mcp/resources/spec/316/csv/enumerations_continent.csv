@@ -1,0 +1,8 @@
+﻿"Enumeration Name","Abbreviation","Continent","Import-only","Comments","ADIF Version","ADIF Status"
+"Continent","NA","North America","","","3.1.6","Released"
+"Continent","SA","South America","","","3.1.6","Released"
+"Continent","EU","Europe","","","3.1.6","Released"
+"Continent","AF","Africa","","","3.1.6","Released"
+"Continent","OC","Oceania","","","3.1.6","Released"
+"Continent","AS","Asia","","","3.1.6","Released"
+"Continent","AN","Antarctica","","","3.1.6","Released"

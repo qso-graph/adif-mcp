@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:57Z">
+  <enumerations>
+    <enumeration name="Secondary_Administrative_Subdivision_Alt">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Code</value>
+        <value>DXCC Entity Code</value>
+        <value>Region</value>
+        <value>District</value>
+        <value>Deleted</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Northland/Far North</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Northland</value>
+        <value name="District">Far North</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Northland/Whangarei</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Northland</value>
+        <value name="District">Whangarei</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Northland/Kaipara</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Northland</value>
+        <value name="District">Kaipara</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Rodney</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Rodney</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/North Shore</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">North Shore</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Waitakere</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Waitakere</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Auckland</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Auckland</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Manukau</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Manukau</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Papakura</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Papakura</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Auckland/Franklin</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Auckland</value>
+        <value name="District">Franklin</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Thames-Coromandel</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Thames-Coromandel</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Hauraki</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Hauraki</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Waikato</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Waikato</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Matamata Piako</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Matamata Piako</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Hamilton</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Hamilton</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Waipa</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Waipa</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Otorohanga</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Otorohanga</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/South Waikato</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">South Waikato</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Waitomo</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Waitomo</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Waikato/Taupo</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Waikato</value>
+        <value name="District">Taupo</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Western Bay of Plenty</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Western Bay of Plenty</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Tauranga</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Tauranga</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Rotorua</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Rotorua</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Kawerau</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Kawerau</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Whakatane</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Whakatane</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Bay of Plenty/Opotiki</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Bay of Plenty</value>
+        <value name="District">Opotiki</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Gisborne/Gisborne</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Gisborne</value>
+        <value name="District">Gisborne</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Hawkes Bay/Wairoa</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Hawkes Bay</value>
+        <value name="District">Wairoa</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Hawkes Bay/Hastings</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Hawkes Bay</value>
+        <value name="District">Hastings</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Hawkes Bay/Napier</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Hawkes Bay</value>
+        <value name="District">Napier</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Hawkes Bay/Central Hawkes Bay</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Hawkes Bay</value>
+        <value name="District">Central Hawkes Bay</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Taranaki/New Plymouth</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Taranaki</value>
+        <value name="District">New Plymouth</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Taranaki/Stratford</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Taranaki</value>
+        <value name="District">Stratford</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Taranaki/South Taranaki</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Taranaki</value>
+        <value name="District">South Taranaki</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Ruapehu</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Ruapehu</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Wanganui</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Wanganui</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Rangitikei</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Rangitikei</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Manawatu</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Manawatu</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Palmerston North</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Palmerston North</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Horowhenua</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Horowhenua</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wanganui-Manawatu/Tararua</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wanganui-Manawatu</value>
+        <value name="District">Tararua</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Masterton</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Masterton</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Carterton</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Carterton</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/South Wairarapa</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">South Wairarapa</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Kapiti Coast</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Kapiti Coast</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Porirua</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Porirua</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Upper Hutt</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Upper Hutt</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Lower Hutt</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Lower Hutt</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Wellington/Wellington</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Wellington</value>
+        <value name="District">Wellington</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Nelson/Nelson</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Nelson</value>
+        <value name="District">Nelson</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Marlborough/Marlborough</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Marlborough</value>
+        <value name="District">Marlborough</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Tasman/Tasman</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Tasman</value>
+        <value name="District">Tasman</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:West Coast/Buller</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">West Coast</value>
+        <value name="District">Buller</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:West Coast/Grey</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">West Coast</value>
+        <value name="District">Grey</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:West Coast/Westland</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">West Coast</value>
+        <value name="District">Westland</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Kaikoura</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Kaikoura</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Hurunui</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Hurunui</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Selwyn</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Selwyn</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Waimakariri</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Waimakariri</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Christchurch</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Christchurch</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Banks Peninsula</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Banks Peninsula</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Ashburton</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Ashburton</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Mackenzie</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Mackenzie</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Timaru</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Timaru</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Canterbury/Waimate</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Canterbury</value>
+        <value name="District">Waimate</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Otago/Waitaki</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Otago</value>
+        <value name="District">Waitaki</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Otago/Queenstown-Lakes</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Otago</value>
+        <value name="District">Queenstown-Lakes</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Otago/Central Otago</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Otago</value>
+        <value name="District">Central Otago</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Otago/Dunedin</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Otago</value>
+        <value name="District">Dunedin</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Otago/Clutha</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Otago</value>
+        <value name="District">Clutha</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Southland/Gore</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Southland</value>
+        <value name="District">Gore</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Southland/Southland</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Southland</value>
+        <value name="District">Southland</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision_Alt</value>
+        <value name="Code">NZ_Regions:Southland/Invercargill</value>
+        <value name="DXCC Entity Code">170</value>
+        <value name="Region">Southland</value>
+        <value name="District">Invercargill</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

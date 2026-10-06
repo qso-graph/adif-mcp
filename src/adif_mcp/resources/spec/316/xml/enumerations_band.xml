@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:30Z">
+  <enumerations>
+    <enumeration name="Band">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Band</value>
+        <value>Lower Freq (MHz)</value>
+        <value>Upper Freq (MHz)</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">2190m</value>
+        <value name="Lower Freq (MHz)">.1357</value>
+        <value name="Upper Freq (MHz)">.1378</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">630m</value>
+        <value name="Lower Freq (MHz)">.472</value>
+        <value name="Upper Freq (MHz)">.479</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">560m</value>
+        <value name="Lower Freq (MHz)">.501</value>
+        <value name="Upper Freq (MHz)">.504</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">160m</value>
+        <value name="Lower Freq (MHz)">1.8</value>
+        <value name="Upper Freq (MHz)">2.0</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">80m</value>
+        <value name="Lower Freq (MHz)">3.5</value>
+        <value name="Upper Freq (MHz)">4.0</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">60m</value>
+        <value name="Lower Freq (MHz)">5.06</value>
+        <value name="Upper Freq (MHz)">5.45</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">40m</value>
+        <value name="Lower Freq (MHz)">7.0</value>
+        <value name="Upper Freq (MHz)">7.3</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">30m</value>
+        <value name="Lower Freq (MHz)">10.1</value>
+        <value name="Upper Freq (MHz)">10.15</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">20m</value>
+        <value name="Lower Freq (MHz)">14.0</value>
+        <value name="Upper Freq (MHz)">14.35</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">17m</value>
+        <value name="Lower Freq (MHz)">18.068</value>
+        <value name="Upper Freq (MHz)">18.168</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">15m</value>
+        <value name="Lower Freq (MHz)">21.0</value>
+        <value name="Upper Freq (MHz)">21.45</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">12m</value>
+        <value name="Lower Freq (MHz)">24.890</value>
+        <value name="Upper Freq (MHz)">24.99</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">10m</value>
+        <value name="Lower Freq (MHz)">28.0</value>
+        <value name="Upper Freq (MHz)">29.7</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">8m</value>
+        <value name="Lower Freq (MHz)">40</value>
+        <value name="Upper Freq (MHz)">45</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">6m</value>
+        <value name="Lower Freq (MHz)">50</value>
+        <value name="Upper Freq (MHz)">54</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">5m</value>
+        <value name="Lower Freq (MHz)">54.000001</value>
+        <value name="Upper Freq (MHz)">69.9</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">4m</value>
+        <value name="Lower Freq (MHz)">70</value>
+        <value name="Upper Freq (MHz)">71</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">2m</value>
+        <value name="Lower Freq (MHz)">144</value>
+        <value name="Upper Freq (MHz)">148</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">1.25m</value>
+        <value name="Lower Freq (MHz)">222</value>
+        <value name="Upper Freq (MHz)">225</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">70cm</value>
+        <value name="Lower Freq (MHz)">420</value>
+        <value name="Upper Freq (MHz)">450</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">33cm</value>
+        <value name="Lower Freq (MHz)">902</value>
+        <value name="Upper Freq (MHz)">928</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">23cm</value>
+        <value name="Lower Freq (MHz)">1240</value>
+        <value name="Upper Freq (MHz)">1300</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">13cm</value>
+        <value name="Lower Freq (MHz)">2300</value>
+        <value name="Upper Freq (MHz)">2450</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">9cm</value>
+        <value name="Lower Freq (MHz)">3300</value>
+        <value name="Upper Freq (MHz)">3500</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">6cm</value>
+        <value name="Lower Freq (MHz)">5650</value>
+        <value name="Upper Freq (MHz)">5925</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">3cm</value>
+        <value name="Lower Freq (MHz)">10000</value>
+        <value name="Upper Freq (MHz)">10500</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">1.25cm</value>
+        <value name="Lower Freq (MHz)">24000</value>
+        <value name="Upper Freq (MHz)">24250</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">6mm</value>
+        <value name="Lower Freq (MHz)">47000</value>
+        <value name="Upper Freq (MHz)">47200</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">4mm</value>
+        <value name="Lower Freq (MHz)">75500</value>
+        <value name="Upper Freq (MHz)">81000</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">2.5mm</value>
+        <value name="Lower Freq (MHz)">119980</value>
+        <value name="Upper Freq (MHz)">123000</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">2mm</value>
+        <value name="Lower Freq (MHz)">134000</value>
+        <value name="Upper Freq (MHz)">149000</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">1mm</value>
+        <value name="Lower Freq (MHz)">241000</value>
+        <value name="Upper Freq (MHz)">250000</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Band</value>
+        <value name="Band">submm</value>
+        <value name="Lower Freq (MHz)">300000</value>
+        <value name="Upper Freq (MHz)">7500000</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

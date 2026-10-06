@@ -96,7 +96,8 @@ _UPSTREAM = os.path.join(os.path.dirname(__file__), "data", "adif_upstream_sha25
 
 @pytest.mark.parametrize("version_dir", VERSIONS)
 def test_upstream_files_match_adif_org_checksums(version_dir: str) -> None:
-    """Every ADIF export we package is byte-identical to adif.org.uk's (#8).
+    """Every ADIF file we package, in every format, is byte-identical to adif.org.uk's
+    (#8, #28), and nothing of ADIF's is missing or extra.
 
     The SHA-256 values come from ADIF's published resource zip, so a change here
     is our change, never mistaken for an upstream one.
@@ -105,11 +106,42 @@ def test_upstream_files_match_adif_org_checksums(version_dir: str) -> None:
 
     with open(_UPSTREAM, encoding="utf-8") as f:
         pinned = json.load(f)["versions"][version_dir]["files"]
+    base = os.path.join(_SPEC, version_dir)
     packaged = {
-        os.path.basename(p) for p in glob.glob(os.path.join(_SPEC, version_dir, "*.json"))
+        os.path.relpath(p, base).replace(os.sep, "/")
+        for p in glob.glob(os.path.join(base, "**", "*"), recursive=True)
+        if os.path.isfile(p)
     }
-    assert packaged - set(pinned) == {"enumerations_country.json"}
+    assert packaged - set(pinned) == {"enumerations_country.json", "MANIFEST.json"}
     assert set(pinned) <= packaged
     for name, sha in pinned.items():
-        with open(os.path.join(_SPEC, version_dir, name), "rb") as fh:
+        with open(os.path.join(base, name), "rb") as fh:
             assert hashlib.sha256(fh.read()).hexdigest() == sha, name
+
+
+@pytest.mark.parametrize("version_dir", VERSIONS)
+def test_shipped_manifest_matches_the_pins(version_dir: str) -> None:
+    """The MANIFEST.json users can check against is exactly what the tests pin (#28)."""
+    with open(_UPSTREAM, encoding="utf-8") as f:
+        pinned = json.load(f)["versions"][version_dir]
+    with open(os.path.join(_SPEC, version_dir, "MANIFEST.json"), encoding="utf-8") as f:
+        manifest = json.load(f)
+    assert manifest["files"] == pinned["files"]
+    assert manifest["zip_sha256"] == pinned["zip_sha256"]
+    assert manifest["source"] == pinned["source"]
+
+
+@pytest.mark.parametrize("version_dir", VERSIONS)
+def test_every_format_shipped_but_no_tests(version_dir: str) -> None:
+    """ADIF's full release except its test material (#28)."""
+    with open(_UPSTREAM, encoding="utf-8") as f:
+        pinned = json.load(f)["versions"][version_dir]["files"]
+    formats = {name.split("/")[0] for name in pinned if "/" in name}
+    assert formats == {"csv", "ods", "tsv", "xlsx", "xml"}
+    assert {"xml/all.xml", "xml/adifexport.xsd", "all.json"} <= set(pinned)
+    assert not any(name.startswith("tests/") or "test_QSOs" in name for name in pinned)
+
+
+def test_two_adif_versions_shipped() -> None:
+    """The previous ADIF version and the current one; never more (KI7MT, 2026-10-06)."""
+    assert len(VERSIONS) == 2

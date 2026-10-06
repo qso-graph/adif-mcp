@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:34Z">
+  <enumerations>
+    <enumeration name="Award">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Award</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">AJA</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQDX</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQDXFIELD</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWAZ_MIXED</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWAZ_CW</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWAZ_PHONE</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWAZ_RTTY</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWAZ_160m</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">CQWPX</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DARC_DOK</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DXCC</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DXCC_MIXED</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DXCC_CW</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DXCC_PHONE</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">DXCC_RTTY</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">IOTA</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">JCC</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">JCG</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">MARATHON</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">RDA</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAB</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAC</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAE</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAIP</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAJA</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAS</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">WAZ</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">USACA</value>
+        <value name="Import-only">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award</value>
+        <value name="Award">VUCC</value>
+        <value name="Import-only">true</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

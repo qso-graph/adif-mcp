@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-10-06
+
+### Added
+
+- **ADIF's full release, not only its JSON** (#28). For each shipped ADIF version, the package
+  now carries every file in ADIF's resource zip except the test material, unmodified: the
+  JSON (as before, where the tools read it) plus `xml/` (with `all.xml` and the XSD
+  `adifexport.xsd`), `csv/`, `tsv/`, `xlsx/` and `ods/`. Each version folder has a
+  `MANIFEST.json` with the zip's URL and SHA-256 and every file's SHA-256, so the files can be
+  checked against ADIF's own; tests check every file in every format.
+- **Two ADIF versions are shipped: the previous and the current** (3.1.6 and 3.1.7 today). When
+  ADIF publishes the next version, the oldest is dropped, so the package doesn't grow with every
+  release. `scripts/import_adif_release.py` installs a version from ADIF's pinned zip.
+
 ## [1.1.4] - 2026-09-28
 
 ### Fixed

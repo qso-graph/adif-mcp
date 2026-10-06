@@ -1,9 +1,14 @@
 name: Publish to PyPI
 
+# The release flow (qso-graph/.github TEMPLATES.md): work lands on `develop`; a release is a
+# PR from `develop` into `main`, and merging it publishes. `main` is always the released code.
 on:
   push:
-    tags:
-      - "v*"
+    branches: [ main ]
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -12,20 +17,43 @@ jobs:
   security:
     name: Security gate
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
 
-      # PyPI publishes pyproject's version; the Registry publishes the tag's.
-      # They must be the same, or the two would disagree about what was released.
-      - name: Tag matches pyproject.toml version
+      # main changes only by a release PR, so main's version must be new. PyPI publishes
+      # pyproject's version and the Registry server.json's, so they must agree too.
+      # Computed once; every later job uses this value (needs.security.outputs.version).
+      # The gate fails closed: anything it cannot confirm stops the release.
+      - name: The version on main is new and consistent
+        id: version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
-          PKG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
-          echo "tag=${TAG_VERSION} pyproject=${PKG_VERSION}"
-          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
-            echo "FAIL: tag v${TAG_VERSION} does not match pyproject.toml version ${PKG_VERSION}"
+          VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
+          PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
+          echo "pyproject=${VERSION} server.json=$(jq -r '.version' server.json)/$(jq -r '.packages[0].version' server.json)"
+          if [ "$(jq -r '.version' server.json)" != "$VERSION" ] || [ "$(jq -r '.packages[0].version' server.json)" != "$VERSION" ]; then
+            echo "FAIL: server.json does not match pyproject.toml version ${VERSION}"
             exit 1
           fi
+          # Only a 404 means "not published yet"; unreachable or 5xx is not a yes.
+          CODE="$(curl -s -o /dev/null -w '%{http_code}' "https://pypi.org/pypi/${PACKAGE}/${VERSION}/json")"
+          case "$CODE" in
+            404) echo "PyPI: ${PACKAGE} ${VERSION} is new" ;;
+            200) echo "FAIL: ${PACKAGE} ${VERSION} is already on PyPI. main changes only by a release PR with a new version."; exit 1 ;;
+            *)   echo "FAIL: PyPI returned ${CODE}; cannot confirm ${VERSION} is new"; exit 1 ;;
+          esac
+          # git ls-remote --exit-code: 2 means no such tag; anything else (0, 128) stops.
+          set +e
+          git ls-remote --exit-code --tags origin "refs/tags/v${VERSION}" > /dev/null
+          RC=$?
+          set -e
+          case "$RC" in
+            2) echo "tag v${VERSION} does not exist yet" ;;
+            0) echo "FAIL: tag v${VERSION} already exists"; exit 1 ;;
+            *) echo "FAIL: could not check tags (git ls-remote exited ${RC})"; exit 1 ;;
+          esac
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
 
 
       - uses: actions/setup-python@v5
@@ -75,7 +103,7 @@ jobs:
   # ---------------------------------------------------------------------------
   registry-publish:
     name: Publish to MCP Registry
-    needs: publish  # waits for PyPI publish to succeed
+    needs: [security, publish]  # waits for PyPI publish to succeed
     runs-on: ubuntu-latest
     permissions:
       id-token: write   # GitHub OIDC
@@ -92,11 +120,11 @@ jobs:
           curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
           ./mcp-publisher --help > /dev/null  # smoke test
 
-      - name: Bump server.json to tag version
+      - name: Set server.json to the released version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
-          echo "Setting server.json to ${TAG_VERSION}"
-          jq --arg v "$TAG_VERSION" \
+          VERSION="${{ needs.security.outputs.version }}"
+          echo "Setting server.json to ${VERSION}"
+          jq --arg v "$VERSION" \
              '.version = $v | .packages[0].version = $v' \
              server.json > /tmp/server.json
           mv /tmp/server.json server.json
@@ -106,17 +134,17 @@ jobs:
       # serving yet, which can lag the upload by a minute or more.
       - name: Wait until PyPI serves this version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${{ needs.security.outputs.version }}"
           PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
           for i in $(seq 1 40); do
-            if curl -fsS "https://pypi.org/pypi/${PACKAGE}/${TAG_VERSION}/json" > /dev/null; then
-              echo "PyPI serves ${PACKAGE} ${TAG_VERSION}"
+            if curl -fsS "https://pypi.org/pypi/${PACKAGE}/${VERSION}/json" > /dev/null; then
+              echo "PyPI serves ${PACKAGE} ${VERSION}"
               exit 0
             fi
-            echo "attempt ${i}: PyPI doesn't serve ${PACKAGE} ${TAG_VERSION} yet"
+            echo "attempt ${i}: PyPI doesn't serve ${PACKAGE} ${VERSION} yet"
             sleep 15
           done
-          echo "FAIL: PyPI never served ${PACKAGE} ${TAG_VERSION}"
+          echo "FAIL: PyPI never served ${PACKAGE} ${VERSION}"
           exit 1
 
       - name: Authenticate to MCP Registry (GitHub OIDC)
@@ -126,7 +154,7 @@ jobs:
       # retry, check whether an earlier attempt landed despite the error.
       - name: Publish to MCP Registry
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${{ needs.security.outputs.version }}"
           NAME="$(jq -r '.name' server.json)"
           REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
           for i in 1 2 3 4 5; do
@@ -136,8 +164,8 @@ jobs:
             echo "attempt ${i} failed; retrying in $((i * 30)) s"
             sleep $((i * 30))
             REG="$(curl -fsS "$REGISTRY" | jq -r --arg n "$NAME" '[.servers[] | select(.server.name == $n) | .server.version][0] // empty' || true)"
-            if [ "$REG" = "$TAG_VERSION" ]; then
-              echo "The Registry already has ${NAME} ${TAG_VERSION}; an earlier attempt landed"
+            if [ "$REG" = "$VERSION" ]; then
+              echo "The Registry already has ${NAME} ${VERSION}; an earlier attempt landed"
               exit 0
             fi
           done
@@ -151,26 +179,48 @@ jobs:
   # ---------------------------------------------------------------------------
   verify:
     name: Verify PyPI and MCP Registry
-    needs: registry-publish
+    needs: [security, registry-publish]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
 
-      - name: PyPI and Registry serve the tagged version
+      - name: PyPI and Registry serve the released version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${{ needs.security.outputs.version }}"
           PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
           NAME="$(jq -r '.name' server.json)"
           REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
           for i in $(seq 1 40); do
             PYPI="$(curl -fsS "https://pypi.org/pypi/${PACKAGE}/json" | jq -r '.info.version' || true)"
             REG="$(curl -fsS "$REGISTRY" | jq -r --arg n "$NAME" '[.servers[] | select(.server.name == $n) | .server.version][0] // empty' || true)"
-            echo "attempt ${i}: PyPI=${PYPI:-none} Registry=${REG:-none} want=${TAG_VERSION}"
-            if [ "$PYPI" = "$TAG_VERSION" ] && [ "$REG" = "$TAG_VERSION" ]; then
-              echo "Published everywhere: ${PACKAGE} ${TAG_VERSION} on PyPI and ${NAME} ${TAG_VERSION} in the MCP Registry"
+            echo "attempt ${i}: PyPI=${PYPI:-none} Registry=${REG:-none} want=${VERSION}"
+            if [ "$PYPI" = "$VERSION" ] && [ "$REG" = "$VERSION" ]; then
+              echo "Published everywhere: ${PACKAGE} ${VERSION} on PyPI and ${NAME} ${VERSION} in the MCP Registry"
               exit 0
             fi
             sleep 15
           done
-          echo "FAIL: release incomplete. PyPI=${PYPI:-none} Registry=${REG:-none}, expected ${TAG_VERSION}"
+          echo "FAIL: release incomplete. PyPI=${PYPI:-none} Registry=${REG:-none}, expected ${VERSION}"
           exit 1
+
+  # ---------------------------------------------------------------------------
+  # Tag the release, once it is published everywhere. The tag marks the commit on
+  # main that was released; nothing is triggered by it. If this job fails after a
+  # green verify, the release IS published: re-running this job is safe.
+  # ---------------------------------------------------------------------------
+  tag:
+    name: Tag the release
+    needs: [security, verify]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Create and push vX.Y.Z
+        run: |
+          VERSION="${{ needs.security.outputs.version }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${VERSION}" -m "${GITHUB_REPOSITORY#*/} ${VERSION}" "$GITHUB_SHA"
+          git push origin "v${VERSION}"

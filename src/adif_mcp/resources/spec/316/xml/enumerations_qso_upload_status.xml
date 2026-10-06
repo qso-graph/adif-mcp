@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:55Z">
+  <enumerations>
+    <enumeration name="QSO_Upload_Status">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Status</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSO_Upload_Status</value>
+        <value name="Status">Y</value>
+        <value name="Description">the QSO has been uploaded to, and accepted by, the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSO_Upload_Status</value>
+        <value name="Status">N</value>
+        <value name="Description">do not upload the QSO to the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSO_Upload_Status</value>
+        <value name="Status">M</value>
+        <value name="Description">the QSO has been modified since being uploaded to the online service</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

@@ -1,0 +1,6 @@
+﻿Enumeration Name	Status	Meaning	Description	Import-only	Comments	ADIF Version	ADIF Status
+QSL_Rcvd	Y	yes (confirmed)	an incoming QSL card has been received the QSO has been confirmed by the online service			3.1.7	Released
+QSL_Rcvd	N	no	an incoming QSL card has not been received the QSO has not been confirmed by the online service			3.1.7	Released
+QSL_Rcvd	R	requested	the logging station has requested a QSL card the logging station has requested the QSO be uploaded to the online service			3.1.7	Released
+QSL_Rcvd	I	ignore or invalid				3.1.7	Released
+QSL_Rcvd	V	verified	DXCC award credit granted for the QSL card - instead use <CREDIT_GRANTED:39>DXCC:card,DXCC_BAND:card,DXCC_MODE:card DXCC credit granted for the LoTW confirmation - instead use <CREDIT_GRANTED:39>DXCC:lotw,DXCC_BAND:lotw,DXCC_MODE:lotw	Import-only		3.1.7	Released

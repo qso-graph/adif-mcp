@@ -1,9 +1,14 @@
 name: Publish to PyPI
 
+# The release flow (qso-graph/.github TEMPLATES.md): work lands on `develop`; a release is a
+# PR from `develop` into `main`, and merging it publishes. `main` is always the released code.
 on:
   push:
-    tags:
-      - "v*"
+    branches: [ main ]
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -15,15 +20,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # PyPI publishes pyproject's version; the Registry publishes the tag's.
-      # They must be the same, or the two would disagree about what was released.
-      - name: Tag matches pyproject.toml version
+      # main changes only by a release PR, so main's version must be new. PyPI publishes
+      # pyproject's version and the Registry server.json's, so they must agree too.
+      - name: The version on main is new and consistent
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
-          PKG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
-          echo "tag=${TAG_VERSION} pyproject=${PKG_VERSION}"
-          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
-            echo "FAIL: tag v${TAG_VERSION} does not match pyproject.toml version ${PKG_VERSION}"
+          VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
+          PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
+          echo "pyproject=${VERSION} server.json=$(jq -r '.version' server.json)/$(jq -r '.packages[0].version' server.json)"
+          if [ "$(jq -r '.version' server.json)" != "$VERSION" ] || [ "$(jq -r '.packages[0].version' server.json)" != "$VERSION" ]; then
+            echo "FAIL: server.json does not match pyproject.toml version ${VERSION}"
+            exit 1
+          fi
+          if curl -fsS "https://pypi.org/pypi/${PACKAGE}/${VERSION}/json" > /dev/null; then
+            echo "FAIL: ${PACKAGE} ${VERSION} is already on PyPI. main changes only by a release PR with a new version."
+            exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/v${VERSION}" > /dev/null; then
+            echo "FAIL: tag v${VERSION} already exists"
             exit 1
           fi
 
@@ -92,9 +105,9 @@ jobs:
           curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
           ./mcp-publisher --help > /dev/null  # smoke test
 
-      - name: Bump server.json to tag version
+      - name: Set server.json to the released version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          TAG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
           echo "Setting server.json to ${TAG_VERSION}"
           jq --arg v "$TAG_VERSION" \
              '.version = $v | .packages[0].version = $v' \
@@ -106,7 +119,7 @@ jobs:
       # serving yet, which can lag the upload by a minute or more.
       - name: Wait until PyPI serves this version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          TAG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
           PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
           for i in $(seq 1 40); do
             if curl -fsS "https://pypi.org/pypi/${PACKAGE}/${TAG_VERSION}/json" > /dev/null; then
@@ -126,7 +139,7 @@ jobs:
       # retry, check whether an earlier attempt landed despite the error.
       - name: Publish to MCP Registry
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          TAG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
           NAME="$(jq -r '.name' server.json)"
           REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
           for i in 1 2 3 4 5; do
@@ -156,9 +169,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: PyPI and Registry serve the tagged version
+      - name: PyPI and Registry serve the released version
         run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          TAG_VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
           PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
           NAME="$(jq -r '.name' server.json)"
           REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
@@ -174,3 +187,24 @@ jobs:
           done
           echo "FAIL: release incomplete. PyPI=${PYPI:-none} Registry=${REG:-none}, expected ${TAG_VERSION}"
           exit 1
+
+  # ---------------------------------------------------------------------------
+  # Tag the release, once it is published everywhere. The tag marks the commit on
+  # main that was released; nothing is triggered by it.
+  # ---------------------------------------------------------------------------
+  tag:
+    name: Tag the release
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Create and push vX.Y.Z
+        run: |
+          VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${VERSION}" -m "${GITHUB_REPOSITORY#*/} ${VERSION}" "$GITHUB_SHA"
+          git push origin "v${VERSION}"

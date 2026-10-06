@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:49Z">
+  <enumerations>
+    <enumeration name="QSL_Medium">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Medium</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSL_Medium</value>
+        <value name="Medium">CARD</value>
+        <value name="Description">QSO confirmation via paper QSL card</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Medium</value>
+        <value name="Medium">EQSL</value>
+        <value name="Description">QSO confirmation via eQSL.cc</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Medium</value>
+        <value name="Medium">LOTW</value>
+        <value name="Description">QSO confirmation via ARRL Logbook of the World</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:28Z">
+  <enumerations>
+    <enumeration name="Ant_Path">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Abbreviation</value>
+        <value>Meaning</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Ant_Path</value>
+        <value name="Abbreviation">G</value>
+        <value name="Meaning">grayline</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Ant_Path</value>
+        <value name="Abbreviation">O</value>
+        <value name="Meaning">other</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Ant_Path</value>
+        <value name="Abbreviation">S</value>
+        <value name="Meaning">short path</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Ant_Path</value>
+        <value name="Abbreviation">L</value>
+        <value name="Meaning">long path</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

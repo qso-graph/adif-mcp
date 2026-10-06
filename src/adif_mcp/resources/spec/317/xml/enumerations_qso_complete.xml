@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:50Z">
+  <enumerations>
+    <enumeration name="QSO_Complete">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Abbreviation</value>
+        <value>Meaning</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSO_Complete</value>
+        <value name="Abbreviation">Y</value>
+        <value name="Meaning">yes</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSO_Complete</value>
+        <value name="Abbreviation">N</value>
+        <value name="Meaning">no</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSO_Complete</value>
+        <value name="Abbreviation">NIL</value>
+        <value name="Meaning">not heard</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSO_Complete</value>
+        <value name="Abbreviation">?</value>
+        <value name="Meaning">uncertain</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

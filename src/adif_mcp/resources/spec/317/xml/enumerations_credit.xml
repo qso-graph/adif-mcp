@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:37Z">
+  <enumerations>
+    <enumeration name="Credit">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Credit For</value>
+        <value>Sponsor</value>
+        <value>Award</value>
+        <value>Facet</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX_BAND</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX_MODE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX_MOBILE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">Mobile</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX_QRP</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">QRP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDX_SATELLITE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD_BAND</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD_MODE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD_MOBILE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">Mobile</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD_QRP</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">QRP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQDXFIELD_SATELLITE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">DX Field</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_MIXED</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_BAND</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_MODE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_SATELLITE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_EME</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">EME</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_MOBILE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">Mobile</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWAZ_QRP</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">Worked All Zones (WAZ)</value>
+        <value name="Facet">QRP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWPX</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">WPX</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWPX_BAND</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">WPX</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">CQWPX_MODE</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">WPX</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">DXCC</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">DX Century Club (DXCC)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">DXCC_BAND</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">DX Century Club (DXCC)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">DXCC_MODE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">DX Century Club (DXCC)</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">DXCC_SATELLITE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">DX Century Club (DXCC)</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EAUSTRALIA</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eAustralia</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">ECANADA</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eCanada</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">ECOUNTY_STATE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eCounty</value>
+        <value name="Facet">State</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EDX</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eDX</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EDX100</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eDX100</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EDX100_BAND</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eDX100</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EDX100_MODE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eDX100</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EECHOLINK50</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eEcholink50</value>
+        <value name="Facet">Echolink</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EGRID_BAND</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eGrid</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EGRID_SATELLITE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eGrid</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EPFX300</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">ePfx300</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EPFX300_MODE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">ePfx300</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EWAS</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eWAS</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EWAS_BAND</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eWAS</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EWAS_MODE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eWAS</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EWAS_SATELLITE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eWAS</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EZ40</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eZ40</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">EZ40_MODE</value>
+        <value name="Sponsor">eQSL</value>
+        <value name="Award">eZ40</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">FFMA</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Fred Fish Memorial Award (FFMA)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">IOTA</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Islands on the Air (IOTA)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">IOTA_BASIC</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Islands on the Air (IOTA)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">IOTA_CONT</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Islands on the Air (IOTA)</value>
+        <value name="Facet">Continent</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">IOTA_GROUP</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Islands on the Air (IOTA)</value>
+        <value name="Facet">Group</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">RDA</value>
+        <value name="Sponsor">TAG</value>
+        <value name="Award">Russian Districts Award (RDA)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">USACA</value>
+        <value name="Sponsor">CQ Magazine</value>
+        <value name="Award">United States of America Counties (USA-CA)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">VUCC_BAND</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">VHF/UHF Century Club Program (VUCC)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">VUCC_SATELLITE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">VHF/UHF Century Club Program (VUCC)</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAB</value>
+        <value name="Sponsor">WAB AG</value>
+        <value name="Award">Worked All Britain (WAB)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAC</value>
+        <value name="Sponsor">IARU</value>
+        <value name="Award">Worked All Continents (WAC)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAC_BAND</value>
+        <value name="Sponsor">IARU</value>
+        <value name="Award">Worked All Continents (WAC)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAE</value>
+        <value name="Sponsor">DARC</value>
+        <value name="Award">Worked All Europe (WAE)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAE_BAND</value>
+        <value name="Sponsor">DARC</value>
+        <value name="Award">Worked All Europe (WAE)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAE_MODE</value>
+        <value name="Sponsor">DARC</value>
+        <value name="Award">Worked All Europe (WAE)</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAIP</value>
+        <value name="Sponsor">ARI</value>
+        <value name="Award">Worked All Italian Provinces (WAIP)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAIP_BAND</value>
+        <value name="Sponsor">ARI</value>
+        <value name="Award">Worked All Italian Provinces (WAIP)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAIP_MODE</value>
+        <value name="Sponsor">ARI</value>
+        <value name="Award">Worked All Italian Provinces (WAIP)</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_BAND</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">Band</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_EME</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">EME</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_MODE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">Mode</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_NOVICE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">Novice</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_QRP</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">QRP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WAS_SATELLITE</value>
+        <value name="Sponsor">ARRL</value>
+        <value name="Award">Worked All States (WAS)</value>
+        <value name="Facet">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WITUZ</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Worked ITU Zones (WITUZ)</value>
+        <value name="Facet">Mixed</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Credit</value>
+        <value name="Credit For">WITUZ_BAND</value>
+        <value name="Sponsor">RSGB</value>
+        <value name="Award">Worked ITU Zones (WITUZ)</value>
+        <value name="Facet">Band</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

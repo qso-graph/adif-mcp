@@ -1,0 +1,4 @@
+﻿Enumeration Name	Medium	Description	Import-only	Comments	ADIF Version	ADIF Status
+QSL_Medium	CARD	QSO confirmation via paper QSL card			3.1.7	Released
+QSL_Medium	EQSL	QSO confirmation via eQSL.cc			3.1.7	Released
+QSL_Medium	LOTW	QSO confirmation via ARRL Logbook of the World			3.1.7	Released

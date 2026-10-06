@@ -1,0 +1,5 @@
+﻿Enumeration Name	Abbreviation	Meaning	Import-only	Comments	ADIF Version	ADIF Status
+Ant_Path	G	grayline			3.1.6	Released
+Ant_Path	O	other			3.1.6	Released
+Ant_Path	S	short path			3.1.6	Released
+Ant_Path	L	long path			3.1.6	Released

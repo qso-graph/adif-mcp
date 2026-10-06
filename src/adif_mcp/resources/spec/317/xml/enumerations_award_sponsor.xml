@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:34Z">
+  <enumerations>
+    <enumeration name="Award_Sponsor">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Sponsor</value>
+        <value>Sponsoring Organization</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">ADIF_</value>
+        <value name="Sponsoring Organization">ADIF Development Group</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">ARI_</value>
+        <value name="Sponsoring Organization">ARI - l'Associazione Radioamatori Italiani</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">ARRL_</value>
+        <value name="Sponsoring Organization">ARRL - American Radio Relay League</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">CQ_</value>
+        <value name="Sponsoring Organization">CQ Magazine</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">DARC_</value>
+        <value name="Sponsoring Organization">DARC - Deutscher Amateur-Radio-Club e.V.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">EQSL_</value>
+        <value name="Sponsoring Organization">eQSL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">IARU_</value>
+        <value name="Sponsoring Organization">IARU - International Amateur Radio Union</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">JARL_</value>
+        <value name="Sponsoring Organization">JARL - Japan Amateur Radio League</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">RSGB_</value>
+        <value name="Sponsoring Organization">RSGB - Radio Society of Great Britain</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">TAG_</value>
+        <value name="Sponsoring Organization">TAG - Tambov award group</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Award_Sponsor</value>
+        <value name="Sponsor">WABAG_</value>
+        <value name="Sponsoring Organization">WAB - Worked all Britain</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

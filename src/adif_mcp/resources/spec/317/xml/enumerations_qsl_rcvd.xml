@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:49Z">
+  <enumerations>
+    <enumeration name="QSL_Rcvd">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Status</value>
+        <value>Meaning</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSL_Rcvd</value>
+        <value name="Status">Y</value>
+        <value name="Meaning">yes (confirmed)</value>
+        <value name="Description">an incoming QSL card has been received the QSO has been confirmed by the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Rcvd</value>
+        <value name="Status">N</value>
+        <value name="Meaning">no</value>
+        <value name="Description">an incoming QSL card has not been received the QSO has not been confirmed by the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Rcvd</value>
+        <value name="Status">R</value>
+        <value name="Meaning">requested</value>
+        <value name="Description">the logging station has requested a QSL card the logging station has requested the QSO be uploaded to the online service</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Rcvd</value>
+        <value name="Status">I</value>
+        <value name="Meaning">ignore or invalid</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Rcvd</value>
+        <value name="Status">V</value>
+        <value name="Meaning">verified</value>
+        <value name="Description">DXCC award credit granted for the QSL card - instead use &lt;CREDIT_GRANTED:39&gt;DXCC:card,DXCC_BAND:card,DXCC_MODE:card DXCC credit granted for the LoTW confirmation - instead use &lt;CREDIT_GRANTED:39&gt;DXCC:lotw,DXCC_BAND:lotw,DXCC_MODE:lotw</value>
+        <value name="Import-only">true</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.7" status="Released" date="2026-03-22T00:00:00Z" created="2026-03-22T12:41:52Z">
+  <enumerations>
+    <enumeration name="Secondary_Administrative_Subdivision">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Code</value>
+        <value>Secondary Administrative Subdivision</value>
+        <value>DXCC Entity Code</value>
+        <value>Alaska Judicial District</value>
+        <value>Deleted</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Aleutians East</value>
+        <value name="Secondary Administrative Subdivision">Aleutians East</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Aleutians Islands</value>
+        <value name="Secondary Administrative Subdivision">Aleutians Islands</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Aleutians West</value>
+        <value name="Secondary Administrative Subdivision">Aleutians West</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Anchorage</value>
+        <value name="Secondary Administrative Subdivision">Anchorage</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Angoon</value>
+        <value name="Secondary Administrative Subdivision">Angoon</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Barrow</value>
+        <value name="Secondary Administrative Subdivision">Barrow</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Bethel</value>
+        <value name="Secondary Administrative Subdivision">Bethel</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Bristol Bay</value>
+        <value name="Secondary Administrative Subdivision">Bristol Bay</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Cordova-McCarthy</value>
+        <value name="Secondary Administrative Subdivision">Cordova-McCarthy</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Denali</value>
+        <value name="Secondary Administrative Subdivision">Denali</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Dillingham</value>
+        <value name="Secondary Administrative Subdivision">Dillingham</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Fairbanks</value>
+        <value name="Secondary Administrative Subdivision">Fairbanks</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Fairbanks North Star</value>
+        <value name="Secondary Administrative Subdivision">Fairbanks North Star</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,First Judicial District</value>
+        <value name="Secondary Administrative Subdivision">First Judicial District</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Fourth Judicial District</value>
+        <value name="Secondary Administrative Subdivision">Fourth Judicial District</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Haines</value>
+        <value name="Secondary Administrative Subdivision">Haines</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Juneau</value>
+        <value name="Secondary Administrative Subdivision">Juneau</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Hoonah-Angoon</value>
+        <value name="Secondary Administrative Subdivision">Hoonah-Angoon</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kenai Peninsula</value>
+        <value name="Secondary Administrative Subdivision">Kenai Peninsula</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kenai-Cook Inlet</value>
+        <value name="Secondary Administrative Subdivision">Kenai-Cook Inlet</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Ketchikan</value>
+        <value name="Secondary Administrative Subdivision">Ketchikan</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Ketchikan Gateway</value>
+        <value name="Secondary Administrative Subdivision">Ketchikan Gateway</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kobuk</value>
+        <value name="Secondary Administrative Subdivision">Kobuk</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kodiak Island</value>
+        <value name="Secondary Administrative Subdivision">Kodiak Island</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kuskokwim</value>
+        <value name="Secondary Administrative Subdivision">Kuskokwim</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Kusilvak</value>
+        <value name="Secondary Administrative Subdivision">Kusilvak</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Lake and Peninsula</value>
+        <value name="Secondary Administrative Subdivision">Lake and Peninsula</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Lynn Canal-Icy Straits</value>
+        <value name="Secondary Administrative Subdivision">Lynn Canal-Icy Straits</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Matanuska-Susitna</value>
+        <value name="Secondary Administrative Subdivision">Matanuska-Susitna</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Nome</value>
+        <value name="Secondary Administrative Subdivision">Nome</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,North Slope</value>
+        <value name="Secondary Administrative Subdivision">North Slope</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Northwest Arctic</value>
+        <value name="Secondary Administrative Subdivision">Northwest Arctic</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Outer Ketchikan</value>
+        <value name="Secondary Administrative Subdivision">Outer Ketchikan</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Palmer-Wasilla-Talkeetna</value>
+        <value name="Secondary Administrative Subdivision">Palmer-Wasilla-Talkeetna</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Petersburg</value>
+        <value name="Secondary Administrative Subdivision">Petersburg</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Pribilof Islands</value>
+        <value name="Secondary Administrative Subdivision">Pribilof Islands</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Prince of Wales</value>
+        <value name="Secondary Administrative Subdivision">Prince of Wales</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Prince of Wales-Hyder</value>
+        <value name="Secondary Administrative Subdivision">Prince of Wales-Hyder</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Prince of Wales-Outer Ketchikan</value>
+        <value name="Secondary Administrative Subdivision">Prince of Wales-Outer Ketchikan</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Saint Matthew Island</value>
+        <value name="Secondary Administrative Subdivision">Saint Matthew Island</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Second Judicial District</value>
+        <value name="Secondary Administrative Subdivision">Second Judicial District</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Seward</value>
+        <value name="Secondary Administrative Subdivision">Seward</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Sitka</value>
+        <value name="Secondary Administrative Subdivision">Sitka</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Skagway-Hoonah-Angoon</value>
+        <value name="Secondary Administrative Subdivision">Skagway-Hoonah-Angoon</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Skagway</value>
+        <value name="Secondary Administrative Subdivision">Skagway</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Skagway-Yakuta</value>
+        <value name="Secondary Administrative Subdivision">Skagway-Yakutat</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Skagway-Yakutat-Angoon</value>
+        <value name="Secondary Administrative Subdivision">Skagway-Yakutat-Angoon</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Southeast Fairbanks</value>
+        <value name="Secondary Administrative Subdivision">Southeast Fairbanks</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Third Judicial District</value>
+        <value name="Secondary Administrative Subdivision">Third Judicial District</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Upper Yukon</value>
+        <value name="Secondary Administrative Subdivision">Upper Yukon</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Valdez-Chitina-Whittier</value>
+        <value name="Secondary Administrative Subdivision">Valdez-Chitina-Whittier</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Valdez-Cordova</value>
+        <value name="Secondary Administrative Subdivision">Valdez-Cordova</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Third Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Wade Hampton</value>
+        <value name="Secondary Administrative Subdivision">Wade Hampton</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Second Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Wales-Hyder</value>
+        <value name="Secondary Administrative Subdivision">Wales-Hyder</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Wrangell</value>
+        <value name="Secondary Administrative Subdivision">Wrangell</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Wrangell-Petersburg</value>
+        <value name="Secondary Administrative Subdivision">Wrangell-Petersburg</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Yakutat</value>
+        <value name="Secondary Administrative Subdivision">Yakutat</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska First Judicial District</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Secondary_Administrative_Subdivision</value>
+        <value name="Code">AK,Yukon-Koyukuk</value>
+        <value name="Secondary Administrative Subdivision">Yukon-Koyukuk</value>
+        <value name="DXCC Entity Code">6</value>
+        <value name="Alaska Judicial District">Alaska Fourth Judicial District</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

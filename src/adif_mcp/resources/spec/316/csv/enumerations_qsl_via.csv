@@ -1,0 +1,5 @@
+﻿"Enumeration Name","Via","Description","Import-only","Comments","ADIF Version","ADIF Status"
+"QSL_Via","B","bureau","","","3.1.6","Released"
+"QSL_Via","D","direct","","","3.1.6","Released"
+"QSL_Via","E","electronic","","","3.1.6","Released"
+"QSL_Via","M","manager","Import-only","","3.1.6","Released"

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:53Z">
+  <enumerations>
+    <enumeration name="QSL_Via">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Via</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">QSL_Via</value>
+        <value name="Via">B</value>
+        <value name="Description">bureau</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Via</value>
+        <value name="Via">D</value>
+        <value name="Description">direct</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Via</value>
+        <value name="Via">E</value>
+        <value name="Description">electronic</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">QSL_Via</value>
+        <value name="Via">M</value>
+        <value name="Description">manager</value>
+        <value name="Import-only">true</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

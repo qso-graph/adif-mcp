@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:52Z">
+  <enumerations>
+    <enumeration name="Propagation_Mode">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Enumeration</value>
+        <value>Description</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">AS</value>
+        <value name="Description">Aircraft Scatter</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">AUE</value>
+        <value name="Description">Aurora-E</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">AUR</value>
+        <value name="Description">Aurora</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">BS</value>
+        <value name="Description">Back scatter</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">ECH</value>
+        <value name="Description">EchoLink</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">EME</value>
+        <value name="Description">Earth-Moon-Earth</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">ES</value>
+        <value name="Description">Sporadic E</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">F2</value>
+        <value name="Description">F2 Reflection</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">FAI</value>
+        <value name="Description">Field Aligned Irregularities</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">GWAVE</value>
+        <value name="Description">Ground Wave</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">INTERNET</value>
+        <value name="Description">Internet-assisted</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">ION</value>
+        <value name="Description">Ionoscatter</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">IRL</value>
+        <value name="Description">IRLP</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">LOS</value>
+        <value name="Description">Line of Sight (includes transmission through obstacles such as walls)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">MS</value>
+        <value name="Description">Meteor scatter</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">RPT</value>
+        <value name="Description">Terrestrial or atmospheric repeater or transponder</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">RS</value>
+        <value name="Description">Rain scatter</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">SAT</value>
+        <value name="Description">Satellite</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">TEP</value>
+        <value name="Description">Trans-equatorial</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">Propagation_Mode</value>
+        <value name="Enumeration">TR</value>
+        <value name="Description">Tropospheric ducting</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

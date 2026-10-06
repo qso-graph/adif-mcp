@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:29Z">
+  <enumerations>
+    <enumeration name="ARRL_Section">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Abbreviation</value>
+        <value>Section Name</value>
+        <value>DXCC Entity Code</value>
+        <value>From Date</value>
+        <value>Deleted Date</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">AL</value>
+        <value name="Section Name">Alabama</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">AK</value>
+        <value name="Section Name">Alaska</value>
+        <value name="DXCC Entity Code">6</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">AB</value>
+        <value name="Section Name">Alberta</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">AR</value>
+        <value name="Section Name">Arkansas</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">AZ</value>
+        <value name="Section Name">Arizona</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">BC</value>
+        <value name="Section Name">British Columbia</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">CO</value>
+        <value name="Section Name">Colorado</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">CT</value>
+        <value name="Section Name">Connecticut</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">DE</value>
+        <value name="Section Name">Delaware</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">EB</value>
+        <value name="Section Name">East Bay</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">EMA</value>
+        <value name="Section Name">Eastern Massachusetts</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ENY</value>
+        <value name="Section Name">Eastern New York</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">EPA</value>
+        <value name="Section Name">Eastern Pennsylvania</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">EWA</value>
+        <value name="Section Name">Eastern Washington</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">GA</value>
+        <value name="Section Name">Georgia</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">GH</value>
+        <value name="Section Name">Golden Horseshoe</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2023-01-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">GTA</value>
+        <value name="Section Name">Greater Toronto Area</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2012-09-01Z</value>
+        <value name="Deleted Date">2023-01-01Z</value>
+        <value name="Comments">replaced by GH</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ID</value>
+        <value name="Section Name">Idaho</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">IL</value>
+        <value name="Section Name">Illinois</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">IN</value>
+        <value name="Section Name">Indiana</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">IA</value>
+        <value name="Section Name">Iowa</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">KS</value>
+        <value name="Section Name">Kansas</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">KY</value>
+        <value name="Section Name">Kentucky</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">LAX</value>
+        <value name="Section Name">Los Angeles</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">LA</value>
+        <value name="Section Name">Louisiana</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ME</value>
+        <value name="Section Name">Maine</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MB</value>
+        <value name="Section Name">Manitoba</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MAR</value>
+        <value name="Section Name">Maritime</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="Deleted Date">2023-01-01Z</value>
+        <value name="Comments">replaced by NB and NS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MDC</value>
+        <value name="Section Name">Maryland-DC</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MI</value>
+        <value name="Section Name">Michigan</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MN</value>
+        <value name="Section Name">Minnesota</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MS</value>
+        <value name="Section Name">Mississippi</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MO</value>
+        <value name="Section Name">Missouri</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">MT</value>
+        <value name="Section Name">Montana</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NE</value>
+        <value name="Section Name">Nebraska</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NV</value>
+        <value name="Section Name">Nevada</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NB</value>
+        <value name="Section Name">New Brunswick</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2023-01-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NH</value>
+        <value name="Section Name">New Hampshire</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NM</value>
+        <value name="Section Name">New Mexico</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NLI</value>
+        <value name="Section Name">New York City-Long Island</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NL</value>
+        <value name="Section Name">Newfoundland/Labrador</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NC</value>
+        <value name="Section Name">North Carolina</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ND</value>
+        <value name="Section Name">North Dakota</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NTX</value>
+        <value name="Section Name">North Texas</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NFL</value>
+        <value name="Section Name">Northern Florida</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NNJ</value>
+        <value name="Section Name">Northern New Jersey</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NNY</value>
+        <value name="Section Name">Northern New York</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NT</value>
+        <value name="Section Name">Northwest Territories/Yukon/Nunavut</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2003-11-01Z</value>
+        <value name="Deleted Date">2023-01-01Z</value>
+        <value name="Comments">replaced by TER</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NWT</value>
+        <value name="Section Name">Northwest Territories/Yukon/Nunavut</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="Deleted Date">2003-11-01Z</value>
+        <value name="Comments">replaced by NT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">NS</value>
+        <value name="Section Name">Nova Scotia</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2023-01-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">OH</value>
+        <value name="Section Name">Ohio</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">OK</value>
+        <value name="Section Name">Oklahoma</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ON</value>
+        <value name="Section Name">Ontario</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="Deleted Date">2012-09-01Z</value>
+        <value name="Comments">replaced by GTA, ONE, ONN, and ONS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ONE</value>
+        <value name="Section Name">Ontario East</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2012-09-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ONN</value>
+        <value name="Section Name">Ontario North</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2012-09-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ONS</value>
+        <value name="Section Name">Ontario South</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2012-09-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">ORG</value>
+        <value name="Section Name">Orange</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">OR</value>
+        <value name="Section Name">Oregon</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">PAC</value>
+        <value name="Section Name">Pacific</value>
+        <value name="DXCC Entity Code">9,20,103,110,123,138,166,174,197,297,515</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">PE</value>
+        <value name="Section Name">Prince Edward Island</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2020-04-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">PR</value>
+        <value name="Section Name">Puerto Rico</value>
+        <value name="DXCC Entity Code">43,202</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">QC</value>
+        <value name="Section Name">Quebec</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">RI</value>
+        <value name="Section Name">Rhode Island</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SV</value>
+        <value name="Section Name">Sacramento Valley</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SDG</value>
+        <value name="Section Name">San Diego</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SF</value>
+        <value name="Section Name">San Francisco</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SJV</value>
+        <value name="Section Name">San Joaquin Valley</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SB</value>
+        <value name="Section Name">Santa Barbara</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SCV</value>
+        <value name="Section Name">Santa Clara Valley</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SK</value>
+        <value name="Section Name">Saskatchewan</value>
+        <value name="DXCC Entity Code">1</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SC</value>
+        <value name="Section Name">South Carolina</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SD</value>
+        <value name="Section Name">South Dakota</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">STX</value>
+        <value name="Section Name">South Texas</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SFL</value>
+        <value name="Section Name">Southern Florida</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">SNJ</value>
+        <value name="Section Name">Southern New Jersey</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">TN</value>
+        <value name="Section Name">Tennessee</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">TER</value>
+        <value name="Section Name">Territories</value>
+        <value name="DXCC Entity Code">1</value>
+        <value name="From Date">2023-01-01Z</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">VI</value>
+        <value name="Section Name">US Virgin Islands</value>
+        <value name="DXCC Entity Code">105,182,285</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">UT</value>
+        <value name="Section Name">Utah</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">VT</value>
+        <value name="Section Name">Vermont</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">VA</value>
+        <value name="Section Name">Virginia</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WCF</value>
+        <value name="Section Name">West Central Florida</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WTX</value>
+        <value name="Section Name">West Texas</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WV</value>
+        <value name="Section Name">West Virginia</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WMA</value>
+        <value name="Section Name">Western Massachusetts</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WNY</value>
+        <value name="Section Name">Western New York</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WPA</value>
+        <value name="Section Name">Western Pennsylvania</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WWA</value>
+        <value name="Section Name">Western Washington</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WI</value>
+        <value name="Section Name">Wisconsin</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">ARRL_Section</value>
+        <value name="Abbreviation">WY</value>
+        <value name="Section Name">Wyoming</value>
+        <value name="DXCC Entity Code">291</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

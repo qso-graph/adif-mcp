@@ -1,0 +1,2092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<adif version="3.1.6" status="Released" date="2025-09-15T00:00:00Z" created="2025-09-15T11:13:36Z">
+  <enumerations>
+    <enumeration name="DXCC_Entity_Code">
+      <header>
+        <value>Enumeration Name</value>
+        <value>Entity Code</value>
+        <value>Entity Name</value>
+        <value>Deleted</value>
+        <value>Import-only</value>
+        <value>Comments</value>
+      </header>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">0</value>
+        <value name="Entity Name">None (the contacted station is known to not be within a DXCC entity)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">1</value>
+        <value name="Entity Name">CANADA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">2</value>
+        <value name="Entity Name">ABU AIL IS.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">3</value>
+        <value name="Entity Name">AFGHANISTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">4</value>
+        <value name="Entity Name">AGALEGA &amp; ST. BRANDON IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">5</value>
+        <value name="Entity Name">ALAND IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">6</value>
+        <value name="Entity Name">ALASKA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">7</value>
+        <value name="Entity Name">ALBANIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">8</value>
+        <value name="Entity Name">ALDABRA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">9</value>
+        <value name="Entity Name">AMERICAN SAMOA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">10</value>
+        <value name="Entity Name">AMSTERDAM &amp; ST. PAUL IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">11</value>
+        <value name="Entity Name">ANDAMAN &amp; NICOBAR IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">12</value>
+        <value name="Entity Name">ANGUILLA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">13</value>
+        <value name="Entity Name">ANTARCTICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">14</value>
+        <value name="Entity Name">ARMENIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">15</value>
+        <value name="Entity Name">ASIATIC RUSSIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">16</value>
+        <value name="Entity Name">NEW ZEALAND SUBANTARCTIC ISLANDS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">17</value>
+        <value name="Entity Name">AVES I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">18</value>
+        <value name="Entity Name">AZERBAIJAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">19</value>
+        <value name="Entity Name">BAJO NUEVO</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">20</value>
+        <value name="Entity Name">BAKER &amp; HOWLAND IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">21</value>
+        <value name="Entity Name">BALEARIC IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">22</value>
+        <value name="Entity Name">PALAU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">23</value>
+        <value name="Entity Name">BLENHEIM REEF</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">24</value>
+        <value name="Entity Name">BOUVET</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">25</value>
+        <value name="Entity Name">BRITISH NORTH BORNEO</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">26</value>
+        <value name="Entity Name">BRITISH SOMALILAND</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">27</value>
+        <value name="Entity Name">BELARUS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">28</value>
+        <value name="Entity Name">CANAL ZONE</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">29</value>
+        <value name="Entity Name">CANARY IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">30</value>
+        <value name="Entity Name">CELEBE &amp; MOLUCCA IS.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">31</value>
+        <value name="Entity Name">C. KIRIBATI (BRITISH PHOENIX IS.)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">32</value>
+        <value name="Entity Name">CEUTA &amp; MELILLA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">33</value>
+        <value name="Entity Name">CHAGOS IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">34</value>
+        <value name="Entity Name">CHATHAM IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">35</value>
+        <value name="Entity Name">CHRISTMAS I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">36</value>
+        <value name="Entity Name">CLIPPERTON I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">37</value>
+        <value name="Entity Name">COCOS I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">38</value>
+        <value name="Entity Name">COCOS (KEELING) IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">39</value>
+        <value name="Entity Name">COMOROS</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">40</value>
+        <value name="Entity Name">CRETE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">41</value>
+        <value name="Entity Name">CROZET I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">42</value>
+        <value name="Entity Name">DAMAO, DIU</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">43</value>
+        <value name="Entity Name">DESECHEO I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">44</value>
+        <value name="Entity Name">DESROCHES</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">45</value>
+        <value name="Entity Name">DODECANESE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">46</value>
+        <value name="Entity Name">EAST MALAYSIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">47</value>
+        <value name="Entity Name">EASTER I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">48</value>
+        <value name="Entity Name">E. KIRIBATI (LINE IS.)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">49</value>
+        <value name="Entity Name">EQUATORIAL GUINEA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">50</value>
+        <value name="Entity Name">MEXICO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">51</value>
+        <value name="Entity Name">ERITREA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">52</value>
+        <value name="Entity Name">ESTONIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">53</value>
+        <value name="Entity Name">ETHIOPIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">54</value>
+        <value name="Entity Name">EUROPEAN RUSSIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">55</value>
+        <value name="Entity Name">FARQUHAR</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">56</value>
+        <value name="Entity Name">FERNANDO DE NORONHA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">57</value>
+        <value name="Entity Name">FRENCH EQUATORIAL AFRICA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">58</value>
+        <value name="Entity Name">FRENCH INDO-CHINA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">59</value>
+        <value name="Entity Name">FRENCH WEST AFRICA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">60</value>
+        <value name="Entity Name">BAHAMAS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">61</value>
+        <value name="Entity Name">FRANZ JOSEF LAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">62</value>
+        <value name="Entity Name">BARBADOS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">63</value>
+        <value name="Entity Name">FRENCH GUIANA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">64</value>
+        <value name="Entity Name">BERMUDA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">65</value>
+        <value name="Entity Name">BRITISH VIRGIN IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">66</value>
+        <value name="Entity Name">BELIZE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">67</value>
+        <value name="Entity Name">FRENCH INDIA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">68</value>
+        <value name="Entity Name">KUWAIT/SAUDI ARABIA NEUTRAL ZONE</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">69</value>
+        <value name="Entity Name">CAYMAN IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">70</value>
+        <value name="Entity Name">CUBA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">71</value>
+        <value name="Entity Name">GALAPAGOS IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">72</value>
+        <value name="Entity Name">DOMINICAN REPUBLIC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">74</value>
+        <value name="Entity Name">EL SALVADOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">75</value>
+        <value name="Entity Name">GEORGIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">76</value>
+        <value name="Entity Name">GUATEMALA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">77</value>
+        <value name="Entity Name">GRENADA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">78</value>
+        <value name="Entity Name">HAITI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">79</value>
+        <value name="Entity Name">GUADELOUPE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">80</value>
+        <value name="Entity Name">HONDURAS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">81</value>
+        <value name="Entity Name">GERMANY</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">82</value>
+        <value name="Entity Name">JAMAICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">84</value>
+        <value name="Entity Name">MARTINIQUE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">85</value>
+        <value name="Entity Name">BONAIRE, CURACAO</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">86</value>
+        <value name="Entity Name">NICARAGUA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">88</value>
+        <value name="Entity Name">PANAMA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">89</value>
+        <value name="Entity Name">TURKS &amp; CAICOS IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">90</value>
+        <value name="Entity Name">TRINIDAD &amp; TOBAGO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">91</value>
+        <value name="Entity Name">ARUBA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">93</value>
+        <value name="Entity Name">GEYSER REEF</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">94</value>
+        <value name="Entity Name">ANTIGUA &amp; BARBUDA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">95</value>
+        <value name="Entity Name">DOMINICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">96</value>
+        <value name="Entity Name">MONTSERRAT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">97</value>
+        <value name="Entity Name">ST. LUCIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">98</value>
+        <value name="Entity Name">ST. VINCENT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">99</value>
+        <value name="Entity Name">GLORIOSO IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">100</value>
+        <value name="Entity Name">ARGENTINA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">101</value>
+        <value name="Entity Name">GOA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">102</value>
+        <value name="Entity Name">GOLD COAST, TOGOLAND</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">103</value>
+        <value name="Entity Name">GUAM</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">104</value>
+        <value name="Entity Name">BOLIVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">105</value>
+        <value name="Entity Name">GUANTANAMO BAY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">106</value>
+        <value name="Entity Name">GUERNSEY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">107</value>
+        <value name="Entity Name">GUINEA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">108</value>
+        <value name="Entity Name">BRAZIL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">109</value>
+        <value name="Entity Name">GUINEA-BISSAU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">110</value>
+        <value name="Entity Name">HAWAII</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">111</value>
+        <value name="Entity Name">HEARD I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">112</value>
+        <value name="Entity Name">CHILE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">113</value>
+        <value name="Entity Name">IFNI</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">114</value>
+        <value name="Entity Name">ISLE OF MAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">115</value>
+        <value name="Entity Name">ITALIAN SOMALILAND</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">116</value>
+        <value name="Entity Name">COLOMBIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">117</value>
+        <value name="Entity Name">ITU HQ</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">118</value>
+        <value name="Entity Name">JAN MAYEN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">119</value>
+        <value name="Entity Name">JAVA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">120</value>
+        <value name="Entity Name">ECUADOR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">122</value>
+        <value name="Entity Name">JERSEY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">123</value>
+        <value name="Entity Name">JOHNSTON I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">124</value>
+        <value name="Entity Name">JUAN DE NOVA, EUROPA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">125</value>
+        <value name="Entity Name">JUAN FERNANDEZ IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">126</value>
+        <value name="Entity Name">KALININGRAD</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">127</value>
+        <value name="Entity Name">KAMARAN IS.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">128</value>
+        <value name="Entity Name">KARELO-FINNISH REPUBLIC</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">129</value>
+        <value name="Entity Name">GUYANA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">130</value>
+        <value name="Entity Name">KAZAKHSTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">131</value>
+        <value name="Entity Name">KERGUELEN IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">132</value>
+        <value name="Entity Name">PARAGUAY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">133</value>
+        <value name="Entity Name">KERMADEC IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">134</value>
+        <value name="Entity Name">KINGMAN REEF</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">135</value>
+        <value name="Entity Name">KYRGYZSTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">136</value>
+        <value name="Entity Name">PERU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">137</value>
+        <value name="Entity Name">REPUBLIC OF KOREA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">138</value>
+        <value name="Entity Name">KURE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">139</value>
+        <value name="Entity Name">KURIA MURIA I.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">140</value>
+        <value name="Entity Name">SURINAME</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">141</value>
+        <value name="Entity Name">FALKLAND IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">142</value>
+        <value name="Entity Name">LAKSHADWEEP IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">143</value>
+        <value name="Entity Name">LAOS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">144</value>
+        <value name="Entity Name">URUGUAY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">145</value>
+        <value name="Entity Name">LATVIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">146</value>
+        <value name="Entity Name">LITHUANIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">147</value>
+        <value name="Entity Name">LORD HOWE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">148</value>
+        <value name="Entity Name">VENEZUELA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">149</value>
+        <value name="Entity Name">AZORES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">150</value>
+        <value name="Entity Name">AUSTRALIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">151</value>
+        <value name="Entity Name">MALYJ VYSOTSKIJ I.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">152</value>
+        <value name="Entity Name">MACAO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">153</value>
+        <value name="Entity Name">MACQUARIE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">154</value>
+        <value name="Entity Name">YEMEN ARAB REPUBLIC</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">155</value>
+        <value name="Entity Name">MALAYA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">157</value>
+        <value name="Entity Name">NAURU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">158</value>
+        <value name="Entity Name">VANUATU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">159</value>
+        <value name="Entity Name">MALDIVES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">160</value>
+        <value name="Entity Name">TONGA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">161</value>
+        <value name="Entity Name">MALPELO I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">162</value>
+        <value name="Entity Name">NEW CALEDONIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">163</value>
+        <value name="Entity Name">PAPUA NEW GUINEA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">164</value>
+        <value name="Entity Name">MANCHURIA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">165</value>
+        <value name="Entity Name">MAURITIUS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">166</value>
+        <value name="Entity Name">MARIANA IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">167</value>
+        <value name="Entity Name">MARKET REEF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">168</value>
+        <value name="Entity Name">MARSHALL IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">169</value>
+        <value name="Entity Name">MAYOTTE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">170</value>
+        <value name="Entity Name">NEW ZEALAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">171</value>
+        <value name="Entity Name">MELLISH REEF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">172</value>
+        <value name="Entity Name">PITCAIRN I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">173</value>
+        <value name="Entity Name">MICRONESIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">174</value>
+        <value name="Entity Name">MIDWAY I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">175</value>
+        <value name="Entity Name">FRENCH POLYNESIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">176</value>
+        <value name="Entity Name">FIJI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">177</value>
+        <value name="Entity Name">MINAMI TORISHIMA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">178</value>
+        <value name="Entity Name">MINERVA REEF</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">179</value>
+        <value name="Entity Name">MOLDOVA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">180</value>
+        <value name="Entity Name">MOUNT ATHOS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">181</value>
+        <value name="Entity Name">MOZAMBIQUE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">182</value>
+        <value name="Entity Name">NAVASSA I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">183</value>
+        <value name="Entity Name">NETHERLANDS BORNEO</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">184</value>
+        <value name="Entity Name">NETHERLANDS NEW GUINEA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">185</value>
+        <value name="Entity Name">SOLOMON IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">186</value>
+        <value name="Entity Name">NEWFOUNDLAND, LABRADOR</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">187</value>
+        <value name="Entity Name">NIGER</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">188</value>
+        <value name="Entity Name">NIUE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">189</value>
+        <value name="Entity Name">NORFOLK I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">190</value>
+        <value name="Entity Name">SAMOA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">191</value>
+        <value name="Entity Name">NORTH COOK IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">192</value>
+        <value name="Entity Name">OGASAWARA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">193</value>
+        <value name="Entity Name">OKINAWA (RYUKYU IS.)</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">194</value>
+        <value name="Entity Name">OKINO TORI-SHIMA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">195</value>
+        <value name="Entity Name">ANNOBON I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">196</value>
+        <value name="Entity Name">PALESTINE</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">197</value>
+        <value name="Entity Name">PALMYRA &amp; JARVIS IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">198</value>
+        <value name="Entity Name">PAPUA TERRITORY</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">199</value>
+        <value name="Entity Name">PETER 1 I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">200</value>
+        <value name="Entity Name">PORTUGUESE TIMOR</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">201</value>
+        <value name="Entity Name">PRINCE EDWARD &amp; MARION IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">202</value>
+        <value name="Entity Name">PUERTO RICO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">203</value>
+        <value name="Entity Name">ANDORRA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">204</value>
+        <value name="Entity Name">REVILLAGIGEDO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">205</value>
+        <value name="Entity Name">ASCENSION I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">206</value>
+        <value name="Entity Name">AUSTRIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">207</value>
+        <value name="Entity Name">RODRIGUES I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">208</value>
+        <value name="Entity Name">RUANDA-URUNDI</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">209</value>
+        <value name="Entity Name">BELGIUM</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">210</value>
+        <value name="Entity Name">SAAR</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">211</value>
+        <value name="Entity Name">SABLE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">212</value>
+        <value name="Entity Name">BULGARIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">213</value>
+        <value name="Entity Name">SAINT MARTIN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">214</value>
+        <value name="Entity Name">CORSICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">215</value>
+        <value name="Entity Name">CYPRUS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">216</value>
+        <value name="Entity Name">SAN ANDRES &amp; PROVIDENCIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">217</value>
+        <value name="Entity Name">SAN FELIX &amp; SAN AMBROSIO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">218</value>
+        <value name="Entity Name">CZECHOSLOVAKIA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">219</value>
+        <value name="Entity Name">SAO TOME &amp; PRINCIPE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">220</value>
+        <value name="Entity Name">SARAWAK</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">221</value>
+        <value name="Entity Name">DENMARK</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">222</value>
+        <value name="Entity Name">FAROE IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">223</value>
+        <value name="Entity Name">ENGLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">224</value>
+        <value name="Entity Name">FINLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">225</value>
+        <value name="Entity Name">SARDINIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">226</value>
+        <value name="Entity Name">SAUDI ARABIA/IRAQ NEUTRAL ZONE</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">227</value>
+        <value name="Entity Name">FRANCE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">228</value>
+        <value name="Entity Name">SERRANA BANK &amp; RONCADOR CAY</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">229</value>
+        <value name="Entity Name">GERMAN DEMOCRATIC REPUBLIC</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">230</value>
+        <value name="Entity Name">FEDERAL REPUBLIC OF GERMANY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">231</value>
+        <value name="Entity Name">SIKKIM</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">232</value>
+        <value name="Entity Name">SOMALIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">233</value>
+        <value name="Entity Name">GIBRALTAR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">234</value>
+        <value name="Entity Name">SOUTH COOK IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">235</value>
+        <value name="Entity Name">SOUTH GEORGIA I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">236</value>
+        <value name="Entity Name">GREECE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">237</value>
+        <value name="Entity Name">GREENLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">238</value>
+        <value name="Entity Name">SOUTH ORKNEY IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">239</value>
+        <value name="Entity Name">HUNGARY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">240</value>
+        <value name="Entity Name">SOUTH SANDWICH IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">241</value>
+        <value name="Entity Name">SOUTH SHETLAND IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">242</value>
+        <value name="Entity Name">ICELAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">243</value>
+        <value name="Entity Name">PEOPLE'S DEMOCRATIC REP. OF YEMEN</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">244</value>
+        <value name="Entity Name">SOUTHERN SUDAN</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">245</value>
+        <value name="Entity Name">IRELAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">246</value>
+        <value name="Entity Name">SOVEREIGN MILITARY ORDER OF MALTA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">247</value>
+        <value name="Entity Name">SPRATLY IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">248</value>
+        <value name="Entity Name">ITALY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">249</value>
+        <value name="Entity Name">ST. KITTS &amp; NEVIS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">250</value>
+        <value name="Entity Name">ST. HELENA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">251</value>
+        <value name="Entity Name">LIECHTENSTEIN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">252</value>
+        <value name="Entity Name">ST. PAUL I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">253</value>
+        <value name="Entity Name">ST. PETER &amp; ST. PAUL ROCKS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">254</value>
+        <value name="Entity Name">LUXEMBOURG</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">255</value>
+        <value name="Entity Name">ST. MAARTEN, SABA, ST. EUSTATIUS</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">256</value>
+        <value name="Entity Name">MADEIRA IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">257</value>
+        <value name="Entity Name">MALTA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">258</value>
+        <value name="Entity Name">SUMATRA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">259</value>
+        <value name="Entity Name">SVALBARD</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">260</value>
+        <value name="Entity Name">MONACO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">261</value>
+        <value name="Entity Name">SWAN IS.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">262</value>
+        <value name="Entity Name">TAJIKISTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">263</value>
+        <value name="Entity Name">NETHERLANDS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">264</value>
+        <value name="Entity Name">TANGIER</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">265</value>
+        <value name="Entity Name">NORTHERN IRELAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">266</value>
+        <value name="Entity Name">NORWAY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">267</value>
+        <value name="Entity Name">TERRITORY OF NEW GUINEA</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">268</value>
+        <value name="Entity Name">TIBET</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">269</value>
+        <value name="Entity Name">POLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">270</value>
+        <value name="Entity Name">TOKELAU IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">271</value>
+        <value name="Entity Name">TRIESTE</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">272</value>
+        <value name="Entity Name">PORTUGAL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">273</value>
+        <value name="Entity Name">TRINDADE &amp; MARTIM VAZ IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">274</value>
+        <value name="Entity Name">TRISTAN DA CUNHA &amp; GOUGH I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">275</value>
+        <value name="Entity Name">ROMANIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">276</value>
+        <value name="Entity Name">TROMELIN I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">277</value>
+        <value name="Entity Name">ST. PIERRE &amp; MIQUELON</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">278</value>
+        <value name="Entity Name">SAN MARINO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">279</value>
+        <value name="Entity Name">SCOTLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">280</value>
+        <value name="Entity Name">TURKMENISTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">281</value>
+        <value name="Entity Name">SPAIN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">282</value>
+        <value name="Entity Name">TUVALU</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">283</value>
+        <value name="Entity Name">UK SOVEREIGN BASE AREAS ON CYPRUS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">284</value>
+        <value name="Entity Name">SWEDEN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">285</value>
+        <value name="Entity Name">VIRGIN IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">286</value>
+        <value name="Entity Name">UGANDA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">287</value>
+        <value name="Entity Name">SWITZERLAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">288</value>
+        <value name="Entity Name">UKRAINE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">289</value>
+        <value name="Entity Name">UNITED NATIONS HQ</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">291</value>
+        <value name="Entity Name">UNITED STATES OF AMERICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">292</value>
+        <value name="Entity Name">UZBEKISTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">293</value>
+        <value name="Entity Name">VIET NAM</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">294</value>
+        <value name="Entity Name">WALES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">295</value>
+        <value name="Entity Name">VATICAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">296</value>
+        <value name="Entity Name">SERBIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">297</value>
+        <value name="Entity Name">WAKE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">298</value>
+        <value name="Entity Name">WALLIS &amp; FUTUNA IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">299</value>
+        <value name="Entity Name">WEST MALAYSIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">301</value>
+        <value name="Entity Name">W. KIRIBATI (GILBERT IS. )</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">302</value>
+        <value name="Entity Name">WESTERN SAHARA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">303</value>
+        <value name="Entity Name">WILLIS I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">304</value>
+        <value name="Entity Name">BAHRAIN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">305</value>
+        <value name="Entity Name">BANGLADESH</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">306</value>
+        <value name="Entity Name">BHUTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">307</value>
+        <value name="Entity Name">ZANZIBAR</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">308</value>
+        <value name="Entity Name">COSTA RICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">309</value>
+        <value name="Entity Name">MYANMAR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">312</value>
+        <value name="Entity Name">CAMBODIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">315</value>
+        <value name="Entity Name">SRI LANKA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">318</value>
+        <value name="Entity Name">CHINA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">321</value>
+        <value name="Entity Name">HONG KONG</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">324</value>
+        <value name="Entity Name">INDIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">327</value>
+        <value name="Entity Name">INDONESIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">330</value>
+        <value name="Entity Name">IRAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">333</value>
+        <value name="Entity Name">IRAQ</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">336</value>
+        <value name="Entity Name">ISRAEL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">339</value>
+        <value name="Entity Name">JAPAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">342</value>
+        <value name="Entity Name">JORDAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">344</value>
+        <value name="Entity Name">DEMOCRATIC PEOPLE'S REP. OF KOREA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">345</value>
+        <value name="Entity Name">BRUNEI DARUSSALAM</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">348</value>
+        <value name="Entity Name">KUWAIT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">354</value>
+        <value name="Entity Name">LEBANON</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">363</value>
+        <value name="Entity Name">MONGOLIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">369</value>
+        <value name="Entity Name">NEPAL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">370</value>
+        <value name="Entity Name">OMAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">372</value>
+        <value name="Entity Name">PAKISTAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">375</value>
+        <value name="Entity Name">PHILIPPINES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">376</value>
+        <value name="Entity Name">QATAR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">378</value>
+        <value name="Entity Name">SAUDI ARABIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">379</value>
+        <value name="Entity Name">SEYCHELLES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">381</value>
+        <value name="Entity Name">SINGAPORE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">382</value>
+        <value name="Entity Name">DJIBOUTI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">384</value>
+        <value name="Entity Name">SYRIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">386</value>
+        <value name="Entity Name">TAIWAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">387</value>
+        <value name="Entity Name">THAILAND</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">390</value>
+        <value name="Entity Name">TURKEY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">391</value>
+        <value name="Entity Name">UNITED ARAB EMIRATES</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">400</value>
+        <value name="Entity Name">ALGERIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">401</value>
+        <value name="Entity Name">ANGOLA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">402</value>
+        <value name="Entity Name">BOTSWANA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">404</value>
+        <value name="Entity Name">BURUNDI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">406</value>
+        <value name="Entity Name">CAMEROON</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">408</value>
+        <value name="Entity Name">CENTRAL AFRICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">409</value>
+        <value name="Entity Name">CAPE VERDE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">410</value>
+        <value name="Entity Name">CHAD</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">411</value>
+        <value name="Entity Name">COMOROS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">412</value>
+        <value name="Entity Name">REPUBLIC OF THE CONGO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">414</value>
+        <value name="Entity Name">DEMOCRATIC REPUBLIC OF THE CONGO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">416</value>
+        <value name="Entity Name">BENIN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">420</value>
+        <value name="Entity Name">GABON</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">422</value>
+        <value name="Entity Name">THE GAMBIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">424</value>
+        <value name="Entity Name">GHANA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">428</value>
+        <value name="Entity Name">COTE D'IVOIRE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">430</value>
+        <value name="Entity Name">KENYA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">432</value>
+        <value name="Entity Name">LESOTHO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">434</value>
+        <value name="Entity Name">LIBERIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">436</value>
+        <value name="Entity Name">LIBYA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">438</value>
+        <value name="Entity Name">MADAGASCAR</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">440</value>
+        <value name="Entity Name">MALAWI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">442</value>
+        <value name="Entity Name">MALI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">444</value>
+        <value name="Entity Name">MAURITANIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">446</value>
+        <value name="Entity Name">MOROCCO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">450</value>
+        <value name="Entity Name">NIGERIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">452</value>
+        <value name="Entity Name">ZIMBABWE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">453</value>
+        <value name="Entity Name">REUNION I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">454</value>
+        <value name="Entity Name">RWANDA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">456</value>
+        <value name="Entity Name">SENEGAL</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">458</value>
+        <value name="Entity Name">SIERRA LEONE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">460</value>
+        <value name="Entity Name">ROTUMA I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">462</value>
+        <value name="Entity Name">REPUBLIC OF SOUTH AFRICA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">464</value>
+        <value name="Entity Name">NAMIBIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">466</value>
+        <value name="Entity Name">SUDAN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">468</value>
+        <value name="Entity Name">KINGDOM OF ESWATINI</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">470</value>
+        <value name="Entity Name">TANZANIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">474</value>
+        <value name="Entity Name">TUNISIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">478</value>
+        <value name="Entity Name">EGYPT</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">480</value>
+        <value name="Entity Name">BURKINA FASO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">482</value>
+        <value name="Entity Name">ZAMBIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">483</value>
+        <value name="Entity Name">TOGO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">488</value>
+        <value name="Entity Name">WALVIS BAY</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">489</value>
+        <value name="Entity Name">CONWAY REEF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">490</value>
+        <value name="Entity Name">BANABA I. (OCEAN I.)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">492</value>
+        <value name="Entity Name">YEMEN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">493</value>
+        <value name="Entity Name">PENGUIN IS.</value>
+        <value name="Deleted">true</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">497</value>
+        <value name="Entity Name">CROATIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">499</value>
+        <value name="Entity Name">SLOVENIA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">501</value>
+        <value name="Entity Name">BOSNIA-HERZEGOVINA</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">502</value>
+        <value name="Entity Name">NORTH MACEDONIA (REPUBLIC OF)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">503</value>
+        <value name="Entity Name">CZECH REPUBLIC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">504</value>
+        <value name="Entity Name">SLOVAK REPUBLIC</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">505</value>
+        <value name="Entity Name">PRATAS I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">506</value>
+        <value name="Entity Name">SCARBOROUGH REEF</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">507</value>
+        <value name="Entity Name">TEMOTU PROVINCE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">508</value>
+        <value name="Entity Name">AUSTRAL I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">509</value>
+        <value name="Entity Name">MARQUESAS IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">510</value>
+        <value name="Entity Name">PALESTINE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">511</value>
+        <value name="Entity Name">TIMOR-LESTE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">512</value>
+        <value name="Entity Name">CHESTERFIELD IS.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">513</value>
+        <value name="Entity Name">DUCIE I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">514</value>
+        <value name="Entity Name">MONTENEGRO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">515</value>
+        <value name="Entity Name">SWAINS I.</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">516</value>
+        <value name="Entity Name">SAINT BARTHELEMY</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">517</value>
+        <value name="Entity Name">CURACAO</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">518</value>
+        <value name="Entity Name">SINT MAARTEN</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">519</value>
+        <value name="Entity Name">SABA &amp; ST. EUSTATIUS</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">520</value>
+        <value name="Entity Name">BONAIRE</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">521</value>
+        <value name="Entity Name">SOUTH SUDAN (REPUBLIC OF)</value>
+      </record>
+      <record>
+        <value name="Enumeration Name">DXCC_Entity_Code</value>
+        <value name="Entity Code">522</value>
+        <value name="Entity Name">REPUBLIC OF KOSOVO</value>
+      </record>
+    </enumeration>
+  </enumerations>
+</adif>

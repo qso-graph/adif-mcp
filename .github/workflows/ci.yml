@@ -1,13 +1,26 @@
 name: ci
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
 
 permissions:
   contents: read
 
 jobs:
+  # main takes a release PR from develop, or a security branch, and nothing else:
+  # merging into main publishes. Required on main by its branch protection.
+  release-source:
+    name: Release PR source
+    if: github.event_name == 'pull_request' && github.base_ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          case "${{ github.head_ref }}" in
+            develop|security/*) echo "ok: ${{ github.head_ref }} -> main" ;;
+            *) echo "main takes a release PR from develop, or a security/ branch"; exit 1 ;;
+          esac
+
   ci:
     runs-on: ubuntu-latest
     permissions:

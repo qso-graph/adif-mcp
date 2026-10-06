@@ -127,7 +127,8 @@ def test_shipped_manifest_matches_the_pins(version_dir: str) -> None:
     with open(os.path.join(_SPEC, version_dir, "MANIFEST.json"), encoding="utf-8") as f:
         manifest = json.load(f)
     assert manifest["files"] == pinned["files"]
-    assert manifest["zip_sha256"] == pinned["zip_sha256"] and manifest["source"] == pinned["source"]
+    assert manifest["zip_sha256"] == pinned["zip_sha256"]
+    assert manifest["source"] == pinned["source"]
 
 
 @pytest.mark.parametrize("version_dir", VERSIONS)

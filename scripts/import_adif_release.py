@@ -90,7 +90,9 @@ def main(version: str, url: str, zip_sha: str) -> None:
     (out / "MANIFEST.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
     pins = json.loads(PINS.read_text(encoding="utf-8"))
-    pins["versions"][version] = {"source": url, "zip_sha256": zip_sha, "files": manifest["files"]}
+    pins["versions"][version] = {
+        "source": url, "zip_sha256": zip_sha, "files": manifest["files"],
+    }
     pins["versions"] = dict(sorted(pins["versions"].items()))
     PINS.write_text(json.dumps(pins, indent=2) + "\n", encoding="utf-8")
     print(f"{version}: {len(files)} files, zip {zip_sha[:12]}")

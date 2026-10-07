@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2026-10-07
+
+- LICENSE: the full GPL-3.0 text. The file held only its opening and a link, so GitHub detected no licence.
+
 ## [1.2.0] - 2026-10-06
 
 ### Added

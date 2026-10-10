@@ -16,7 +16,7 @@ requires-python = ">=3.10"
 dependencies = [
     "aiofiles>=25.1.0",
     "click>=8.1.7",
-    "fastmcp>=3.0",
+    "fastmcp>=4.0,<5",
     "requests>=2.32.5",
     "typing-extensions>=4.15.0",
     "tomli>=2.0; python_version < '3.11'",

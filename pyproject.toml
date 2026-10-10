@@ -4,7 +4,7 @@ version = "1.2.1"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
-authors = [{name = "KI7MT", email = "ki7mt@yahoo.com"}]
+authors = [{name = "KI7MT", email = "maintainers@qso-graph.io"}]
 keywords = [
     "amateur-radio", "ham-radio", "adif", "mcp", "model-context-protocol",
     "lotw", "eqsl", "qrz", "qso-logging", "ai-agents",

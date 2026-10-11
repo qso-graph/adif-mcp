@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.3] - 2026-10-11
 
 - **The Python matrix this package advertises is now the one it tests.** `requires-python` is
   `>=3.10` and the classifiers name 3.10 through 3.13; CI pinned 3.11 and ran nothing else, while

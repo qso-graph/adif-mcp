@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.2.2] - 2026-10-11
 
 - **`fastmcp` is bounded: `>=4.0,<5`** (qso-graph-devel#60). It was `>=3.0` with no upper bound, and
   these servers are run with `uvx`, which resolves fresh — so a `fastmcp` 5.0 would have reached

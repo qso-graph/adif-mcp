@@ -78,10 +78,10 @@ jobs:
       - name: Unit tests
         env:
           PYTHONWARNINGS: error
-        run: uv run pytest test --ignore=test/test_security.py -v
+        run: uv run pytest tests --ignore=tests/test_security.py -v
 
       - name: Security tests
-        run: uv run pytest test/test_security.py -v
+        run: uv run pytest tests/test_security.py -v
 
       - name: Manifest validate (CLI)
         run: uv run adif-mcp validate-manifest

@@ -16,7 +16,7 @@ its `exports/` are written to `src/adif_mcp/resources/spec/VERSION/`:
   `adifexport.xsd`), `csv/`, `tsv/`, `xlsx/`, `ods/`.
 
 It writes `MANIFEST.json` beside them (the zip's URL and SHA-256, and every file's
-SHA-256) and the same pins to `test/data/adif_upstream_sha256.json`, which the tests
+SHA-256) and the same pins to `tests/data/adif_upstream_sha256.json`, which the tests
 check the packaged files against.
 
 **Two versions are shipped: the previous and the current** (KI7MT, 2026-10-06), so the

@@ -1,4 +1,4 @@
-# test/test_manifest_shape.py
+# tests/test_manifest_shape.py
 from __future__ import annotations
 
 import json

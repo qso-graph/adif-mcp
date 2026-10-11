@@ -51,7 +51,7 @@ make gate
 uv run pytest -q
 
 # Specific file or test
-uv run pytest -q test/test_resources.py
+uv run pytest -q tests/test_resources.py
 uv run pytest -q -k "manifest"
 ```
 

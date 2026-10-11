@@ -64,7 +64,7 @@ jobs:
         run: pip install -e ".[test]"
 
       - name: Security tests
-        run: python -m pytest test/test_security.py -v
+        run: python -m pytest tests/test_security.py -v
 
       - name: Static security checks
         run: |

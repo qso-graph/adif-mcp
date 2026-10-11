@@ -1,4 +1,4 @@
-# test/conftest.py
+# tests/conftest.py
 from __future__ import annotations
 
 import json
@@ -33,7 +33,7 @@ def load_env_defaults(p: Path) -> Dict[str, object]:
 
 
 def _load_sample(name: str) -> Dict[str, object]:
-    """Load a test JSON blob from test/data and return as dict[str, object]."""
+    """Load a test JSON blob from tests/data and return as dict[str, object]."""
     here = Path(__file__).parent / "data"
     data: Dict[str, Any] = json.loads((here / name).read_text(encoding="utf-8"))
     return dict(data)

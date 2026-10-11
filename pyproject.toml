@@ -98,7 +98,6 @@ features = ["core QSO model", "band/mode/QSL_RCVD enums"]
 
 [tool.adif_mcp]
 config_dir_name = "config"
-manifest = "manifest.json"
 meta_output = "adif_meta.json"
 personas_index = "personas.json"
 providers_dir = "providers"
@@ -118,8 +117,6 @@ asyncio_default_fixture_loop_scope = "function"
 # Paths below are *logical* (not absolute). Your util code should:
 # - Resolve {config_dir} to a platform-appropriate location (e.g., appdirs)
 # - Treat relative repo paths as development defaults
-manifest = "mcp/manifest.json"
-schemas = { manifest = "mcp/schemas/manifest.v1.json" }
 spec = { adif_catalog = "mcp/spec/adif_catalog.json" }
 providers_dir = "mcp/providers"
 meta_output = "src/adif_mcp/adif_meta.json"

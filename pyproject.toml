@@ -154,7 +154,12 @@ fixable = ["I"]
 [tool.mypy]
 python_version = "3.11"
 strict = true
-packages = ["adif-mcp"]
+# The source tree, so a bare `mypy` checks what CI checks. This said
+# `packages = ["adif-mcp"]`, which is not a legal Python package name — a
+# hyphen cannot appear in one — so `mypy` with no arguments answered
+# "Can't find package 'adif-mcp'" and checked nothing. CI never saw it because
+# it passes a path explicitly.
+files = ["src"]
 disable_error_code = ["annotation-unchecked", "call-arg"]
 warn_unused_ignores = true
 warn_redundant_casts = true

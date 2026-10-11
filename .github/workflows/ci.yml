@@ -1,8 +1,16 @@
-name: ci
+name: CI
+
 on:
-  push:
-    branches: [ main, develop ]
   pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+
+# Cancel superseded runs on the same ref (push or PR) so we don't waste
+# minutes when commits land in rapid succession.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -21,34 +29,22 @@ jobs:
             *) echo "main takes a release PR from develop, or a security/ branch"; exit 1 ;;
           esac
 
-  ci:
+  # Lint and types, once rather than per Python: both read the source, and
+  # neither answer changes with the interpreter running them. The matrix below
+  # is for the code's behaviour, which does (qso-graph-devel#66).
+  lint:
+    name: ruff and mypy
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v1
-        with:
-          version: latest
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.11"
+          enable-cache: true
 
-      - name: Sync deps (prefer dev group; frozen if lock)
-        run: |
-          set -e
-          # log uv version for debugging
-          uv --version || true
-          # try newest syntax first; fall back for older uv
-          if [ -f uv.lock ]; then
-            uv sync --group dev --frozen || uv sync --frozen || uv sync
-          else
-            uv sync --group dev || uv sync
-          fi
+      - name: Install (locked)
+        run: uv sync --group dev --frozen
 
       - name: Lint (ruff)
         run: uv run ruff check .
@@ -56,13 +52,58 @@ jobs:
       - name: Type-check (mypy)
         run: uv run mypy src
 
-      - name: Tests (pytest)
+  # Every version this package says it supports. `requires-python` is `>=3.10`
+  # and the classifiers name 3.10 through 3.13; before this they were a claim
+  # nothing ran. This package is the ADIF spec engine every other server reads
+  # its definitions through, so an interpreter difference here is one that
+  # reaches all of them.
+  test:
+    name: pytest (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+
+      - name: Install (locked)
+        run: uv sync --group dev --frozen
+
+      - name: Unit tests
         env:
           PYTHONWARNINGS: error
-        run: uv run pytest -q
+        run: uv run pytest test --ignore=test/test_security.py -v
+
+      - name: Security tests
+        run: uv run pytest test/test_security.py -v
 
       - name: Manifest validate (CLI)
         run: uv run adif-mcp validate-manifest
+
+  # The version in pyproject.toml and the latest tag have to agree. Kept from
+  # this repo's own CI: nothing else in the fleet carries it, and it is what
+  # catches a release prepared without its tag.
+  version:
+    name: version matches the tag
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install (locked)
+        run: uv sync --group dev --frozen
 
       - name: Fetch tags
         run: git fetch --tags --force --prune
@@ -92,3 +133,25 @@ jobs:
           echo "pyproject: ${PJ}"
           echo "pushed tag: ${TAG}"
           test "$PJ" = "$TAG" || { echo "::error ::Tag mismatch"; exit 1; }
+
+  ci-all-green:
+    name: ci-all-green
+    needs: [lint, test, version]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Verify required jobs all succeeded
+        run: |
+          if [[ "${{ needs.lint.result }}" != "success" ]]; then
+            echo "FAIL: ruff or mypy did not pass (result=${{ needs.lint.result }})"
+            exit 1
+          fi
+          if [[ "${{ needs.test.result }}" != "success" ]]; then
+            echo "FAIL: test matrix did not all succeed (result=${{ needs.test.result }})"
+            exit 1
+          fi
+          if [[ "${{ needs.version.result }}" != "success" ]]; then
+            echo "FAIL: pyproject and the latest tag disagree (result=${{ needs.version.result }})"
+            exit 1
+          fi
+          echo "All required CI jobs passed."

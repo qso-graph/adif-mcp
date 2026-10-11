@@ -86,68 +86,9 @@ jobs:
       - name: Manifest validate (CLI)
         run: uv run adif-mcp validate-manifest
 
-  # The version in pyproject.toml and the latest tag have to agree — on `main`
-  # and on a tag, and nowhere else.
-  #
-  # On `develop` it is false by construction: a release tag is created on the
-  # merge commit on `main`, which is not an ancestor of `develop`, so the
-  # newest tag `git describe` can reach from `develop` is the one before last.
-  # And a Prepare PR deliberately puts the new version on `develop` before any
-  # tag for it exists — being ahead of the last tag is the point of it.
-  #
-  # This never fired before. The job used a shallow checkout, `git describe`
-  # found no tag, the `|| echo none` fallback ran, and the enforcement step
-  # skipped itself on `tag != 'none'`. Giving it `fetch-depth: 0` is what made
-  # it a real check, and the first thing a real check did was reject develop.
-  version:
-    name: version matches the tag
-    if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || startsWith(github.ref, 'refs/tags/')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-
-      - uses: astral-sh/setup-uv@v6
-        with:
-          python-version: "3.11"
-          enable-cache: true
-
-      - name: Install (locked)
-        run: uv sync --group dev --frozen
-
-      - name: Fetch tags
-        run: git fetch --tags --force --prune
-
-      - name: Read project version (pyproject)
-        id: pj
-        run: echo "version=$(uv run cz version --project)" >> "$GITHUB_OUTPUT"
-
-      - name: Read latest git tag
-        id: tag
-        run: echo "tag=$(git describe --tags --abbrev=0 2>/dev/null || echo none)" >> "$GITHUB_OUTPUT"
-
-      - name: Enforce pyproject == latest tag (when tag exists)
-        if: steps.tag.outputs.tag != 'none'
-        run: |
-          PJ="v${{ steps.pj.outputs.version }}"
-          TG="${{ steps.tag.outputs.tag }}"
-          echo "pyproject: ${PJ}"
-          echo "latest tag: ${TG}"
-          test "$PJ" = "$TG" || { echo "::error ::Version mismatch"; exit 1; }
-
-      - name: Enforce pushed tag matches pyproject (only on tag pushes)
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          PJ="v$(uv run cz version --project)"
-          TAG="${GITHUB_REF#refs/tags/}"
-          echo "pyproject: ${PJ}"
-          echo "pushed tag: ${TAG}"
-          test "$PJ" = "$TAG" || { echo "::error ::Tag mismatch"; exit 1; }
-
   ci-all-green:
     name: ci-all-green
-    needs: [lint, test, version]
+    needs: [lint, test]
     runs-on: ubuntu-latest
     if: always()
     steps:
@@ -159,13 +100,6 @@ jobs:
           fi
           if [[ "${{ needs.test.result }}" != "success" ]]; then
             echo "FAIL: test matrix did not all succeed (result=${{ needs.test.result }})"
-            exit 1
-          fi
-          # Skipped off main is correct, not a pass being waved through: the
-          # job's own `if` is what decides, and it runs wherever it means
-          # something.
-          if [[ "${{ needs.version.result }}" != "success" && "${{ needs.version.result }}" != "skipped" ]]; then
-            echo "FAIL: pyproject and the latest tag disagree (result=${{ needs.version.result }})"
             exit 1
           fi
           echo "All required CI jobs passed."

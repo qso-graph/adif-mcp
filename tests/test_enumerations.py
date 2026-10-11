@@ -11,6 +11,18 @@ from adif_mcp.mcp.server import (
 
 _TEST_DATA = os.path.join(os.path.dirname(__file__), "data")
 
+# The two tests below read ADIF's own published logs, and their whole claim is
+# that this validator does not reject a record ADIF itself issued. Each used to
+# `return` when the file was absent, which made the test pass having read
+# nothing — and the file was always absent, because `*.adi` was ignored
+# wholesale and nothing fetched it. Both reported green in CI from the day they
+# were written. The logs are committed now, so absence is a defect.
+_MISSING_LOG = (
+    "{name} is missing. It is committed to tests/data/ and is what this test "
+    "reads; without it the test proves nothing. Restore it from the pinned "
+    "upstream zip recorded in tests/data/adif_upstream_sha256.json."
+)
+
 # --- list_enumerations ---
 
 
@@ -278,8 +290,7 @@ def test_official_adif_test_file_zero_errors() -> None:
     test_file = os.path.join(
         _TEST_DATA, "ADIF_317_test_QSOs_2026_03_22.adi"
     )
-    if not os.path.exists(test_file):
-        return  # Skip if test file not present (CI without data)
+    assert os.path.exists(test_file), _MISSING_LOG.format(name=os.path.basename(test_file))
 
     with open(test_file, "r", encoding="utf-8") as f:
         content = f.read()
@@ -311,10 +322,9 @@ def test_official_adif_test_file_warning_categories() -> None:
     Both are correct validator behavior, not false positives.
     """
     test_file = os.path.join(
-        _TEST_DATA, "ADIF_316_test_QSOs_2025_08_27.adi"
+        _TEST_DATA, "ADIF_316_test_QSOs_2025_09_15.adi"
     )
-    if not os.path.exists(test_file):
-        return
+    assert os.path.exists(test_file), _MISSING_LOG.format(name=os.path.basename(test_file))
 
     with open(test_file, "r", encoding="utf-8") as f:
         content = f.read()

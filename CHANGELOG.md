@@ -19,6 +19,21 @@ All notable changes to this project will be documented in this file.
   carries, is now named rather than buried in a step. `actions/checkout` v4 to v5, `setup-uv` v1 to v6.
 - `test/` is now `tests/`, as every other repo names it. CHANGELOG entries naming the old path are
   left as they were written.
+- **The two tests that validate against ADIF's own published logs have never run.** Their gate is
+  "if our validator rejects an official record, our validator is wrong", and each opened with
+  `if not os.path.exists(test_file): return` — a bare `return`, so a missing file made the test
+  **pass having read nothing**. The file was always missing: `*.adi` was ignored wholesale and
+  nothing fetched it, so both have reported green in CI since the day they were written.
+- ADIF's test logs for 3.1.6 and 3.1.7 are now committed — 6,191 and 6,197 records. They were
+  fetched from the resource zips already pinned in `tests/data/adif_upstream_sha256.json` and both
+  zips were checked against their recorded SHA-256 before anything was extracted. `.gitignore`
+  keeps `*.adi` and adds one exception for ADIF's own published logs.
+- The 3.1.6 test pointed at `ADIF_316_test_QSOs_2025_08_27.adi`, from an upstream release older
+  than the pinned zip, so it could not have run even where a log was present. It now reads
+  `ADIF_316_test_QSOs_2025_09_15.adi`, the one the pin names.
+- A missing log is now a failure that says how to restore it. With the logs hidden both tests fail;
+  with them present the suite takes 4.4s rather than 2.4s, which is the 12,388 records being
+  validated for the first time.
 
 ## [1.2.2] - 2026-10-11
 

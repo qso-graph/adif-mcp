@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+- **The Python matrix this package advertises is now the one it tests.** `requires-python` is
+  `>=3.10` and the classifiers name 3.10 through 3.13; CI pinned 3.11 and ran nothing else, while
+  every other repo in the org runs all four. 3.10 and 3.13 were run before the change landed — 125
+  pass on each — so the claim was true and had simply never been checked. This is the ADIF spec
+  engine the other servers read their definitions through, so an interpreter difference here is one
+  that reaches all of them.
+- **A bare `mypy` checked nothing.** `[tool.mypy]` said `packages = ["adif-mcp"]`, and a hyphen is
+  not legal in a Python package name, so it answered "Can't find package 'adif-mcp'". CI was
+  unaffected because it passes `mypy src` explicitly. Now `files = ["src"]`, and a bare `mypy`
+  checks the same 26 files CI does.
+- CI gains the `ci-all-green` gate the rest of the fleet has, over `lint`, the test matrix, and a
+  `version` job of its own — this repo's pyproject-matches-the-tag check, which nothing else
+  carries, is now named rather than buried in a step. `actions/checkout` v4 to v5, `setup-uv` v1 to v6.
+- `test/` is now `tests/`, as every other repo names it. CHANGELOG entries naming the old path are
+  left as they were written.
+
 ## [1.2.2] - 2026-10-11
 
 - **`fastmcp` is bounded: `>=4.0,<5`** (qso-graph-devel#60). It was `>=3.0` with no upper bound, and

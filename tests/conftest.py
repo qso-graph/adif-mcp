@@ -4,9 +4,8 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
-from typing import Any, Callable, Dict, List, cast
+from typing import Any, Dict, List
 
-import pytest
 from _pytest.config.argparsing import Parser
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -92,17 +91,3 @@ def records_two_modes() -> List[Dict[str, str]]:
 # ---------------------------
 
 
-@pytest.fixture
-def inbox_for_callsign() -> Callable[[str], List[Dict[str, Any]]]:
-    """
-    Returns a callable that, given a username/callsign, returns the
-    stubbed eQSL inbox records list for tests.
-    """
-    from adif_mcp.tools.eqsl_stub import fetch_inbox
-
-    def _factory(user: str) -> List[Dict[str, Any]]:
-        payload = fetch_inbox(user)  # {"records": [...]}
-        # payload["records"] is List[QSORecord]; cast to List[Dict[str, Any]] for tests
-        return cast(List[Dict[str, Any]], payload["records"])
-
-    return _factory

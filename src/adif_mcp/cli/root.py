@@ -10,7 +10,7 @@ import importlib.metadata
 import sys
 from typing import Callable, Protocol, cast
 
-from . import convert_adi, eqsl_stub, validate
+from . import convert_adi, validate
 
 
 class _RegisterCLI(Protocol):
@@ -56,8 +56,6 @@ def build_parser() -> argparse.ArgumentParser:
     convert_adi.add_convert_args(p_conv_alias)
     p_conv_alias.set_defaults(func=lambda _args: convert_adi.main(sys.argv[2:]))
 
-    if hasattr(eqsl_stub, "register_cli"):
-        cast(_RegisterCLI, getattr(eqsl_stub, "register_cli"))(subparsers)
     if hasattr(validate, "register_cli"):
         cast(_RegisterCLI, getattr(validate, "register_cli"))(subparsers)
 

@@ -24,6 +24,18 @@ z-make-lean*
 
 # ADIF & large artifacts
 *.adi
+# ...except ADIF's own published test logs. The rule above is there to keep a
+# personal log from being added, and it is worth keeping for that. These two
+# are the opposite kind of file: ADIF publishes them in the same resource zips
+# as the spec exports this package already ships unmodified, every record in
+# them is valid ADIF by definition, and they are what proves the validator does
+# not reject a record ADIF itself issued.
+#
+# tests/data/ki7mt-sample.adi is tracked and stays tracked: it is a real
+# extract, which is exactly what makes it useful as a known-good reference
+# alongside ADIF's generated ones. It predates this rule, and .gitignore does
+# not apply to a tracked file in any case.
+!tests/data/ADIF_*_test_QSOs_*.adi
 *.ndjson
 *.jsonl
 /tmp/

@@ -1,6 +1,6 @@
 """CLI smoke tests for `adif-mcp`."""
 
-# test/test_cli_test.py
+# tests/test_cli_test.py
 from cli_test_helpers import shell
 
 

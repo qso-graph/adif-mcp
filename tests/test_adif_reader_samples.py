@@ -14,7 +14,7 @@ def sample_adi_text() -> str:
     """
     Provide ADIF sample text for tests.
 
-    - If `test/data/ki7mt-sample.adi` exists, load it.
+    - If `tests/data/ki7mt-sample.adi` exists, load it.
     - Otherwise, return a minimal inline ADIF record so tests
       still run in CI environments without the sample file.
     """

@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.3] - 2026-10-11
+
+- **The Python matrix this package advertises is now the one it tests.** `requires-python` is
+  `>=3.10` and the classifiers name 3.10 through 3.13; CI pinned 3.11 and ran nothing else, while
+  every other repo in the org runs all four. 3.10 and 3.13 were run before the change landed — 125
+  pass on each — so the claim was true and had simply never been checked. This is the ADIF spec
+  engine the other servers read their definitions through, so an interpreter difference here is one
+  that reaches all of them.
+- **A bare `mypy` checked nothing.** `[tool.mypy]` said `packages = ["adif-mcp"]`, and a hyphen is
+  not legal in a Python package name, so it answered "Can't find package 'adif-mcp'". CI was
+  unaffected because it passes `mypy src` explicitly. Now `files = ["src"]`, and a bare `mypy`
+  checks the same 26 files CI does.
+- CI gains the `ci-all-green` gate the rest of the fleet has, over `lint`, the test matrix, and a
+  `version` job of its own — this repo's pyproject-matches-the-tag check, which nothing else
+  carries, is now named rather than buried in a step. `actions/checkout` v4 to v5, `setup-uv` v1 to v6.
+- `test/` is now `tests/`, as every other repo names it. CHANGELOG entries naming the old path are
+  left as they were written.
+- **The two tests that validate against ADIF's own published logs have never run.** Their gate is
+  "if our validator rejects an official record, our validator is wrong", and each opened with
+  `if not os.path.exists(test_file): return` — a bare `return`, so a missing file made the test
+  **pass having read nothing**. The file was always missing: `*.adi` was ignored wholesale and
+  nothing fetched it, so both have reported green in CI since the day they were written.
+- ADIF's test logs for 3.1.6 and 3.1.7 are now committed — 6,191 and 6,197 records. They were
+  fetched from the resource zips already pinned in `tests/data/adif_upstream_sha256.json` and both
+  zips were checked against their recorded SHA-256 before anything was extracted. `.gitignore`
+  keeps `*.adi` and adds one exception for ADIF's own published logs.
+- The 3.1.6 test pointed at `ADIF_316_test_QSOs_2025_08_27.adi`, from an upstream release older
+  than the pinned zip, so it could not have run even where a log was present. It now reads
+  `ADIF_316_test_QSOs_2025_09_15.adi`, the one the pin names.
+- A missing log is now a failure that says how to restore it. With the logs hidden both tests fail;
+  with them present the suite takes 4.4s rather than 2.4s, which is the 12,388 records being
+  validated for the first time.
+
 ## [1.2.2] - 2026-10-11
 
 - **`fastmcp` is bounded: `>=4.0,<5`** (qso-graph-devel#60). It was `>=3.0` with no upper bound, and

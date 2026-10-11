@@ -1,6 +1,6 @@
 [project]
 name = "adif-mcp"
-version = "1.2.2"
+version = "1.2.3"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -106,7 +106,7 @@ schemas = "adif_catalog.json"
 spec = "ADIF_317"
 
 [tool.pytest.ini_options]
-testpaths = ["test"]
+testpaths = ["tests"]
 pythonpath = ["src"]
 asyncio_mode = "auto"
 markers = [
@@ -133,7 +133,7 @@ personas_index = "{config_dir}/personas.json"  # util resolves {config_dir}
 # ----------------
 [tool.ruff]
 target-version = "py311"
-src = ["src", "test"]
+src = ["src", "tests"]
 line-length = 95
 extend-exclude = [
     ".venv",
@@ -154,7 +154,12 @@ fixable = ["I"]
 [tool.mypy]
 python_version = "3.11"
 strict = true
-packages = ["adif-mcp"]
+# The source tree, so a bare `mypy` checks what CI checks. This said
+# `packages = ["adif-mcp"]`, which is not a legal Python package name — a
+# hyphen cannot appear in one — so `mypy` with no arguments answered
+# "Can't find package 'adif-mcp'" and checked nothing. CI never saw it because
+# it passes a path explicitly.
+files = ["src"]
 disable_error_code = ["annotation-unchecked", "call-arg"]
 warn_unused_ignores = true
 warn_redundant_casts = true
@@ -222,7 +227,7 @@ include = [
   "LICENSE",
   "NOTICE",
   "pyproject.toml",
-  "test/**",
+  "tests/**",
 ]
 exclude = [
     "scripts/**",

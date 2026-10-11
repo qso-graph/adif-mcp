@@ -1,10 +1,10 @@
 [project]
 name = "adif-mcp"
-version = "1.2.1"
+version = "1.2.2"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
-authors = [{name = "KI7MT", email = "ki7mt@yahoo.com"}]
+authors = [{name = "KI7MT", email = "maintainers@qso-graph.io"}]
 keywords = [
     "amateur-radio", "ham-radio", "adif", "mcp", "model-context-protocol",
     "lotw", "eqsl", "qrz", "qso-logging", "ai-agents",
@@ -16,7 +16,7 @@ requires-python = ">=3.10"
 dependencies = [
     "aiofiles>=25.1.0",
     "click>=8.1.7",
-    "fastmcp>=3.0",
+    "fastmcp>=4.0,<5",
     "requests>=2.32.5",
     "typing-extensions>=4.15.0",
     "tomli>=2.0; python_version < '3.11'",

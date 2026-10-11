@@ -86,11 +86,22 @@ jobs:
       - name: Manifest validate (CLI)
         run: uv run adif-mcp validate-manifest
 
-  # The version in pyproject.toml and the latest tag have to agree. Kept from
-  # this repo's own CI: nothing else in the fleet carries it, and it is what
-  # catches a release prepared without its tag.
+  # The version in pyproject.toml and the latest tag have to agree — on `main`
+  # and on a tag, and nowhere else.
+  #
+  # On `develop` it is false by construction: a release tag is created on the
+  # merge commit on `main`, which is not an ancestor of `develop`, so the
+  # newest tag `git describe` can reach from `develop` is the one before last.
+  # And a Prepare PR deliberately puts the new version on `develop` before any
+  # tag for it exists — being ahead of the last tag is the point of it.
+  #
+  # This never fired before. The job used a shallow checkout, `git describe`
+  # found no tag, the `|| echo none` fallback ran, and the enforcement step
+  # skipped itself on `tag != 'none'`. Giving it `fetch-depth: 0` is what made
+  # it a real check, and the first thing a real check did was reject develop.
   version:
     name: version matches the tag
+    if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -150,7 +161,10 @@ jobs:
             echo "FAIL: test matrix did not all succeed (result=${{ needs.test.result }})"
             exit 1
           fi
-          if [[ "${{ needs.version.result }}" != "success" ]]; then
+          # Skipped off main is correct, not a pass being waved through: the
+          # job's own `if` is what decides, and it runs wherever it means
+          # something.
+          if [[ "${{ needs.version.result }}" != "success" && "${{ needs.version.result }}" != "skipped" ]]; then
             echo "FAIL: pyproject and the latest tag disagree (result=${{ needs.version.result }})"
             exit 1
           fi

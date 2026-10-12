@@ -23,7 +23,7 @@ To contribute to ADIF-MCP, you will need a working Python ≥3.11 environment wi
 
 ## Development Setup
 
-The following is a quick start in getting the required environment setup. Details workflows will be outlined in the [Dev Guide](./docs/devguide/).
+The following is a quick start in getting the required environment set up.
 
 ### Clone the Repo and Install Development Dependencies
 

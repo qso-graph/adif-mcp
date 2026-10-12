@@ -15,17 +15,13 @@ When contributing new code, documentation, or other resources, please ensure:
    - Run `make test` and ensure all unit tests pass.
    - Run `pre-commit run --all-files` before committing.
 
-2. **Documentation Standards**
-   - Use **lowercase filenames** in `docs/` (e.g., `troubleshooting.md`).
-   - Update `mkdocs.yml` to include new docs under the correct `nav` section.
-   - Verify that all internal links in Markdown files resolve correctly.
-   - Copy root-level files (`CHANGELOG.md`, `LICENSE.md`) into `docs/` if you want them visible on GitHub Pages.
+2. **Documentation**
+   - The README is the documentation; keep it in the layout the other qso-graph MCP servers use.
+   - Record every change under `## Unreleased` in `CHANGELOG.md`.
 
 3. **Releases**
-   - Update `CHANGELOG.md` with changes.
-   - Bump `__version__` in `src/wspr_ai_lite/__init__.py`.
-   - Tag the release (`git tag vX.Y.Z && git push --tags`).
-   - Smoke test with `make smoke-test` or `make smoke-test-pypi`.
+   - A change never bumps the version. KI7MT decides when to release; the release pull request to
+     `main` sets the version, and `publish.yml` publishes to PyPI and the MCP Registry and then tags.
 
 4. **General**
    - Keep commits atomic and meaningful.

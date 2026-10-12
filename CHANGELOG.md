@@ -24,6 +24,21 @@ every tracked file of every type, and listing the built wheel — before anythin
   `ssl-expiry` workflow (it watched `lotw.` and `eqsl.adif-mcp.com`), the Makefile's persona target,
   the `cli-test-helpers` test dependency, and the `lotw`, `eqsl` and `qrz` keywords.
 
+- **The docs site** (`docs/`, `mkdocs.yml`, `CNAME` and the Pages workflow), published at
+  adif-mcp.com. Most of it was the persona era (personas, credentials, awards, provider schemas),
+  hidden or out of date, and it still said ADIF 3.1.6. The README is the documentation, in the
+  layout the other servers use, and qso-graph.io/servers/adif-mcp/ is the page users are pointed to.
+  The README's Compliance & Provenance section went with it: it described LoTW, eQSL and QRZ
+  servers and record-merging `APP_` fields that are not this package. Also the mkdocs
+  dependencies, the Makefile's docs and tag-and-push release targets, and the copied
+  release instructions in `CONTRIBUTORS.md` (they named another project).
+
+### Added
+
+- **`--transport streamable-http --port 8003`**, as every other server takes, so the MCP Inspector
+  can reach it; stdio stays the default. The README has the MCP Inspector section the house layout
+  has.
+
 The wheel's code is now `mcp/server.py`, `utils/geography.py` and `__init__.py`. Every tool was
 called through the installed wheel over stdio before this landed.
 

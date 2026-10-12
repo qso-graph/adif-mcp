@@ -49,9 +49,6 @@ full.json
 # MkDocs Local Site Build
 # ------------------------
 site/
-!mkdocs.yml
-!docs/
-!docs/**
 
 
 # ------------------------

@@ -43,14 +43,6 @@ dev = [
     "pydantic>=2.12.0",
     "jsonschema>=4.25.1",
     "interrogate>=1.7.0",
-    "mkdocs>=1.6.1",
-    "mkdocs-material>=9.6.18",
-    "mkdocstrings[python]>=0.30.0",
-    "pymdown-extensions>=10.10",
-    "pymdown-extensions[extra]>=10.10",
-    "mkdocs-redirects>=1.2.2",
-    "mkdocs-mermaid2-plugin>=1.2.2",
-    "mkdocs-git-revision-date-localized-plugin>=1.4.7",
     "types-aiofiles>=25.1.0.20251011",
     "pytest-asyncio>=1.3.0",
 ]
@@ -109,7 +101,6 @@ extend-exclude = [
     ".eggs",
     ".pytest_cache",
     "site",
-    "docs/_site",
 ]
 
 [tool.ruff.lint]
@@ -146,7 +137,7 @@ ignore-private = true
 ignore-nested-functions = true
 ignore-properties = true
 paths = ["src", "test"]
-exclude = [".venv", ".smoke-venv", "dist", "build", "site", "docs/_site"]
+exclude = [".venv", ".smoke-venv", "dist", "build"]
 whitelist-regex = [
     "^test_*"
 ]
@@ -189,8 +180,6 @@ exclude = [
     "build/**",
     ".git/**",
     ".github/**",
-    "docs/**",
-    "site/**",
     ".ruff_cache/**",
     ".mypy_cache/**",
     ".pytest_cache/**",

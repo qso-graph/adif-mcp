@@ -8,6 +8,7 @@ import datetime
 import json
 import os
 import re
+import sys
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 import aiofiles
@@ -817,14 +818,22 @@ def _cross_validate_dxcc_state(
 # --- Entry Points ---
 
 
-def run() -> None:
-    """Entry point for the server."""
-    mcp.run()
-
-
 def main() -> None:
-    """Main entry point."""
-    mcp.run()
+    """Run the adif-mcp server: stdio, or streamable HTTP for the MCP Inspector."""
+    transport = "stdio"
+    port = 8003
+    for i, arg in enumerate(sys.argv[1:], 1):
+        if arg == "--transport" and i < len(sys.argv) - 1:
+            transport = sys.argv[i + 1]
+        if arg == "--port" and i < len(sys.argv) - 1:
+            port = int(sys.argv[i + 1])
+
+    # Written out rather than passed through: fastmcp takes a literal, and a
+    # str that happens to hold the right word is not the same thing.
+    if transport == "streamable-http":
+        mcp.run(transport="streamable-http", port=port)
+    else:
+        mcp.run(transport="stdio")
 
 
 if __name__ == "__main__":

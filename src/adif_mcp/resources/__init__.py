@@ -24,4 +24,3 @@ def get_adif_catalog() -> dict[str, Any]:
     """Load ADIF field catalog."""
     p = files("adif_mcp.resources.spec").joinpath("adif_catalog.json")
     return cast(dict[str, Any], json.loads(p.read_text(encoding="utf-8")))
-

@@ -16,4 +16,3 @@ def test_adif_catalog_fields_nonempty() -> None:
     """adif_catalog.json loads with a non-empty field list."""
     cat = get_adif_catalog()
     assert isinstance(cat.get("fields"), list) and cat["fields"]
-

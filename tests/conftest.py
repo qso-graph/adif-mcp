@@ -73,5 +73,3 @@ def records_two_modes() -> List[Dict[str, str]]:
 # ---------------------------
 # Pytest fixtures
 # ---------------------------
-
-

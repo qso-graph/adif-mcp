@@ -54,11 +54,21 @@ adif-mcp           # starts in stdio mode
 adif-mcp --transport streamable-http
 ```
 
-## Manifest
+## How a client discovers the tools
 
-The MCP manifest declares the server's available tools and their JSON schemas. It lives inside the package at `src/adif_mcp/mcp/manifest.json` so it ships with every install.
+A client reads the tool list from the protocol itself, with `tools/list`. Each tool carries its
+name, description, `inputSchema`, `outputSchema` and annotations, generated from the Python
+signatures and docstrings, so there is nothing to keep in sync by hand.
 
-The manifest is validated on every build via `make manifest`. Tool schemas mirror the ADIF field semantics -- dates, callsigns, enumerations, and grid locators are all typed correctly.
+`server.json` at the repository root is the other half: it is the
+[MCP Registry](https://registry.modelcontextprotocol.io) manifest, declaring the package name and
+version for discovery. The release pipeline checks it against `pyproject.toml` and refuses to
+publish if they disagree.
+
+There used to be a third, hand-maintained `mcp/manifest.json` describing the tools separately. It
+was removed in the 2026-10-11 cleanup: the server never read it, and it had drifted to declaring
+four tools that no longer existed while the server registered eight. Two declarations of the same
+thing is one too many, and the protocol's own is authoritative.
 
 ## How FastMCP Works
 

@@ -83,9 +83,6 @@ jobs:
       - name: Security tests
         run: uv run pytest tests/test_security.py -v
 
-      - name: Manifest validate (CLI)
-        run: uv run adif-mcp validate-manifest
-
   ci-all-green:
     name: ci-all-green
     needs: [lint, test]

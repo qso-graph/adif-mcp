@@ -5,8 +5,6 @@ PROJECT	?= "adif-mcp"
 PYTHON	?= python3
 
 # Persona Variables
-PERSONA ?= Primary
-PROVIDERS := eqsl lotw qrz
 
 # Pull versions from pyproject.toml (Python 3.11+ for tomllib)
 PY_PROJ_VERSION := $(shell $(PYTHON) -c "import tomllib;print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])" 2>/dev/null)
@@ -74,10 +72,10 @@ type: bootstrap ## mypy (src only)
 test: bootstrap ## pytest
 	uv run pytest -q
 
-smoke: lint type manifest ## quick local gate (lint+type+manifest)
+smoke: lint type ## quick local gate (lint+type)
 	@echo "[smoke] OK"
 
-.PHONY: gate lint type test validate-manifest keychain-test
+.PHONY: gate lint type test
 gate: ## CI parity gate: lint + type + tests + manifest + docstrings, keychain test
 	@echo "[gate] lint (ruff)"
 	$(MAKE) lint
@@ -88,18 +86,6 @@ gate: ## CI parity gate: lint + type + tests + manifest + docstrings, keychain t
 	@echo "[gate] interrogate"
 	uv run interrogate -c pyproject.toml
 	@echo ''
-	@echo "[gate] validate manifest"
-	$(MAKE) validate-manifest
-	@echo ''
-#	$(MAKE) keychain-test
-
-# -------------------------------
-# Manifest validation
-# -------------------------------
-
-.PHONY: validate-manifest
-validate-manifest: ## Validate MCP manifest(s)
-	uv run adif-mcp validate-manifest
 
 # -------------------------------
 # Docs: export dev commands page
@@ -143,9 +129,6 @@ smoke-all: ## Run smoke checks in a fresh, reproducible env
 	@echo ''
 	@echo "[smoke] docstrings (interrogate)"
 	uv run interrogate -c pyproject.toml
-	@echo ''
-	@echo "[smoke] manifest validation]"
-	$(MAKE) validate-manifest
 	@echo ''
 	@echo "[smoke-all] OK"
 	@echo ''
@@ -232,71 +215,21 @@ check-version: ## Ensure VERSION and/or SPEC match pyproject.toml (use VERSION=.
 # Test Persona
 # -------------------------------
 .PHONY: test-persona
-test-persona: # Run test using for persona
-	uv run pytest -q test/test_personas_cli.py
-
-# -------------------------------
-# Keychain test (macOS only)
-# -------------------------------
-.PHONY: keychain-test
-keychain-test: # Test keychain for accepting credentials
-ifneq ($(shell uname),Darwin)
-	@echo "[keychain-test] skipping Keychain check (not macOS)"
-else
-	@set -euo pipefail; \
-	echo "[keychain-test] starting..."; \
-	uv run adif-mcp persona remove-all --yes; \
-	uv run adif-mcp persona add --name Primary; \
-	uv run adif-mcp creds set Primary lotw --username W7X --password testpw; \
-	uv run adif-mcp persona list --verbose; \
-	uv run adif-mcp persona remove-all --yes; \
-	# 'security' returns 44 when no items; neutralize it so pipefail doesn't trip
-	if command -v security >/dev/null 2>&1; then \
-	  cnt=$$( (security find-generic-password -s adif-mcp 2>/dev/null || true) | wc -l | tr -d ' ' ); \
-	  echo "[keychain-test] remaining keychain rows: $$cnt"; \
-	fi; \
-	echo "[keychain-test] done."
-endif
-
-# -------- Probes --------
-# Use one persona for all providers (override with `make probe-index PERSONA=Foo`)
-probe-index: ## Run index (no network) probes for all providers
-	@echo "== Index probes (no network) for persona: $(PERSONA) =="
-	@set -e; \
-	for p in $(PROVIDERS); do \
-	  echo "-- $$p"; \
-	  uv run adif-mcp provider index-check --provider $$p --persona $(PERSONA); \
-	done
-
-probe-get: ## Run GET (network) probes for all providers
-	@echo "== GET probes (network) for persona: $(PERSONA) =="
-	@set -e; \
-	for p in $(PROVIDERS); do \
-	  echo "-- $$p"; \
-	  uv run adif-mcp provider probe --provider $$p --persona $(PERSONA) --timeout 30 || true; \
-	done
-
-probe-all: ## Run both index and GET probes
-	$(MAKE) probe-index
-	@echo
-	$(MAKE) probe-get
-
 # -------------------------------
 # Docstring coverage (verbose)
 # -------------------------------
 .PHONY: docstrings
 docstrings: ## Show per-object docstring coverage with file/function lines
-	uv run interrogate -vv -c pyproject.toml --fail-under=100 src scripts test
+	uv run interrogate -vv -c pyproject.toml --fail-under=100 src scripts tests
 
 # -------------------------------
 # Full local gate
 # -------------------------------
 .PHONY: check-all
-check-all: ## Ruff + mypy + verbose docstrings + manifest validation
-	uv run ruff check src scripts test
-	uv run mypy src scripts test
-	uv run interrogate -vv -c pyproject.toml --fail-under=100 src scripts test
-	$(MAKE) manifest
+check-all: ## Ruff + mypy + verbose docstrings
+	uv run ruff check src scripts tests
+	uv run mypy src scripts tests
+	uv run interrogate -vv -c pyproject.toml --fail-under=100 src scripts tests
 
 # -------------------------------
 # Clean

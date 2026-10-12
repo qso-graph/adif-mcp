@@ -93,14 +93,6 @@ uv run adif-mcp persona remove-all --yes
 ```
 
 ## 8. Manifest Validation
-```bash
-# Preferred (packaged manifest with repo fallback)
-uv run adif-mcp validate-manifest
-
-# Make target (calls the CLI)
-make validate-manifest
-```
-
 ## 9. Building & Installing Locally
 ```bash
 # Build sdist+wheel
@@ -183,5 +175,4 @@ smoke                  quick local gate (lint+type+manifest)
 sync                   uv sync dependencies
 test                   pytest
 type                   mypy (src only)
-validate-manifest      Validate MCP manifest(s)
 ```

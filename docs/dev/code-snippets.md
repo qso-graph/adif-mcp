@@ -30,10 +30,6 @@ persona-add-contest() {
     --end   2025-03-03
 }
 
-# Validate manifest (short alias)
-manifest-check() {
-  uv run adif-mcp validate-manifest
-}
 ```
 
 ---

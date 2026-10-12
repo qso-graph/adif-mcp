@@ -17,6 +17,7 @@ from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
 
 import adif_mcp
+from adif_mcp.utils import datatypes
 from adif_mcp.utils.geography import calculate_distance_impl, calculate_heading_impl
 
 # Initialize the FastMCP server
@@ -170,6 +171,16 @@ def _load_enum_records(enum_name: str) -> Dict[str, Any]:
     _enum_cache[enum_name] = records
     result: Dict[str, Any] = records
     return result
+
+
+def _continents() -> set[str]:
+    """ADIF's Continent abbreviations, read from the shipped enumeration."""
+    records = _load_enum_records("Continent").values()
+    return {str(record.get("Abbreviation", "")).upper() for record in records}
+
+
+# The structured data types ADIF defines a grammar for (#47), by name.
+_DATA_TYPE_CHECKS = datatypes.table(_continents)
 
 
 def _validate_enum_field(
@@ -516,10 +527,23 @@ def get_version_info() -> Dict[str, Any]:
     }
 
 
+def _require_locators(*locators: str) -> None:
+    """Refuse, as a tool error, anything that is not a 4, 6 or 8 character
+    Maidenhead locator. Unchecked, 'ZZ99' decoded to a point off the Earth."""
+    for locator in locators:
+        text = locator.strip()
+        if len(text) < 4 or not datatypes.is_maidenhead(text):
+            raise ToolError(
+                f"'{locator}' is not a 4, 6 or 8 character Maidenhead locator "
+                "(e.g. DN13 or DN13la)."
+            )
+
+
 @mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
                        "idempotentHint": True, "openWorldHint": False})
 def calculate_distance(start: str, end: str) -> float:
     """Calculates distance (km) between Maidenhead locators."""
+    _require_locators(start, end)
     return calculate_distance_impl(start, end)
 
 
@@ -527,6 +551,7 @@ def calculate_distance(start: str, end: str) -> float:
                        "idempotentHint": True, "openWorldHint": False})
 def calculate_heading(start: str, end: str) -> float:
     """Calculates heading (azimuth) between Maidenhead locators."""
+    _require_locators(start, end)
     return calculate_heading_impl(start, end)
 
 
@@ -546,8 +571,9 @@ async def parse_adif(
 
     try:
         if not os.path.exists(file_path):
-            err_msg = f"ERROR: File not found at {file_path}"
-            return [types.TextContent(type="text", text=err_msg)]
+            # A tool error, flagged isError, so the model sees the call failed
+            # rather than reading the word ERROR in a successful answer (#48).
+            raise ToolError(f"No file at {file_path}.")
 
         async with aiofiles.open(file_path, mode="r") as f:
             content = await f.read()
@@ -569,8 +595,10 @@ async def parse_adif(
 
             return [types.TextContent(type="text", text=output_text)]
 
+    except ToolError:
+        raise
     except Exception as e:
-        return [types.TextContent(type="text", text=f"STREAM ERROR: {str(e)}")]
+        raise ToolError(f"The file could not be read: {e}") from None
 
 
 @mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
@@ -762,6 +790,15 @@ def validate_adif_record(adif_string: str) -> Dict[str, Any]:
             time_errors = _validate_time(upper_field, str(value).strip())
             report["errors"].extend(time_errors)
             if time_errors:
+                report["status"] = "invalid"
+
+        # The structured types: grids, locations, Booleans and references.
+        check = _DATA_TYPE_CHECKS.get(data_type or "")
+        if check is not None:
+            errs, warns = check(upper_field, str(value).strip())
+            report["errors"].extend(errs)
+            report["warnings"].extend(warns)
+            if errs:
                 report["status"] = "invalid"
 
         # Enumeration validation

@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+
+- **`validate_adif_record` checks ADIF's structured data types** (#47): `GridSquare`,
+  `GridSquareExt`, `GridSquareList` (with VUCC's two-or-four, four-or-six narrowing), `Location`,
+  `Boolean`, `IOTARefNo`, `WWFFRef`, `POTARefList` and `SOTARef`, each against the sentence of
+  ADIF 3.1.7 that defines it, in `utils/datatypes.py`. Breaking the stated grammar is an error;
+  what the grammar allows but cannot be right (a latitude over 90 degrees, a hemisphere letter on
+  the wrong axis) is a warning, so nothing ADIF permits is rejected. All 6,198 of ADIF's own test
+  QSOs still validate. Case never fails a type ADIF calls case-insensitive.
+
+### Fixed
+
+- **Tool failures are flagged `isError`** (#48): `parse_adif` reported a missing or unreadable
+  file as a successful answer reading "ERROR: …", and `calculate_distance` / `calculate_heading`
+  decoded anything as a locator, so `ZZ99` returned a number for a point off the Earth. All three
+  now raise a tool error the client can see. The tool annotations #48 asked for were already in
+  place.
+
 ### Removed — adif-mcp is the MCP server and ADIF's resources, nothing else
 
 KI7MT, 2026-10-12. Found by tracing what the server and the command import at run time, sweeping

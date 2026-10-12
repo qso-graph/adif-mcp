@@ -49,9 +49,6 @@ full.json
 # MkDocs Local Site Build
 # ------------------------
 site/
-!mkdocs.yml
-!docs/
-!docs/**
 
 
 # ------------------------
@@ -117,5 +114,4 @@ tmp/
 temp/
 
 # Local Manifesto
-ADIF_MCP_MANIFEST.md
 .mcpregistry_*

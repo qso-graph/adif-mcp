@@ -15,7 +15,7 @@ It’s a simple rule of thumb:
 
 Following this mindset helps keep the project consistent, approachable, and operator-friendly.
 
->Contributing Tip: “See [TODO.md](TODO.md) for backlog ideas. Concrete items should be filed as Issues when ready.”
+>Contributing Tip: file ideas and concrete items as Issues.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ To contribute to ADIF-MCP, you will need a working Python ≥3.11 environment wi
 
 ## Development Setup
 
-The following is a quick start in getting the required environment setup. Details workflows will be outlined in the [Dev Guide](./docs/devguide/).
+The following is a quick start in getting the required environment set up.
 
 ### Clone the Repo and Install Development Dependencies
 

@@ -156,20 +156,13 @@ against the enumeration:
 The server also publishes the MCP resource `adif://system/version`: the service version and the ADIF
 specification version it serves.
 
-## Compliance & Provenance
+## MCP Inspector
 
-adif-mcp follows the [ADIF Specification](https://adif.org.uk) (currently 3.1.7) and uses **registered Program IDs** to identify all exports:
+```bash
+adif-mcp --transport streamable-http --port 8003
+```
 
-- `ADIF-MCP` -- Core engine
-- `ADIF-MCP-LOTW` -- LoTW server
-- `ADIF-MCP-EQSL` -- eQSL server
-- `ADIF-MCP-QRZ` -- QRZ server
-
-The project uses **APP_ fields** for provenance when augmenting records:
-
-- `APP_ADIF-MCP_OP` -- operation performed (`normalize`, `validate`, `merge`)
-- `APP_ADIF-MCP-LOTW_ACTION` -- LoTW server operation
-- `APP_ADIF-MCP-EQSL_TIME` -- timestamp of eQSL merge
+Then open the MCP Inspector at `http://localhost:8003`.
 
 ## Development
 
@@ -184,4 +177,4 @@ uv run pytest
 
 adif-mcp's own code is GPL-3.0-or-later. See [LICENSE](LICENSE) for details.
 
-**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.6 and 3.1.7 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256s per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our licence doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and two small catalog files. See [NOTICE](NOTICE).
+**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.6 and 3.1.7 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256s per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our licence doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and each version's `MANIFEST.json`. See [NOTICE](NOTICE).

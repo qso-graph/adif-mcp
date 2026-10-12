@@ -5,7 +5,7 @@ Thanks for using **adif-mcp**!
 If you run into issues or have questions, here’s how you can get help:
 
 ## Documentation
-- [Project Documentation](https://adif-mcp.com/)
+- [adif-mcp on qso-graph.io](https://qso-graph.io/servers/adif-mcp/) and this repository's README
 
 ## Community Support
 - Please use [GitHub Discussions](https://github.com/KI7MT/adif-mcp/discussions) for:

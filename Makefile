@@ -8,7 +8,8 @@ PYTHON	?= python3
 
 # Pull versions from pyproject.toml (Python 3.11+ for tomllib)
 PY_PROJ_VERSION := $(shell $(PYTHON) -c "import tomllib;print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])" 2>/dev/null)
-ADIF_SPEC_VERSION := $(shell $(PYTHON) -c "import tomllib;d=tomllib.load(open('pyproject.toml','rb'));print(d.get('tool',{}).get('adif',{}).get('spec_version','unknown'))" 2>/dev/null)
+# The ADIF version the server serves, from the package itself.
+ADIF_SPEC_VERSION := $(shell sed -n 's/^__adif_spec__: Final\[str\] = "\(.*\)"/\1/p' src/adif_mcp/__init__.py)
 
 # Optional defaults printed in the help header (leave blank if N/A)
 FROM    ?=
@@ -76,7 +77,7 @@ smoke: lint type ## quick local gate (lint+type)
 	@echo "[smoke] OK"
 
 .PHONY: gate lint type test
-gate: ## CI parity gate: lint + type + tests + manifest + docstrings, keychain test
+gate: ## CI parity gate: lint + type + tests + docstrings
 	@echo "[gate] lint (ruff)"
 	$(MAKE) lint
 	@echo ''
@@ -86,21 +87,6 @@ gate: ## CI parity gate: lint + type + tests + manifest + docstrings, keychain t
 	@echo "[gate] interrogate"
 	uv run interrogate -c pyproject.toml
 	@echo ''
-
-# -------------------------------
-# Docs: export dev commands page
-# -------------------------------
-.PHONY: docs-dev
-docs-dev: ## Generate docs/dev.md from make help
-	@mkdir -p docs
-	@echo "# Developer Commands" > docs/dev.md
-	@echo >> docs/dev.md
-	@echo "This page is generated from \`make help\` for quick reference." >> docs/dev.md
-	@echo >> docs/dev.md
-	@echo '```' >> docs/dev.md
-	@$(MAKE) -s help >> docs/dev.md
-	@echo '```' >> docs/dev.md
-	@echo "Wrote docs/dev.md"
 
 # -------------------------------
 # pre-commit
@@ -132,47 +118,6 @@ smoke-all: ## Run smoke checks in a fresh, reproducible env
 	@echo ''
 	@echo "[smoke-all] OK"
 	@echo ''
-
-# -------------------------------
-# Release helper (tags & push)
-# -------------------------------
-.PHONY: release
-release: check-version ## Tag & push release [usage: make release VERSION=x.y.z SPEC=3.1.6]
-	@git fetch --tags --quiet
-	@if [ -z "$(VERSION)" ]; then echo "ERROR: set VERSION=x.y.z"; exit 1; fi
-	@if git rev-parse "v$(VERSION)" >/dev/null 2>&1; then \
-	  echo "Tag v$(VERSION) already exists"; exit 1; \
-	fi
-	git tag -a "v$(VERSION)" -m "chore(release): v$(VERSION)"
-	git push origin "v$(VERSION)"
-	@echo "🚀 Pushed tag v$(VERSION). GitHub Actions will build & publish."
-
-# -------------------------------
-# Docs (MkDocs)
-# -------------------------------
-.PHONY: docs-build docs-serve
-docs-build: ## Build docs to ./site
-	@test -f mkdocs.yml || { echo "mkdocs.yml not found; skipping"; exit 0; }
-	uv run mkdocs build --strict
-	@echo "site/ built"
-
-docs-serve: ## Serve MkDocs locally on http://127.0.0.1:8000/
-	@test -f mkdocs.yml || { echo "mkdocs.yml not found"; exit 1; }
-	uv run mkdocs serve -a 127.0.0.1:8000
-
-.PHONY: docs-check
-docs-check: docs-build ## Verify Mermaid rendered (div.mermaid present; no code.language-mermaid left)
-	@set -e; \
-	ok_div=$$(grep -R '<div class="mermaid"' -c site/ || true); \
-	bad_code=$$(grep -R '<code class="language-mermaid"' -c site/ || true); \
-	echo "mermaid divs: $$ok_div; leftover code blocks: $$bad_code"; \
-	if [ "$$ok_div" -eq 0 ]; then \
-	  echo "❌ No rendered <div class=\"mermaid\"> found in site/"; exit 1; \
-	fi; \
-	if [ "$$bad_code" -gt 0 ]; then \
-	  echo "❌ Found unrendered <code class=\"language-mermaid\"> blocks in site/"; exit 1; \
-	fi; \
-	echo "✅ Mermaid diagrams look good."
 
 # -------------------------------
 # Version checks
@@ -211,10 +156,6 @@ check-version: ## Ensure VERSION and/or SPEC match pyproject.toml (use VERSION=.
 	@if [ -n "$(SPEC)" ]; then echo $(C_G)"✔ ADIF spec matches ($(SPEC))"$(C_NC); fi
 	@echo
 
-# -------------------------------
-# Test Persona
-# -------------------------------
-.PHONY: test-persona
 # -------------------------------
 # Docstring coverage (verbose)
 # -------------------------------

@@ -20,6 +20,7 @@ every tracked file of every type, and listing the built wheel — before anythin
   (read only by their own test), and the build hook with `[tool.adif]`, which wrote an
   `adif_meta.json` nothing read and shipped in the wheel itself.
 - **Repository leftovers:** `scripts/reset-personas.sh`, an empty `scripts/smoke_test.py`,
+  `scripts/test_mcp.py` (it started a `src/adif_mcp/server.py` that does not exist),
   `ADIF_MCP_MANIFEST.md`, `TODO.md`, `project-coding-standards.md`, the `sanity` workflow and the
   `ssl-expiry` workflow (it watched `lotw.` and `eqsl.adif-mcp.com`), the Makefile's persona target,
   the `cli-test-helpers` test dependency, and the `lotw`, `eqsl` and `qrz` keywords.

@@ -2,7 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [2.0.0] - 2026-10-12
+
+A major version: the `convert`, `convert-adi` and `mcp` subcommands are gone, and `adif-mcp`
+only starts the server. `uvx adif-mcp`, which is how every client runs it, is unchanged.
 
 ### Added
 

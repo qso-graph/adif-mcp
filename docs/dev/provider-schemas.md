@@ -94,7 +94,6 @@ PY
 
 ## CI & Packaging notes
 - Resources are included via tool.hatch.build.targets.wheel.packages & tool.hatch.build.include.
-- validate-manifest (CLI) uses the packaged manifest by default; keep it under src/adif_mcp/mcp/manifest.json.
 - A simple resource smoke test exists in tests/test_resources.py.
 
 ## Future extensions (nice to have)

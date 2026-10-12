@@ -2,6 +2,70 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+### Removed — holdovers from the original MCP-plus-CLI design
+
+KI7MT: *"That was my first attempt at MCPs and CLIs combined"*, and *"it was also
+ported from a Java base"*. These are that era's residue, all of it shipping in the wheel
+until now.
+
+- **`adif-mcp eqsl count`** — a CLI subcommand, labelled "(stub)" in its own help, that
+  returned **synthetic eQSL counts**. A user running it got numbers that were made up. For
+  a package that cites a source for every fact it serves, a command answering with fiction
+  about another service was the wrong thing to ship. The real integration is `eqsl-mcp`.
+- **`tools/eqsl_tools.py`** — unreferenced, and the reason this sweep started. It
+  instantiated `PersonaManager`, put credentials into request headers via
+  `build_request("eqsl", ...)`, and called `urlopen` with **no TLS context**. Never called,
+  so never an active vulnerability — but a live credential path in a published package,
+  importable by anyone who typed the module name.
+- **`tools/qrz_stub.py`**, **`tools/lotw_stub.py`**, **`cli/attrib.py`** — unreferenced.
+  `attrib.py` could not even be imported: it imports `qso_graph_auth` at module level,
+  which is neither declared nor installed.
+- **The MCP-tools manifest** — `mcp/manifest.json` declared four tools:
+  `eqsl.fetch_inbox`, `eqsl.filter_summary`, listed **twice**, at version **0.1.16** while
+  the package is 1.2.3, and none of the eight tools the server registers. The server never
+  read it. CI validated it on every push and could not notice, because both validators
+  only checked the file was JSON with a non-empty `tools` list. Removed with its schema,
+  both validators, its workflow, the `validate-manifest` subcommand and its tests.
+  `server.json` is the manifest that matters; `tools/list` is what a client reads.
+- **Three runtime dependencies nothing imported** — `click`, `requests` and
+  `typing-extensions`, plus the now-orphaned `types-click` and `types-requests` stubs.
+  Runtime dependencies are three, down from six.
+
+Kept, because they are live and were checked: `resources/spec/<version>/MANIFEST.json`
+(the ADIF spec provenance pins, asserted by tests), `[tool.adif]` in `pyproject.toml`
+(read by `utils/paths.py`, `providers/provider_coverage.py` and `dev/build_hooks.py`),
+`dev/build_hooks.py` itself (a hatchling build hook referenced by config, not imported),
+and **both the 3.1.6 and 3.1.7 spec trees** — 3.1.6 is retained deliberately, current
+and ‑1.
+
+### Changed — conformance with the MCP specification
+
+Measured against revision **2026-07-28** over real JSON-RPC, not read off source.
+
+- **Tool execution errors now set `isError`.** Four refusals were returned as
+  `{"error": "..."}` inside a *successful* result, so a client could not tell a failure
+  from an answer and the model never learned to correct its input. The specification states
+  the cost: otherwise *"the LLM would not be able to see that an error occurred and
+  self-correct"*.
+- **A verdict is not an error.** A record validating to `invalid` stays a successful call
+  whose answer happens to be no; only a specification that will not load is a tool failure.
+  Conflating them would make every rejected record look like a broken tool.
+- **All eight tools declare `readOnlyHint`, `destructiveHint`, `idempotentHint` and
+  `openWorldHint`.** The defaults are pessimistic — omitting them advertised these
+  read-only tools as potentially destructive and open-world, so a client was entitled to
+  put a confirmation prompt in front of reading a spec table.
+- **`get_version_info` returns the shape the rest of the fleet returns.** It omitted
+  `service_name` entirely and called the third field `adif_spec_version`, so a caller
+  reading `service_name` across 22 servers got a `KeyError` on the one they all depend on.
+  `service_name` and `spec_version` are added; `adif_spec_version` is **kept** as an alias,
+  so callers of 1.2.3 and earlier are unaffected.
+
+There is now no outbound HTTP and no credential access anywhere in `src/`, and a test
+asserts it — which is what makes `openWorldHint: false` an honest claim rather than a
+hopeful one.
+
 ## [1.2.3] - 2026-10-11
 
 - **The Python matrix this package advertises is now the one it tests.** `requires-python` is

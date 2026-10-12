@@ -15,10 +15,7 @@ requires-python = ">=3.10"
 # Runtime deps only (keep UI optional; Tkinter is stdlib)
 dependencies = [
     "aiofiles>=25.1.0",
-    "click>=8.1.7",
     "fastmcp>=4.0,<5",
-    "requests>=2.32.5",
-    "typing-extensions>=4.15.0",
     "tomli>=2.0; python_version < '3.11'",
 ]
 
@@ -46,8 +43,6 @@ dev = [
     "pydantic>=2.12.0",
     "jsonschema>=4.25.1",
     "interrogate>=1.7.0",
-    "types-click>=7.1.8",
-    "types-requests",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.6.18",
     "mkdocstrings[python]>=0.30.0",
@@ -96,15 +91,6 @@ adif-mcp = "adif_mcp.cli.__main__:main"
 spec_version = "3.1.7"
 features = ["core QSO model", "band/mode/QSL_RCVD enums"]
 
-[tool.adif_mcp]
-config_dir_name = "config"
-manifest = "manifest.json"
-meta_output = "adif_meta.json"
-personas_index = "personas.json"
-providers_dir = "providers"
-schemas = "adif_catalog.json"
-spec = "ADIF_317"
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
@@ -114,19 +100,6 @@ markers = [
 ]
 asyncio_default_fixture_loop_scope = "function"
 #addopts = "-q"
-
-# Paths below are *logical* (not absolute). Your util code should:
-# - Resolve {config_dir} to a platform-appropriate location (e.g., appdirs)
-# - Treat relative repo paths as development defaults
-manifest = "mcp/manifest.json"
-schemas = { manifest = "mcp/schemas/manifest.v1.json" }
-spec = { adif_catalog = "mcp/spec/adif_catalog.json" }
-providers_dir = "mcp/providers"
-meta_output = "src/adif_mcp/adif_meta.json"
-
-# New: centralize config locations in one place (interpreted by util code)
-config_dir_name = "adif-mcp"           # e.g., ~/.config/adif-mcp on Unix, %APPDATA%/adif-mcp on Windows
-personas_index = "{config_dir}/personas.json"  # util resolves {config_dir}
 
 # ----------------
 # Dev / QA tooling
@@ -160,7 +133,7 @@ strict = true
 # "Can't find package 'adif-mcp'" and checked nothing. CI never saw it because
 # it passes a path explicitly.
 files = ["src"]
-disable_error_code = ["annotation-unchecked", "call-arg"]
+disable_error_code = ["annotation-unchecked"]
 warn_unused_ignores = true
 warn_redundant_casts = true
 warn_return_any = true
@@ -171,11 +144,6 @@ ignore_missing_imports = true
 module = "adif_mcp.cli"
 disable_error_code = ["misc"]
 ignore_missing_imports = true
-
-# If tests get too noisy, we can loosen just that package
-[[tool.mypy.overrides]]
-module = "test.*"
-disable_error_code = ["annotation-unchecked"]
 
 [tool.interrogate]
 fail-under = 100
@@ -214,14 +182,12 @@ path = "src/adif_mcp/dev/build_hooks.py"
 [tool.hatch.build.targets.wheel]
 packages = ["src/adif_mcp"]
 include = [
-  "src/adif_mcp/mcp/manifest.json",
   "src/adif_mcp/resources/**",
 ]
 
 [tool.hatch.build.targets.sdist]
 include = [
   "src/adif_mcp/**",
-  "src/adif_mcp/mcp/manifest.json",
   "src/adif_mcp/resources/**",
   "README.md",
   "LICENSE",

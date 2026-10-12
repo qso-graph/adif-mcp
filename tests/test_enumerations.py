@@ -3,6 +3,9 @@
 import os
 import re
 
+import pytest
+from fastmcp.exceptions import ToolError
+
 from adif_mcp.mcp.server import (
     list_enumerations,
     search_enumerations,
@@ -131,10 +134,24 @@ def test_search_not_found() -> None:
 
 
 def test_search_invalid_enum() -> None:
-    """Returns error for invalid enumeration name."""
-    result = search_enumerations("CW", enumeration="FakeEnum")
-    assert "error" in result
-    assert "Unknown enumeration" in result["error"]
+    """An unknown enumeration name is a tool execution error, not a result.
+
+    It used to be returned as ``{"error": ...}`` inside a *successful* result,
+    which the MCP specification calls out: a client cannot tell that apart from
+    an answer, so the model never learns it failed and cannot correct the name.
+    Raising ToolError makes FastMCP set ``isError: true`` with the message
+    intact.
+    """
+    with pytest.raises(ToolError) as caught:
+        search_enumerations("CW", enumeration="FakeEnum")
+    assert "Unknown enumeration" in str(caught.value)
+    assert "list_enumerations" in str(caught.value)
+
+
+def test_search_empty_term_is_an_error() -> None:
+    """An empty search term is a refusal the model can act on."""
+    with pytest.raises(ToolError):
+        search_enumerations("")
 
 
 # --- validate_adif_record (enumeration validation) ---

@@ -13,6 +13,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import aiofiles
 import mcp.types as types
 from fastmcp import FastMCP
+from fastmcp.exceptions import ToolError
 
 import adif_mcp
 from adif_mcp.utils.geography import calculate_distance_impl, calculate_heading_impl
@@ -497,28 +498,39 @@ def parse_adif_internal(text: str) -> Dict[str, str]:
 # --- Core Tools ---
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def get_version_info() -> Dict[str, Any]:
     """Returns the version of the ADIF-MCP server and spec."""
     return {
+        # The shape 13 other servers in the fleet return. adif-mcp had neither
+        # key: it omitted service_name entirely and called the third field
+        # adif_spec_version, so a caller reading service_name across the fleet
+        # got a KeyError on the one server everything else depends on.
+        "service_name": "adif-mcp",
         "service_version": adif_mcp.__version__,
+        "spec_version": adif_mcp.__adif_spec__,
+        # Kept for callers of 1.2.3 and earlier. Additive, so nothing breaks.
         "adif_spec_version": adif_mcp.__adif_spec__,
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def calculate_distance(start: str, end: str) -> float:
     """Calculates distance (km) between Maidenhead locators."""
     return calculate_distance_impl(start, end)
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def calculate_heading(start: str, end: str) -> float:
     """Calculates heading (azimuth) between Maidenhead locators."""
     return calculate_heading_impl(start, end)
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 async def parse_adif(
     file_path: str, start_at: int | None = 1, limit: int | None = 20
 ) -> List[types.TextContent]:
@@ -560,16 +572,33 @@ async def parse_adif(
         return [types.TextContent(type="text", text=f"STREAM ERROR: {str(e)}")]
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def read_specification_resource(resource_name: str) -> str:
     """Reads an ADIF 3.1.7 specification resource (e.g., 'mode', 'fields', 'all').
 
-    An unknown name returns an error listing the available names.
+    An unknown or unreadable name is a tool execution error, so the model can
+    see it failed and correct the name rather than being handed an error
+    document that looks like a successful result.
     """
-    return get_spec_text(resource_name)
+    raw = get_spec_text(resource_name)
+    # get_spec_text is an internal helper with its own contract: it returns a
+    # safe error document rather than raising, and tests/test_security.py
+    # depends on that for its path-traversal probes. The protocol translation
+    # belongs here, at the tool boundary, not in the helper.
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError:
+        return raw
+    if isinstance(payload, dict) and "error" in payload:
+        available = payload.get("available")
+        detail = f" Available: {', '.join(available)}." if available else ""
+        raise ToolError(f"{payload['error']}{detail}")
+    return raw
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def list_enumerations() -> Dict[str, Any]:
     """Lists the 26 enumerations: ADIF 3.1.7's 25 plus Country (derived).
 
@@ -592,7 +621,8 @@ def list_enumerations() -> Dict[str, Any]:
     return {"enumeration_count": len(result), "enumerations": result}
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def search_enumerations(
     search_term: str,
     enumeration: Optional[str] = None,
@@ -600,7 +630,7 @@ def search_enumerations(
     """Searches ADIF 3.1.7 enumerations. Optionally filter by enumeration name."""
     term = search_term.upper().strip()
     if not term:
-        return {"error": "Search term must not be empty."}
+        raise ToolError("Search term must not be empty.")
 
     # Determine which enumerations to search
     if enumeration:
@@ -611,10 +641,10 @@ def search_enumerations(
                 matched_enum = name
                 break
         if not matched_enum:
-            return {
-                "error": f"Unknown enumeration '{enumeration}'. Use "
-                f"list_enumerations to see valid names.",
-            }
+            raise ToolError(
+                f"Unknown enumeration '{enumeration}'. Use list_enumerations "
+                "to see valid names."
+            )
         enums_to_search = {matched_enum: ENUMERATION_FIELDS[matched_enum]}
     else:
         enums_to_search = ENUMERATION_FIELDS
@@ -648,7 +678,8 @@ def search_enumerations(
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
+                       "idempotentHint": True, "openWorldHint": False})
 def validate_adif_record(adif_string: str) -> Dict[str, Any]:
     """Validates an ADIF record against 3.1.7 rules including enum membership."""
     parsed = parse_adif_internal(adif_string)
@@ -657,7 +688,11 @@ def validate_adif_record(adif_string: str) -> Dict[str, Any]:
         raw_fields = get_spec_text("fields")
         fields_spec = json.loads(raw_fields)["Adif"]["Fields"]["Records"]
     except Exception as e:
-        return {"status": "error", "message": f"Could not load spec: {str(e)}"}
+        # The server could not read its own carried specification. That is a
+        # failure of the tool, not a verdict about the record, so it is raised.
+        # A record that validates to "invalid" is the opposite: a successful
+        # call whose answer happens to be no, and it stays a normal result.
+        raise ToolError(f"Could not load the ADIF specification: {e}") from None
 
     report: Dict[str, Any] = {
         "status": "success",

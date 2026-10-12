@@ -18,7 +18,8 @@
 | Official ADIF 3.1.7 Test Corpus (ADIF-TCR) | 2 | 2/2 PASS |
 | Enum JSON Parity vs Official Export | 1 | 1/1 PASS (manual) |
 | KI7MT Forensic Hard Tests (KI7MT-FRN) | 12 | 12/12 PASS |
-| **Total** | **40** | **40/40 PASS** |
+| Structured Data Types (ADIF-DT01-06), `tests/test_datatypes.py` | 69 | 69/69 PASS |
+| **Total** | **109** | **109/109 PASS** |
 
 ## Run Command
 

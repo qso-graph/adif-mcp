@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0] - 2026-10-12
+
+A major version: the `convert`, `convert-adi` and `mcp` subcommands are gone, and `adif-mcp`
+only starts the server. `uvx adif-mcp`, which is how every client runs it, is unchanged.
+
+### Added
+
+- **`validate_adif_record` checks ADIF's structured data types** (#47): `GridSquare`,
+  `GridSquareExt`, `GridSquareList` (with VUCC's two-or-four, four-or-six narrowing), `Location`,
+  `Boolean`, `IOTARefNo`, `WWFFRef`, `POTARefList` and `SOTARef`, each against the sentence of
+  ADIF 3.1.7 that defines it, in `utils/datatypes.py`. Breaking the stated grammar is an error;
+  what the grammar allows but cannot be right (a latitude over 90 degrees, a hemisphere letter on
+  the wrong axis) is a warning, so nothing ADIF permits is rejected. All 6,198 of ADIF's own test
+  QSOs still validate. Case never fails a type ADIF calls case-insensitive.
+
+### Fixed
+
+- **Tool failures are flagged `isError`** (#48): `parse_adif` reported a missing or unreadable
+  file as a successful answer reading "ERROR: …", and `calculate_distance` / `calculate_heading`
+  decoded anything as a locator, so `ZZ99` returned a number for a point off the Earth. All three
+  now raise a tool error the client can see. The tool annotations #48 asked for were already in
+  place.
+
+### Removed — adif-mcp is the MCP server and ADIF's resources, nothing else
+
+KI7MT, 2026-10-12. Found by tracing what the server and the command import at run time, sweeping
+every tracked file of every type, and listing the built wheel — before anything was deleted.
+
+- **Moved to `qsp-client`** (qso-graph/qsp-client#23), with their tests: the ADIF converter
+  (`adif-mcp convert`, now `qsp-adif-convert`), the `.adi` reader in `parsers/`, and the QSO and
+  entity models in `models/`. The server used none of them.
+- **The CLI.** `adif-mcp` now starts the MCP server directly (`adif_mcp.mcp.server:main`), which is
+  what `uvx adif-mcp` with no arguments always did. The `mcp`, `convert` and `convert-adi`
+  subcommands are gone with it.
+- **Dead code:** `utils/paths.py` (it located a `personas.json` nothing uses; `qsp-client` has its
+  own configuration), `resources/__init__.py` with `adif_catalog.json` and `adif_meta.json`
+  (read only by their own test), and the build hook with `[tool.adif]`, which wrote an
+  `adif_meta.json` nothing read and shipped in the wheel itself.
+- **Repository leftovers:** `scripts/reset-personas.sh`, an empty `scripts/smoke_test.py`,
+  `scripts/test_mcp.py` (it started a `src/adif_mcp/server.py` that does not exist),
+  `ADIF_MCP_MANIFEST.md`, `TODO.md`, `project-coding-standards.md`, the `sanity` workflow and the
+  `ssl-expiry` workflow (it watched `lotw.` and `eqsl.adif-mcp.com`), the Makefile's persona target,
+  the `cli-test-helpers` test dependency, and the `lotw`, `eqsl` and `qrz` keywords.
+
+- **The docs site** (`docs/`, `mkdocs.yml`, `CNAME` and the Pages workflow), published at
+  adif-mcp.com. Most of it was the persona era (personas, credentials, awards, provider schemas),
+  hidden or out of date, and it still said ADIF 3.1.6. The README is the documentation, in the
+  layout the other servers use, and qso-graph.io/servers/adif-mcp/ is the page users are pointed to.
+  The README's Compliance & Provenance section went with it: it described LoTW, eQSL and QRZ
+  servers and record-merging `APP_` fields that are not this package. Also the mkdocs
+  dependencies, the Makefile's docs and tag-and-push release targets, and the copied
+  release instructions in `CONTRIBUTORS.md` (they named another project).
+
+### Added
+
+- **`--transport streamable-http --port 8003`**, as every other server takes, so the MCP Inspector
+  can reach it; stdio stays the default. The README has the MCP Inspector section the house layout
+  has.
+
+The wheel's code is now `mcp/server.py`, `utils/geography.py` and `__init__.py`. Every tool was
+called through the installed wheel over stdio before this landed.
+
 ## [1.3.0] - 2026-10-11
 
 ### Removed — holdovers from the original MCP-plus-CLI design

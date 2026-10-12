@@ -23,5 +23,4 @@ Exceptions, which are ours:
 - src/adif_mcp/resources/spec/317/enumerations_country.json
   The Country enumeration is derived by this project (see the file's "Derived" block);
   ADIF does not publish it in this form.
-- src/adif_mcp/resources/spec/adif_catalog.json and adif_meta.json.
 - src/adif_mcp/resources/spec/316/MANIFEST.json and 317/MANIFEST.json (the checksum lists).

@@ -1,13 +1,13 @@
 [project]
 name = "adif-mcp"
-version = "1.3.0"
+version = "2.0.0"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
 authors = [{name = "KI7MT", email = "maintainers@qso-graph.io"}]
 keywords = [
     "amateur-radio", "ham-radio", "adif", "mcp", "model-context-protocol",
-    "lotw", "eqsl", "qrz", "qso-logging", "ai-agents",
+    "qso-logging", "ai-agents",
 ]
 # Support modern CPython, develop on 3.13, run on 3.11+
 requires-python = ">=3.10"
@@ -43,15 +43,6 @@ dev = [
     "pydantic>=2.12.0",
     "jsonschema>=4.25.1",
     "interrogate>=1.7.0",
-    "mkdocs>=1.6.1",
-    "mkdocs-material>=9.6.18",
-    "mkdocstrings[python]>=0.30.0",
-    "pymdown-extensions>=10.10",
-    "pymdown-extensions[extra]>=10.10",
-    "mkdocs-redirects>=1.2.2",
-    "mkdocs-mermaid2-plugin>=1.2.2",
-    "mkdocs-git-revision-date-localized-plugin>=1.4.7",
-    "cli-test-helpers>=4.1.0",
     "types-aiofiles>=25.1.0.20251011",
     "pytest-asyncio>=1.3.0",
 ]
@@ -66,7 +57,6 @@ dev = [
 
 test = [
   "pytest>=8.3",
-  "cli-test-helpers>=0.3.0",
 ]
 
 # Convenience bundle
@@ -82,14 +72,9 @@ Issues = "https://github.com/qso-graph/adif-mcp/issues"
 "ADIF Specification" = "https://adif.org.uk/317/ADIF_317.htm"
 
 [project.scripts]
-adif-mcp = "adif_mcp.cli.__main__:main"
+# The command starts the MCP server; there is nothing else to run.
+adif-mcp = "adif_mcp.mcp.server:main"
 
-# --------------------------------------------------------------------
-# ADIF tool config (OS-agnostic & SSOT-ish; helpers interpret it)
-# --------------------------------------------------------------------
-[tool.adif]
-spec_version = "3.1.7"
-features = ["core QSO model", "band/mode/QSL_RCVD enums"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -116,7 +101,6 @@ extend-exclude = [
     ".eggs",
     ".pytest_cache",
     "site",
-    "docs/_site",
 ]
 
 [tool.ruff.lint]
@@ -140,10 +124,6 @@ warn_return_any = true
 no_implicit_optional = true
 ignore_missing_imports = true
 
-[[tool.mypy.overrides]]
-module = "adif_mcp.cli"
-disable_error_code = ["misc"]
-ignore_missing_imports = true
 
 [tool.interrogate]
 fail-under = 100
@@ -157,7 +137,7 @@ ignore-private = true
 ignore-nested-functions = true
 ignore-properties = true
 paths = ["src", "test"]
-exclude = [".venv", ".smoke-venv", "dist", "build", "site", "docs/_site"]
+exclude = [".venv", ".smoke-venv", "dist", "build"]
 whitelist-regex = [
     "^test_*"
 ]
@@ -174,9 +154,6 @@ update_changelog_on_bump = true
 [build-system]
 requires = ["hatchling>=1.21", "tomli>=2.0; python_version < '3.11'"]
 build-backend = "hatchling.build"
-
-[tool.hatch.build.hooks.custom]
-path = "src/adif_mcp/dev/build_hooks.py"
 
 
 [tool.hatch.build.targets.wheel]
@@ -203,8 +180,6 @@ exclude = [
     "build/**",
     ".git/**",
     ".github/**",
-    "docs/**",
-    "site/**",
     ".ruff_cache/**",
     ".mypy_cache/**",
     ".pytest_cache/**",

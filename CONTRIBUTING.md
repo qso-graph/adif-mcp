@@ -15,7 +15,7 @@ It’s a simple rule of thumb:
 
 Following this mindset helps keep the project consistent, approachable, and operator-friendly.
 
->Contributing Tip: “See [TODO.md](TODO.md) for backlog ideas. Concrete items should be filed as Issues when ready.”
+>Contributing Tip: file ideas and concrete items as Issues.
 
 ## Prerequisites
 

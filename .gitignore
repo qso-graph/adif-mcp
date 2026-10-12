@@ -117,5 +117,4 @@ tmp/
 temp/
 
 # Local Manifesto
-ADIF_MCP_MANIFEST.md
 .mcpregistry_*

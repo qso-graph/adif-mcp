@@ -8,7 +8,8 @@ PYTHON	?= python3
 
 # Pull versions from pyproject.toml (Python 3.11+ for tomllib)
 PY_PROJ_VERSION := $(shell $(PYTHON) -c "import tomllib;print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])" 2>/dev/null)
-ADIF_SPEC_VERSION := $(shell $(PYTHON) -c "import tomllib;d=tomllib.load(open('pyproject.toml','rb'));print(d.get('tool',{}).get('adif',{}).get('spec_version','unknown'))" 2>/dev/null)
+# The ADIF version the server serves, from the package itself.
+ADIF_SPEC_VERSION := $(shell sed -n 's/^__adif_spec__: Final\[str\] = "\(.*\)"/\1/p' src/adif_mcp/__init__.py)
 
 # Optional defaults printed in the help header (leave blank if N/A)
 FROM    ?=
@@ -76,7 +77,7 @@ smoke: lint type ## quick local gate (lint+type)
 	@echo "[smoke] OK"
 
 .PHONY: gate lint type test
-gate: ## CI parity gate: lint + type + tests + manifest + docstrings, keychain test
+gate: ## CI parity gate: lint + type + tests + docstrings
 	@echo "[gate] lint (ruff)"
 	$(MAKE) lint
 	@echo ''
@@ -211,10 +212,6 @@ check-version: ## Ensure VERSION and/or SPEC match pyproject.toml (use VERSION=.
 	@if [ -n "$(SPEC)" ]; then echo $(C_G)"✔ ADIF spec matches ($(SPEC))"$(C_NC); fi
 	@echo
 
-# -------------------------------
-# Test Persona
-# -------------------------------
-.PHONY: test-persona
 # -------------------------------
 # Docstring coverage (verbose)
 # -------------------------------

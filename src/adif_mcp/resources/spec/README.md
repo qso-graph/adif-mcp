@@ -12,6 +12,6 @@ installed with `scripts/import_adif_release.py` and the oldest folder is removed
 
 They are ADIF's work, not ours: adif-mcp's GPL-3.0-or-later licence does not cover them. The
 exceptions, which are ours, are each version's `enumerations_country.json` (derived by adif-mcp;
-see its `Derived` block), each `MANIFEST.json`, and `adif_catalog.json` / `adif_meta.json` in this folder.
+see its `Derived` block), and each `MANIFEST.json`.
 
 See `NOTICE` at the root of the adif-mcp repository.

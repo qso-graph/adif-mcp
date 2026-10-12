@@ -152,6 +152,11 @@ against the enumeration:
   checked entry by entry.
 - **SUBMODE** must be a valid Submode; one that belongs to a different MODE gives a warning. FT4, for
   example, is `MODE=MFSK` with `SUBMODE=FT4`.
+- **Structured types** are checked against the grammar ADIF states for them: grid squares (2, 4, 6 or
+  8 characters, any case) and their extensions and lists (VUCC needs two or four, each four or six
+  characters), `Location` (`XDDD MM.MMM`), `Boolean` (Y or N), and IOTA, WWFF, POTA and SOTA
+  references. What the grammar allows but cannot be right, such as a latitude over 90 degrees or
+  N/S on a longitude, is a warning, never an error.
 
 The server also publishes the MCP resource `adif://system/version`: the service version and the ADIF
 specification version it serves.

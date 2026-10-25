@@ -1,10 +1,22 @@
 name: Publish to PyPI
 
-# The release flow (qso-graph/.github TEMPLATES.md): work lands on `develop`; a release is a
-# PR from `develop` into `main`, and merging it publishes. `main` is always the released code.
+# A release happens on purpose, not as a side effect of merging (KI7MT, 2026-10-25).
+#
+# This used to fire on a push to `main`, which made "merge the release PR" the act of
+# publishing — and that is what forced two pull requests per release: one to prepare the
+# version, and a second to merge `develop` into `main` and ship it.
+#
+# Now `main` is the one working branch. Merging into it builds and tests and publishes
+# nothing; a release is Actions -> Publish to PyPI -> Run workflow, with the version
+# typed in. Typed, because it is a decision: it must match what the tree already says,
+# and every gate below refuses anything it cannot confirm.
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "The version to publish, e.g. 0.2.1 — must match pyproject.toml"
+        required: true
+        type: string
 
 concurrency:
   group: publish
@@ -17,19 +29,66 @@ jobs:
   security:
     name: Security gate
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: read
     outputs:
       version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
 
-      # main changes only by a release PR, so main's version must be new. PyPI publishes
+      # workflow_dispatch offers a branch picker, so unlike the old push trigger this
+      # workflow can be started from anywhere. The lock is the pypi Environment's
+      # deployment branch rule (main only); this is the same rule stated where a failed
+      # run can show it, because an Environment rule rejects the deployment with no
+      # explanation of what was wrong.
+      - name: This runs from main
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "FAIL: a release is published from main only (this is $GITHUB_REF)"
+            exit 1
+          fi
+
+      # Merging no longer publishes, so nothing else guarantees that what is about to
+      # be released is the code CI passed on. Under the old trigger the release PR had
+      # to be green before the merge that published it; this restores that property.
+      - name: CI passed on the commit being published
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PASSED="$(gh api \
+            "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/check-runs?check_name=ci-all-green" \
+            --jq '[.check_runs[] | select(.conclusion == "success")] | length')"
+          if [ "${PASSED:-0}" -lt 1 ]; then
+            echo "FAIL: ci-all-green has not passed on ${GITHUB_SHA}"
+            exit 1
+          fi
+          echo "ci-all-green passed on ${GITHUB_SHA}"
+
+      # A release publishes a version that is not out yet. PyPI publishes
       # pyproject's version and the Registry server.json's, so they must agree too.
       # Computed once; every later job uses this value (needs.security.outputs.version).
       # The gate fails closed: anything it cannot confirm stops the release.
-      - name: The version on main is new and consistent
+      - name: The version is the one asked for, new, and consistent
         id: version
+        env:
+          # Through the environment rather than interpolated into the script: a
+          # ${{ }} expansion inside run: is substituted before the shell sees it, so
+          # the input would be script rather than data. Only a writer can dispatch
+          # this, and the rule is still input validation on every supplied string.
+          ASKED: ${{ inputs.version }}
         run: |
           VERSION="$(grep -m1 '^version' pyproject.toml | cut -d'"' -f2)"
+          if ! printf '%s' "$ASKED" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+([a-z0-9.-]*)$'; then
+            echo "FAIL: '$ASKED' is not a version"
+            exit 1
+          fi
+          # Typed by the person releasing, so a slip names a version that is not here
+          # rather than shipping whatever happens to be on main.
+          if [ "$ASKED" != "$VERSION" ]; then
+            echo "FAIL: asked to publish ${ASKED}, but this tree is ${VERSION}"
+            exit 1
+          fi
           PACKAGE="$(jq -r '.packages[0].identifier' server.json)"
           echo "pyproject=${VERSION} server.json=$(jq -r '.version' server.json)/$(jq -r '.packages[0].version' server.json)"
           if [ "$(jq -r '.version' server.json)" != "$VERSION" ] || [ "$(jq -r '.packages[0].version' server.json)" != "$VERSION" ]; then
@@ -40,7 +99,7 @@ jobs:
           CODE="$(curl -s -o /dev/null -w '%{http_code}' "https://pypi.org/pypi/${PACKAGE}/${VERSION}/json")"
           case "$CODE" in
             404) echo "PyPI: ${PACKAGE} ${VERSION} is new" ;;
-            200) echo "FAIL: ${PACKAGE} ${VERSION} is already on PyPI. main changes only by a release PR with a new version."; exit 1 ;;
+            200) echo "FAIL: ${PACKAGE} ${VERSION} is already on PyPI. Bump the version before releasing."; exit 1 ;;
             *)   echo "FAIL: PyPI returned ${CODE}; cannot confirm ${VERSION} is new"; exit 1 ;;
           esac
           # git ls-remote --exit-code: 2 means no such tag; anything else (0, 128) stops.
@@ -66,12 +125,68 @@ jobs:
       - name: Security tests
         run: python -m pytest tests/test_security.py -v
 
-      - name: Static security checks
+      - name: Audit dependencies for vulnerabilities
+        # Audits this package's declared dependencies, and can fail: a known CVE stops the release.
+        # A finding with no fix yet is excepted only explicitly: --ignore-vuln ID, with a reason and date.
+        #
+        # This repository was the only one in the fleet whose release gate ran no
+        # dependency audit at all (measured 2026-10-25). Its three grep checks were
+        # also an older, weaker form than the rest of the fleet's, replaced below.
+        run: pip-audit --strict --desc on .
+
+      - name: Grep check — no subprocess/shell
         run: |
-          ! grep -rn "subprocess\|shell=True" src/ --include="*.py"
-          ! grep -rn 'http://[^l]' src/ --include="*.py"
-          ! grep -rni "print.*password\|print.*secret" src/ --include="*.py"
-          echo "Static checks passed"
+          # The old form searched "subprocess\|shell=True" and so did not look for
+          # os.system at all.
+          if grep -rn 'subprocess\.\|os\.system\|shell=True' src/; then
+            echo "FAIL: subprocess/shell found in source"
+            exit 1
+          fi
+
+      - name: Grep check — no plaintext http://
+        run: |
+          # The old form was `! grep -rn 'http://[^l]'`, meant to skip localhost.
+          # What [^l] actually exempts is every host whose name begins with "l":
+          # a planted http://leaky.example.com/api passed this gate (measured
+          # 2026-10-25). An exemption names the exact thing exempted, never a
+          # prefix or a character class — the same defect as qrz-mcp#39, where a
+          # hostname exclusion also passed every URL beneath that host.
+          #
+          # Tests the output rather than the pipeline's exit status, because the
+          # output is what this gate is actually asking about: are there any
+          # plaintext URLs.
+          # The two legitimate http:// strings in this package are the W3C
+          # XMLSchema namespace identifier in ADIF's own .xsd files. A namespace
+          # identifier is a name, not an address: nothing connects to it, and it
+          # must match W3C's byte for byte. Exempted as the whole line, so a real
+          # URL cannot ride in beside it, and with the spec directory left open so
+          # a new sealed ADIF version does not trip the gate while any change to
+          # the line itself does.
+          #
+          # [[:space:]]*$ rather than a bare $ because ADIF ships these .xsd files
+          # with CRLF endings, so the line ends in a carriage return. It still
+          # anchors the whole line: only whitespace may follow.
+          #
+          # Note the old form also passed --include="*.py", so no non-Python file
+          # under src/ was ever scanned -- which is why these two .xsd lines had
+          # never been seen by this gate at all.
+          hits="$(grep -rn 'http://' src/ \
+              | grep -v 'localhost\|127\.0\.0\.1\|::1' \
+              | grep -vE '^src/adif_mcp/resources/spec/[0-9]+/xml/adifexport\.xsd:[0-9]+:<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www\.w3\.org/2001/XMLSchema">[[:space:]]*$' || true)"
+          if [ -n "$hits" ]; then
+            echo "$hits"
+            echo "FAIL: non-HTTPS URL found in source"
+            exit 1
+          fi
+
+      - name: Grep check — no credential logging
+        run: |
+          # The old form looked for print.*password and print.*secret only, so an
+          # api_key, or anything reaching a logger rather than print, went unseen.
+          if grep -rn -i 'print.*password\|print.*api_key\|logging.*password\|logging.*api_key' src/; then
+            echo "FAIL: credential logging found in source"
+            exit 1
+          fi
 
   publish:
     name: Build and publish to PyPI

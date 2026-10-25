@@ -1,0 +1,37 @@
+# Dependabot: security updates only, grouped into one pull request.
+#
+# WHY THIS FILE EXISTS (2026-10-25). There was no dependabot.yml in any of the 22
+# servers. Without one Dependabot runs *security* updates only -- those need no
+# config -- and they are ungrouped by default: one advisory x one package x one
+# repository = one pull request. Four upgrades produced **57 open pull requests**
+# across the fleet, and KI7MT's objection was the right one: nobody could say
+# what 57 pull requests did. Measured, they were four dependency upgrades closing
+# 130 alerts, one of them CRITICAL. The volume was not noise, it was signal
+# nobody could read.
+#
+# `groups` with `applies-to: security-updates` collapses that to one pull request
+# per repository.
+#
+# open-pull-requests-limit: 0 disables *version* updates, which we do not want --
+# ci.yml audits the locked dependencies on every pull request and weekly, so a
+# stale lock already fails CI and does not need a bot to notice. Security updates
+# are unaffected by this limit: they have their own fixed limit of 10, which
+# cannot be configured. Checked against the Dependabot options reference rather
+# than assumed, because setting this wrong would silently switch off the thing
+# that found those 130 alerts.
+#
+# `uv` is the ecosystem for a uv.lock project, also checked against that
+# reference and not inferred from the file name.
+version: 2
+updates:
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 0
+    groups:
+      security:
+        applies-to: security-updates
+        patterns:
+          - "*"

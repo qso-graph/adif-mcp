@@ -10,6 +10,11 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Weekly, because an advisory is published against a lockfile that has not
+  # changed. Nothing in a pull-request-and-push trigger fires when the danger
+  # arrives from outside the repository -- see the audit job below.
+  schedule:
+    - cron: "17 6 * * 1"
 
 # Cancel superseded runs on the same ref (push or PR) so we don't waste
 # minutes when commits land in rapid succession.
@@ -75,9 +80,46 @@ jobs:
       - name: Security tests
         run: uv run pytest tests/test_security.py -v
 
+  # Audits the LOCKED environment, which is a different question from the one
+  # the release gate asks.
+  #
+  # publish.yml runs `pip-audit --strict --desc on .` -- the project's *declared*
+  # dependencies, resolved fresh. That protects the people who `pip install` this
+  # package, because the ranges we publish must not resolve to something
+  # vulnerable. It cannot see uv.lock at all: `certifi` is declared unpinned, so a
+  # fresh resolve always picks the newest and the locked version is never examined.
+  #
+  # This job syncs `--frozen` and audits what that produced, so a stale lock
+  # cannot sit unnoticed. That is not hypothetical. On 2026-10-25 five
+  # repositories carried certifi 2026.7.22 against a CRITICAL advisory
+  # (GHSA-6q48-6c7w-9gw2, emSign roots with compromised intermediate CA keys) and
+  # **Dependabot had never opened a pull request for any of them** -- alerts on,
+  # security updates on, no pull request, no explanation available over the API.
+  # The release gate could not see it and nothing else was looking.
+  #
+  # Falsified rather than assumed: with certifi pinned back to 2026.7.22 this
+  # reports `certifi 2026.7.22 PYSEC-2026-4320` and exits 1; with the lock
+  # current it reports no known vulnerabilities and exits 0.
+  audit:
+    name: audit (locked dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Install (locked)
+        run: uv sync --group dev --frozen
+
+      - name: No known vulnerability in the locked dependencies
+        run: uv run --with pip-audit pip-audit --strict
+
   ci-all-green:
     name: ci-all-green
-    needs: [lint, test]
+    needs: [lint, test, audit]
     runs-on: ubuntu-latest
     if: always()
     steps:
@@ -89,6 +131,10 @@ jobs:
           fi
           if [[ "${{ needs.test.result }}" != "success" ]]; then
             echo "FAIL: test matrix did not all succeed (result=${{ needs.test.result }})"
+            exit 1
+          fi
+          if [[ "${{ needs.audit.result }}" != "success" ]]; then
+            echo "FAIL: the locked dependencies have a known vulnerability (result=${{ needs.audit.result }})"
             exit 1
           fi
           echo "All required CI jobs passed."

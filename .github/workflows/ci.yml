@@ -115,7 +115,24 @@ jobs:
         run: uv sync --group dev --frozen
 
       - name: No known vulnerability in the locked dependencies
-        run: uv run --with pip-audit pip-audit --strict
+        # No --strict, deliberately. --strict fails on any distribution it
+        # could not audit, and `uv sync` installs the project itself -- so the
+        # moment a release bumps the version to one not yet on PyPI, pip-audit
+        # cannot look the project up and --strict turns that into a failure.
+        # It blocked every version bump in all 23 repositories, which is how it
+        # was found: the first real release, dxe-mcp 0.0.3, went red on it with
+        #   "dxe-mcp: Dependency not found on PyPI and could not be audited"
+        # while the lockfile was perfectly clean.
+        #
+        # Without --strict, pip-audit still exits 1 when it FINDS a
+        # vulnerability, which is the whole job. An unauditable local project is
+        # reported as skipped, with its reason, and does not fail the run.
+        #
+        # Verified in both directions against a lock holding certifi 2026.7.22
+        # with the version bumped past PyPI: it reports PYSEC-2026-4320 and
+        # exits 1; with the lock current it reports no vulnerabilities, names the
+        # project as skipped, and exits 0.
+        run: uv run --with pip-audit pip-audit
 
   ci-all-green:
     name: ci-all-green

@@ -1,10 +1,15 @@
 name: CI
 
+# A pull request is tested whatever it targets, and deliberately has no branch
+# filter. `main` is the one long-lived branch now, so `push` names it; but a filter
+# here would mean a pull request into any other branch ran no ruff, no mypy and no
+# pytest while still reporting green. That is not hypothetical: narrowing this to
+# [main] is what let the pull request making this very change merge with CodeQL as
+# its only check.
 on:
   pull_request:
-    branches: [main, develop]
   push:
-    branches: [main, develop]
+    branches: [main]
 
 # Cancel superseded runs on the same ref (push or PR) so we don't waste
 # minutes when commits land in rapid succession.
@@ -16,19 +21,6 @@ permissions:
   contents: read
 
 jobs:
-  # main takes a release PR from develop, or a security branch, and nothing else:
-  # merging into main publishes. Required on main by its branch protection.
-  release-source:
-    name: Release PR source
-    if: github.event_name == 'pull_request' && github.base_ref == 'main'
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          case "${{ github.head_ref }}" in
-            develop|security/*) echo "ok: ${{ github.head_ref }} -> main" ;;
-            *) echo "main takes a release PR from develop, or a security/ branch"; exit 1 ;;
-          esac
-
   # Lint and types, once rather than per Python: both read the source, and
   # neither answer changes with the interpreter running them. The matrix below
   # is for the code's behaviour, which does (qso-graph-devel#66).

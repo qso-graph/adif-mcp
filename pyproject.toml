@@ -1,6 +1,6 @@
 [project]
 name = "adif-mcp"
-version = "2.0.2"
+version = "2.0.3"
 description = "ADIF MCP server — spec parsing, validation, and field enumeration tools"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }

@@ -120,7 +120,11 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -e ".[test]"
+        # pip-audit is named here because the audit step below calls it. It was
+        # not, so that step exited 127 (`pip-audit: command not found`) and the
+        # Security gate failed -- this is the same shape netlogger-mcp and
+        # omiss-mcp use, which do install it.
+        run: pip install -e ".[test]" pip-audit
 
       - name: Security tests
         run: python -m pytest tests/test_security.py -v

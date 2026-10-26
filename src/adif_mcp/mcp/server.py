@@ -861,6 +861,9 @@ usage: adif-mcp [--transport stdio|streamable-http] [--port N] [--version] [--he
 An MCP server: an AI app (Claude Desktop, Claude Code, ...) starts it and talks
 to it over stdio. Run on its own it waits for that app; press Ctrl-C to stop.
 Set up a client: https://github.com/qso-graph/adif-mcp#quick-start
+
+streamable-http binds 127.0.0.1 only: not another machine,
+not a container.
 """
 
 
@@ -885,6 +888,13 @@ def main() -> None:
     # Written out rather than passed through: fastmcp takes a literal, and a
     # str that happens to hold the right word is not the same thing.
     if transport == "streamable-http":
+        # Where it bound, said out loud. FastMCP binds 127.0.0.1 and takes
+        # no host option, so this is never reachable from another machine
+        # or from outside a container. Silent before this line.
+        print(
+            f"adif-mcp on http://127.0.0.1:{port}/mcp - loopback only",
+            file=sys.stderr,
+        )
         mcp.run(transport="streamable-http", port=port)
     else:
         mcp.run(transport="stdio")

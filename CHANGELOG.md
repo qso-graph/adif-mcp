@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- `--transport streamable-http` now says where it bound, and the help text says
+  it too. It binds `127.0.0.1`, and FastMCP takes no host option, so it was
+  never reachable from another machine or from outside a container — and nothing
+  said so. The bind address is unchanged: loopback-only is deliberate for a
+  server that holds credentials and has no authentication of its own.
+
 ## [2.0.2] — 2026-10-26
 
 ### Fixed

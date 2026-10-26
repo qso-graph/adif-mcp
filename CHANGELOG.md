@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] — 2026-10-26
+
+- A release should appear on the Releases page
+- Declare Semantic Versioning, like the other 20 do
+- Move every Node 20 action to its first Node 24 major
+- The locked-dependency audit blocked every release
+- Four upgrades arrived as 57 pull requests
+- Nothing was auditing the lockfile
+- Close every open security advisory in the lockfile
+- A release is a workflow, not a merge
+
 ## [2.0.0] - 2026-10-12
 
 A major version: the `convert`, `convert-adi` and `mcp` subcommands are gone, and `adif-mcp`

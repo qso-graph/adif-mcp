@@ -10,13 +10,12 @@ keywords = [
     "qso-logging", "ai-agents",
 ]
 # Support modern CPython, develop on 3.13, run on 3.11+
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 
 # Runtime deps only (keep UI optional; Tkinter is stdlib)
 dependencies = [
     "aiofiles>=25.1.0",
     "fastmcp>=4.0,<5",
-    "tomli>=2.0; python_version < '3.11'",
 ]
 
 # Classifiers help downstream tooling/users
@@ -24,7 +23,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -152,7 +150,7 @@ update_changelog_on_bump = true
 # Build system
 # -------------
 [build-system]
-requires = ["hatchling>=1.21", "tomli>=2.0; python_version < '3.11'"]
+requires = ["hatchling>=1.21"]
 build-backend = "hatchling.build"
 
 

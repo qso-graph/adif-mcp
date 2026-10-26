@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- **Python 3.11 is the minimum.** 3.10 reached end of life in October 2026
+  ([PEP 619](https://peps.python.org/pep-0619/)), so it gets no further security
+  releases on any platform. On Windows it was worse than unsupported: `uv`'s 3.10
+  is built against OpenSSL 1.1.1w, end of life since September 2023, so HTTPS
+  from this server ran over an unmaintained TLS library. `certifi` does not help
+  with that — it supplies the root store, not the implementation.
+
+  3.10 support was already nominal. This package has linted with
+  `ruff target-version = "py311"` and type-checked with `mypy python_version =
+  "3.11"` for some time, so nothing ever verified the 3.10 claim.
+
+  `uv.lock` is regenerated and the diff is large, but **nothing is upgraded** —
+  it is the 3.10 resolution branch disappearing. Packages that carried two pins,
+  one per Python branch, now carry the single 3.11+ pin they already resolved to.
+  An install on 3.11 or later is unchanged.
+- `tomli` is dropped from `dependencies` and `build-system.requires`. It existed
+  only for Python below 3.11, where `tomllib` is not stdlib, and nothing in this
+  package imported it — the only toml reader here is the Makefile, which already
+  used stdlib `tomllib` and said so.
+
 ## [2.0.3] — 2026-10-26
 
 ### Changed

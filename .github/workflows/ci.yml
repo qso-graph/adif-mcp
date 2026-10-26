@@ -49,8 +49,8 @@ jobs:
       - name: Type-check (mypy)
         run: uv run mypy src
 
-  # Every version this package says it supports. `requires-python` is `>=3.10`
-  # and the classifiers name 3.10 through 3.13; before this they were a claim
+  # Every version this package says it supports. `requires-python` is `>=3.11`
+  # and the classifiers name 3.11 through 3.13; before this they were a claim
   # nothing ran. This package is the ADIF spec engine every other server reads
   # its definitions through, so an interpreter difference here is one that
   # reaches all of them.
@@ -60,7 +60,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.11", "3.12", "3.13"]
     steps:
       - uses: actions/checkout@v5
 

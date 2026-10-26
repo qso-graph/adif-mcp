@@ -339,3 +339,46 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git tag -a "v${VERSION}" -m "${GITHUB_REPOSITORY#*/} ${VERSION}" "$GITHUB_SHA"
           git push origin "v${VERSION}"
+
+      # The tag alone left every Releases page in this org empty. The body is
+      # this version's own CHANGELOG section, extracted by heading rather than
+      # by line count, because the fleet has three heading styles:
+      #   ## [0.4.0] — date    ## [2.0.0] - date    ## 0.2.0 (date)
+      # It stops at the next "## " heading, and returns nothing for a version
+      # it cannot find -- so a missing section falls back to GitHub's own
+      # generated notes rather than publishing the whole changelog.
+      #
+      # After `verify` by construction: a Release only ever describes a version
+      # already confirmed on PyPI and the MCP Registry.
+      - name: Create the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="${{ needs.security.outputs.version }}"
+          python3 - "$VERSION" CHANGELOG.md > /tmp/notes.md <<'EXTRACT'
+          import re, sys, pathlib
+          ver, path = sys.argv[1], sys.argv[2]
+          text = pathlib.Path(path).read_text()
+          start = re.search(r'(?m)^##\s+\[?%s\]?\b.*$' % re.escape(ver), text)
+          if not start:
+              raise SystemExit(0)
+          rest = text[start.end():]
+          nxt = re.search(r'(?m)^##\s', rest)
+          print((rest[:nxt.start()] if nxt else rest).strip())
+          EXTRACT
+
+          # A version with a suffix (0.2.1rc1) is a pre-release, not Latest.
+          PRE=""
+          case "$VERSION" in
+            *[!0-9.]*) PRE="--prerelease" ;;
+          esac
+
+          if [ -s /tmp/notes.md ]; then
+            echo "release notes: this version's CHANGELOG section ($(wc -l < /tmp/notes.md) lines)"
+            gh release create "v${VERSION}" --verify-tag --title "v${VERSION}" \
+              --notes-file /tmp/notes.md $PRE
+          else
+            echo "release notes: no CHANGELOG section for ${VERSION}; using generated notes"
+            gh release create "v${VERSION}" --verify-tag --title "v${VERSION}" \
+              --generate-notes $PRE
+          fi

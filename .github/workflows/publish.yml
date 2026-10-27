@@ -266,17 +266,31 @@ jobs:
           echo "FAIL: PyPI never served ${PACKAGE} ${VERSION}"
           exit 1
 
-      - name: Authenticate to MCP Registry (GitHub OIDC)
-        run: ./mcp-publisher login github-oidc
-
-      # Retries ride out the Registry's own transient failures. Before each
-      # retry, check whether an earlier attempt landed despite the error.
-      - name: Publish to MCP Registry
+      # One step, because authentication has to happen INSIDE the retry loop.
+      #
+      # The Registry JWT lives about six minutes. This loop sleeps 30+60+90+120+150
+      # seconds and each attempt can take another minute, so it is built to run for
+      # roughly twelve. pota-mcp 0.5.0 on 2026-10-26 spent its last two attempts on
+      # a dead credential:
+      #   17:48:52  login
+      #   17:49:53  attempt 1  504   <- the Registry was genuinely down
+      #   17:51:28  attempt 2  504
+      #   17:53:29  attempt 3  504
+      #   17:54:59  attempt 4  401 "token has invalid claims: token is expired"
+      #   17:57:00  attempt 5  401
+      # PyPI had already accepted the upload, so the run failed after publishing,
+      # the tag job never ran, and 0.5.0 is on PyPI untagged and unregistered for
+      # good -- PyPI is immutable. The outage was theirs; not surviving it was ours.
+      - name: Authenticate and publish to the MCP Registry
         run: |
           VERSION="${{ needs.security.outputs.version }}"
           NAME="$(jq -r '.name' server.json)"
           REGISTRY="https://registry.modelcontextprotocol.io/v0/servers?search=${NAME}&version=latest"
           for i in 1 2 3 4 5; do
+            # Fresh token per attempt. A login failure is not fatal on its own:
+            # if the Registry is down it will fail here too, and the next attempt
+            # after the backoff is the one that matters.
+            ./mcp-publisher login github-oidc || echo "login attempt ${i} failed"
             if ./mcp-publisher publish; then
               exit 0
             fi

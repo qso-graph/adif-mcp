@@ -27,7 +27,7 @@ permissions:
 
 jobs:
   security:
-    name: Security gate
+    name: Security gates
     runs-on: ubuntu-latest
     permissions:
       contents: read

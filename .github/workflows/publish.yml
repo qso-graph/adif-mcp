@@ -34,6 +34,9 @@ jobs:
       checks: read
     outputs:
       version: ${{ steps.version.outputs.version }}
+      # "yes" when this version is on PyPI with no tag: an interrupted release
+      # being finished rather than a new one being made.
+      resume: ${{ steps.version.outputs.resume }}
     steps:
       - uses: actions/checkout@v5
 
@@ -96,11 +99,31 @@ jobs:
             exit 1
           fi
           # Only a 404 means "not published yet"; unreachable or 5xx is not a yes.
+          # PyPI and the tag are read together, because neither alone says
+          # whether this version is releasable.
+          #
+          # This gate used to refuse on PyPI 200 full stop, and that made every
+          # interruption after the upload cost a version. The tag is written by
+          # the last job, so a transient failure in between -- the MCP Registry
+          # 504s on 2026-10-26, nine bytes served for the mcp-publisher
+          # download on 2026-10-27 -- left the version on PyPI, which is
+          # immutable, with no tag and no registry entry. The only recovery was
+          # to bump and release again, abandoning the version. Three releases
+          # went that way.
+          #
+          # So the four states are named, and only two of them refuse:
+          #
+          #   PyPI 404, no tag   a new release
+          #   PyPI 200, no tag   a release that was interrupted after the
+          #                      upload. RESUMABLE: the upload is skipped and
+          #                      the remaining jobs finish the release
+          #   PyPI 200, tagged   already released
+          #   PyPI 404, tagged   a tag with nothing behind it; something is
+          #                      wrong and guessing is worse than stopping
           CODE="$(curl -s -o /dev/null -w '%{http_code}' "https://pypi.org/pypi/${PACKAGE}/${VERSION}/json")"
           case "$CODE" in
-            404) echo "PyPI: ${PACKAGE} ${VERSION} is new" ;;
-            200) echo "FAIL: ${PACKAGE} ${VERSION} is already on PyPI. Bump the version before releasing."; exit 1 ;;
-            *)   echo "FAIL: PyPI returned ${CODE}; cannot confirm ${VERSION} is new"; exit 1 ;;
+            404|200) : ;;
+            *) echo "FAIL: PyPI returned ${CODE}; cannot tell whether ${VERSION} is published"; exit 1 ;;
           esac
           # git ls-remote --exit-code: 2 means no such tag; anything else (0, 128) stops.
           set +e
@@ -108,11 +131,31 @@ jobs:
           RC=$?
           set -e
           case "$RC" in
-            2) echo "tag v${VERSION} does not exist yet" ;;
-            0) echo "FAIL: tag v${VERSION} already exists"; exit 1 ;;
+            0) TAGGED=yes ;;
+            2) TAGGED=no ;;
             *) echo "FAIL: could not check tags (git ls-remote exited ${RC})"; exit 1 ;;
           esac
+
+          RESUME=false
+          if [ "$CODE" = 404 ] && [ "$TAGGED" = no ]; then
+            echo "PyPI: ${PACKAGE} ${VERSION} is new, tag v${VERSION} is free"
+          elif [ "$CODE" = 200 ] && [ "$TAGGED" = no ]; then
+            RESUME=true
+            echo "NOTE: ${PACKAGE} ${VERSION} is already on PyPI with no tag v${VERSION}."
+            echo "      A previous run uploaded it and did not finish. Resuming:"
+            echo "      the PyPI upload is skipped and the registry, verify and"
+            echo "      tag jobs will complete this release."
+          elif [ "$CODE" = 200 ] && [ "$TAGGED" = yes ]; then
+            echo "FAIL: ${PACKAGE} ${VERSION} is on PyPI and tagged v${VERSION} — already released."
+            echo "      Bump the version to release again."
+            exit 1
+          else
+            echo "FAIL: tag v${VERSION} exists but PyPI has no ${VERSION}."
+            echo "      That is not a state this workflow created; stopping rather than guessing."
+            exit 1
+          fi
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "resume=${RESUME}" >> "$GITHUB_OUTPUT"
 
 
       - uses: actions/setup-python@v6
@@ -207,13 +250,25 @@ jobs:
           python-version: "3.12"
 
       - name: Install build dependencies
+        if: needs.security.outputs.resume != 'true'
         run: pip install build
 
       - name: Build package
+        if: needs.security.outputs.resume != 'true'
         run: python -m build
 
       - name: Publish to PyPI
+        if: needs.security.outputs.resume != 'true'
         uses: pypa/gh-action-pypi-publish@release/v1
+
+      - name: Already on PyPI — resuming
+        if: needs.security.outputs.resume == 'true'
+        run: |
+          # The upload happened in an earlier run that did not finish. PyPI
+          # rejects a second upload of the same version anyway, so skipping it
+          # is required rather than merely tidy. The jobs after this one are
+          # what the resume is for.
+          echo "skipped the upload: this version is already on PyPI"
 
   # ---------------------------------------------------------------------------
   # Registry-publish — pushes server.json to the Official MCP Registry after
@@ -236,7 +291,19 @@ jobs:
 
       - name: Install mcp-publisher
         run: |
-          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+          # Downloaded to a file, not piped into tar, and with --fail.
+          #
+          # A bare `curl -L | tar xz` cannot fail usefully: curl writes the
+          # error body to stdout, so a 404 becomes nine bytes of "Not Found"
+          # fed to tar, which exits 2 with "not in gzip format" and says
+          # nothing about what actually went wrong. That is what happened on
+          # 2026-10-27 at 14:45:53Z -- the asset existed and the URL was right;
+          # GitHub served nine bytes for one request. --retry turns that into a
+          # retry instead of a failed release.
+          URL="https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz"
+          curl --fail --location --retry 5 --retry-all-errors --retry-delay 3 \
+               --output mcp-publisher.tar.gz "$URL"
+          tar xzf mcp-publisher.tar.gz mcp-publisher
           ./mcp-publisher --help > /dev/null  # smoke test
 
       - name: Set server.json to the released version

@@ -16,6 +16,8 @@ requires-python = ">=3.11"
 dependencies = [
     "aiofiles>=25.1.0",
     "fastmcp>=4.0,<5",
+    # ADIF reading, shared with the logbook servers. Standard library only.
+    "qso-graph-lib>=0.2.0",
 ]
 
 # Classifiers help downstream tooling/users

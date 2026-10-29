@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- **ADIF is read by `qso_graph_lib.adif`**, the fleet's one ADI reader, as ADIF 3.1.7 defines
+  it, passing ADIF's own test files.
+  - `validate_adif_record` matched tags anywhere, values included, so a COMMENT holding
+    `<CALL:2>X1` replaced the CALL being validated.
+  - `parse_adif` split records on `<EOR>`: one written inside a value made a second record,
+    and record 1 included the whole Header. It now shows each record's own text, and lists
+    any ADIF problems the reader repaired.
+  - `parse_adif` opened files in text mode, which turns CR LF into LF and breaks every
+    multi-line field's declared length; it now reads line ends as written, as UTF-8.
+  New dependency: `qso-graph-lib>=0.2.0` (standard library only).
+
 ## [2.1.0] — 2026-10-26
 
 ### Changed

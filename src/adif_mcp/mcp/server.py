@@ -15,6 +15,7 @@ import aiofiles
 import mcp.types as types
 from fastmcp import FastMCP
 from fastmcp.exceptions import ToolError
+from qso_graph_lib import adif as adi
 
 import adif_mcp
 from adif_mcp.utils import datatypes
@@ -491,20 +492,16 @@ async def get_system_version() -> str:
 
 
 def parse_adif_internal(text: str) -> Dict[str, str]:
-    """Surgically extracts ADIF tags and their data by length."""
-    tag_pattern = re.compile(
-        r"<(?P<name>[^:>]+):(?P<len>\d+)(?::(?P<type>[^>]+))?>", re.IGNORECASE
-    )
-    results: Dict[str, str] = {}
+    """A record's fields by name, read by qso_graph_lib.adif, the fleet's ADI reader.
 
-    for match in tag_pattern.finditer(text):
-        name = match.group("name").upper()
-        length = int(match.group("len"))
-        start_of_data = match.end()
-        data = text[start_of_data : start_of_data + length]
-        results[name] = data
-
-    return results
+    Every record's fields together, in order, as this always returned them. The old
+    scanner matched tags anywhere, values included, so a COMMENT holding "<CALL:5>X"
+    replaced the CALL being validated.
+    """
+    fields: Dict[str, str] = {}
+    for record in adi.read(text).records:
+        fields.update(record.fields)
+    return fields
 
 
 # --- Core Tools ---
@@ -567,7 +564,6 @@ async def parse_adif(
     """
     start_at = start_at if start_at is not None else 1
     limit = limit if limit is not None else 20
-    record_pattern = re.compile(r"(.*?)<EOR>", re.IGNORECASE | re.DOTALL)
 
     try:
         if not os.path.exists(file_path):
@@ -575,23 +571,34 @@ async def parse_adif(
             # rather than reading the word ERROR in a successful answer (#48).
             raise ToolError(f"No file at {file_path}.")
 
-        async with aiofiles.open(file_path, mode="r") as f:
+        # Line ends as written: text mode turns CR LF into LF and breaks every
+        # multi-line field's declared length (four fields in ADIF's own test file).
+        async with aiofiles.open(
+            file_path, mode="r", encoding="utf-8", errors="replace", newline=""
+        ) as f:
             content = await f.read()
-            matches = list(record_pattern.finditer(content))
-            total_count = len(matches)
+            # Records as qso_graph_lib.adif reads them. Splitting on "<EOR>" counted
+            # one written inside a value, and put the whole Header in record 1.
+            doc = adi.read(content)
+            total_count = len(doc.records)
 
             start_idx = max(0, start_at - 1)
             end_idx = start_idx + limit
-            requested = matches[start_idx:end_idx]
+            requested = doc.records[start_idx:end_idx]
 
             output_text = f"FILE: {file_path}\nTOTAL RECORDS: {total_count}\n"
             current_max = min(start_at + len(requested) - 1, total_count)
-            output_text += f"DISPLAYING: {start_at} to {current_max}\n\n"
+            output_text += f"DISPLAYING: {start_at} to {current_max}\n"
+            if doc.problems:
+                output_text += f"ADIF PROBLEMS: {len(doc.problems)}\n"
+                for problem in doc.problems[:5]:
+                    output_text += f"  at {problem.offset}: {problem.message}\n"
+            output_text += "\n"
 
-            for i, match in enumerate(requested):
+            for i, record in enumerate(requested):
                 current_num = start_at + i
                 output_text += f"--- RECORD {current_num} ---\n"
-                output_text += f"{match.group(0).strip()}\n\n"
+                output_text += f"{content[record.start:record.end].strip()}\n\n"
 
             return [types.TextContent(type="text", text=output_text)]
 

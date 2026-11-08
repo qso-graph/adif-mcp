@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Documentation
-    url: https://ki7mt.github.io/adif-mcp/
-    about: Please check the docs before filing an issue.
-  - name: Discussions
-    url: https://github.com/KI7MT/adif-mcp/discussions
-    about: For general questions and ideas, use GitHub Discussions.

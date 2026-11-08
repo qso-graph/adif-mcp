@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Issue forms come from the QSO Graph organisation defaults, with a Credentials confirmation; the repository's own were removed.
+- Issue forms come from the QSO Graph organization defaults, with a Credentials confirmation; the repository's own were removed.
 
 ## [2.1.1] — 2026-10-29
 

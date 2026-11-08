@@ -6,7 +6,7 @@
 
 MCP server for the [ADIF 3.1.7 specification](https://adif.org.uk/317/ADIF_317.htm): validate and parse ADIF records, search the spec's fields, enumerations and data types, and compute distance and heading between Maidenhead locators, through any MCP-compatible AI assistant.
 
-Part of the [qso-graph](https://qso-graph.io/) project. **No authentication required** — the ADIF specification is bundled, so it works offline.
+Part of the [qso-graph](https://qso-graph.io/) project. **No authentication required**—the ADIF specification is bundled, so it works offline.
 
 ## Install
 
@@ -33,7 +33,7 @@ ADIF (Amateur Data Interchange Format) is the standard file format amateur radio
 
 ## Quick Start
 
-No credentials needed — just install and configure your MCP client.
+No credentials needed—just install and configure your MCP client.
 
 ### Configure your MCP client
 
@@ -182,4 +182,4 @@ uv run pytest
 
 adif-mcp's own code is GPL-3.0-or-later. See [LICENSE](LICENSE) for details.
 
-**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.6 and 3.1.7 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256s per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our licence doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and each version's `MANIFEST.json`. See [NOTICE](NOTICE).
+**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.6 and 3.1.7 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256 hashes per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our licence doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and each version's `MANIFEST.json`. See [NOTICE](NOTICE).

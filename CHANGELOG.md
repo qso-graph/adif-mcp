@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- README: American spelling, as the QSO Graph style guide asks.
+
 
 - README: style fixes for the QSO Graph style guide (Google Developer Documentation Style Guide, American English).
 - Issue forms come from the QSO Graph organization defaults, with a Credentials confirmation; the repository's own were removed.

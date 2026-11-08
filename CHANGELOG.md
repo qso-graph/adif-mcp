@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- README: the sample ADIF record is shown as code; `<CALL:5>` was read as a link.
+
+### Changed
 
 - AGENTS.md and CLAUDE.md: the organization's shared agent guide, and this repository's own.
 - README: American spelling, as the QSO Graph style guide asks.

@@ -131,7 +131,7 @@ Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 
 ### Ask questions
 
-> "Is this ADIF record valid? <CALL:5>KI7MT<QSO_DATE:8>20260928<BAND:3>20m<MODE:3>SSB<EOR>"
+> "Is this ADIF record valid? `<CALL:5>KI7MT<QSO_DATE:8>20260928<BAND:3>20m<MODE:3>SSB<EOR>`"
 
 > "What values does the ADIF MODE enumeration allow for digital modes?"
 

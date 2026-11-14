@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+
+- Locked dependencies: dnspython 2.9.2 (CVE-2026-128089) and
+  opentelemetry-api 1.45.2 (CVE-2026-126360), both transitive.
+
 ### Changed
 
 - README: the sample ADIF record is shown as code; `<CALL:5>` was read as a link.

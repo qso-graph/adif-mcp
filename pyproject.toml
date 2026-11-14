@@ -69,7 +69,7 @@ Homepage = "https://qso-graph.io"
 Documentation = "https://qso-graph.io/servers/adif-mcp/"
 Repository = "https://github.com/qso-graph/adif-mcp"
 Issues = "https://github.com/qso-graph/adif-mcp/issues"
-"ADIF Specification" = "https://adif.org.uk/317/ADIF_317.htm"
+"ADIF Specification" = "https://adif.org.uk/318/ADIF_318.htm"
 
 [project.scripts]
 # The command starts the MCP server; there is nothing else to run.

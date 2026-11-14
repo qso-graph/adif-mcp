@@ -5,9 +5,9 @@ Licensed under the GNU General Public License v3.0 or later (see LICENSE).
 Third-party material: the ADIF specification
 --------------------------------------------
 
-The files in src/adif_mcp/resources/spec/316/ and src/adif_mcp/resources/spec/317/
+The files in src/adif_mcp/resources/spec/317/ and src/adif_mcp/resources/spec/318/
 (and their xml/, csv/, tsv/, xlsx/ and ods/ subfolders) are the Amateur Data
-Interchange Format (ADIF) specification exports, versions 3.1.6 and 3.1.7, in every
+Interchange Format (ADIF) specification exports, versions 3.1.7 and 3.1.8, in every
 format ADIF publishes, produced by the ADIF Developers Group and published at
 https://adif.org.uk/. They are redistributed unmodified; each folder's MANIFEST.json
 lists their SHA-256s, and a test checks that they stay byte-identical to ADIF's
@@ -19,8 +19,8 @@ rights in them. ADIF publishes the exports so developers can "generate (for exam
 program data or SQL files" from them, which is how this project uses them.
 
 Exceptions, which are ours:
-- src/adif_mcp/resources/spec/316/enumerations_country.json
 - src/adif_mcp/resources/spec/317/enumerations_country.json
+- src/adif_mcp/resources/spec/318/enumerations_country.json
   The Country enumeration is derived by this project (see the file's "Derived" block);
   ADIF does not publish it in this form.
-- src/adif_mcp/resources/spec/316/MANIFEST.json and 317/MANIFEST.json (the checksum lists).
+- src/adif_mcp/resources/spec/317/MANIFEST.json and 318/MANIFEST.json (the checksum lists).

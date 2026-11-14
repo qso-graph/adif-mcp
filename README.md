@@ -4,7 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/adif-mcp?label=PyPI&color=blue)](https://pypi.org/project/adif-mcp/)
 [![MCP Registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0%2Fservers%3Fsearch%3Dio.github.qso-graph%2Fadif-mcp%26version%3Dlatest&query=%24.servers%5B0%5D.server.version&label=MCP%20Registry&color=blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.qso-graph/adif-mcp&version=latest)
 
-MCP server for the [ADIF 3.1.7 specification](https://adif.org.uk/317/ADIF_317.htm): validate and parse ADIF records, search the spec's fields, enumerations and data types, and compute distance and heading between Maidenhead locators, through any MCP-compatible AI assistant.
+MCP server for the [ADIF 3.1.8 specification](https://adif.org.uk/318/ADIF_318.htm): validate and parse ADIF records, search the spec's fields, enumerations and data types, and compute distance and heading between Maidenhead locators, through any MCP-compatible AI assistant.
 
 Part of the [qso-graph](https://qso-graph.io/) project. **No authentication required**—the ADIF specification is bundled, so it works offline.
 
@@ -18,7 +18,7 @@ uvx adif-mcp            # run it; nothing to install
 
 | Tool | Description | Key Parameters |
 |------|-------------|----------------|
-| `validate_adif_record` | Validate a raw ADIF record against the 3.1.7 spec | adif_string |
+| `validate_adif_record` | Validate a raw ADIF record against the 3.1.8 spec | adif_string |
 | `parse_adif` | Streaming parser for large ADIF files, with pagination | file_path, start_at, limit |
 | `read_specification_resource` | Raw JSON for any spec module (band, mode, fields, ...) | resource_name |
 | `list_enumerations` | All ADIF enumerations with entry counts | — |
@@ -141,7 +141,7 @@ Add to `~/.gemini/settings.json` (global) or `.gemini/settings.json` (project):
 
 ## What the validator checks
 
-adif-mcp ships ADIF 3.1.7 as ADIF publishes it: 186 fields, 25 enumerations and 28 data types.
+adif-mcp ships ADIF 3.1.8 as ADIF publishes it: 186 fields, 25 enumerations and 28 data types.
 `validate_adif_record` checks each field against its ADIF data type and, for enumerated fields,
 against the enumeration:
 
@@ -182,4 +182,4 @@ uv run pytest
 
 adif-mcp's own code is GPL-3.0-or-later. See [LICENSE](LICENSE) for details.
 
-**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.6 and 3.1.7 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256 hashes per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our license doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and each version's `MANIFEST.json`. See [NOTICE](NOTICE).
+**The ADIF specification files are not ours.** The package includes ADIF's published files for two versions, the previous and the current (3.1.7 and 3.1.8 today), unmodified: every file in ADIF's resource zip except its test material, in every format ADIF publishes (JSON, XML with `all.xml` and the XSD, CSV, TSV, XLSX, ODS), with a `MANIFEST.json` of their SHA-256 hashes per version, from the [ADIF Developers Group](https://adif.org.uk/). They are ADIF's work, and our license doesn't cover them. The only files in that folder that are ours are the derived Country enumeration and each version's `MANIFEST.json`. See [NOTICE](NOTICE).

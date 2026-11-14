@@ -1,4 +1,4 @@
-"""ADIF-DT: the structured data types, checked as ADIF 3.1.7 defines them (#47).
+"""ADIF-DT: the structured data types, checked as ADIF 3.1.8 defines them (#47).
 
 Errors for what the specification states; warnings, never errors, for what its
 grammar allows but cannot be right. Case never fails a type ADIF calls

@@ -354,9 +354,9 @@ cd adif-mcp
 | **Name** | All warnings on the previous version's official test file (3.1.7) are correct behavior |
 | **Tool** | `validate_adif_record` (iterated over 6,197 records of `ADIF_317_test_QSOs_2026_03_22.adi`) |
 | **Purpose** | Verify warnings are real (not misclassified errors). The test file deliberately uses user-defined fields and import-only values. |
-| **Expected** | ~39 warnings total, all in categories: "not in spec" (user/app-defined fields), "import-only" (deprecated enum values), or "submode" (parent mode mismatch) |
+| **Expected** | ~37 warnings total, all in categories: "not in spec" (user/app-defined fields), "import-only" (deprecated enum values), or "submode" (parent mode mismatch) |
 | **Pass Criteria** | 30-50 warnings, every warning matches a known category |
-| **Observed** | 39 warnings: 23 user/app-defined fields + 16 import-only values |
+| **Observed** | 37 warnings: 21 user/app-defined fields + 16 import-only values (3.1.7 corpus; 3.1.8's gives the same, measured 2026-11-14) |
 | **Result** | **PASS** |
 
 ### Enum JSON Parity (Manual Verification)

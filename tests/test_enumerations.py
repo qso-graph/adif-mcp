@@ -291,21 +291,20 @@ def test_validate_whitespace_band_errors() -> None:
     assert any("BAND" in e and "empty" in e for e in result["errors"])
 
 
-# --- Official ADIF 3.1.7 Test File (G3ZOD / adif.org.uk) ---
+# --- Official ADIF 3.1.8 Test File (G3ZOD / adif.org.uk) ---
 
 
 def test_official_adif_test_file_zero_errors() -> None:
-    """ADIF-TCR-001: Zero false errors on official 3.1.7 test corpus.
+    """ADIF-TCR-001: Zero false errors on official 3.1.8 test corpus.
 
-    Source: https://adif.org.uk/317/resources
+    Source: https://adif.org.uk/318/index.htm (ADIF_318_resources_2026_10_12.zip)
     Generator: CreateADIFTestFiles (G3ZOD)
-    Records: 6,197 QSOs exercising every enumeration value (3.1.7 adds
-    +6 over 3.1.6: covers OFDM mode + FT2, FREEDATA, RIBBIT_PIX,
-    RIBBIT_SMS submodes).
+    Records: 6,202 QSOs exercising every enumeration value (3.1.8 adds
+    +5 over 3.1.7: the JTTY submode and four SKCC contest IDs).
     Gate: If our validator rejects an official record, our validator is wrong.
     """
     test_file = os.path.join(
-        _TEST_DATA, "ADIF_317_test_QSOs_2026_03_22.adi"
+        _TEST_DATA, "ADIF_318_test_QSOs_2026_10_12.adi"
     )
     assert os.path.exists(test_file), _MISSING_LOG.format(name=os.path.basename(test_file))
 
@@ -316,7 +315,7 @@ def test_official_adif_test_file_zero_errors() -> None:
     body = parts[1]
     records = re.findall(r"(.*?<EOR>)", body, re.IGNORECASE | re.DOTALL)
 
-    assert len(records) == 6197, f"Expected 6197 records, got {len(records)}"
+    assert len(records) == 6202, f"Expected 6202 records, got {len(records)}"
 
     all_errors = []
     for i, rec_text in enumerate(records):
@@ -339,7 +338,7 @@ def test_official_adif_test_file_warning_categories() -> None:
     Both are correct validator behavior, not false positives.
     """
     test_file = os.path.join(
-        _TEST_DATA, "ADIF_316_test_QSOs_2025_09_15.adi"
+        _TEST_DATA, "ADIF_317_test_QSOs_2026_03_22.adi"
     )
     assert os.path.exists(test_file), _MISSING_LOG.format(name=os.path.basename(test_file))
 
@@ -395,7 +394,7 @@ def test_country_invalid() -> None:
     assert any("FAKELAND" in e for e in result["errors"])
 
 
-# --- ADIF 3.1.7 new enum entries ---
+# --- Added in ADIF 3.1.7, still in 3.1.8 ---
 
 
 def test_317_new_mode_ofdm() -> None:
@@ -442,11 +441,32 @@ def test_317_new_submode_ribbit_sms() -> None:
     assert not submode_warns, submode_warns
 
 
-def test_317_submode_count() -> None:
-    """ADIF 3.1.7: Submode count is 187 (3.1.6 had 183, +4 new in 3.1.7)."""
+# --- Added in ADIF 3.1.8 ---
+
+
+def test_318_new_submode_jtty() -> None:
+    """ADIF 3.1.8: JTTY is a new Submode under Mode MFSK."""
+    adif = "<MODE:4>MFSK<SUBMODE:4>JTTY<EOR>"
+    result = validate_adif_record(adif)
+    assert result["status"] == "success", result
+    submode_warns = [w for w in result["warnings"] if "submode" in w.lower()]
+    assert not submode_warns, submode_warns
+
+
+def test_318_new_contest_ids_skcc() -> None:
+    """ADIF 3.1.8: four SKCC contest IDs are new."""
+    for contest in ("SKCC-SKS", "SKCC-SKSA", "SKCC-SKSE", "SKCC-WES"):
+        adif = f"<CONTEST_ID:{len(contest)}>{contest}<EOR>"
+        result = validate_adif_record(adif)
+        assert result["status"] == "success", (contest, result)
+        assert not result["warnings"], (contest, result["warnings"])
+
+
+def test_318_submode_count() -> None:
+    """ADIF 3.1.8: Submode count is 188 (3.1.7 had 187, +1: JTTY)."""
     result = list_enumerations()
     sub = result["enumerations"]["Submode"]
-    assert sub["record_count"] == 187
+    assert sub["record_count"] == 188
 
 
 def test_country_case_insensitive() -> None:

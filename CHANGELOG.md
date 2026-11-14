@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- **ADIF 3.1.8 is the current specification** (released 2026-10-12); 3.1.7 is kept as the
+  previous one and 3.1.6 is removed, so the package still carries two. 3.1.8 adds the `JTTY`
+  submode of `MFSK` (WSJT-X 3.2's new mode), four SKCC contest IDs (`SKCC-SKS`, `SKCC-SKSA`,
+  `SKCC-SKSE`, `SKCC-WES`) and a change to Region `WAE`; its fields and data types are the
+  same as 3.1.7's. The official test corpus is 3.1.8's (6,202 QSOs).
+- The spec loader's default version follows `__adif_spec__`, so the current version is named
+  in one place.
+
+### Fixed
+
+- `scripts/import_adif_release.py` wrote its checksum register to `test/data/`, a folder
+  renamed to `tests/`, so an import failed after writing the files; and it downloaded with
+  the interpreter's certificate roots rather than certifi's.
+
 ### Security
 
 - Locked dependencies: dnspython 2.9.2 (CVE-2026-128089) and

@@ -1,6 +1,6 @@
 # ADIF specification files
 
-`316/` and `317/` hold the ADIF specification exports, versions 3.1.6 and 3.1.7, produced by the
+`317/` and `318/` hold the ADIF specification exports, versions 3.1.7 and 3.1.8, produced by the
 ADIF Developers Group and published at <https://adif.org.uk/>: every file in ADIF's resource zip
 except its test material, unmodified. The JSON is at the top of each folder; the other formats are
 in `xml/` (with `all.xml` and `adifexport.xsd`), `csv/`, `tsv/`, `xlsx/` and `ods/`, as ADIF names

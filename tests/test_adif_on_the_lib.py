@@ -23,7 +23,7 @@ def test_a_tag_inside_a_value_does_not_replace_the_field_being_validated():
 def test_a_literal_eor_in_a_value_is_not_a_second_record(tmp_path: Path):
     record = spec("CALL", "W1AW") + spec("COMMENT", "a<eor>b") + "<EOR>"
     log = tmp_path / "log.adi"
-    log.write_text("Header\n" + spec("ADIF_VER", "3.1.7") + "<EOH>\n" + record + "\n")
+    log.write_text("Header\n" + spec("ADIF_VER", "3.1.8") + "<EOH>\n" + record + "\n")
     out = asyncio.run(server.parse_adif(str(log)))[0].text
     assert "TOTAL RECORDS: 1" in out
     assert "--- RECORD 1 ---\n" + record + "\n" in out  # and no Header in it

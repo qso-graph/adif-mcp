@@ -9,4 +9,4 @@ def test_pkg_meta_exposed() -> None:
     assert isinstance(adif_mcp.__version__, str) and len(adif_mcp.__version__) > 0
     assert hasattr(adif_mcp, "__adif_spec__")
     # Allowed set kept in sync as new ADIF spec revisions are added.
-    assert adif_mcp.__adif_spec__ in {"3.1.5", "3.1.6", "3.1.7", "3.2.0"}
+    assert adif_mcp.__adif_spec__ in {"3.1.7", "3.1.8"}

@@ -1,4 +1,4 @@
-"""ADIF's structured data types, checked as ADIF 3.1.7 defines them (#47).
+"""ADIF's structured data types, checked as ADIF 3.1.8 defines them (#47).
 
 One function per data type, each quoting the sentence of the specification it
 enforces, and a table from the type's name to its function. A value that breaks

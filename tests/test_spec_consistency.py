@@ -21,7 +21,7 @@ import pytest
 from adif_mcp.mcp.server import DERIVED_ENUMERATIONS, ENUMERATION_FIELDS
 
 _SPEC = os.path.join(os.path.dirname(__file__), "..", "src", "adif_mcp", "resources", "spec")
-VERSIONS = {"316": "3.1.6", "317": "3.1.7"}
+VERSIONS = {"317": "3.1.7", "318": "3.1.8"}
 
 
 def _load(path: str) -> Dict[str, Any]:

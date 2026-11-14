@@ -31,14 +31,17 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import ssl
 import sys
 import urllib.request
 import zipfile
 from pathlib import Path
 
+import certifi
+
 ROOT = Path(__file__).resolve().parent.parent
 SPEC = ROOT / "src" / "adif_mcp" / "resources" / "spec"
-PINS = ROOT / "test" / "data" / "adif_upstream_sha256.json"
+PINS = ROOT / "tests" / "data" / "adif_upstream_sha256.json"
 OURS = {"enumerations_country.json"}  # derived by adif-mcp, never from the zip
 
 
@@ -58,7 +61,9 @@ def target(member: str, version: str) -> str | None:
 
 
 def main(version: str, url: str, zip_sha: str) -> None:
-    with urllib.request.urlopen(url, timeout=120) as r:  # https, adif.org.uk
+    # certifi's roots, not the interpreter's: Apple's reduced store fails valid chains.
+    tls = ssl.create_default_context(cafile=certifi.where())
+    with urllib.request.urlopen(url, timeout=120, context=tls) as r:  # https, adif.org.uk
         blob = r.read()
     got = sha256(blob)
     if got != zip_sha:

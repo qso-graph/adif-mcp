@@ -96,7 +96,7 @@ def test_spec_resource_rejects_path_traversal(tmp_path):
 
     outside = tmp_path / "probe.json"
     outside.write_text('{"secret": "outside the spec dir"}')
-    spec_dir = os.path.join(os.path.dirname(server.__file__), "..", "resources", "spec", "317")
+    spec_dir = os.path.join(os.path.dirname(server.__file__), "..", "resources", "spec", "318")
     rel = os.path.relpath(str(outside)[: -len(".json")], os.path.abspath(spec_dir))
     for name in (rel, rel.lower(), "../fields", "/etc/passwd", "all/../fields"):
         result = json.loads(server.get_spec_text(name))
@@ -115,6 +115,6 @@ def test_spec_resource_unknown_name_is_an_error():
     assert "error" in result
     assert "mode" in result["available"] and "all" in result["available"]
     # The names that must keep working.
-    assert json.loads(get_spec_text("all"))["Adif"]["Version"] == "3.1.7"
+    assert json.loads(get_spec_text("all"))["Adif"]["Version"] == "3.1.8"
     assert "Mode" in json.loads(get_spec_text("mode"))["Adif"]["Enumerations"]
     assert "Records" in json.loads(get_spec_text("fields"))["Adif"]["Fields"]

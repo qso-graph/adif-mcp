@@ -1,5 +1,5 @@
 """
-ADIF-MCP Server: Authoritative 3.1.7 Specification Server.
+ADIF-MCP Server: Authoritative 3.1.8 Specification Server.
 
 Provides tools for parsing, streaming, and validating ADIF data.
 """
@@ -437,8 +437,10 @@ def _validate_time(field_name: str, value: str) -> List[str]:
 _SPEC_NAME_RE = re.compile(r"[a-z0-9_]+")
 
 
-def get_spec_text(filename: str, version: str = "317") -> str:
-    """Retrieve raw text of a 3.1.7 specification JSON file."""
+def get_spec_text(filename: str, version: str | None = None) -> str:
+    """Retrieve raw text of a specification JSON file, by default the current version's."""
+    # The folder follows __adif_spec__, so the version is named in one place.
+    version = version or adif_mcp.__adif_spec__.replace(".", "")
     current_dir = os.path.dirname(os.path.abspath(__file__))
     json_dir = os.path.abspath(
         os.path.join(current_dir, "..", "resources", "spec", version)
@@ -611,7 +613,7 @@ async def parse_adif(
 @mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
                        "idempotentHint": True, "openWorldHint": False})
 def read_specification_resource(resource_name: str) -> str:
-    """Reads an ADIF 3.1.7 specification resource (e.g., 'mode', 'fields', 'all').
+    """Reads an ADIF 3.1.8 specification resource (e.g., 'mode', 'fields', 'all').
 
     An unknown or unreadable name is a tool execution error, so the model can
     see it failed and correct the name rather than being handed an error
@@ -636,7 +638,7 @@ def read_specification_resource(resource_name: str) -> str:
 @mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
                        "idempotentHint": True, "openWorldHint": False})
 def list_enumerations() -> Dict[str, Any]:
-    """Lists the 26 enumerations: ADIF 3.1.7's 25 plus Country (derived).
+    """Lists the 26 enumerations: ADIF 3.1.8's 25 plus Country (derived).
 
     Each entry's ``source`` says whether it is ADIF's own export or derived
     by adif-mcp, so a consumer loading reference tables can tell them apart.
@@ -663,7 +665,7 @@ def search_enumerations(
     search_term: str,
     enumeration: Optional[str] = None,
 ) -> Dict[str, Any]:
-    """Searches ADIF 3.1.7 enumerations. Optionally filter by enumeration name."""
+    """Searches ADIF 3.1.8 enumerations. Optionally filter by enumeration name."""
     term = search_term.upper().strip()
     if not term:
         raise ToolError("Search term must not be empty.")
@@ -717,7 +719,7 @@ def search_enumerations(
 @mcp.tool(annotations={"readOnlyHint": True, "destructiveHint": False,
                        "idempotentHint": True, "openWorldHint": False})
 def validate_adif_record(adif_string: str) -> Dict[str, Any]:
-    """Validates an ADIF record against 3.1.7 rules including enum membership."""
+    """Validates an ADIF record against 3.1.8 rules including enum membership."""
     parsed = parse_adif_internal(adif_string)
 
     try:
